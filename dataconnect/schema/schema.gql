@@ -1,0 +1,33 @@
+type User @table {
+  name: String!
+  email: String!
+  role: String!
+  avatarUrl: String
+}
+
+type Classroom @table {
+  name: String!
+  teacher: User!
+}
+
+type Enrollment @table(key: ["classroom", "student"]) {
+  classroom: Classroom!
+  student: User!
+}
+
+type Assignment @table {
+  title: String!
+  dueDate: Timestamp!
+  description: String
+  attachmentUrl: String
+  classroom: Classroom!
+}
+
+type Submission @table {
+  status: String!
+  contentUrl: String
+  grade: Int
+  teacherFeedback: String
+  assignment: Assignment!
+  student: User!
+}

@@ -1,0 +1,9 @@
+.env
+.claude
+.specify
+CLAUDE.md
+
+# Node / build
+node_modules/
+dist/
+*.log
