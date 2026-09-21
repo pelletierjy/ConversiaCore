@@ -58,11 +58,13 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
   renderLoginForm(shell, {
     mode: 'login',
     storedPinHash: config.adminPinHash,
-    onLogin: () => renderAdminHome(shell),
+    onLogin: () => renderAdminHome(shell, config),
   });
 }
 
-async function renderAdminHome(container: HTMLElement): Promise<void> {
+async function renderAdminHome(container: HTMLElement, config: AppConfig): Promise<void> {
+  const subjects = [...new Set([...config.predefinedSubjects, ...config.customSubjects])];
+
   container.innerHTML = `
     <div class="admin-home">
       <header class="admin-header">
@@ -80,12 +82,12 @@ async function renderAdminHome(container: HTMLElement): Promise<void> {
 
   const refreshList = () =>
     renderEntryList(listContainer, {
-      onEdit: (entry) => renderEntryEditor(editorContainer, { entry, onSaved: refreshList }),
+      onEdit: (entry) => renderEntryEditor(editorContainer, { entry, onSaved: refreshList, subjects }),
       onDeleted: refreshList,
     });
 
   addBtn.addEventListener('click', () => {
-    renderEntryEditor(editorContainer, { onSaved: refreshList });
+    renderEntryEditor(editorContainer, { onSaved: refreshList, subjects });
   });
 
   await refreshList();

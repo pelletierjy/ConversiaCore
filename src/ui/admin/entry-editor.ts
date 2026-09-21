@@ -2,7 +2,6 @@ import { createKnowledgeEntry, updateKnowledgeEntry } from '../../db/knowledge';
 import { saveEmbeddingVector } from '../../db/vectors';
 import { embedText } from '../../services/gemini';
 import { GEMINI_EMBEDDING_MODEL } from '../../config';
-import { PREDEFINED_SUBJECTS } from '../../models/constants';
 import { showToast } from '../shared/toast';
 import type { Attachment, KnowledgeEntry } from '../../models/types';
 
@@ -11,10 +10,12 @@ const MAX_ATTACHMENT_BYTES = 1_000_000;
 export interface EntryEditorOptions {
   entry?: KnowledgeEntry;
   onSaved: () => void;
+  subjects?: string[];
 }
 
 export function renderEntryEditor(container: HTMLElement, options: EntryEditorOptions): void {
   const entry = options.entry;
+  const subjects = options.subjects ?? [];
 
   container.innerHTML = `
     <form class="entry-editor">
@@ -22,7 +23,7 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
       <label>Subject
         <input list="subject-options" name="subject" value="${entry?.subject ?? ''}" required />
         <datalist id="subject-options">
-          ${PREDEFINED_SUBJECTS.map((s) => `<option value="${s}"></option>`).join('')}
+          ${subjects.map((s) => `<option value="${s}"></option>`).join('')}
         </datalist>
       </label>
       <label>Grade Level
