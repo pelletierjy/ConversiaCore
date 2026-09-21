@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
     define: {
       'import.meta.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY ?? ''),
     },
+    base: '/need-homework/',
     build: {
       outDir: 'dist',
     },

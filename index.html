@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem('gh_pages_redirect');
+        if (redirect) {
+          sessionStorage.removeItem('gh_pages_redirect');
+          if (redirect !== location.href) {
+            history.replaceState(null, '', redirect);
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
