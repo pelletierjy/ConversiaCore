@@ -1,0 +1,123 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: { id_expr: "auth.uid", name: "New User", email: "user@example.com", role: "Student" })
+}
+
+mutation UpdateUser @auth(level: USER) {
+  user_update(key: { id_expr: "auth.uid" }, data: { name: "Updated Name" })
+}
+
+mutation DeleteUser @auth(level: USER) {
+  user_delete(key: { id_expr: "auth.uid" })
+}
+
+query GetUser @auth(level: USER) {
+  user(key: { id_expr: "auth.uid" }) {
+    id
+    name
+    email
+  }
+}
+
+query ListUsers @auth(level: PUBLIC, insecureReason: "Public directory of users") {
+  users {
+    id
+    name
+  }
+}
+
+mutation CreateClassroom @auth(level: USER) {
+  classroom_insert(data: { name: "Math 101", teacher: { id_expr: "auth.uid" } })
+}
+
+mutation UpdateClassroom($id: UUID!) @auth(level: USER) {
+  classroom_update(key: { id: $id }, data: { name: "Advanced Math" })
+}
+
+mutation DeleteClassroom($id: UUID!) @auth(level: USER) {
+  classroom_delete(key: { id: $id })
+}
+
+query GetClassroom($id: UUID!) @auth(level: PUBLIC, insecureReason: "Classroom details are public") {
+  classroom(id: $id) {
+    name
+    teacher {
+      name
+    }
+  }
+}
+
+query ListClassrooms @auth(level: PUBLIC, insecureReason: "Public list of classrooms") {
+  classrooms {
+    name
+  }
+}
+
+mutation CreateEnrollment($classroomId: UUID!) @auth(level: USER) {
+  enrollment_insert(data: { classroomId: $classroomId, studentId_expr: "auth.uid" })
+}
+
+mutation DeleteEnrollment($classroomId: UUID!) @auth(level: USER) {
+  enrollment_delete(key: { classroomId: $classroomId, studentId_expr: "auth.uid" })
+}
+
+query ListMyEnrollments @auth(level: USER) {
+  enrollments(where: { studentId: { eq_expr: "auth.uid" } }) {
+    classroom {
+      name
+    }
+  }
+}
+
+mutation CreateAssignment($classroomId: UUID!, $title: String!, $dueDate: Timestamp!) @auth(level: USER) {
+  assignment_insert(data: { classroomId: $classroomId, title: $title, dueDate: $dueDate })
+}
+
+mutation UpdateAssignment($id: UUID!, $title: String) @auth(level: USER) {
+  assignment_update(key: { id: $id }, data: { title: $title })
+}
+
+mutation DeleteAssignment($id: UUID!) @auth(level: USER) {
+  assignment_delete(key: { id: $id })
+}
+
+query GetAssignment($id: UUID!) @auth(level: PUBLIC, insecureReason: "Assignments are public") {
+  assignment(id: $id) {
+    title
+    dueDate
+  }
+}
+
+query ListAssignments($classroomId: UUID!) @auth(level: PUBLIC, insecureReason: "Assignments are public") {
+  assignments(where: { classroomId: { eq: $classroomId } }) {
+    title
+  }
+}
+
+mutation CreateSubmission($assignmentId: UUID!, $contentUrl: String!) @auth(level: USER) {
+  submission_insert(data: { assignmentId: $assignmentId, studentId_expr: "auth.uid", status: "submitted", contentUrl: $contentUrl })
+}
+
+mutation UpdateSubmission($id: UUID!, $grade: Int) @auth(level: USER) {
+  submission_update(key: { id: $id }, data: { grade: $grade })
+}
+
+mutation DeleteSubmission($id: UUID!) @auth(level: USER) {
+  submission_delete(key: { id: $id })
+}
+
+query GetSubmission($id: UUID!) @auth(level: USER) {
+  submission(id: $id) {
+    status
+    grade
+    teacherFeedback
+  }
+}
+
+query ListMySubmissions @auth(level: USER) {
+  submissions(where: { studentId: { eq_expr: "auth.uid" } }) {
+    status
+    assignment {
+      title
+    }
+  }
+}

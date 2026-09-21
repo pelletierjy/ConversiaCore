@@ -1,0 +1,32 @@
+mutation SeedDatabase @transaction {
+  user_insertMany(data: [
+    { id: "10000000-0000-4000-a000-000000000001", name: "Alice Teacher", email: "alice@example.com", role: "teacher" },
+    { id: "10000000-0000-4000-a000-000000000002", name: "Bob Teacher", email: "bob@example.com", role: "teacher" },
+    { id: "20000000-0000-4000-a000-000000000001", name: "Charlie Student", email: "charlie@example.com", role: "student" },
+    { id: "20000000-0000-4000-a000-000000000002", name: "David Student", email: "david@example.com", role: "student" },
+    { id: "20000000-0000-4000-a000-000000000003", name: "Eve Student", email: "eve@example.com", role: "student" }
+  ])
+
+  classroom_insertMany(data: [
+    { id: "30000000-0000-4000-a000-000000000001", name: "Mathematics 101", teacher: { id: "10000000-0000-4000-a000-000000000001" } },
+    { id: "30000000-0000-4000-a000-000000000002", name: "Physics 202", teacher: { id: "10000000-0000-4000-a000-000000000002" } }
+  ])
+
+  enrollment_insertMany(data: [
+    { classroom: { id: "30000000-0000-4000-a000-000000000001" }, student: { id: "20000000-0000-4000-a000-000000000001" } },
+    { classroom: { id: "30000000-0000-4000-a000-000000000001" }, student: { id: "20000000-0000-4000-a000-000000000002" } },
+    { classroom: { id: "30000000-0000-4000-a000-000000000002" }, student: { id: "20000000-0000-4000-a000-000000000003" } }
+  ])
+
+  assignment_insertMany(data: [
+    { id: "40000000-0000-4000-a000-000000000001", title: "Algebra Quiz", dueDate: "2024-12-01T23:59:59Z", classroom: { id: "30000000-0000-4000-a000-000000000001" } },
+    { id: "40000000-0000-4000-a000-000000000002", title: "Calculus HW", dueDate: "2024-12-10T23:59:59Z", classroom: { id: "30000000-0000-4000-a000-000000000001" } },
+    { id: "40000000-0000-4000-a000-000000000003", title: "Lab Report", dueDate: "2024-12-15T23:59:59Z", classroom: { id: "30000000-0000-4000-a000-000000000002" } }
+  ])
+
+  submission_insertMany(data: [
+    { status: "submitted", grade: 95, assignment: { id: "40000000-0000-4000-a000-000000000001" }, student: { id: "20000000-0000-4000-a000-000000000001" } },
+    { status: "pending", grade: null, assignment: { id: "40000000-0000-4000-a000-000000000002" }, student: { id: "20000000-0000-4000-a000-000000000002" } },
+    { status: "graded", grade: 88, assignment: { id: "40000000-0000-4000-a000-000000000003" }, student: { id: "20000000-0000-4000-a000-000000000003" } }
+  ])
+}
