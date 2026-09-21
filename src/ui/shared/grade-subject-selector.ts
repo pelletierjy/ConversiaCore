@@ -1,4 +1,4 @@
-import { GRADE_LEVELS, PREDEFINED_SUBJECTS } from '../../models/constants';
+import { GRADE_LEVELS } from '../../models/constants';
 
 export interface GradeSubjectSelection {
   gradeLevel: number;
@@ -8,6 +8,7 @@ export interface GradeSubjectSelection {
 export interface GradeSubjectDefaults {
   lastSubject?: string;
   lastGradeLevel?: number;
+  subjects?: string[];
 }
 
 export function renderGradeSubjectSelector(
@@ -15,7 +16,8 @@ export function renderGradeSubjectSelector(
   onSubmit: (selection: GradeSubjectSelection) => void,
   defaults: GradeSubjectDefaults = {},
 ): void {
-  const isCustomDefault = Boolean(defaults.lastSubject) && !PREDEFINED_SUBJECTS.includes(defaults.lastSubject!);
+  const subjects = defaults.subjects ?? [];
+  const isCustomDefault = Boolean(defaults.lastSubject) && !subjects.includes(defaults.lastSubject!);
 
   container.innerHTML = `
     <form class="selector-form">
@@ -30,7 +32,7 @@ export function renderGradeSubjectSelector(
       </label>
       <label>Subject
         <select name="subject">
-          ${PREDEFINED_SUBJECTS.map(
+          ${subjects.map(
             (s) => `<option value="${s}" ${s === defaults.lastSubject ? 'selected' : ''}>${s}</option>`,
           ).join('')}
           <option value="__custom__" ${isCustomDefault ? 'selected' : ''}>Other...</option>
