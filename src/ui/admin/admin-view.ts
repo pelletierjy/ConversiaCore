@@ -49,7 +49,7 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
       mode: 'setup',
       onSetup: async (pinHash) => {
         await setDoc(appConfigDoc(), { ...config, adminPinHash: pinHash }, { merge: true });
-        await renderAdminHome(shell);
+        await renderAdminHome(shell, config);
       },
     });
     return;
