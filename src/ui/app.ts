@@ -18,6 +18,18 @@ export async function renderApp(root: HTMLElement): Promise<void> {
 }
 
 async function renderStudentFlow(root: HTMLElement): Promise<void> {
+  const params = new URLSearchParams(window.location.search);
+  const forcedSubject = params.get('subject') ?? undefined;
+  const forcedGradeLevel = params.has('gradeLevel')
+    ? Number(params.get('gradeLevel'))
+    : undefined;
+
+  // If both subject and grade are forced via URL, skip the selector entirely.
+  if (forcedSubject && forcedGradeLevel != null && !Number.isNaN(forcedGradeLevel)) {
+    await startStudentSession(root, forcedGradeLevel, forcedSubject);
+    return;
+  }
+
   const lastSubject = await getAppStateValue<string>('lastSubject');
   const lastGradeLevel = await getAppStateValue<number>('lastGradeLevel');
 
@@ -37,23 +49,30 @@ async function renderStudentFlow(root: HTMLElement): Promise<void> {
     async ({ gradeLevel, subject }) => {
       await setAppStateValue('lastSubject', subject);
       await setAppStateValue('lastGradeLevel', gradeLevel);
-
-      const session: StudentSession = {
-        id: crypto.randomUUID(),
-        gradeLevel,
-        subject,
-        startedAt: Date.now(),
-        lastActiveAt: Date.now(),
-        performance: {
-          consecutiveCorrect: 0,
-          consecutiveIncorrect: 0,
-          totalQuestions: 0,
-          currentDifficulty: 'easy',
-        },
-      };
-      await createSession(session);
-      await renderChatView(root, session);
+      await startStudentSession(root, gradeLevel, subject);
     },
-    { lastSubject, lastGradeLevel, subjects },
+    { lastSubject, lastGradeLevel, subjects, forcedSubject },
   );
+}
+
+async function startStudentSession(
+  root: HTMLElement,
+  gradeLevel: number,
+  subject: string,
+): Promise<void> {
+  const session: StudentSession = {
+    id: crypto.randomUUID(),
+    gradeLevel,
+    subject,
+    startedAt: Date.now(),
+    lastActiveAt: Date.now(),
+    performance: {
+      consecutiveCorrect: 0,
+      consecutiveIncorrect: 0,
+      totalQuestions: 0,
+      currentDifficulty: 'easy',
+    },
+  };
+  await createSession(session);
+  await renderChatView(root, session);
 }
