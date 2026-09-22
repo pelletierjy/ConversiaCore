@@ -1,6 +1,7 @@
 import { deleteKnowledgeEntry, listKnowledgeEntries } from '../../db/knowledge';
 import { deleteEmbeddingVector } from '../../db/vectors';
 import { showToast } from '../shared/toast';
+import { t } from '../../i18n/translations';
 import type { KnowledgeEntry } from '../../models/types';
 
 export interface EntryListOptions {
@@ -9,18 +10,18 @@ export interface EntryListOptions {
 }
 
 export async function renderEntryList(container: HTMLElement, options: EntryListOptions): Promise<void> {
-  container.innerHTML = '<p>Loading knowledge entries...</p>';
+  container.innerHTML = `<p>${t('entryList.loading')}</p>`;
 
   let entries: KnowledgeEntry[];
   try {
     entries = await listKnowledgeEntries();
   } catch {
-    container.innerHTML = '<p class="admin-error">Unable to load knowledge entries.</p>';
+    container.innerHTML = `<p class="admin-error">${t('entryList.loadError')}</p>`;
     return;
   }
 
   if (entries.length === 0) {
-    container.innerHTML = '<p>No knowledge entries yet.</p>';
+    container.innerHTML = `<p>${t('entryList.empty')}</p>`;
     return;
   }
 
@@ -32,11 +33,11 @@ export async function renderEntryList(container: HTMLElement, options: EntryList
         <li class="entry-list-item" data-id="${e.id}">
           <div>
             <strong>${escapeHtml(e.title)}</strong>
-            <span>${escapeHtml(e.subject)} · Grade ${e.gradeLevel}</span>
+            <span>${escapeHtml(e.subject)} · ${t('common.grade')} ${e.gradeLevel}</span>
           </div>
           <div class="entry-list-actions">
-            <button type="button" data-action="edit">Edit</button>
-            <button type="button" data-action="delete">Delete</button>
+            <button type="button" data-action="edit">${t('entryList.editButton')}</button>
+            <button type="button" data-action="delete">${t('entryList.deleteButton')}</button>
           </div>
         </li>`,
         )
@@ -50,14 +51,14 @@ export async function renderEntryList(container: HTMLElement, options: EntryList
 
     item.querySelector('[data-action="edit"]')?.addEventListener('click', () => options.onEdit(entry));
     item.querySelector('[data-action="delete"]')?.addEventListener('click', async () => {
-      if (!confirm(`Delete "${entry.title}"?`)) return;
+      if (!confirm(t('entryList.deleteConfirm', { title: entry.title }))) return;
       try {
         await deleteKnowledgeEntry(entry.id);
         await deleteEmbeddingVector(entry.id).catch(() => undefined);
-        showToast('Entry deleted.', 'success');
+        showToast(t('entryList.deletedToast'), 'success');
         options.onDeleted();
       } catch {
-        showToast('Failed to delete entry.', 'error');
+        showToast(t('entryList.deleteFailedToast'), 'error');
       }
     });
   });

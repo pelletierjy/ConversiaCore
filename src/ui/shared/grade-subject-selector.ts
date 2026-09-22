@@ -1,4 +1,5 @@
 import { GRADE_LEVELS } from '../../models/constants';
+import { t } from '../../i18n/translations';
 
 export interface GradeSubjectSelection {
   gradeLevel: number;
@@ -23,28 +24,28 @@ export function renderGradeSubjectSelector(
 
   const subjectHtml = forcedSubject
     ? `<input type="hidden" name="subject" value="${forcedSubject}" />
-       <div class="selector-forced-subject"><strong>Subject:</strong> ${forcedSubject}</div>`
-    : `<label>Subject
+       <div class="selector-forced-subject"><strong>${t('selector.subjectForcedLabel')}</strong> ${forcedSubject}</div>`
+    : `<label>${t('selector.subjectLabel')}
          <select name="subject">
            ${subjects.map(
              (s) => `<option value="${s}" ${s === defaults.lastSubject ? 'selected' : ''}>${s}</option>`,
            ).join('')}
-           <option value="__custom__" ${isCustomDefault ? 'selected' : ''}>Other...</option>
+           <option value="__custom__" ${isCustomDefault ? 'selected' : ''}>${t('selector.subjectOtherOption')}</option>
          </select>
        </label>
        <input
          type="text"
          name="customSubject"
-         placeholder="Enter subject"
+         placeholder="${t('selector.subjectPlaceholder')}"
          value="${isCustomDefault ? defaults.lastSubject : ''}"
          style="display:${isCustomDefault ? 'block' : 'none'}"
        />`;
 
   container.innerHTML = `
     <form class="selector-form">
-      <h1>AI Homework Chatbot</h1>
-      <p>Select your grade level and subject to start a homework session.</p>
-      <label>Grade Level
+      <h1>${t('selector.title')}</h1>
+      <p>${t('selector.subtitle')}</p>
+      <label>${t('selector.gradeLevelLabel')}
         <select name="gradeLevel">
           ${GRADE_LEVELS.map(
             (g) => `<option value="${g}" ${g === defaults.lastGradeLevel ? 'selected' : ''}>${g}</option>`,
@@ -52,7 +53,7 @@ export function renderGradeSubjectSelector(
         </select>
       </label>
       ${subjectHtml}
-      <button type="submit">Start Session</button>
+      <button type="submit">${t('selector.startButton')}</button>
     </form>
   `;
 

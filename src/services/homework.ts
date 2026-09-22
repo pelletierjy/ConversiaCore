@@ -2,6 +2,7 @@ import { buildTutorSystemPrompt } from '../models/constants';
 import { generateTutorResponse, type ChatTurn } from './gemini';
 import { isLikelyOffTopic, buildRedirectMessage } from './guardrails';
 import { formatKnowledgeContext, retrieveRelevantEntries } from './rag';
+import { getLocale, LOCALE_LANGUAGE_NAMES } from '../i18n/locale';
 import type { Difficulty, PerformanceSnapshot } from '../models/types';
 
 const TAG_PATTERN = /^\[(HOMEWORK|CORRECT|INCORRECT|INFO)\]\s*/i;
@@ -48,8 +49,9 @@ export async function sendStudentMessage(params: {
     }
   }
 
+  const language = LOCALE_LANGUAGE_NAMES[getLocale()];
   const systemPrompt =
-    buildTutorSystemPrompt({ subject, gradeLevel, difficulty: performance.currentDifficulty, knowledgeContext }) +
+    buildTutorSystemPrompt({ subject, gradeLevel, difficulty: performance.currentDifficulty, knowledgeContext, language }) +
     '\nBegin every reply with exactly one tag as the first token: [HOMEWORK] when presenting a new question, ' +
     "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or [INFO] for anything else " +
     '(hints, explanations, off-topic redirects).';

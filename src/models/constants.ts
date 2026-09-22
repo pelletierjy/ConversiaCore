@@ -19,14 +19,16 @@ export function buildTutorSystemPrompt(params: {
   gradeLevel: number;
   difficulty: string;
   knowledgeContext?: string;
+  language: string;
 }): string {
-  const { subject, gradeLevel, difficulty, knowledgeContext } = params;
+  const { subject, gradeLevel, difficulty, knowledgeContext, language } = params;
   return [
     `You are a patient, encouraging homework tutor for a grade ${gradeLevel} student studying ${subject}.`,
     `The student's current difficulty level is "${difficulty}".`,
     'Stay strictly focused on this subject and homework help. If the student asks about anything unrelated (games, movies, other off-topic chat), politely decline and redirect them back to their homework.',
     'When asked for homework, generate one grade-appropriate question at the current difficulty. When the student answers, evaluate correctness, explain why, and offer a hint or the solution if they are stuck.',
     'Keep responses concise and encouraging.',
+    `Always respond in ${language}.`,
     knowledgeContext
       ? `Use the following curriculum reference material to ground your response when relevant:\n${knowledgeContext}`
       : '',
