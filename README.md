@@ -1,10 +1,10 @@
 # AI Homework Chatbot
 
 A client-side single-page app that lets students chat with an AI tutor for personalized, grade-appropriate homework help, and lets an admin curate a shared knowledge base that grounds the tutor's responses (RAG). No backend server — deployed as static files to GitHub Pages.
+**🌐 Try it live:** https://pelletierjy.github.io/need-homework/
 
-See [specs/001-ai-homework-chatbot/](specs/001-ai-homework-chatbot/) for the full spec, plan, and data model.
-
-NOTE: This is mainly an experimentation.  I'm doing AI Engineer classes and I needed a platform to tryout a few things.  I opted for a learning platform with typescipt over Python just to tryout something different than most course using Python mainly beacuse I looking at embeding this in another project I'm working on which is the ScaleViewer.  Stay tune!
+NOTE: This is mainly an experimentation.  I'm doing AI Engineer classes and I needed a platform to tryout a few things.  I opted for typescipt over Python just to tryout something different than most course using Python.  I'm integrating this tutor in multiple projects where the 1st one is this modern web application built with Next.js that helps students & musicians visualize scales across multiple instruments.  The application provides interactive visualizations for guitar, piano, flute, kalimba and more.
+**🌐 Try it live:** https://scales-viewer.vercel.app/guitar
 
 ## Tech Stack
 
