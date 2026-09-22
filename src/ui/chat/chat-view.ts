@@ -3,12 +3,13 @@ import { renderInputBar, setInputBarDisabled } from './input-bar';
 import { addMessage, getMessagesForSession, updateSession } from '../../db/chat';
 import { sendStudentMessage } from '../../services/homework';
 import { GeminiError } from '../../services/gemini';
+import { t } from '../../i18n/translations';
 import type { ChatMessage, StudentSession } from '../../models/types';
 
 export async function renderChatView(container: HTMLElement, session: StudentSession): Promise<void> {
   container.innerHTML = `
     <div class="chat-view">
-      <header class="chat-header">${session.subject} · Grade ${session.gradeLevel}</header>
+      <header class="chat-header">${session.subject} · ${t('common.grade')} ${session.gradeLevel}</header>
       <div class="message-list"></div>
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
@@ -35,7 +36,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
     await addMessage(studentMessage);
 
     setInputBarDisabled(inputBarEl, true);
-    statusEl.textContent = 'Thinking...';
+    statusEl.textContent = t('chat.thinking');
 
     try {
       const history = messages.slice(0, -1).map((m) => ({ role: m.role, content: m.content }));
@@ -79,16 +80,16 @@ function describeError(error: unknown): string {
   if (error instanceof GeminiError) {
     switch (error.kind) {
       case 'not_configured':
-        return 'The AI service is not configured. Please contact an administrator.';
+        return t('chat.errorNotConfigured');
       case 'rate_limited':
-        return "We're a bit busy right now. Please try again in about a minute.";
+        return t('chat.errorRateLimited');
       case 'unavailable':
-        return 'The AI service is temporarily unavailable. Please try again shortly.';
+        return t('chat.errorUnavailable');
       case 'network':
-        return 'Connection problem. Check your internet and try again.';
+        return t('chat.errorNetwork');
       default:
-        return 'Something went wrong. Please try again.';
+        return t('chat.errorGeneric');
     }
   }
-  return 'Something went wrong. Please try again.';
+  return t('chat.errorGeneric');
 }

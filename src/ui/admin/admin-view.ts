@@ -5,19 +5,20 @@ import { PREDEFINED_SUBJECTS } from '../../models/constants';
 import { renderLoginForm } from './login-form';
 import { renderEntryList } from './entry-list';
 import { renderEntryEditor } from './entry-editor';
+import { t } from '../../i18n/translations';
 import type { AppConfig } from '../../models/types';
 
 export async function renderAdminView(root: HTMLElement): Promise<void> {
   if (!isFirebaseConfigured()) {
     root.innerHTML = `
       <div class="admin-error">
-        <h2>Firebase is not configured</h2>
-        <p>The shared knowledge base requires a Firebase project.</p>
+        <h2>${t('admin.firebaseNotConfiguredTitle')}</h2>
+        <p>${t('admin.firebaseNotConfiguredDescription')}</p>
         <ol>
-          <li>Create a project at <a href="https://console.firebase.google.com" target="_blank">Firebase Console</a></li>
-          <li>Enable Cloud Firestore (Native mode)</li>
-          <li>Copy your web app config into <code>.env</code> (see the placeholder variables)</li>
-          <li>Restart the dev server (<code>npm run dev</code>)</li>
+          <li>${t('admin.firebaseStep1')}</li>
+          <li>${t('admin.firebaseStep2')}</li>
+          <li>${t('admin.firebaseStep3')}</li>
+          <li>${t('admin.firebaseStep4')}</li>
         </ol>
       </div>
     `;
@@ -37,8 +38,8 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
     console.error('Firestore read error:', err);
     shell.innerHTML = `
       <div class="admin-error">
-        <strong>Unable to reach the shared database.</strong><br/>
-        Check your connection, Firestore security rules, and browser console for details.
+        <strong>${t('admin.dbErrorTitle')}</strong><br/>
+        ${t('admin.dbErrorDescription')}
       </div>
     `;
     return;
@@ -68,8 +69,8 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
   container.innerHTML = `
     <div class="admin-home">
       <header class="admin-header">
-        <h2>Knowledge Base</h2>
-        <button type="button" class="add-entry-btn">Add Entry</button>
+        <h2>${t('admin.knowledgeBaseTitle')}</h2>
+        <button type="button" class="add-entry-btn">${t('admin.addEntryButton')}</button>
       </header>
       <div class="entry-editor-container"></div>
       <div class="entry-list-container"></div>

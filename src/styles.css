@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --color-bg: #f5f7fb;
   --color-surface: #ffffff;
   --color-primary: #4f46e5;
@@ -14,7 +14,7 @@
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
-[data-theme='dark'] {
+[data-theme='dark'], :host([data-theme='dark']) {
   --color-bg: #0f1117;
   --color-surface: #1a1d27;
   --color-primary: #6366f1;
@@ -24,6 +24,21 @@
   --color-border: #2d3142;
   --color-student: #6366f1;
   --color-assistant: #252a3a;
+}
+
+/* Only matches when this stylesheet is injected into the <need-homework-app> shadow root. */
+:host {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+:host #app {
+  height: 100%;
+  min-height: 0;
 }
 
 * {

@@ -1,8 +1,10 @@
+import { t } from '../../i18n/translations';
+
 export function renderInputBar(container: HTMLElement, onSend: (text: string) => void): void {
   container.innerHTML = `
     <form class="input-bar">
-      <input type="text" name="message" placeholder="Type your message..." autocomplete="off" />
-      <button type="submit">Send</button>
+      <input type="text" name="message" placeholder="${t('chat.inputPlaceholder')}" autocomplete="off" />
+      <button type="submit">${t('chat.sendButton')}</button>
     </form>
   `;
 

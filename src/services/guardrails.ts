@@ -1,4 +1,5 @@
 import { OFF_TOPIC_KEYWORDS } from '../models/constants';
+import { t } from '../i18n/translations';
 
 /** Lightweight client-side pre-check for obviously off-topic messages. */
 export function isLikelyOffTopic(message: string): boolean {
@@ -7,5 +8,5 @@ export function isLikelyOffTopic(message: string): boolean {
 }
 
 export function buildRedirectMessage(subject: string): string {
-  return `Let's stay focused on your ${subject} homework — that question is outside what I can help with here. Want another practice problem?`;
+  return t('guardrails.redirectMessage', { subject });
 }

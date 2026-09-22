@@ -3,6 +3,7 @@ import { saveEmbeddingVector } from '../../db/vectors';
 import { embedText } from '../../services/gemini';
 import { GEMINI_EMBEDDING_MODEL } from '../../config';
 import { showToast } from '../shared/toast';
+import { t } from '../../i18n/translations';
 import type { Attachment, KnowledgeEntry } from '../../models/types';
 
 const MAX_ATTACHMENT_BYTES = 1_000_000;
@@ -19,31 +20,31 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
 
   container.innerHTML = `
     <form class="entry-editor">
-      <h3>${entry ? 'Edit Entry' : 'Add Entry'}</h3>
-      <label>Subject
+      <h3>${entry ? t('entryEditor.editTitle') : t('entryEditor.addTitle')}</h3>
+      <label>${t('entryEditor.subjectLabel')}
         <input list="subject-options" name="subject" value="${entry?.subject ?? ''}" required />
         <datalist id="subject-options">
           ${subjects.map((s) => `<option value="${s}"></option>`).join('')}
         </datalist>
       </label>
-      <label>Grade Level
+      <label>${t('entryEditor.gradeLevelLabel')}
         <input type="number" name="gradeLevel" min="1" max="20" value="${entry?.gradeLevel ?? ''}" required />
       </label>
-      <label>Title
+      <label>${t('entryEditor.titleLabel')}
         <input type="text" name="title" value="${entry?.title ?? ''}" required />
       </label>
-      <label>Content
+      <label>${t('entryEditor.contentLabel')}
         <textarea name="contentBody" rows="6" required>${entry?.contentBody ?? ''}</textarea>
       </label>
-      <label>Pedagogical Notes
+      <label>${t('entryEditor.pedagogicalNotesLabel')}
         <textarea name="pedagogicalNotes" rows="3">${entry?.pedagogicalNotes ?? ''}</textarea>
       </label>
-      <label>Attachment (optional image, max 1MB)
+      <label>${t('entryEditor.attachmentLabel')}
         <input type="file" name="attachment" accept="image/*" />
       </label>
       <div class="entry-editor-actions">
-        <button type="submit">Save</button>
-        ${entry ? '<button type="button" data-action="cancel">Cancel</button>' : ''}
+        <button type="submit">${t('entryEditor.saveButton')}</button>
+        ${entry ? `<button type="button" data-action="cancel">${t('entryEditor.cancelButton')}</button>` : ''}
       </div>
       <p class="entry-editor-status" role="status"></p>
     </form>
@@ -68,17 +69,17 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
     const file = formData.get('attachment') as File | null;
 
     if (contentBody.length < 10) {
-      statusEl.textContent = 'Content must be at least 10 characters.';
+      statusEl.textContent = t('entryEditor.contentTooShortError');
       return;
     }
 
-    statusEl.textContent = 'Saving...';
+    statusEl.textContent = t('entryEditor.savingStatus');
 
     try {
       const attachments: Attachment[] = entry?.attachments ?? [];
       if (file && file.size > 0) {
         if (file.size > MAX_ATTACHMENT_BYTES) {
-          statusEl.textContent = 'Image is too large (max 1MB).';
+          statusEl.textContent = t('entryEditor.imageTooLargeError');
           return;
         }
         attachments.push({ id: crypto.randomUUID(), mimeType: file.type, dataUrl: await fileToDataUrl(file) });
@@ -107,13 +108,13 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
       }
 
       statusEl.textContent = '';
-      showToast('Entry saved.', 'success');
+      showToast(t('entryEditor.entrySavedToast'), 'success');
       options.onSaved();
       if (!entry) form.reset();
     } catch (error) {
       console.error(error);
-      statusEl.textContent = 'Failed to save entry.';
-      showToast('Failed to save entry.', 'error');
+      statusEl.textContent = t('entryEditor.saveFailedError');
+      showToast(t('entryEditor.saveFailedToast'), 'error');
     }
   });
 }

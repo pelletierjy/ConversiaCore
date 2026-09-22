@@ -1,4 +1,5 @@
 import { hashPin, verifyPin } from '../../utils/pin-hash';
+import { t } from '../../i18n/translations';
 
 export interface LoginFormOptions {
   mode: 'setup' | 'login';
@@ -12,14 +13,10 @@ export function renderLoginForm(container: HTMLElement, options: LoginFormOption
 
   container.innerHTML = `
     <form class="admin-login-form">
-      <h2>${isSetup ? 'Set Admin PIN' : 'Admin Login'}</h2>
-      <p>${
-        isSetup
-          ? 'No PIN has been configured yet. Choose one to protect the admin area.'
-          : 'Enter the admin PIN to continue.'
-      }</p>
-      <input type="password" name="pin" placeholder="PIN" inputmode="numeric" minlength="4" required />
-      <button type="submit">${isSetup ? 'Save PIN' : 'Log In'}</button>
+      <h2>${isSetup ? t('login.setupTitle') : t('login.loginTitle')}</h2>
+      <p>${isSetup ? t('login.setupDescription') : t('login.loginDescription')}</p>
+      <input type="password" name="pin" placeholder="${t('login.pinPlaceholder')}" inputmode="numeric" minlength="4" required />
+      <button type="submit">${isSetup ? t('login.savePinButton') : t('login.loginButton')}</button>
       <p class="admin-login-error" role="alert"></p>
     </form>
   `;
@@ -31,7 +28,7 @@ export function renderLoginForm(container: HTMLElement, options: LoginFormOption
     e.preventDefault();
     const pin = (form.querySelector('input[name="pin"]') as HTMLInputElement).value.trim();
     if (pin.length < 4) {
-      errorEl.textContent = 'PIN must be at least 4 characters.';
+      errorEl.textContent = t('login.pinTooShortError');
       return;
     }
 
@@ -42,7 +39,7 @@ export function renderLoginForm(container: HTMLElement, options: LoginFormOption
 
     const ok = options.storedPinHash ? await verifyPin(pin, options.storedPinHash) : false;
     if (!ok) {
-      errorEl.textContent = 'Incorrect PIN.';
+      errorEl.textContent = t('login.incorrectPinError');
       return;
     }
     options.onLogin?.();

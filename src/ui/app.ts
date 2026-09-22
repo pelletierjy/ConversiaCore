@@ -8,25 +8,38 @@ import { appConfigDoc } from '../db/firebase';
 import { PREDEFINED_SUBJECTS } from '../models/constants';
 import type { StudentSession, AppConfig } from '../models/types';
 
+export interface StudentFlowOptions {
+  forcedSubject?: string;
+  forcedGradeLevel?: number;
+  /** Called once a session starts, so a caller (e.g. the web component) can re-render this session later. */
+  onSessionStart?: (session: StudentSession) => void;
+}
+
 export async function renderApp(root: HTMLElement): Promise<void> {
   const path = window.location.pathname.replace(/\/$/, '');
   if (path.endsWith('/admin')) {
     await renderAdminView(root);
     return;
   }
-  await renderStudentFlow(root);
-}
-
-async function renderStudentFlow(root: HTMLElement): Promise<void> {
   const params = new URLSearchParams(window.location.search);
   const forcedSubject = params.get('subject') ?? undefined;
   const forcedGradeLevel = params.has('gradeLevel')
     ? Number(params.get('gradeLevel'))
     : undefined;
+  await renderStudentFlow(root, { forcedSubject, forcedGradeLevel });
+}
 
-  // If both subject and grade are forced via URL, skip the selector entirely.
-  if (forcedSubject && forcedGradeLevel != null && !Number.isNaN(forcedGradeLevel)) {
-    await startStudentSession(root, forcedGradeLevel, forcedSubject);
+export async function renderStudentFlow(root: HTMLElement, options: StudentFlowOptions = {}): Promise<void> {
+  const { onSessionStart } = options;
+  const forcedSubject = options.forcedSubject;
+  const forcedGradeLevel =
+    options.forcedGradeLevel != null && !Number.isNaN(options.forcedGradeLevel)
+      ? options.forcedGradeLevel
+      : undefined;
+
+  // If both subject and grade are forced, skip the selector entirely.
+  if (forcedSubject && forcedGradeLevel != null) {
+    await startStudentSession(root, forcedGradeLevel, forcedSubject, onSessionStart);
     return;
   }
 
@@ -49,7 +62,7 @@ async function renderStudentFlow(root: HTMLElement): Promise<void> {
     async ({ gradeLevel, subject }) => {
       await setAppStateValue('lastSubject', subject);
       await setAppStateValue('lastGradeLevel', gradeLevel);
-      await startStudentSession(root, gradeLevel, subject);
+      await startStudentSession(root, gradeLevel, subject, onSessionStart);
     },
     { lastSubject, lastGradeLevel, subjects, forcedSubject },
   );
@@ -59,6 +72,7 @@ async function startStudentSession(
   root: HTMLElement,
   gradeLevel: number,
   subject: string,
+  onSessionStart?: (session: StudentSession) => void,
 ): Promise<void> {
   const session: StudentSession = {
     id: crypto.randomUUID(),
@@ -74,5 +88,6 @@ async function startStudentSession(
     },
   };
   await createSession(session);
+  onSessionStart?.(session);
   await renderChatView(root, session);
 }
