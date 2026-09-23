@@ -83,6 +83,8 @@ function describeError(error: unknown): string {
     switch (error.kind) {
       case 'not_configured':
         return t('chat.errorNotConfigured');
+      case 'unauthorized':
+        return t('chat.errorUnauthorized');
       case 'rate_limited':
         return t('chat.errorRateLimited');
       case 'unavailable':

@@ -1,4 +1,4 @@
-export type AiProviderErrorKind = 'not_configured' | 'rate_limited' | 'unavailable' | 'network' | 'unknown';
+export type AiProviderErrorKind = 'not_configured' | 'unauthorized' | 'rate_limited' | 'unavailable' | 'network' | 'unknown';
 
 export class AiProviderError extends Error {
   constructor(

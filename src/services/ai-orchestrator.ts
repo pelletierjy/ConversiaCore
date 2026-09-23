@@ -2,7 +2,7 @@ import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } fro
 import { AI_PROVIDERS } from './ai-provider-registry';
 import { getProviderPriority } from './ai-provider-config';
 
-const RETRYABLE_KINDS = new Set(['rate_limited', 'unavailable', 'network']);
+const RETRYABLE_KINDS = new Set(['not_configured', 'unauthorized', 'rate_limited', 'unavailable', 'network']);
 
 async function resolveOrder(): Promise<AiProvider[]> {
   const priority = await getProviderPriority();

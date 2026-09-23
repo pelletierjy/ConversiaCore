@@ -57,9 +57,15 @@ function jsonResponse(body: unknown, status: number, origin: string | null): Res
   });
 }
 
-/** Maps an upstream SDK error to an HTTP status the client's existing classifyError() regexes already understand. */
+/** Maps an upstream SDK error to an HTTP status the client understands.
+ *  401/403 → passed through so the orchestrator can skip providers with bad keys.
+ *  429 → passed through for rate-limit backoff.
+ *  5xx → mapped to 502 (Bad Gateway) to indicate upstream trouble.
+ *  everything else → 500.
+ */
 function statusFromError(error: unknown): number {
   const message = error instanceof Error ? error.message : String(error);
+  if (/401|403/.test(message)) return 401;
   if (/429/.test(message)) return 429;
   if (/5\d\d/.test(message)) return 502;
   return 500;
@@ -85,6 +91,11 @@ async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<
     role: turn.role === 'student' ? 'user' : 'model',
     parts: [{ text: turn.content }],
   }));
+  // Gemini rejects an empty contents array. This can happen on the first turn
+  // if the client sends history: [] (e.g. admin-panel smoke test).
+  if (contents.length === 0) {
+    contents.push({ role: 'user', parts: [{ text: '' }] });
+  }
   const result = await model.generateContent({ contents });
   return { text: result.response.text() };
 }
@@ -161,7 +172,8 @@ export default {
           return jsonResponse({ error: 'not_found' }, 404, origin);
       }
     } catch (error) {
-      return jsonResponse({ error: 'upstream_error' }, statusFromError(error), origin);
+      const detail = error instanceof Error ? error.message : String(error);
+      return jsonResponse({ error: 'upstream_error', detail }, statusFromError(error), origin);
     }
   },
 };
