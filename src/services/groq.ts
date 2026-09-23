@@ -7,6 +7,8 @@ export const GROQ_PROVIDER_ID = 'groq';
 function classifyError(error: unknown): AiProviderError {
   if (error instanceof AiProviderError) return error;
   const message = error instanceof Error ? error.message : String(error);
+  if (/not_configured/.test(message)) return new AiProviderError(GROQ_PROVIDER_ID, 'not_configured', message);
+  if (/401|403/.test(message)) return new AiProviderError(GROQ_PROVIDER_ID, 'unauthorized', message);
   if (/429/.test(message)) return new AiProviderError(GROQ_PROVIDER_ID, 'rate_limited', message);
   if (/5\d\d/.test(message)) return new AiProviderError(GROQ_PROVIDER_ID, 'unavailable', message);
   if (/network|timeout|fetch failed/i.test(message)) return new AiProviderError(GROQ_PROVIDER_ID, 'network', message);

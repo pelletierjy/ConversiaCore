@@ -8,7 +8,8 @@ export async function postToWorker<T>(path: string, body: unknown): Promise<T> {
     body: JSON.stringify(body),
   });
   if (!response.ok) {
-    throw new Error(`Worker responded ${response.status}`);
+    const body = await response.json().catch(() => ({ error: 'unknown' }));
+    throw new Error(`${response.status} ${body.error}`);
   }
   return response.json() as Promise<T>;
 }

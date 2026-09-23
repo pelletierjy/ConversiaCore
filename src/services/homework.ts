@@ -14,6 +14,7 @@ export interface HomeworkTurnResult {
   performance: PerformanceSnapshot;
   isHomeworkRequest: boolean;
   referencedEntryIds: string[];
+  providerId?: string;
 }
 
 function nextDifficulty(current: Difficulty, correct: boolean): Difficulty {
@@ -77,7 +78,7 @@ export async function sendStudentMessage(params: {
     "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or [INFO] for anything else " +
     '(hints, explanations, off-topic redirects).';
 
-  const raw = await generateTutorResponse(systemPrompt, [...history, { role: 'student', content: message }]);
+  const { text: raw, providerId } = await generateTutorResponse(systemPrompt, [...history, { role: 'student', content: message }]);
 
   const tag = raw.match(TAG_PATTERN)?.[1]?.toUpperCase();
   const reply = raw.replace(TAG_PATTERN, '').trim();
@@ -104,5 +105,5 @@ export async function sendStudentMessage(params: {
     }
   }
 
-  return { reply, performance: updated, isHomeworkRequest, referencedEntryIds };
+  return { reply, performance: updated, isHomeworkRequest, referencedEntryIds, providerId };
 }
