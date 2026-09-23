@@ -13,13 +13,17 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       <div class="message-list"></div>
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
-      <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
+      <div class="chat-footer">
+        <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
+        <span class="provider-status" aria-live="polite"></span>
+      </div>
     </div>
   `;
 
   const messageListEl = container.querySelector('.message-list') as HTMLElement;
   const inputBarEl = container.querySelector('.input-bar-container') as HTMLElement;
   const statusEl = container.querySelector('.chat-status') as HTMLElement;
+  const providerStatusEl = container.querySelector('.provider-status') as HTMLElement;
 
   let messages = await getMessagesForSession(session.id);
   renderMessageList(messageListEl, messages);
@@ -64,12 +68,16 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
         metadata: {
           difficulty: session.performance.currentDifficulty,
           isHomeworkRequest: result.isHomeworkRequest,
+          providerId: result.providerId,
         },
       };
       messages = [...messages, assistantMessage];
       renderMessageList(messageListEl, messages);
       await addMessage(assistantMessage);
       statusEl.textContent = '';
+      if (providerStatusEl && result.providerId) {
+        providerStatusEl.textContent = `${t('chat.modelLabel')}: ${result.providerId}`;
+      }
     } catch (error) {
       statusEl.textContent = describeError(error);
     } finally {

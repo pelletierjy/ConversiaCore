@@ -12,16 +12,23 @@ async function resolveOrder(): Promise<AiProvider[]> {
   return ordered;
 }
 
+/** Result of a successful tutor response, including which provider actually served it. */
+export interface TutorResponse {
+  text: string;
+  providerId: string;
+}
+
 /** Tries each configured provider in admin-set priority order, falling through only on
- * rate_limited/unavailable/network errors. An unknown-kind error (e.g. an invalid API key)
- * is surfaced immediately rather than masked by trying the next provider. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
+ * retryable errors (rate_limited, unavailable, network, unauthorized, not_configured).
+ * An unknown-kind error is surfaced immediately rather than masked by trying the next provider. */
+export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<TutorResponse> {
   const providers = await resolveOrder();
   let lastError: AiProviderError | undefined;
   for (const provider of providers) {
     if (!provider.isConfigured()) continue;
     try {
-      return await provider.generateTutorResponse(systemPrompt, history);
+      const text = await provider.generateTutorResponse(systemPrompt, history);
+      return { text, providerId: provider.id };
     } catch (error) {
       const classified = error instanceof AiProviderError ? error : new AiProviderError(provider.id, 'unknown', String(error));
       if (!RETRYABLE_KINDS.has(classified.kind)) throw classified;

@@ -21,6 +21,7 @@ export interface MessageMetadata {
   difficulty?: Difficulty;
   hintLevel?: number;
   isHomeworkRequest?: boolean;
+  providerId?: string;
 }
 
 export interface ChatMessage {

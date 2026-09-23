@@ -27,6 +27,7 @@ interface TranslationDict {
     errorNetwork: string;
     errorGeneric: string;
     aiProviderWarning: string;
+    modelLabel: string;
   };
   guardrails: {
     redirectMessage: string;
@@ -126,6 +127,7 @@ const en: TranslationDict = {
     errorGeneric: 'Something went wrong. Please try again.',
     aiProviderWarning:
       'This feature runs on a free, rate-limited AI provider, so it may be temporarily throttled at busy times. This will be improved in the future.',
+    modelLabel: 'Model',
   },
   guardrails: {
     redirectMessage:
@@ -227,6 +229,7 @@ const fr: TranslationDict = {
     errorGeneric: "Une erreur s'est produite. Veuillez réessayer.",
     aiProviderWarning:
       "Cette fonctionnalité repose sur un fournisseur d'IA gratuit à capacité limitée ; elle peut donc être temporairement ralentie aux heures d'affluence. Ce sera amélioré à l'avenir.",
+    modelLabel: 'Modèle',
   },
   guardrails: {
     redirectMessage:
@@ -328,6 +331,7 @@ const es: TranslationDict = {
     errorGeneric: 'Algo salió mal. Inténtalo de nuevo.',
     aiProviderWarning:
       'Esta función utiliza un proveedor de IA gratuito y de capacidad limitada, por lo que puede verse temporalmente restringida en horas de mucho uso. Esto se mejorará en el futuro.',
+    modelLabel: 'Modelo',
   },
   guardrails: {
     redirectMessage:
