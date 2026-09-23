@@ -41,6 +41,13 @@ interface TranslationDict {
     dbErrorDescription: string;
     knowledgeBaseTitle: string;
     addEntryButton: string;
+    aiProvidersTitle: string;
+    aiProvidersDescription: string;
+    moveUpButton: string;
+    moveDownButton: string;
+    saveOrderButton: string;
+    orderSavedToast: string;
+    orderSaveFailedError: string;
   };
   login: {
     setupTitle: string;
@@ -133,6 +140,14 @@ const en: TranslationDict = {
     dbErrorDescription: 'Check your connection, Firestore security rules, and browser console for details.',
     knowledgeBaseTitle: 'Knowledge Base',
     addEntryButton: 'Add Entry',
+    aiProvidersTitle: 'AI Providers',
+    aiProvidersDescription:
+      'Order in which AI providers are tried. The first configured provider in this list handles each request; if it fails, the next one is tried.',
+    moveUpButton: 'Move up',
+    moveDownButton: 'Move down',
+    saveOrderButton: 'Save Order',
+    orderSavedToast: 'Provider order saved.',
+    orderSaveFailedError: 'Failed to save provider order.',
   },
   login: {
     setupTitle: 'Set Admin PIN',
@@ -225,6 +240,14 @@ const fr: TranslationDict = {
     dbErrorDescription: 'Vérifiez votre connexion, les règles de sécurité Firestore et la console du navigateur pour plus de détails.',
     knowledgeBaseTitle: 'Base de connaissances',
     addEntryButton: 'Ajouter une entrée',
+    aiProvidersTitle: 'Fournisseurs IA',
+    aiProvidersDescription:
+      "Ordre dans lequel les fournisseurs IA sont essayés. Le premier fournisseur configuré de cette liste traite chaque requête ; s'il échoue, le suivant est essayé.",
+    moveUpButton: 'Monter',
+    moveDownButton: 'Descendre',
+    saveOrderButton: "Enregistrer l'ordre",
+    orderSavedToast: "Ordre des fournisseurs enregistré.",
+    orderSaveFailedError: "Échec de l'enregistrement de l'ordre des fournisseurs.",
   },
   login: {
     setupTitle: 'Définir le NIP administrateur',
@@ -317,6 +340,14 @@ const es: TranslationDict = {
     dbErrorDescription: 'Revisa tu conexión, las reglas de seguridad de Firestore y la consola del navegador para más detalles.',
     knowledgeBaseTitle: 'Base de conocimientos',
     addEntryButton: 'Agregar entrada',
+    aiProvidersTitle: 'Proveedores de IA',
+    aiProvidersDescription:
+      'Orden en que se prueban los proveedores de IA. El primer proveedor configurado de esta lista maneja cada solicitud; si falla, se prueba el siguiente.',
+    moveUpButton: 'Subir',
+    moveDownButton: 'Bajar',
+    saveOrderButton: 'Guardar orden',
+    orderSavedToast: 'Orden de proveedores guardado.',
+    orderSaveFailedError: 'No se pudo guardar el orden de proveedores.',
   },
   login: {
     setupTitle: 'Establecer PIN de administrador',

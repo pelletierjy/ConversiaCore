@@ -5,6 +5,7 @@ import { PREDEFINED_SUBJECTS } from '../../models/constants';
 import { renderLoginForm } from './login-form';
 import { renderEntryList } from './entry-list';
 import { renderEntryEditor } from './entry-editor';
+import { renderAiProvidersPanel } from './ai-providers-panel';
 import { t } from '../../i18n/translations';
 import type { AppConfig } from '../../models/types';
 
@@ -74,12 +75,15 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
       </header>
       <div class="entry-editor-container"></div>
       <div class="entry-list-container"></div>
+      <div class="ai-providers-container"></div>
     </div>
   `;
 
   const listContainer = container.querySelector('.entry-list-container') as HTMLElement;
   const editorContainer = container.querySelector('.entry-editor-container') as HTMLElement;
   const addBtn = container.querySelector('.add-entry-btn') as HTMLButtonElement;
+  const aiProvidersContainer = container.querySelector('.ai-providers-container') as HTMLElement;
+  renderAiProvidersPanel(aiProvidersContainer, config);
 
   const refreshList = () =>
     renderEntryList(listContainer, {

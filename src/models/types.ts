@@ -85,6 +85,8 @@ export interface AppConfig {
   adminPinHash: string | null;
   customSubjects: string[];
   predefinedSubjects: string[];
+  /** Admin-configured AI provider try-order (provider ids). Defaults to registry order when unset. */
+  aiProviderPriority?: string[];
 }
 
 export interface RetrievedEntry {

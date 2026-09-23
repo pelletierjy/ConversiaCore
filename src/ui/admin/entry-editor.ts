@@ -1,7 +1,6 @@
 import { createKnowledgeEntry, updateKnowledgeEntry } from '../../db/knowledge';
 import { saveEmbeddingVector } from '../../db/vectors';
-import { embedText } from '../../services/gemini';
-import { GEMINI_EMBEDDING_MODEL } from '../../config';
+import { embedText } from '../../services/ai-orchestrator';
 import { showToast } from '../shared/toast';
 import { t } from '../../i18n/translations';
 import type { Attachment, KnowledgeEntry } from '../../models/types';
@@ -160,8 +159,8 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
       }
 
       try {
-        const vector = await embedText(`${title}\n${contentBody}`, 'document');
-        await saveEmbeddingVector(id, GEMINI_EMBEDDING_MODEL, vector);
+        const { vector, model } = await embedText(`${title}\n${contentBody}`, 'document');
+        await saveEmbeddingVector(id, model, vector);
       } catch (embedError) {
         console.warn('Embedding generation failed; entry saved without vector.', embedError);
       }

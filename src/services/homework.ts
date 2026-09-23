@@ -1,5 +1,6 @@
 import { buildTutorSystemPrompt } from '../models/constants';
-import { generateTutorResponse, type ChatTurn } from './gemini';
+import { generateTutorResponse } from './ai-orchestrator';
+import type { ChatTurn } from './ai-provider';
 import { isLikelyOffTopic, buildRedirectMessage } from './guardrails';
 import { formatKnowledgeContext, retrieveContextEntries, retrieveRelevantEntries } from './rag';
 import { getLocale, LOCALE_LANGUAGE_NAMES } from '../i18n/locale';

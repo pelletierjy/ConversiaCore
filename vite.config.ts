@@ -5,6 +5,8 @@ export default defineConfig(({ mode }) => {
   return {
     define: {
       'import.meta.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY ?? ''),
+      'import.meta.env.GROQ_API_KEY': JSON.stringify(env.GROQ_API_KEY ?? ''),
+      'import.meta.env.OPENROUTER_API_KEY': JSON.stringify(env.OPENROUTER_API_KEY ?? ''),
     },
     base: '/need-homework/',
     build: {
