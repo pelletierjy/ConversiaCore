@@ -33,7 +33,11 @@ export async function renderEntryList(container: HTMLElement, options: EntryList
         <li class="entry-list-item" data-id="${e.id}">
           <div>
             <strong>${escapeHtml(e.title)}</strong>
-            <span>${escapeHtml(e.subject)} · ${t('common.grade')} ${e.gradeLevel}</span>
+            <span>${
+              e.entryType === 'context'
+                ? `${t('entryList.contextBadge', { key: escapeHtml(e.contextKey ?? '') })} · ${e.isMainArticle ? t('entryList.mainArticleBadge') : t('entryList.subArticleBadge')}`
+                : `${escapeHtml(e.subject ?? '')} · ${e.gradeLevel == null ? t('entryList.allGradesBadge') : `${t('common.grade')} ${e.gradeLevel}`}`
+            }</span>
           </div>
           <div class="entry-list-actions">
             <button type="button" data-action="edit">${t('entryList.editButton')}</button>

@@ -1,9 +1,9 @@
 import { buildTutorSystemPrompt } from '../models/constants';
 import { generateTutorResponse, type ChatTurn } from './gemini';
 import { isLikelyOffTopic, buildRedirectMessage } from './guardrails';
-import { formatKnowledgeContext, retrieveRelevantEntries } from './rag';
+import { formatKnowledgeContext, retrieveContextEntries, retrieveRelevantEntries } from './rag';
 import { getLocale, LOCALE_LANGUAGE_NAMES } from '../i18n/locale';
-import type { Difficulty, PerformanceSnapshot } from '../models/types';
+import type { Difficulty, PerformanceSnapshot, RetrievedEntry } from '../models/types';
 
 const TAG_PATTERN = /^\[(HOMEWORK|CORRECT|INCORRECT|INFO)\]\s*/i;
 const DIFFICULTY_ORDER: Difficulty[] = ['easy', 'medium', 'hard'];
@@ -26,12 +26,13 @@ function nextDifficulty(current: Difficulty, correct: boolean): Difficulty {
 export async function sendStudentMessage(params: {
   subject: string;
   gradeLevel: number;
+  contextKey?: string;
   performance: PerformanceSnapshot;
   history: ChatTurn[];
   message: string;
   knowledgeContext?: string;
 }): Promise<HomeworkTurnResult> {
-  const { subject, gradeLevel, performance, history, message } = params;
+  const { subject, gradeLevel, contextKey, performance, history, message } = params;
 
   if (isLikelyOffTopic(message)) {
     return { reply: buildRedirectMessage(subject), performance, isHomeworkRequest: false, referencedEntryIds: [] };
@@ -41,7 +42,26 @@ export async function sendStudentMessage(params: {
   let referencedEntryIds: string[] = [];
   if (!knowledgeContext) {
     try {
-      const retrieved = await retrieveRelevantEntries(subject, gradeLevel, message);
+      const subjectRetrieved = await retrieveRelevantEntries(subject, gradeLevel, message);
+      const contextResult = contextKey
+        ? await retrieveContextEntries(contextKey, message)
+        : { main: undefined, relatedTitles: [] as string[], related: [] as RetrievedEntry[] };
+
+      const mainEntry: RetrievedEntry[] = contextResult.main
+        ? [
+            {
+              entry: {
+                ...contextResult.main,
+                contentBody: contextResult.relatedTitles.length
+                  ? `${contextResult.main.contentBody}\n\nRelated articles: ${contextResult.relatedTitles.join(', ')}`
+                  : contextResult.main.contentBody,
+              },
+              score: 1,
+            },
+          ]
+        : [];
+
+      const retrieved = [...mainEntry, ...contextResult.related, ...subjectRetrieved];
       knowledgeContext = formatKnowledgeContext(retrieved);
       referencedEntryIds = retrieved.map((r) => r.entry.id);
     } catch {

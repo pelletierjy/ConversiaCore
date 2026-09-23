@@ -11,6 +11,7 @@ export interface StudentSession {
   id: string;
   gradeLevel: number;
   subject: string;
+  contextKey?: string;
   startedAt: number;
   lastActiveAt: number;
   performance: PerformanceSnapshot;
@@ -48,8 +49,11 @@ export interface Attachment {
 
 export interface KnowledgeEntry {
   id: string;
-  subject: string;
-  gradeLevel: number;
+  entryType?: 'subject' | 'context';
+  subject?: string;
+  gradeLevel?: number | null;
+  contextKey?: string;
+  isMainArticle?: boolean;
   title: string;
   contentBody: string;
   exampleProblems?: ExampleProblem[];

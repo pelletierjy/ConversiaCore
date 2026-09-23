@@ -55,8 +55,14 @@ interface TranslationDict {
   entryEditor: {
     editTitle: string;
     addTitle: string;
+    entryTypeLabel: string;
+    entryTypeSubjectOption: string;
+    entryTypeContextOption: string;
     subjectLabel: string;
+    allGradesLabel: string;
     gradeLevelLabel: string;
+    contextKeyLabel: string;
+    isMainArticleLabel: string;
     titleLabel: string;
     contentLabel: string;
     pedagogicalNotesLabel: string;
@@ -64,6 +70,7 @@ interface TranslationDict {
     saveButton: string;
     cancelButton: string;
     contentTooShortError: string;
+    contextKeyRequiredError: string;
     savingStatus: string;
     imageTooLargeError: string;
     entrySavedToast: string;
@@ -79,6 +86,10 @@ interface TranslationDict {
     deleteConfirm: string;
     deletedToast: string;
     deleteFailedToast: string;
+    allGradesBadge: string;
+    contextBadge: string;
+    mainArticleBadge: string;
+    subArticleBadge: string;
   };
 }
 
@@ -134,8 +145,14 @@ const en: TranslationDict = {
   entryEditor: {
     editTitle: 'Edit Entry',
     addTitle: 'Add Entry',
+    entryTypeLabel: 'Entry Type',
+    entryTypeSubjectOption: 'Subject-based',
+    entryTypeContextOption: 'App Context',
     subjectLabel: 'Subject',
+    allGradesLabel: 'All grades',
     gradeLevelLabel: 'Grade Level',
+    contextKeyLabel: 'Context Key (host app name)',
+    isMainArticleLabel: 'Main article for this context',
     titleLabel: 'Title',
     contentLabel: 'Content',
     pedagogicalNotesLabel: 'Pedagogical Notes',
@@ -143,6 +160,7 @@ const en: TranslationDict = {
     saveButton: 'Save',
     cancelButton: 'Cancel',
     contentTooShortError: 'Content must be at least 10 characters.',
+    contextKeyRequiredError: 'Context Key is required for App Context entries.',
     savingStatus: 'Saving...',
     imageTooLargeError: 'Image is too large (max 1MB).',
     entrySavedToast: 'Entry saved.',
@@ -158,6 +176,10 @@ const en: TranslationDict = {
     deleteConfirm: 'Delete "{title}"?',
     deletedToast: 'Entry deleted.',
     deleteFailedToast: 'Failed to delete entry.',
+    allGradesBadge: 'All grades',
+    contextBadge: 'Context: {key}',
+    mainArticleBadge: 'Main article',
+    subArticleBadge: 'Sub-article',
   },
 };
 
@@ -213,8 +235,14 @@ const fr: TranslationDict = {
   entryEditor: {
     editTitle: "Modifier l'entrée",
     addTitle: 'Ajouter une entrée',
+    entryTypeLabel: "Type d'entrée",
+    entryTypeSubjectOption: 'Basé sur une matière',
+    entryTypeContextOption: "Contexte d'application",
     subjectLabel: 'Matière',
+    allGradesLabel: 'Tous les niveaux',
     gradeLevelLabel: 'Niveau scolaire',
+    contextKeyLabel: "Clé de contexte (nom de l'application hôte)",
+    isMainArticleLabel: 'Article principal pour ce contexte',
     titleLabel: 'Titre',
     contentLabel: 'Contenu',
     pedagogicalNotesLabel: 'Notes pédagogiques',
@@ -222,6 +250,7 @@ const fr: TranslationDict = {
     saveButton: 'Enregistrer',
     cancelButton: 'Annuler',
     contentTooShortError: 'Le contenu doit comporter au moins 10 caractères.',
+    contextKeyRequiredError: "La clé de contexte est requise pour les entrées de type contexte d'application.",
     savingStatus: 'Enregistrement en cours...',
     imageTooLargeError: "L'image est trop volumineuse (max 1 Mo).",
     entrySavedToast: 'Entrée enregistrée.',
@@ -237,6 +266,10 @@ const fr: TranslationDict = {
     deleteConfirm: 'Supprimer « {title} » ?',
     deletedToast: 'Entrée supprimée.',
     deleteFailedToast: "Échec de la suppression de l'entrée.",
+    allGradesBadge: 'Tous les niveaux',
+    contextBadge: 'Contexte : {key}',
+    mainArticleBadge: 'Article principal',
+    subArticleBadge: 'Article secondaire',
   },
 };
 
@@ -292,8 +325,14 @@ const es: TranslationDict = {
   entryEditor: {
     editTitle: 'Editar entrada',
     addTitle: 'Agregar entrada',
+    entryTypeLabel: 'Tipo de entrada',
+    entryTypeSubjectOption: 'Basado en materia',
+    entryTypeContextOption: 'Contexto de aplicación',
     subjectLabel: 'Materia',
+    allGradesLabel: 'Todos los grados',
     gradeLevelLabel: 'Nivel de grado',
+    contextKeyLabel: 'Clave de contexto (nombre de la app anfitriona)',
+    isMainArticleLabel: 'Artículo principal para este contexto',
     titleLabel: 'Título',
     contentLabel: 'Contenido',
     pedagogicalNotesLabel: 'Notas pedagógicas',
@@ -301,6 +340,7 @@ const es: TranslationDict = {
     saveButton: 'Guardar',
     cancelButton: 'Cancelar',
     contentTooShortError: 'El contenido debe tener al menos 10 caracteres.',
+    contextKeyRequiredError: 'La clave de contexto es obligatoria para entradas de contexto de aplicación.',
     savingStatus: 'Guardando...',
     imageTooLargeError: 'La imagen es demasiado grande (máx. 1 MB).',
     entrySavedToast: 'Entrada guardada.',
@@ -316,6 +356,10 @@ const es: TranslationDict = {
     deleteConfirm: '¿Eliminar "{title}"?',
     deletedToast: 'Entrada eliminada.',
     deleteFailedToast: 'No se pudo eliminar la entrada.',
+    allGradesBadge: 'Todos los grados',
+    contextBadge: 'Contexto: {key}',
+    mainArticleBadge: 'Artículo principal',
+    subArticleBadge: 'Artículo secundario',
   },
 };
 
