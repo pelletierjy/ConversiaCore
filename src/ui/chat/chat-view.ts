@@ -13,6 +13,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       <div class="message-list"></div>
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
+      <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
     </div>
   `;
 
