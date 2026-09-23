@@ -25,6 +25,7 @@ interface TranslationDict {
     errorUnavailable: string;
     errorNetwork: string;
     errorGeneric: string;
+    aiProviderWarning: string;
   };
   guardrails: {
     redirectMessage: string;
@@ -114,6 +115,8 @@ const en: TranslationDict = {
     errorUnavailable: 'The AI service is temporarily unavailable. Please try again shortly.',
     errorNetwork: 'Connection problem. Check your internet and try again.',
     errorGeneric: 'Something went wrong. Please try again.',
+    aiProviderWarning:
+      'This feature runs on a free, rate-limited AI provider, so it may be temporarily throttled at busy times. This will be improved in the future.',
   },
   guardrails: {
     redirectMessage:
@@ -204,6 +207,8 @@ const fr: TranslationDict = {
     errorUnavailable: 'Le service IA est temporairement indisponible. Veuillez réessayer sous peu.',
     errorNetwork: 'Problème de connexion. Vérifiez votre connexion Internet et réessayez.',
     errorGeneric: "Une erreur s'est produite. Veuillez réessayer.",
+    aiProviderWarning:
+      "Cette fonctionnalité repose sur un fournisseur d'IA gratuit à capacité limitée ; elle peut donc être temporairement ralentie aux heures d'affluence. Ce sera amélioré à l'avenir.",
   },
   guardrails: {
     redirectMessage:
@@ -294,6 +299,8 @@ const es: TranslationDict = {
     errorUnavailable: 'El servicio de IA no está disponible temporalmente. Inténtalo de nuevo en breve.',
     errorNetwork: 'Problema de conexión. Revisa tu conexión a Internet e inténtalo de nuevo.',
     errorGeneric: 'Algo salió mal. Inténtalo de nuevo.',
+    aiProviderWarning:
+      'Esta función utiliza un proveedor de IA gratuito y de capacidad limitada, por lo que puede verse temporalmente restringida en horas de mucho uso. Esto se mejorará en el futuro.',
   },
   guardrails: {
     redirectMessage:
