@@ -10,6 +10,7 @@
   --color-assistant: #eef0f6;
   --color-error: #dc2626;
   --color-success: #16a34a;
+  --color-warning: #b8860b;
   --radius: 10px;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
@@ -24,6 +25,7 @@
   --color-border: #2d3142;
   --color-student: #6366f1;
   --color-assistant: #252a3a;
+  --color-warning: #eab308;
 }
 
 /* Only matches when this stylesheet is injected into the <need-homework-app> shadow root. */
@@ -176,24 +178,21 @@ label {
 
 .chat-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 4px;
   margin-top: 4px;
 }
 
 .ai-provider-warning {
   margin: 0;
   font-size: 0.75rem;
-  color: var(--color-muted);
-  flex: 1;
+  color: var(--color-warning);
 }
 
 .provider-status {
   font-size: 0.75rem;
   color: var(--color-success);
   font-weight: 500;
-  white-space: nowrap;
 }
 
 .admin-shell, .admin-home {
