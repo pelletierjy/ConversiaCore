@@ -1,6 +1,4 @@
-import { GoogleGenerativeAI, TaskType, type Content } from '@google/generative-ai';
 import {
-  GEMINI_API_KEY,
   GEMINI_EMBEDDING_MODEL,
   GEMINI_GENERATION_MODEL,
   GEMINI_MAX_OUTPUT_TOKENS,
@@ -8,20 +6,9 @@ import {
   isGeminiConfigured,
 } from '../config';
 import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
+import { postToWorker } from './worker-client';
 
 export const GEMINI_PROVIDER_ID = 'gemini';
-
-let client: GoogleGenerativeAI | null = null;
-
-function getClient(): GoogleGenerativeAI {
-  if (!isGeminiConfigured()) {
-    throw new AiProviderError(GEMINI_PROVIDER_ID, 'not_configured', 'Gemini API key is not configured.');
-  }
-  if (!client) {
-    client = new GoogleGenerativeAI(GEMINI_API_KEY);
-  }
-  return client;
-}
 
 function classifyError(error: unknown): AiProviderError {
   if (error instanceof AiProviderError) return error;
@@ -69,35 +56,22 @@ async function callGemini<T>(fn: () => Promise<T>): Promise<T> {
 /** Generates a tutor response given a system prompt and prior conversation turns. */
 export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
   return callGemini(async () => {
-    const model = getClient().getGenerativeModel({
+    const { text } = await postToWorker<{ text: string }>('/gemini/chat', {
+      systemPrompt,
+      history,
       model: GEMINI_GENERATION_MODEL,
-      systemInstruction: systemPrompt,
-      generationConfig: {
-        temperature: GEMINI_TEMPERATURE,
-        maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS,
-      },
+      temperature: GEMINI_TEMPERATURE,
+      maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS,
     });
-
-    const contents: Content[] = history.map((turn) => ({
-      role: turn.role === 'student' ? 'user' : 'model',
-      parts: [{ text: turn.content }],
-    }));
-
-    const result = await model.generateContent({ contents });
-    return result.response.text();
+    return text;
   });
 }
 
 /** Generates an embedding vector for the given text. */
 export async function embedText(text: string, taskType: 'document' | 'query'): Promise<EmbedResult> {
-  return callGemini(async () => {
-    const model = getClient().getGenerativeModel({ model: GEMINI_EMBEDDING_MODEL });
-    const result = await model.embedContent({
-      content: { role: 'user', parts: [{ text }] },
-      taskType: taskType === 'document' ? TaskType.RETRIEVAL_DOCUMENT : TaskType.RETRIEVAL_QUERY,
-    });
-    return { vector: result.embedding.values, model: GEMINI_EMBEDDING_MODEL };
-  });
+  return callGemini(() =>
+    postToWorker<EmbedResult>('/gemini/embed', { text, taskType, model: GEMINI_EMBEDDING_MODEL }),
+  );
 }
 
 export const geminiProvider: AiProvider = {

@@ -1,26 +1,8 @@
-import { ChatGroq } from '@langchain/groq';
-import { AIMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { AiProviderError, type AiProvider, type ChatTurn } from './ai-provider';
-import { GROQ_API_KEY, GROQ_GENERATION_MODEL, GROQ_MAX_OUTPUT_TOKENS, GROQ_TEMPERATURE, isGroqConfigured } from '../config';
+import { GROQ_GENERATION_MODEL, GROQ_MAX_OUTPUT_TOKENS, GROQ_TEMPERATURE, isGroqConfigured } from '../config';
+import { postToWorker } from './worker-client';
 
 export const GROQ_PROVIDER_ID = 'groq';
-
-let client: ChatGroq | null = null;
-
-function getClient(): ChatGroq {
-  if (!isGroqConfigured()) {
-    throw new AiProviderError(GROQ_PROVIDER_ID, 'not_configured', 'Groq API key is not configured.');
-  }
-  if (!client) {
-    client = new ChatGroq({
-      apiKey: GROQ_API_KEY,
-      model: GROQ_GENERATION_MODEL,
-      temperature: GROQ_TEMPERATURE,
-      maxTokens: GROQ_MAX_OUTPUT_TOKENS,
-    });
-  }
-  return client;
-}
 
 function classifyError(error: unknown): AiProviderError {
   if (error instanceof AiProviderError) return error;
@@ -68,12 +50,14 @@ async function callGroq<T>(fn: () => Promise<T>): Promise<T> {
 /** Generates a tutor response given a system prompt and prior conversation turns. */
 export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
   return callGroq(async () => {
-    const messages = [
-      new SystemMessage(systemPrompt),
-      ...history.map((turn) => (turn.role === 'student' ? new HumanMessage(turn.content) : new AIMessage(turn.content))),
-    ];
-    const result = await getClient().invoke(messages);
-    return typeof result.content === 'string' ? result.content : String(result.content);
+    const { text } = await postToWorker<{ text: string }>('/groq/chat', {
+      systemPrompt,
+      history,
+      model: GROQ_GENERATION_MODEL,
+      temperature: GROQ_TEMPERATURE,
+      maxOutputTokens: GROQ_MAX_OUTPUT_TOKENS,
+    });
+    return text;
   });
 }
 

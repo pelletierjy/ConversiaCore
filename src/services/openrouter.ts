@@ -1,31 +1,13 @@
-import { ChatOpenRouter } from '@langchain/openrouter';
-import { AIMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { AiProviderError, type AiProvider, type ChatTurn } from './ai-provider';
 import {
-  OPENROUTER_API_KEY,
   OPENROUTER_GENERATION_MODEL,
   OPENROUTER_MAX_OUTPUT_TOKENS,
   OPENROUTER_TEMPERATURE,
   isOpenRouterConfigured,
 } from '../config';
+import { postToWorker } from './worker-client';
 
 export const OPENROUTER_PROVIDER_ID = 'openrouter';
-
-let client: ChatOpenRouter | null = null;
-
-function getClient(): ChatOpenRouter {
-  if (!isOpenRouterConfigured()) {
-    throw new AiProviderError(OPENROUTER_PROVIDER_ID, 'not_configured', 'OpenRouter API key is not configured.');
-  }
-  if (!client) {
-    client = new ChatOpenRouter(OPENROUTER_GENERATION_MODEL, {
-      apiKey: OPENROUTER_API_KEY,
-      temperature: OPENROUTER_TEMPERATURE,
-      maxTokens: OPENROUTER_MAX_OUTPUT_TOKENS,
-    });
-  }
-  return client;
-}
 
 function classifyError(error: unknown): AiProviderError {
   if (error instanceof AiProviderError) return error;
@@ -76,12 +58,14 @@ async function callOpenRouter<T>(fn: () => Promise<T>): Promise<T> {
 /** Generates a tutor response given a system prompt and prior conversation turns. */
 export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
   return callOpenRouter(async () => {
-    const messages = [
-      new SystemMessage(systemPrompt),
-      ...history.map((turn) => (turn.role === 'student' ? new HumanMessage(turn.content) : new AIMessage(turn.content))),
-    ];
-    const result = await getClient().invoke(messages);
-    return typeof result.content === 'string' ? result.content : String(result.content);
+    const { text } = await postToWorker<{ text: string }>('/openrouter/chat', {
+      systemPrompt,
+      history,
+      model: OPENROUTER_GENERATION_MODEL,
+      temperature: OPENROUTER_TEMPERATURE,
+      maxOutputTokens: OPENROUTER_MAX_OUTPUT_TOKENS,
+    });
+    return text;
   });
 }
 
