@@ -6,7 +6,7 @@ import {
   setCachedContextEntries,
   setCachedKnowledgeEntries,
 } from '../db/local';
-import { embedText } from './gemini';
+import { embedText } from './ai-orchestrator';
 import { cosineSimilarity } from '../utils/cosine-similarity';
 import type { KnowledgeEntry, RetrievedEntry } from '../models/types';
 
@@ -32,9 +32,10 @@ export async function retrieveRelevantEntries(
   const vectors = await getEmbeddingVectors(entries.map((e) => e.id));
   if (vectors.length === 0) return [];
 
-  const queryVector = await embedText(queryText, 'query');
+  const { vector: queryVector, model: queryModel } = await embedText(queryText, 'query');
 
   return vectors
+    .filter((v) => v.model === queryModel)
     .map((v) => {
       const entry = entries.find((e) => e.id === v.entryId);
       return entry ? { entry, score: cosineSimilarity(queryVector, v.vector) } : null;
@@ -69,9 +70,10 @@ export async function retrieveContextEntries(contextKey: string, queryText: stri
   const vectors = await getEmbeddingVectors(subArticles.map((e) => e.id));
   if (vectors.length === 0) return { main, relatedTitles, related: [] };
 
-  const queryVector = await embedText(queryText, 'query');
+  const { vector: queryVector, model: queryModel } = await embedText(queryText, 'query');
 
   const related = vectors
+    .filter((v) => v.model === queryModel)
     .map((v) => {
       const entry = subArticles.find((e) => e.id === v.entryId);
       return entry ? { entry, score: cosineSimilarity(queryVector, v.vector) } : null;

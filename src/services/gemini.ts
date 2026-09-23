@@ -7,21 +7,15 @@ import {
   GEMINI_TEMPERATURE,
   isGeminiConfigured,
 } from '../config';
+import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
 
-export type GeminiErrorKind = 'not_configured' | 'rate_limited' | 'unavailable' | 'network' | 'unknown';
-
-export class GeminiError extends Error {
-  constructor(public readonly kind: GeminiErrorKind, message: string) {
-    super(message);
-    this.name = 'GeminiError';
-  }
-}
+export const GEMINI_PROVIDER_ID = 'gemini';
 
 let client: GoogleGenerativeAI | null = null;
 
 function getClient(): GoogleGenerativeAI {
   if (!isGeminiConfigured()) {
-    throw new GeminiError('not_configured', 'Gemini API key is not configured.');
+    throw new AiProviderError(GEMINI_PROVIDER_ID, 'not_configured', 'Gemini API key is not configured.');
   }
   if (!client) {
     client = new GoogleGenerativeAI(GEMINI_API_KEY);
@@ -29,13 +23,13 @@ function getClient(): GoogleGenerativeAI {
   return client;
 }
 
-function classifyError(error: unknown): GeminiError {
-  if (error instanceof GeminiError) return error;
+function classifyError(error: unknown): AiProviderError {
+  if (error instanceof AiProviderError) return error;
   const message = error instanceof Error ? error.message : String(error);
-  if (/429/.test(message)) return new GeminiError('rate_limited', message);
-  if (/5\d\d/.test(message)) return new GeminiError('unavailable', message);
-  if (/network|timeout|fetch failed/i.test(message)) return new GeminiError('network', message);
-  return new GeminiError('unknown', message);
+  if (/429/.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'rate_limited', message);
+  if (/5\d\d/.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'unavailable', message);
+  if (/network|timeout|fetch failed/i.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'network', message);
+  return new AiProviderError(GEMINI_PROVIDER_ID, 'unknown', message);
 }
 
 const REQUEST_TIMEOUT_MS = 20_000;
@@ -49,7 +43,7 @@ function withTimeout<T>(promise: Promise<T>): Promise<T> {
   return Promise.race([
     promise,
     new Promise<T>((_, reject) =>
-      setTimeout(() => reject(new GeminiError('network', 'Request timed out.')), REQUEST_TIMEOUT_MS),
+      setTimeout(() => reject(new AiProviderError(GEMINI_PROVIDER_ID, 'network', 'Request timed out.')), REQUEST_TIMEOUT_MS),
     ),
   ]);
 }
@@ -70,11 +64,6 @@ async function callGemini<T>(fn: () => Promise<T>): Promise<T> {
     }
     throw classified;
   }
-}
-
-export interface ChatTurn {
-  role: 'student' | 'assistant';
-  content: string;
 }
 
 /** Generates a tutor response given a system prompt and prior conversation turns. */
@@ -100,13 +89,20 @@ export async function generateTutorResponse(systemPrompt: string, history: ChatT
 }
 
 /** Generates an embedding vector for the given text. */
-export async function embedText(text: string, taskType: 'document' | 'query'): Promise<number[]> {
+export async function embedText(text: string, taskType: 'document' | 'query'): Promise<EmbedResult> {
   return callGemini(async () => {
     const model = getClient().getGenerativeModel({ model: GEMINI_EMBEDDING_MODEL });
     const result = await model.embedContent({
       content: { role: 'user', parts: [{ text }] },
       taskType: taskType === 'document' ? TaskType.RETRIEVAL_DOCUMENT : TaskType.RETRIEVAL_QUERY,
     });
-    return result.embedding.values;
+    return { vector: result.embedding.values, model: GEMINI_EMBEDDING_MODEL };
   });
 }
+
+export const geminiProvider: AiProvider = {
+  id: GEMINI_PROVIDER_ID,
+  isConfigured: isGeminiConfigured,
+  generateTutorResponse,
+  embedText,
+};

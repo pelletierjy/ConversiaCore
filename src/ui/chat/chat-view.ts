@@ -2,7 +2,7 @@ import { renderMessageList } from './message-list';
 import { renderInputBar, setInputBarDisabled } from './input-bar';
 import { addMessage, getMessagesForSession, updateSession } from '../../db/chat';
 import { sendStudentMessage } from '../../services/homework';
-import { GeminiError } from '../../services/gemini';
+import { AiProviderError } from '../../services/ai-provider';
 import { t } from '../../i18n/translations';
 import type { ChatMessage, StudentSession } from '../../models/types';
 
@@ -79,7 +79,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
 }
 
 function describeError(error: unknown): string {
-  if (error instanceof GeminiError) {
+  if (error instanceof AiProviderError) {
     switch (error.kind) {
       case 'not_configured':
         return t('chat.errorNotConfigured');
