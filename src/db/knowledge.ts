@@ -41,17 +41,38 @@ export async function listKnowledgeEntriesBySubjectGrade(
   subject: string,
   gradeLevel: number,
 ): Promise<KnowledgeEntry[]> {
-  const snapshot = await getDocs(
-    query(knowledgeEntriesCollection(), where('subject', '==', subject), where('gradeLevel', '==', gradeLevel)),
-  );
+  const [gradeSnapshot, allGradesSnapshot] = await Promise.all([
+    getDocs(
+      query(knowledgeEntriesCollection(), where('subject', '==', subject), where('gradeLevel', '==', gradeLevel)),
+    ),
+    getDocs(
+      query(knowledgeEntriesCollection(), where('subject', '==', subject), where('gradeLevel', '==', null)),
+    ),
+  ]);
+  const seen = new Set<string>();
+  const entries: KnowledgeEntry[] = [];
+  for (const d of [...gradeSnapshot.docs, ...allGradesSnapshot.docs]) {
+    if (seen.has(d.id)) continue;
+    seen.add(d.id);
+    entries.push(toKnowledgeEntry(d.id, d.data()));
+  }
+  return entries;
+}
+
+/** All entries (main + sub-articles) sharing a host app's execution-context key, independent of subject/grade. */
+export async function listContextEntries(contextKey: string): Promise<KnowledgeEntry[]> {
+  const snapshot = await getDocs(query(knowledgeEntriesCollection(), where('contextKey', '==', contextKey)));
   return snapshot.docs.map((d) => toKnowledgeEntry(d.id, d.data()));
 }
 
 function toKnowledgeEntry(id: string, data: DocumentData): KnowledgeEntry {
   return {
     id,
+    entryType: data.entryType ?? 'subject',
     subject: data.subject,
     gradeLevel: data.gradeLevel,
+    contextKey: data.contextKey,
+    isMainArticle: data.isMainArticle,
     title: data.title,
     contentBody: data.contentBody,
     exampleProblems: data.exampleProblems ?? [],

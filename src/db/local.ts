@@ -69,3 +69,17 @@ export async function setCachedKnowledgeEntries(
 ): Promise<void> {
   await setAppStateValue(knowledgeCacheKey(subject, gradeLevel), { entries, cachedAt: Date.now() });
 }
+
+function contextCacheKey(contextKey: string): string {
+  return `knowledgeCache:context:${contextKey}`;
+}
+
+/** Best-effort offline cache of the last knowledge entries fetched for an app-context key. */
+export async function getCachedContextEntries(contextKey: string): Promise<KnowledgeEntry[]> {
+  const cached = await getAppStateValue<{ entries: KnowledgeEntry[] }>(contextCacheKey(contextKey));
+  return cached?.entries ?? [];
+}
+
+export async function setCachedContextEntries(contextKey: string, entries: KnowledgeEntry[]): Promise<void> {
+  await setAppStateValue(contextCacheKey(contextKey), { entries, cachedAt: Date.now() });
+}

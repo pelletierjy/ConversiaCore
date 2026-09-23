@@ -18,18 +18,40 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
   const entry = options.entry;
   const subjects = options.subjects ?? [];
 
+  const isContextEntry = entry?.entryType === 'context';
+
   container.innerHTML = `
     <form class="entry-editor">
       <h3>${entry ? t('entryEditor.editTitle') : t('entryEditor.addTitle')}</h3>
-      <label>${t('entryEditor.subjectLabel')}
-        <input list="subject-options" name="subject" value="${entry?.subject ?? ''}" required />
-        <datalist id="subject-options">
-          ${subjects.map((s) => `<option value="${s}"></option>`).join('')}
-        </datalist>
+      <label>${t('entryEditor.entryTypeLabel')}
+        <select name="entryType">
+          <option value="subject" ${!isContextEntry ? 'selected' : ''}>${t('entryEditor.entryTypeSubjectOption')}</option>
+          <option value="context" ${isContextEntry ? 'selected' : ''}>${t('entryEditor.entryTypeContextOption')}</option>
+        </select>
       </label>
-      <label>${t('entryEditor.gradeLevelLabel')}
-        <input type="number" name="gradeLevel" min="1" max="20" value="${entry?.gradeLevel ?? ''}" required />
-      </label>
+      <div class="entry-editor-subject-fields" ${isContextEntry ? 'hidden' : ''}>
+        <label>${t('entryEditor.subjectLabel')}
+          <input list="subject-options" name="subject" value="${entry?.subject ?? ''}" ${isContextEntry ? '' : 'required'} />
+          <datalist id="subject-options">
+            ${subjects.map((s) => `<option value="${s}"></option>`).join('')}
+          </datalist>
+        </label>
+        <label>${t('entryEditor.allGradesLabel')}
+          <input type="checkbox" name="allGrades" ${entry?.gradeLevel == null ? 'checked' : ''} />
+        </label>
+        <label>${t('entryEditor.gradeLevelLabel')}
+          <input type="number" name="gradeLevel" min="1" max="20" value="${entry?.gradeLevel ?? ''}"
+            ${entry?.gradeLevel == null ? 'disabled' : ''} />
+        </label>
+      </div>
+      <div class="entry-editor-context-fields" ${isContextEntry ? '' : 'hidden'}>
+        <label>${t('entryEditor.contextKeyLabel')}
+          <input type="text" name="contextKey" value="${entry?.contextKey ?? ''}" ${isContextEntry ? 'required' : ''} />
+        </label>
+        <label>${t('entryEditor.isMainArticleLabel')}
+          <input type="checkbox" name="isMainArticle" ${entry?.isMainArticle ? 'checked' : ''} />
+        </label>
+      </div>
       <label>${t('entryEditor.titleLabel')}
         <input type="text" name="title" value="${entry?.title ?? ''}" required />
       </label>
@@ -53,16 +75,48 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
   const form = container.querySelector('form') as HTMLFormElement;
   const statusEl = form.querySelector('.entry-editor-status') as HTMLElement;
   const cancelBtn = form.querySelector('[data-action="cancel"]') as HTMLButtonElement | null;
+  const entryTypeSelect = form.querySelector('select[name="entryType"]') as HTMLSelectElement;
+  const subjectFieldsEl = form.querySelector('.entry-editor-subject-fields') as HTMLElement;
+  const contextFieldsEl = form.querySelector('.entry-editor-context-fields') as HTMLElement;
+  const subjectInput = form.querySelector('input[name="subject"]') as HTMLInputElement;
+  const contextKeyInput = form.querySelector('input[name="contextKey"]') as HTMLInputElement;
+  const allGradesCheckbox = form.querySelector('input[name="allGrades"]') as HTMLInputElement;
+  const gradeLevelInput = form.querySelector('input[name="gradeLevel"]') as HTMLInputElement;
 
   cancelBtn?.addEventListener('click', () => {
     container.innerHTML = '';
   });
 
+  function syncGradeLevelRequired(): void {
+    gradeLevelInput.required = entryTypeSelect.value === 'subject' && !allGradesCheckbox.checked;
+  }
+
+  entryTypeSelect.addEventListener('change', () => {
+    const isContext = entryTypeSelect.value === 'context';
+    subjectFieldsEl.hidden = isContext;
+    contextFieldsEl.hidden = !isContext;
+    subjectInput.required = !isContext;
+    contextKeyInput.required = isContext;
+    syncGradeLevelRequired();
+  });
+
+  allGradesCheckbox.addEventListener('change', () => {
+    gradeLevelInput.disabled = allGradesCheckbox.checked;
+    if (allGradesCheckbox.checked) gradeLevelInput.value = '';
+    syncGradeLevelRequired();
+  });
+
+  syncGradeLevelRequired();
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
+    const entryType = String(formData.get('entryType') ?? 'subject') === 'context' ? 'context' : 'subject';
     const subject = String(formData.get('subject') ?? '').trim();
-    const gradeLevel = Number(formData.get('gradeLevel'));
+    const allGrades = formData.get('allGrades') === 'on';
+    const gradeLevel = allGrades ? null : Number(formData.get('gradeLevel'));
+    const contextKey = String(formData.get('contextKey') ?? '').trim();
+    const isMainArticle = formData.get('isMainArticle') === 'on';
     const title = String(formData.get('title') ?? '').trim();
     const contentBody = String(formData.get('contentBody') ?? '').trim();
     const pedagogicalNotes = String(formData.get('pedagogicalNotes') ?? '').trim();
@@ -70,6 +124,10 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
 
     if (contentBody.length < 10) {
       statusEl.textContent = t('entryEditor.contentTooShortError');
+      return;
+    }
+    if (entryType === 'context' && !contextKey) {
+      statusEl.textContent = t('entryEditor.contextKeyRequiredError');
       return;
     }
 
@@ -86,8 +144,9 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
       }
 
       const payload = {
-        subject,
-        gradeLevel,
+        ...(entryType === 'context'
+          ? { entryType: 'context' as const, contextKey, isMainArticle }
+          : { entryType: 'subject' as const, subject, gradeLevel }),
         title,
         contentBody,
         pedagogicalNotes,

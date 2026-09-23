@@ -4,7 +4,7 @@ import { renderChatView } from './ui/chat/chat-view';
 import { setLocale, isSupportedLocale } from './i18n/locale';
 import type { StudentSession } from './models/types';
 
-const OBSERVED_ATTRIBUTES = ['theme', 'lang', 'subject', 'grade-level'] as const;
+const OBSERVED_ATTRIBUTES = ['theme', 'lang', 'subject', 'grade-level', 'context'] as const;
 
 /**
  * `<need-homework-app>` — the AI homework chatbot as a self-contained custom element.
@@ -14,6 +14,8 @@ const OBSERVED_ATTRIBUTES = ['theme', 'lang', 'subject', 'grade-level'] as const
  *  - `lang`: "en" | "fr" | "es" (re-renders the current step in place; keeps the session).
  *  - `subject` / `grade-level`: forces the subject/grade and skips the picker.
  *    Changing either restarts the flow with a new session.
+ *  - `context`: the host app's execution-context key (e.g. "ScalesViewer"), independent of subject/grade.
+ *    Changing it restarts the flow with a new session.
  */
 class NeedHomeworkApp extends HTMLElement {
   static get observedAttributes(): readonly string[] {
@@ -83,6 +85,7 @@ class NeedHomeworkApp extends HTMLElement {
     await renderStudentFlow(root, {
       forcedSubject: this.getAttribute('subject') ?? undefined,
       forcedGradeLevel: gradeLevelAttr != null ? Number(gradeLevelAttr) : undefined,
+      forcedContextKey: this.getAttribute('context') ?? undefined,
       onSessionStart: (session) => {
         this.#session = session;
       },

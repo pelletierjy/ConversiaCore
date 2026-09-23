@@ -43,6 +43,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       const result = await sendStudentMessage({
         subject: session.subject,
         gradeLevel: session.gradeLevel,
+        contextKey: session.contextKey,
         performance: session.performance,
         history,
         message: text,

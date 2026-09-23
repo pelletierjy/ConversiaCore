@@ -11,7 +11,7 @@ import type { StudentSession, AppConfig } from '../models/types';
 export interface StudentFlowOptions {
   forcedSubject?: string;
   forcedGradeLevel?: number;
-  /** Called once a session starts, so a caller (e.g. the web component) can re-render this session later. */
+  forcedContextKey?: string;
   onSessionStart?: (session: StudentSession) => void;
 }
 
@@ -26,11 +26,12 @@ export async function renderApp(root: HTMLElement): Promise<void> {
   const forcedGradeLevel = params.has('gradeLevel')
     ? Number(params.get('gradeLevel'))
     : undefined;
-  await renderStudentFlow(root, { forcedSubject, forcedGradeLevel });
+  const forcedContextKey = params.get('context') ?? undefined;
+  await renderStudentFlow(root, { forcedSubject, forcedGradeLevel, forcedContextKey });
 }
 
 export async function renderStudentFlow(root: HTMLElement, options: StudentFlowOptions = {}): Promise<void> {
-  const { onSessionStart } = options;
+  const { onSessionStart, forcedContextKey } = options;
   const forcedSubject = options.forcedSubject;
   const forcedGradeLevel =
     options.forcedGradeLevel != null && !Number.isNaN(options.forcedGradeLevel)
@@ -39,7 +40,7 @@ export async function renderStudentFlow(root: HTMLElement, options: StudentFlowO
 
   // If both subject and grade are forced, skip the selector entirely.
   if (forcedSubject && forcedGradeLevel != null) {
-    await startStudentSession(root, forcedGradeLevel, forcedSubject, onSessionStart);
+    await startStudentSession(root, forcedGradeLevel, forcedSubject, onSessionStart, forcedContextKey);
     return;
   }
 
@@ -62,7 +63,7 @@ export async function renderStudentFlow(root: HTMLElement, options: StudentFlowO
     async ({ gradeLevel, subject }) => {
       await setAppStateValue('lastSubject', subject);
       await setAppStateValue('lastGradeLevel', gradeLevel);
-      await startStudentSession(root, gradeLevel, subject, onSessionStart);
+      await startStudentSession(root, gradeLevel, subject, onSessionStart, forcedContextKey);
     },
     { lastSubject, lastGradeLevel, subjects, forcedSubject },
   );
@@ -73,11 +74,13 @@ async function startStudentSession(
   gradeLevel: number,
   subject: string,
   onSessionStart?: (session: StudentSession) => void,
+  contextKey?: string,
 ): Promise<void> {
   const session: StudentSession = {
     id: crypto.randomUUID(),
     gradeLevel,
     subject,
+    contextKey,
     startedAt: Date.now(),
     lastActiveAt: Date.now(),
     performance: {

@@ -39,6 +39,7 @@ Represents an active interaction between a student and the chatbot. Stored local
 | `id` | `string` | UUID, PK | Unique session identifier |
 | `gradeLevel` | `number` | 1–20, required | Selected grade level (standard numeric scale) |
 | `subject` | `string` | required | Selected subject (predefined or custom) |
+| `contextKey` | `string` | optional | Host app's execution-context key (e.g. `"ScalesViewer"`), if provided; independent of subject/grade |
 | `startedAt` | `number` | timestamp | Session start time (Unix ms) |
 | `lastActiveAt` | `number` | timestamp | Last message timestamp |
 | `performance` | `PerformanceSnapshot` | required | Running performance stats for adaptive difficulty |
@@ -81,8 +82,11 @@ A unit of educational content stored by an admin. Shared across all users.
 | Field | Type | Constraints | Description |
 |-------|------|-------------|-------------|
 | `id` | `string` | Auto-ID, PK | Firestore document ID |
-| `subject` | `string` | required | Subject name (predefined or custom) |
-| `gradeLevel` | `number` | 1–20, required | Target grade level |
+| `entryType` | `'subject' \| 'context'` | optional, defaults to `'subject'` | Distinguishes subject/grade entries from app-context entries |
+| `subject` | `string` | required when `entryType` is `'subject'` | Subject name (predefined or custom) |
+| `gradeLevel` | `number \| null` | 1–20, or `null` for all grades; required when `entryType` is `'subject'` | Target grade level (`null` = applies to every grade) |
+| `contextKey` | `string` | required when `entryType` is `'context'` | Identifies the host app (e.g. `"ScalesViewer"`); independent of subject/grade |
+| `isMainArticle` | `boolean` | only meaningful when `entryType` is `'context'` | `true` for the one entry auto-loaded for that `contextKey`; other entries sharing the key are its searchable sub-articles |
 | `title` | `string` | required | Short descriptive title |
 | `contentBody` | `string` | required | Main educational text |
 | `exampleProblems` | `ExampleProblem[]` | optional | Structured worked examples |
@@ -143,11 +147,12 @@ A generated question delivered to the student. Embedded in ChatMessage metadata;
 
 ## Validation Rules
 
-1. `gradeLevel` must be a positive integer between 1 and 20 inclusive.
-2. `subject` must be non-empty and trimmed.
+1. `KnowledgeEntry.gradeLevel` must be `null` (all grades) or a positive integer between 1 and 20 inclusive, when `entryType` is `'subject'`. `StudentSession.gradeLevel` and `HomeworkItem.gradeLevel` are always a positive integer between 1 and 20 inclusive.
+2. `subject` must be non-empty and trimmed, when `entryType` is `'subject'`.
 3. `KnowledgeEntry.contentBody` must be non-empty and at least 10 characters.
 4. `Attachment.dataUrl` must be a valid base64 data URL under 1MB per image.
 5. `EmbeddingVector.vector` length must match the expected dimension for the configured model (3072 for `gemini-embedding-001`).
+6. `KnowledgeEntry.contextKey` must be non-empty and trimmed, when `entryType` is `'context'`.
 
 ## State Transitions
 
@@ -179,7 +184,7 @@ A generated question delivered to the student. Embedded in ChatMessage metadata;
 
 | Collection | Document ID | Fields |
 |------------|-------------|--------|
-| `knowledgeEntries` | Auto-ID | `subject`, `gradeLevel`, `title`, `contentBody`, `exampleProblems`, `pedagogicalNotes`, `attachments`, `createdAt`, `updatedAt` |
+| `knowledgeEntries` | Auto-ID | `entryType`, `subject`, `gradeLevel`, `contextKey`, `isMainArticle`, `title`, `contentBody`, `exampleProblems`, `pedagogicalNotes`, `attachments`, `createdAt`, `updatedAt` |
 | `embeddingVectors` | `entryId` (matches knowledge entry) | `entryId`, `model`, `vector`, `updatedAt` |
 | `appConfig` | `global` | `adminPinHash`, `customSubjects`, `predefinedSubjects` |
 
@@ -188,6 +193,7 @@ A generated question delivered to the student. Embedded in ChatMessage metadata;
 | Collection | Fields | Query Purpose |
 |------------|--------|---------------|
 | `knowledgeEntries` | `subject` (asc), `gradeLevel` (asc) | Filter by subject and grade |
+| `knowledgeEntries` | `contextKey` (asc) | Fetch all entries (main + sub-articles) for an app context |
 | `knowledgeEntries` | `updatedAt` (desc) | List most recently updated entries |
 
 ## IndexedDB Schema (Object Stores)
