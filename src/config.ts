@@ -1,4 +1,4 @@
-export const GEMINI_API_KEY = import.meta.env.GEMINI_API_KEY as string;
+export const WORKER_BASE_URL = import.meta.env.VITE_WORKER_BASE_URL as string;
 
 // gemini-1.5-flash / embedding-001 were retired by Google; verified against the live
 // ListModels API on 2026-09-20 and replaced with the current supported models.
@@ -11,7 +11,6 @@ export const GEMINI_EMBEDDING_DIMENSION = 3072;
 export const GEMINI_MAX_OUTPUT_TOKENS = 2048;
 export const GEMINI_TEMPERATURE = 0.7;
 
-export const GROQ_API_KEY = import.meta.env.GROQ_API_KEY as string;
 // Verified against the live console.groq.com/docs/models on 2026-09-22. Groq deprecates
 // model ids on a similar cadence to Google (see the GEMINI_* comment above) — re-check
 // before relying on this long-term.
@@ -19,7 +18,6 @@ export const GROQ_GENERATION_MODEL = 'llama-3.3-70b-versatile';
 export const GROQ_MAX_OUTPUT_TOKENS = 2048;
 export const GROQ_TEMPERATURE = 0.7;
 
-export const OPENROUTER_API_KEY = import.meta.env.OPENROUTER_API_KEY as string;
 // "openrouter/free" is OpenRouter's own auto-router across whichever free-tier models are
 // currently available (verified live against openrouter.ai/api/v1/models on 2026-09-22,
 // 24 free models today). Chosen over pinning one concrete free model id, since free-tier
@@ -39,15 +37,15 @@ export const FIREBASE_CONFIG = {
 };
 
 export function isGeminiConfigured(): boolean {
-  return Boolean(GEMINI_API_KEY);
+  return Boolean(WORKER_BASE_URL);
 }
 
 export function isGroqConfigured(): boolean {
-  return Boolean(GROQ_API_KEY);
+  return Boolean(WORKER_BASE_URL);
 }
 
 export function isOpenRouterConfigured(): boolean {
-  return Boolean(OPENROUTER_API_KEY);
+  return Boolean(WORKER_BASE_URL);
 }
 
 export function isFirebaseConfigured(): boolean {
