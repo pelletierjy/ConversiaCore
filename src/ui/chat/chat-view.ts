@@ -10,7 +10,6 @@ import type { ChatMessage, StudentSession } from '../../models/types';
 export async function renderChatView(container: HTMLElement, session: StudentSession): Promise<void> {
   container.innerHTML = `
     <div class="chat-view">
-      <header class="chat-header">${session.subject} · ${t('common.grade')} ${session.gradeLevel}</header>
       <div class="message-list"></div>
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
