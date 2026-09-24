@@ -64,26 +64,52 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
   });
 }
 
+type AdminTab = 'knowledge' | 'settings';
+
 async function renderAdminHome(container: HTMLElement, config: AppConfig): Promise<void> {
+  container.innerHTML = `
+    <div class="admin-home">
+      <nav class="admin-nav">
+        <button type="button" class="admin-nav-btn" data-tab="knowledge">${t('admin.knowledgeBaseNavLabel')}</button>
+        <button type="button" class="admin-nav-btn" data-tab="settings">${t('admin.settingsNavLabel')}</button>
+      </nav>
+      <div class="admin-page-container"></div>
+    </div>
+  `;
+
+  const pageContainer = container.querySelector('.admin-page-container') as HTMLElement;
+  const navButtons = Array.from(container.querySelectorAll<HTMLButtonElement>('.admin-nav-btn'));
+
+  function setActiveTab(tab: AdminTab): void {
+    navButtons.forEach((btn) => btn.classList.toggle('active', btn.dataset.tab === tab));
+    if (tab === 'knowledge') renderKnowledgeBasePage(pageContainer, config);
+    else renderSettingsPage(pageContainer, config);
+  }
+
+  navButtons.forEach((btn) =>
+    btn.addEventListener('click', () => setActiveTab(btn.dataset.tab as AdminTab)),
+  );
+
+  setActiveTab('knowledge');
+}
+
+function renderKnowledgeBasePage(container: HTMLElement, config: AppConfig): void {
   const subjects = [...new Set([...config.predefinedSubjects, ...config.customSubjects])];
 
   container.innerHTML = `
-    <div class="admin-home">
+    <div class="admin-page">
       <header class="admin-header">
         <h2>${t('admin.knowledgeBaseTitle')}</h2>
         <button type="button" class="add-entry-btn">${t('admin.addEntryButton')}</button>
       </header>
       <div class="entry-editor-container"></div>
       <div class="entry-list-container"></div>
-      <div class="ai-providers-container"></div>
     </div>
   `;
 
   const listContainer = container.querySelector('.entry-list-container') as HTMLElement;
   const editorContainer = container.querySelector('.entry-editor-container') as HTMLElement;
   const addBtn = container.querySelector('.add-entry-btn') as HTMLButtonElement;
-  const aiProvidersContainer = container.querySelector('.ai-providers-container') as HTMLElement;
-  renderAiProvidersPanel(aiProvidersContainer, config);
 
   const refreshList = () =>
     renderEntryList(listContainer, {
@@ -95,5 +121,19 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
     renderEntryEditor(editorContainer, { onSaved: refreshList, subjects });
   });
 
-  await refreshList();
+  void refreshList();
+}
+
+function renderSettingsPage(container: HTMLElement, config: AppConfig): void {
+  container.innerHTML = `
+    <div class="admin-page">
+      <header class="admin-header">
+        <h2>${t('admin.settingsTitle')}</h2>
+      </header>
+      <div class="ai-providers-container"></div>
+    </div>
+  `;
+
+  const aiProvidersContainer = container.querySelector('.ai-providers-container') as HTMLElement;
+  renderAiProvidersPanel(aiProvidersContainer, config);
 }

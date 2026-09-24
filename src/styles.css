@@ -206,6 +206,28 @@ label {
   margin-bottom: 16px;
 }
 
+.admin-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-nav-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 10px 4px;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.admin-nav-btn.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
 .admin-login-form, .entry-editor {
   background: var(--color-surface);
   border-radius: var(--radius);
@@ -224,19 +246,27 @@ label {
   padding: 16px;
 }
 
+.entry-list-container {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
 .entry-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 8px;
+  align-content: start;
 }
 
 .entry-list-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   background: var(--color-surface);
   border-radius: var(--radius);
   padding: 12px 16px;

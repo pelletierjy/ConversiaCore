@@ -43,8 +43,11 @@ interface TranslationDict {
     firebaseStep4: string;
     dbErrorTitle: string;
     dbErrorDescription: string;
+    knowledgeBaseNavLabel: string;
+    settingsNavLabel: string;
     knowledgeBaseTitle: string;
     addEntryButton: string;
+    settingsTitle: string;
     aiProvidersTitle: string;
     aiProvidersDescription: string;
     moveUpButton: string;
@@ -146,8 +149,11 @@ const en: TranslationDict = {
     firebaseStep4: 'Restart the dev server (<code>npm run dev</code>)',
     dbErrorTitle: 'Unable to reach the shared database.',
     dbErrorDescription: 'Check your connection, Firestore security rules, and browser console for details.',
+    knowledgeBaseNavLabel: 'Knowledge Base',
+    settingsNavLabel: 'Settings',
     knowledgeBaseTitle: 'Knowledge Base',
     addEntryButton: 'Add Entry',
+    settingsTitle: 'Settings',
     aiProvidersTitle: 'AI Providers',
     aiProvidersDescription:
       'Order in which AI providers are tried. The first configured provider in this list handles each request; if it fails, the next one is tried.',
@@ -250,8 +256,11 @@ const fr: TranslationDict = {
     firebaseStep4: 'Redémarrez le serveur de développement (<code>npm run dev</code>)',
     dbErrorTitle: "Impossible d'accéder à la base de données partagée.",
     dbErrorDescription: 'Vérifiez votre connexion, les règles de sécurité Firestore et la console du navigateur pour plus de détails.',
+    knowledgeBaseNavLabel: 'Base de connaissances',
+    settingsNavLabel: 'Paramètres',
     knowledgeBaseTitle: 'Base de connaissances',
     addEntryButton: 'Ajouter une entrée',
+    settingsTitle: 'Paramètres',
     aiProvidersTitle: 'Fournisseurs IA',
     aiProvidersDescription:
       "Ordre dans lequel les fournisseurs IA sont essayés. Le premier fournisseur configuré de cette liste traite chaque requête ; s'il échoue, le suivant est essayé.",
@@ -354,8 +363,11 @@ const es: TranslationDict = {
     firebaseStep4: 'Reinicia el servidor de desarrollo (<code>npm run dev</code>)',
     dbErrorTitle: 'No se puede acceder a la base de datos compartida.',
     dbErrorDescription: 'Revisa tu conexión, las reglas de seguridad de Firestore y la consola del navegador para más detalles.',
+    knowledgeBaseNavLabel: 'Base de conocimientos',
+    settingsNavLabel: 'Configuración',
     knowledgeBaseTitle: 'Base de conocimientos',
     addEntryButton: 'Agregar entrada',
+    settingsTitle: 'Configuración',
     aiProvidersTitle: 'Proveedores de IA',
     aiProvidersDescription:
       'Orden en que se prueban los proveedores de IA. El primer proveedor configurado de esta lista maneja cada solicitud; si falla, se prueba el siguiente.',
