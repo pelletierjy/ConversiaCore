@@ -18,7 +18,7 @@ function classifyError(error: unknown): AiProviderError {
   if (/401|403/.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'unauthorized', message);
   if (/429/.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'rate_limited', message);
   if (/5\d\d/.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'unavailable', message);
-  if (/network|timeout|fetch failed/i.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'network', message);
+  if (/network|timeout|failed to fetch|fetch failed|load failed/i.test(message)) return new AiProviderError(GEMINI_PROVIDER_ID, 'network', message);
   return new AiProviderError(GEMINI_PROVIDER_ID, 'unknown', message);
 }
 
