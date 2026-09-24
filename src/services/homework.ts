@@ -75,7 +75,7 @@ export async function sendStudentMessage(params: {
   const systemPrompt =
     buildTutorSystemPrompt({ subject, gradeLevel, difficulty: performance.currentDifficulty, knowledgeContext, language }) +
     '\nBegin every reply with exactly one tag as the first token: [HOMEWORK] when presenting a new question, ' +
-    "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or [INFO] for anything else " +
+    "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or skip the tag for anything else " +
     '(hints, explanations, off-topic redirects).';
 
   const { text: raw, providerId } = await generateTutorResponse(systemPrompt, [...history, { role: 'student', content: message }]);

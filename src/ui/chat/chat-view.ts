@@ -3,6 +3,7 @@ import { renderInputBar, setInputBarDisabled } from './input-bar';
 import { addMessage, getMessagesForSession, updateSession } from '../../db/chat';
 import { sendStudentMessage } from '../../services/homework';
 import { AiProviderError } from '../../services/ai-provider';
+import { PROVIDER_DISPLAY } from '../../services/ai-provider-registry';
 import { t } from '../../i18n/translations';
 import type { ChatMessage, StudentSession } from '../../models/types';
 
@@ -14,8 +15,8 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
       <div class="chat-footer">
-        <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
         <span class="provider-status" aria-live="polite"></span>
+        <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
       </div>
     </div>
   `;
@@ -26,6 +27,17 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
   const providerStatusEl = container.querySelector('.provider-status') as HTMLElement;
 
   let messages = await getMessagesForSession(session.id);
+  if (messages.length === 0) {
+    const welcomeMessage: ChatMessage = {
+      id: crypto.randomUUID(),
+      sessionId: session.id,
+      role: 'assistant',
+      content: t('chat.welcomeMessage', { subject: session.subject }),
+      timestamp: Date.now(),
+    };
+    messages = [welcomeMessage];
+    await addMessage(welcomeMessage);
+  }
   renderMessageList(messageListEl, messages);
 
   renderInputBar(inputBarEl, async (text) => {
@@ -76,7 +88,10 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       await addMessage(assistantMessage);
       statusEl.textContent = '';
       if (providerStatusEl && result.providerId) {
-        providerStatusEl.textContent = `${t('chat.modelLabel')}: ${result.providerId}`;
+        const display = PROVIDER_DISPLAY[result.providerId];
+        providerStatusEl.textContent = display
+          ? `${t('chat.providerLabel')}: ${display.provider} ${t('chat.modelLabel')}: ${display.model}`
+          : `${t('chat.modelLabel')}: ${result.providerId}`;
       }
     } catch (error) {
       statusEl.textContent = describeError(error);
