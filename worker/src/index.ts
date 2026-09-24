@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI, TaskType } from '@google/generative-ai';
+import { GoogleGenerativeAI, TaskType, type FunctionCall, type FunctionDeclaration } from '@google/generative-ai';
 import { ChatGroq } from '@langchain/groq';
 import { ChatOpenRouter } from '@langchain/openrouter';
 import { AIMessage, HumanMessage, SystemMessage, type BaseMessage } from '@langchain/core/messages';
@@ -20,6 +20,8 @@ interface ChatRequestBody {
   model: string;
   temperature: number;
   maxOutputTokens: number;
+  /** Gemini function declarations the model may call. Ignored by the Groq/OpenRouter handlers. */
+  tools?: FunctionDeclaration[];
 }
 
 interface EmbedRequestBody {
@@ -78,7 +80,7 @@ function toLangchainMessages(systemPrompt: string, history: ChatTurn[]): BaseMes
   ];
 }
 
-async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string }> {
+async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
   const model = new GoogleGenerativeAI(apiKey).getGenerativeModel({
     model: body.model,
     systemInstruction: body.systemPrompt,
@@ -86,6 +88,7 @@ async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<
       temperature: body.temperature,
       maxOutputTokens: body.maxOutputTokens,
     },
+    tools: body.tools?.length ? [{ functionDeclarations: body.tools }] : undefined,
   });
   const contents = body.history.map((turn) => ({
     role: turn.role === 'student' ? 'user' : 'model',
@@ -97,7 +100,7 @@ async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<
     contents.push({ role: 'user', parts: [{ text: '' }] });
   }
   const result = await model.generateContent({ contents });
-  return { text: result.response.text() };
+  return { text: result.response.text(), functionCalls: result.response.functionCalls() };
 }
 
 async function handleGeminiEmbed(body: EmbedRequestBody, apiKey: string): Promise<{ vector: number[]; model: string }> {

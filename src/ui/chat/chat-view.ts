@@ -5,7 +5,15 @@ import { sendStudentMessage } from '../../services/homework';
 import { AiProviderError } from '../../services/ai-provider';
 import { PROVIDER_DISPLAY } from '../../services/ai-provider-registry';
 import { t } from '../../i18n/translations';
+import { HOST_COMMAND_PROTOCOL_VERSION, type HostCommand, type HostCommandEventDetail } from '../../models/host-commands';
 import type { ChatMessage, StudentSession } from '../../models/types';
+
+/** Dispatched from inside the widget's shadow tree; `composed: true` lets it cross the
+ *  shadow boundary so a listener on the host page (outside `<need-homework-app>`) receives it. */
+function dispatchHostCommands(container: HTMLElement, sessionId: string, commands: HostCommand[]): void {
+  const detail: HostCommandEventDetail = { version: HOST_COMMAND_PROTOCOL_VERSION, sessionId, commands };
+  container.dispatchEvent(new CustomEvent('need-homework:command', { bubbles: true, composed: true, detail }));
+}
 
 export async function renderChatView(container: HTMLElement, session: StudentSession): Promise<void> {
   container.innerHTML = `
@@ -85,6 +93,9 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       messages = [...messages, assistantMessage];
       renderMessageList(messageListEl, messages);
       await addMessage(assistantMessage);
+      if (result.hostCommands?.length) {
+        dispatchHostCommands(container, session.id, result.hostCommands);
+      }
       statusEl.textContent = '';
       if (providerStatusEl && result.providerId) {
         const display = PROVIDER_DISPLAY[result.providerId];

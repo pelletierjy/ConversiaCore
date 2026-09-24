@@ -4,6 +4,7 @@ import type { ChatTurn } from './ai-provider';
 import { isLikelyOffTopic, buildRedirectMessage } from './guardrails';
 import { formatKnowledgeContext, retrieveContextEntries, retrieveRelevantEntries } from './rag';
 import { getLocale, LOCALE_LANGUAGE_NAMES } from '../i18n/locale';
+import { getHostCommandTools, parseFunctionCallsToHostCommands, type HostCommand } from '../models/host-commands';
 import type { Difficulty, PerformanceSnapshot, RetrievedEntry } from '../models/types';
 
 const TAG_PATTERN = /^\[(HOMEWORK|CORRECT|INCORRECT|INFO)\]\s*/i;
@@ -15,6 +16,7 @@ export interface HomeworkTurnResult {
   isHomeworkRequest: boolean;
   referencedEntryIds: string[];
   providerId?: string;
+  hostCommands?: HostCommand[];
 }
 
 function nextDifficulty(current: Difficulty, correct: boolean): Difficulty {
@@ -71,14 +73,28 @@ export async function sendStudentMessage(params: {
     }
   }
 
+  const hostCommandTools = getHostCommandTools(contextKey);
+
   const language = LOCALE_LANGUAGE_NAMES[getLocale()];
   const systemPrompt =
-    buildTutorSystemPrompt({ subject, gradeLevel, difficulty: performance.currentDifficulty, knowledgeContext, language }) +
+    buildTutorSystemPrompt({
+      subject,
+      gradeLevel,
+      difficulty: performance.currentDifficulty,
+      knowledgeContext,
+      language,
+      hasHostCommandTools: Boolean(hostCommandTools),
+    }) +
     '\nBegin every reply with exactly one tag as the first token: [HOMEWORK] when presenting a new question, ' +
     "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or skip the tag for anything else " +
     '(hints, explanations, off-topic redirects).';
 
-  const { text: raw, providerId } = await generateTutorResponse(systemPrompt, [...history, { role: 'student', content: message }]);
+  const { text: raw, providerId, functionCalls } = await generateTutorResponse(
+    systemPrompt,
+    [...history, { role: 'student', content: message }],
+    hostCommandTools,
+  );
+  const hostCommands = parseFunctionCallsToHostCommands(contextKey, functionCalls);
 
   const tag = raw.match(TAG_PATTERN)?.[1]?.toUpperCase();
   const reply = raw.replace(TAG_PATTERN, '').trim();
@@ -105,5 +121,12 @@ export async function sendStudentMessage(params: {
     }
   }
 
-  return { reply, performance: updated, isHomeworkRequest, referencedEntryIds, providerId };
+  return {
+    reply,
+    performance: updated,
+    isHomeworkRequest,
+    referencedEntryIds,
+    providerId,
+    hostCommands: hostCommands.length ? hostCommands : undefined,
+  };
 }

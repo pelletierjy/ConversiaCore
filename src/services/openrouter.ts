@@ -1,4 +1,4 @@
-import { AiProviderError, type AiProvider, type ChatTurn } from './ai-provider';
+import { AiProviderError, type AiProvider, type ChatTurn, type TutorGenerationResult } from './ai-provider';
 import {
   OPENROUTER_GENERATION_MODEL,
   OPENROUTER_MAX_OUTPUT_TOKENS,
@@ -57,8 +57,9 @@ async function callOpenRouter<T>(fn: () => Promise<T>): Promise<T> {
   }
 }
 
-/** Generates a tutor response given a system prompt and prior conversation turns. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
+/** Generates a tutor response given a system prompt and prior conversation turns. OpenRouter has
+ *  no tool-calling support wired up here yet, so any `tools` param is accepted but ignored. */
+export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<TutorGenerationResult> {
   return callOpenRouter(async () => {
     const { text } = await postToWorker<{ text: string }>('/openrouter/chat', {
       systemPrompt,
@@ -67,7 +68,7 @@ export async function generateTutorResponse(systemPrompt: string, history: ChatT
       temperature: OPENROUTER_TEMPERATURE,
       maxOutputTokens: OPENROUTER_MAX_OUTPUT_TOKENS,
     });
-    return text;
+    return { text };
   });
 }
 

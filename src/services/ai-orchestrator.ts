@@ -1,3 +1,4 @@
+import type { FunctionCall, FunctionDeclaration } from '@google/generative-ai';
 import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
 import { AI_PROVIDERS } from './ai-provider-registry';
 import { getProviderPriority } from './ai-provider-config';
@@ -16,19 +17,26 @@ async function resolveOrder(): Promise<AiProvider[]> {
 export interface TutorResponse {
   text: string;
   providerId: string;
+  functionCalls?: FunctionCall[];
 }
 
 /** Tries each configured provider in admin-set priority order, falling through only on
  * retryable errors (rate_limited, unavailable, network, unauthorized, not_configured).
- * An unknown-kind error is surfaced immediately rather than masked by trying the next provider. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<TutorResponse> {
+ * An unknown-kind error is surfaced immediately rather than masked by trying the next provider.
+ * `tools` is only forwarded to providers that declare `supportsTools` — others still serve the
+ * turn, just without any function-calling ability. */
+export async function generateTutorResponse(
+  systemPrompt: string,
+  history: ChatTurn[],
+  tools?: FunctionDeclaration[],
+): Promise<TutorResponse> {
   const providers = await resolveOrder();
   let lastError: AiProviderError | undefined;
   for (const provider of providers) {
     if (!provider.isConfigured()) continue;
     try {
-      const text = await provider.generateTutorResponse(systemPrompt, history);
-      return { text, providerId: provider.id };
+      const { text, functionCalls } = await provider.generateTutorResponse(systemPrompt, history, provider.supportsTools ? tools : undefined);
+      return { text, providerId: provider.id, functionCalls };
     } catch (error) {
       const classified = error instanceof AiProviderError ? error : new AiProviderError(provider.id, 'unknown', String(error));
       if (!RETRYABLE_KINDS.has(classified.kind)) throw classified;
