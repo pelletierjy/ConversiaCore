@@ -28,7 +28,7 @@
   --color-warning: #eab308;
 }
 
-/* Only matches when this stylesheet is injected into the <need-homework-app> shadow root. */
+/* Only matches when this stylesheet is injected into the <conversia-app> shadow root. */
 :host {
   display: block;
   height: 100%;
@@ -331,6 +331,71 @@ label {
   min-height: 1.2em;
   font-size: 0.85rem;
   color: var(--color-muted);
+}
+
+.host-apps-panel {
+  margin-top: 20px;
+}
+
+.host-apps-panel > p {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.host-apps-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.host-apps-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.host-apps-list-item {
+  width: 100%;
+  text-align: left;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.host-apps-list-item.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.host-apps-new {
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+}
+
+.host-apps-form,
+.host-apps-editor > p {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.host-apps-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.host-apps-form-status {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.host-apps-error {
+  color: var(--color-error);
 }
 
 .toast-container {

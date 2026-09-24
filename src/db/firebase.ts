@@ -29,3 +29,5 @@ export function getDb(): Firestore {
 export const knowledgeEntriesCollection = () => collection(getDb(), 'knowledgeEntries');
 export const embeddingVectorsCollection = () => collection(getDb(), 'embeddingVectors');
 export const appConfigDoc = () => doc(getDb(), 'appConfig', 'global');
+export const appConfigCollection = () => collection(getDb(), 'appConfig');
+export const hostAppConfigDoc = (contextKey: string) => doc(getDb(), 'appConfig', contextKey);

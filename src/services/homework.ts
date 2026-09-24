@@ -1,7 +1,8 @@
 import { buildTutorSystemPrompt } from '../models/constants';
 import { generateTutorResponse } from './ai-orchestrator';
 import type { ChatTurn } from './ai-provider';
-import { isLikelyOffTopic, buildRedirectMessage } from './guardrails';
+import { isLikelyOffTopic } from './guardrails';
+import { getHostAppConfig } from './host-config';
 import { formatKnowledgeContext, retrieveContextEntries, retrieveRelevantEntries } from './rag';
 import { getLocale, LOCALE_LANGUAGE_NAMES } from '../i18n/locale';
 import { getHostCommandTools, parseFunctionCallsToHostCommands, type HostCommand } from '../models/host-commands';
@@ -38,8 +39,15 @@ export async function sendStudentMessage(params: {
 }): Promise<HomeworkTurnResult> {
   const { subject, gradeLevel, contextKey, performance, history, message } = params;
 
-  if (isLikelyOffTopic(message)) {
-    return { reply: buildRedirectMessage(subject), performance, isHomeworkRequest: false, referencedEntryIds: [] };
+  const hostConfig = contextKey ? await getHostAppConfig(contextKey) : null;
+
+  if (hostConfig?.guardrails && isLikelyOffTopic(message, hostConfig.guardrails.offTopicKeywords)) {
+    return {
+      reply: hostConfig.guardrails.redirectMessage,
+      performance,
+      isHomeworkRequest: false,
+      referencedEntryIds: [],
+    };
   }
 
   let knowledgeContext = params.knowledgeContext;
@@ -76,6 +84,11 @@ export async function sendStudentMessage(params: {
   const hostCommandTools = getHostCommandTools(contextKey);
 
   const language = LOCALE_LANGUAGE_NAMES[getLocale()];
+  const tagInstructions = hostConfig?.systemPrompt
+    ? '\nBegin every reply with exactly one tag as the first token: [HOMEWORK] when presenting a new question, ' +
+      "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or skip the tag for anything else " +
+      '(hints, explanations, off-topic redirects).'
+    : '';
   const systemPrompt =
     buildTutorSystemPrompt({
       subject,
@@ -84,10 +97,8 @@ export async function sendStudentMessage(params: {
       knowledgeContext,
       language,
       hasHostCommandTools: Boolean(hostCommandTools),
-    }) +
-    '\nBegin every reply with exactly one tag as the first token: [HOMEWORK] when presenting a new question, ' +
-    "[CORRECT] when the student's prior answer was correct, [INCORRECT] when it was wrong, or skip the tag for anything else " +
-    '(hints, explanations, off-topic redirects).';
+      hostSystemPrompt: hostConfig?.systemPrompt,
+    }) + tagInstructions;
 
   const { text: raw, providerId, functionCalls } = await generateTutorResponse(
     systemPrompt,

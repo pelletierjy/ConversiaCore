@@ -1,12 +1,5 @@
-import { OFF_TOPIC_KEYWORDS } from '../models/constants';
-import { t } from '../i18n/translations';
-
-/** Lightweight client-side pre-check for obviously off-topic messages. */
-export function isLikelyOffTopic(message: string): boolean {
+/** Lightweight client-side pre-check for obviously off-topic messages, against a host-supplied keyword list. */
+export function isLikelyOffTopic(message: string, keywords: string[]): boolean {
   const lower = message.toLowerCase();
-  return OFF_TOPIC_KEYWORDS.some((keyword) => lower.includes(keyword));
-}
-
-export function buildRedirectMessage(subject: string): string {
-  return t('guardrails.redirectMessage', { subject });
+  return keywords.some((keyword) => lower.includes(keyword));
 }

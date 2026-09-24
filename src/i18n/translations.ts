@@ -31,9 +31,6 @@ interface TranslationDict {
     modelLabel: string;
     welcomeMessage: string;
   };
-  guardrails: {
-    redirectMessage: string;
-  };
   admin: {
     firebaseNotConfiguredTitle: string;
     firebaseNotConfiguredDescription: string;
@@ -55,6 +52,24 @@ interface TranslationDict {
     saveOrderButton: string;
     orderSavedToast: string;
     orderSaveFailedError: string;
+    hostAppsNavLabel: string;
+    hostAppsTitle: string;
+    hostAppsDescription: string;
+    hostAppsLoadingStatus: string;
+    hostAppsLoadFailedError: string;
+    hostAppsNoSelectionStatus: string;
+    hostAppsNewContextKeyLabel: string;
+    hostAppsNewContextKeyPlaceholder: string;
+    hostAppsNewButton: string;
+    hostAppsSystemPromptLabel: string;
+    hostAppsOffTopicKeywordsLabel: string;
+    hostAppsOffTopicKeywordsPlaceholder: string;
+    hostAppsRedirectMessageLabel: string;
+    hostAppsSaveButton: string;
+    hostAppsSavingStatus: string;
+    hostAppsSavedToast: string;
+    hostAppsSaveFailedError: string;
+    hostAppsSaveFailedToast: string;
   };
   login: {
     setupTitle: string;
@@ -136,10 +151,6 @@ const en: TranslationDict = {
     modelLabel: 'Model',
     welcomeMessage: "Hi! I'm your {subject} tutor. Ask me a question, or ask for a practice problem whenever you're ready.",
   },
-  guardrails: {
-    redirectMessage:
-      "Let's stay focused on your {subject} homework — that question is outside what I can help with here. Want another practice problem?",
-  },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase is not configured',
     firebaseNotConfiguredDescription: 'The shared knowledge base requires a Firebase project.',
@@ -162,6 +173,25 @@ const en: TranslationDict = {
     saveOrderButton: 'Save Order',
     orderSavedToast: 'Provider order saved.',
     orderSaveFailedError: 'Failed to save provider order.',
+    hostAppsNavLabel: 'Host Apps',
+    hostAppsTitle: 'Host Apps',
+    hostAppsDescription:
+      'Each embedding host app can supply its own tutor system prompt and off-topic guardrails, matched by the `context` attribute it passes. Hosts without a configuration here fall back to a built-in "please embed and configure me" prompt.',
+    hostAppsLoadingStatus: 'Loading...',
+    hostAppsLoadFailedError: 'Unable to load host app configurations.',
+    hostAppsNoSelectionStatus: 'Select a host app on the left, or add a new one.',
+    hostAppsNewContextKeyLabel: 'New host context key',
+    hostAppsNewContextKeyPlaceholder: 'e.g. ScalesViewer',
+    hostAppsNewButton: 'Add',
+    hostAppsSystemPromptLabel: 'System Prompt',
+    hostAppsOffTopicKeywordsLabel: 'Off-topic Keywords',
+    hostAppsOffTopicKeywordsPlaceholder: 'One keyword or phrase per line',
+    hostAppsRedirectMessageLabel: 'Off-topic Redirect Message',
+    hostAppsSaveButton: 'Save',
+    hostAppsSavingStatus: 'Saving...',
+    hostAppsSavedToast: 'Host app configuration saved.',
+    hostAppsSaveFailedError: 'Failed to save host app configuration.',
+    hostAppsSaveFailedToast: 'Failed to save host app configuration.',
   },
   login: {
     setupTitle: 'Set Admin PIN',
@@ -243,10 +273,6 @@ const fr: TranslationDict = {
     modelLabel: 'Modèle',
     welcomeMessage: 'Bonjour ! Je suis ton tuteur de {subject}. Pose-moi une question, ou demande un exercice quand tu seras prêt.',
   },
-  guardrails: {
-    redirectMessage:
-      'Restons concentrés sur vos devoirs de {subject} — cette question sort du cadre de ce que je peux vous aider ici. Voulez-vous un autre exercice ?',
-  },
   admin: {
     firebaseNotConfiguredTitle: "Firebase n'est pas configuré",
     firebaseNotConfiguredDescription: 'La base de connaissances partagée nécessite un projet Firebase.',
@@ -269,6 +295,25 @@ const fr: TranslationDict = {
     saveOrderButton: "Enregistrer l'ordre",
     orderSavedToast: "Ordre des fournisseurs enregistré.",
     orderSaveFailedError: "Échec de l'enregistrement de l'ordre des fournisseurs.",
+    hostAppsNavLabel: 'Applications hôtes',
+    hostAppsTitle: 'Applications hôtes',
+    hostAppsDescription:
+      "Chaque application hôte intégrant l'outil peut fournir son propre prompt système et ses propres garde-fous hors-sujet, associés à l'attribut `context` qu'elle transmet. Les hôtes sans configuration ici utilisent un prompt par défaut demandant d'intégrer et de configurer l'outil.",
+    hostAppsLoadingStatus: 'Chargement...',
+    hostAppsLoadFailedError: 'Impossible de charger les configurations des applications hôtes.',
+    hostAppsNoSelectionStatus: 'Sélectionnez une application hôte à gauche, ou ajoutez-en une nouvelle.',
+    hostAppsNewContextKeyLabel: "Clé de contexte du nouvel hôte",
+    hostAppsNewContextKeyPlaceholder: 'ex. ScalesViewer',
+    hostAppsNewButton: 'Ajouter',
+    hostAppsSystemPromptLabel: 'Prompt système',
+    hostAppsOffTopicKeywordsLabel: 'Mots-clés hors-sujet',
+    hostAppsOffTopicKeywordsPlaceholder: 'Un mot-clé ou une expression par ligne',
+    hostAppsRedirectMessageLabel: 'Message de redirection hors-sujet',
+    hostAppsSaveButton: 'Enregistrer',
+    hostAppsSavingStatus: 'Enregistrement en cours...',
+    hostAppsSavedToast: "Configuration de l'application hôte enregistrée.",
+    hostAppsSaveFailedError: "Échec de l'enregistrement de la configuration de l'application hôte.",
+    hostAppsSaveFailedToast: "Échec de l'enregistrement de la configuration de l'application hôte.",
   },
   login: {
     setupTitle: 'Définir le NIP administrateur',
@@ -350,10 +395,6 @@ const es: TranslationDict = {
     modelLabel: 'Modelo',
     welcomeMessage: '¡Hola! Soy tu tutor de {subject}. Hazme una pregunta o pide un ejercicio de práctica cuando estés listo.',
   },
-  guardrails: {
-    redirectMessage:
-      'Mantengámonos enfocados en tu tarea de {subject}; esa pregunta está fuera de lo que puedo ayudarte aquí. ¿Quieres otro problema de práctica?',
-  },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase no está configurado',
     firebaseNotConfiguredDescription: 'La base de conocimientos compartida requiere un proyecto de Firebase.',
@@ -376,6 +417,25 @@ const es: TranslationDict = {
     saveOrderButton: 'Guardar orden',
     orderSavedToast: 'Orden de proveedores guardado.',
     orderSaveFailedError: 'No se pudo guardar el orden de proveedores.',
+    hostAppsNavLabel: 'Apps anfitrionas',
+    hostAppsTitle: 'Apps anfitrionas',
+    hostAppsDescription:
+      'Cada app anfitriona que integra la herramienta puede proporcionar su propio prompt del sistema y sus propias barreras de protección para temas fuera de contexto, según el atributo `context` que envía. Los hosts sin configuración aquí usan un prompt predeterminado que pide integrar y configurar la herramienta.',
+    hostAppsLoadingStatus: 'Cargando...',
+    hostAppsLoadFailedError: 'No se pudieron cargar las configuraciones de las apps anfitrionas.',
+    hostAppsNoSelectionStatus: 'Selecciona una app anfitriona a la izquierda, o agrega una nueva.',
+    hostAppsNewContextKeyLabel: 'Clave de contexto del nuevo host',
+    hostAppsNewContextKeyPlaceholder: 'ej. ScalesViewer',
+    hostAppsNewButton: 'Agregar',
+    hostAppsSystemPromptLabel: 'Prompt del sistema',
+    hostAppsOffTopicKeywordsLabel: 'Palabras clave fuera de tema',
+    hostAppsOffTopicKeywordsPlaceholder: 'Una palabra clave o frase por línea',
+    hostAppsRedirectMessageLabel: 'Mensaje de redirección fuera de tema',
+    hostAppsSaveButton: 'Guardar',
+    hostAppsSavingStatus: 'Guardando...',
+    hostAppsSavedToast: 'Configuración de la app anfitriona guardada.',
+    hostAppsSaveFailedError: 'No se pudo guardar la configuración de la app anfitriona.',
+    hostAppsSaveFailedToast: 'No se pudo guardar la configuración de la app anfitriona.',
   },
   login: {
     setupTitle: 'Establecer PIN de administrador',

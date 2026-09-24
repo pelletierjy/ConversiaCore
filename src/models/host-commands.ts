@@ -1,7 +1,7 @@
 import { SchemaType, type FunctionCall, type FunctionDeclaration } from '@google/generative-ai';
 
 /** Wire contract for the tutor widget telling a host page to change its own state.
- *  Dispatched as a `need-homework:command` CustomEvent from the widget's shadow tree
+ *  Dispatched as a `conversia-app:command` CustomEvent from the widget's shadow tree
  *  (bubbles + composed, so it crosses the shadow boundary to the host's listener). */
 export const HOST_COMMAND_PROTOCOL_VERSION = 1;
 

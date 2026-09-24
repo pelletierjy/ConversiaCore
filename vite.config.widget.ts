@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 
-// Builds `dist/need-homework-widget.js`: the <need-homework-app> custom element as a
+// Builds `dist/conversia-core-widget.js`: the <conversia-app> custom element as a
 // single, self-registering ES module, for embedding in host apps (e.g. ScalesViewer).
 // Run after the regular `vite build` (see package.json) so it doesn't wipe that output.
 export default defineConfig({
@@ -11,7 +11,7 @@ export default defineConfig({
     lib: {
       entry: resolve(process.cwd(), 'src/webcomponent.ts'),
       formats: ['es'],
-      fileName: () => 'need-homework-widget.js',
+      fileName: () => 'conversia-core-widget.js',
     },
     rollupOptions: {
       output: {
