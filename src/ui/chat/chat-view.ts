@@ -104,6 +104,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
           : `${t('chat.modelLabel')}: ${result.providerId}`;
       }
     } catch (error) {
+      console.error('sendStudentMessage failed:', error);
       statusEl.textContent = describeError(error);
     } finally {
       setInputBarDisabled(inputBarEl, false);

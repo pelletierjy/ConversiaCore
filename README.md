@@ -23,7 +23,7 @@ Each host application identifies itself with a `context` attribute, which drives
 Drop the built widget into any web page:
 
 ```html
-<script type="module" src="https://pelletierjy.github.io/conversia-core/conversia-core-widget.js"></script>
+<script type="module" src="https://pelletierjy.github.io/ConversiaCore/conversia-core-widget.js"></script>
 <conversia-app context="ScalesViewer" subject="Music" grade-level="20"></conversia-app>
 ```
 
@@ -85,7 +85,7 @@ npm run build
 
 Outputs static assets to `dist/`:
 
-- `dist/conversia-core/` — standalone SPA index + assets (hosted on GitHub Pages)
+- `dist/` — standalone SPA index + assets (hosted on GitHub Pages at `/ConversiaCore/`)
 - `dist/conversia-core-widget.js` — self-registering ES module for embedding in host apps (built after the main `vite build` so it doesn't wipe that output; see `vite.config.widget.ts`)
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds (injecting `GEMINI_API_KEY`, `GROQ_API_KEY`, `OPENROUTER_API_KEY`, and `VITE_FIREBASE_*` repository secrets) and publishes to GitHub Pages. Add those secrets under **Settings → Secrets and variables → Actions** before the first deploy.
