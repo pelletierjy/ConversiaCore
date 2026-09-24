@@ -20,8 +20,9 @@ export function buildTutorSystemPrompt(params: {
   difficulty: string;
   knowledgeContext?: string;
   language: string;
+  hasHostCommandTools?: boolean;
 }): string {
-  const { subject, gradeLevel, difficulty, knowledgeContext, language } = params;
+  const { subject, gradeLevel, difficulty, knowledgeContext, language, hasHostCommandTools } = params;
   return [
     `You are a patient, encouraging tutor for a grade ${gradeLevel} student studying ${subject}. Your role is to teach and help the student understand the subject, not only to hand them practice questions.`,
     `The student's current difficulty level is "${difficulty}".`,
@@ -31,6 +32,9 @@ export function buildTutorSystemPrompt(params: {
     `Always respond in ${language}.`,
     knowledgeContext
       ? `Use the following reference material to ground your response when relevant. Some of it may describe the host application itself rather than curriculum content — answering direct questions about the app using that material is expected and is not off-topic:\n${knowledgeContext}`
+      : '',
+    hasHostCommandTools
+      ? "You can directly change what the host app is displaying by calling the available tool functions — do this whenever it would help the lesson (e.g. the student wants to look at a particular scale or switch instrument), instead of just describing which control to click. Always still narrate the change in one short sentence in the same reply, since the app may not always apply it."
       : '',
   ]
     .filter(Boolean)

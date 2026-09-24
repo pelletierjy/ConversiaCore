@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI, TaskType } from '@google/generative-ai';
+import { GoogleGenerativeAI, TaskType, type FunctionCall, type FunctionDeclaration } from '@google/generative-ai';
 import { ChatGroq } from '@langchain/groq';
 import { ChatOpenRouter } from '@langchain/openrouter';
 import { AIMessage, HumanMessage, SystemMessage, type BaseMessage } from '@langchain/core/messages';
@@ -20,6 +20,9 @@ interface ChatRequestBody {
   model: string;
   temperature: number;
   maxOutputTokens: number;
+  /** Gemini-style function declarations the model may call. Ignored by the Groq handler;
+   *  the OpenRouter handler converts them to OpenAI-style tool defs before binding. */
+  tools?: FunctionDeclaration[];
 }
 
 interface EmbedRequestBody {
@@ -78,7 +81,20 @@ function toLangchainMessages(systemPrompt: string, history: ChatTurn[]): BaseMes
   ];
 }
 
-async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string }> {
+/** Gemini's FunctionDeclaration.parameters is already OpenAPI/JSON-Schema-shaped (SchemaType's
+ *  values are the lowercase JSON Schema type strings), so this is a wrapping, not a translation. */
+function toOpenAiTools(tools: FunctionDeclaration[]): Record<string, unknown>[] {
+  return tools.map((tool) => ({
+    type: 'function',
+    function: {
+      name: tool.name,
+      description: tool.description,
+      parameters: tool.parameters ?? { type: 'object', properties: {} },
+    },
+  }));
+}
+
+async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
   const model = new GoogleGenerativeAI(apiKey).getGenerativeModel({
     model: body.model,
     systemInstruction: body.systemPrompt,
@@ -86,6 +102,7 @@ async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<
       temperature: body.temperature,
       maxOutputTokens: body.maxOutputTokens,
     },
+    tools: body.tools?.length ? [{ functionDeclarations: body.tools }] : undefined,
   });
   const contents = body.history.map((turn) => ({
     role: turn.role === 'student' ? 'user' : 'model',
@@ -97,7 +114,7 @@ async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<
     contents.push({ role: 'user', parts: [{ text: '' }] });
   }
   const result = await model.generateContent({ contents });
-  return { text: result.response.text() };
+  return { text: result.response.text(), functionCalls: result.response.functionCalls() };
 }
 
 async function handleGeminiEmbed(body: EmbedRequestBody, apiKey: string): Promise<{ vector: number[]; model: string }> {
@@ -120,14 +137,23 @@ async function handleGroqChat(body: ChatRequestBody, apiKey: string): Promise<{ 
   return { text: typeof result.content === 'string' ? result.content : String(result.content) };
 }
 
-async function handleOpenRouterChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string }> {
+async function handleOpenRouterChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
   const client = new ChatOpenRouter(body.model, {
     apiKey,
     temperature: body.temperature,
     maxTokens: body.maxOutputTokens,
   });
-  const result = await client.invoke(toLangchainMessages(body.systemPrompt, body.history));
-  return { text: typeof result.content === 'string' ? result.content : String(result.content) };
+  // "openrouter/free" auto-routes across whichever free model serves the request, and not
+  // every free model supports tool-calling — binding tools it doesn't support degrades to a
+  // prose-only reply rather than an error, same fallback behavior as an unconfigured provider.
+  const runnable = body.tools?.length ? client.bindTools(toOpenAiTools(body.tools)) : client;
+  const result = await runnable.invoke(toLangchainMessages(body.systemPrompt, body.history));
+  return {
+    text: typeof result.content === 'string' ? result.content : String(result.content),
+    functionCalls: result.tool_calls?.length
+      ? result.tool_calls.map((call) => ({ name: call.name, args: call.args }))
+      : undefined,
+  };
 }
 
 export default {

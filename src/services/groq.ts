@@ -1,4 +1,4 @@
-import { AiProviderError, type AiProvider, type ChatTurn } from './ai-provider';
+import { AiProviderError, type AiProvider, type ChatTurn, type TutorGenerationResult } from './ai-provider';
 import { GROQ_GENERATION_MODEL, GROQ_MAX_OUTPUT_TOKENS, GROQ_TEMPERATURE, isGroqConfigured } from '../config';
 import { postToWorker } from './worker-client';
 
@@ -49,8 +49,9 @@ async function callGroq<T>(fn: () => Promise<T>): Promise<T> {
   }
 }
 
-/** Generates a tutor response given a system prompt and prior conversation turns. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
+/** Generates a tutor response given a system prompt and prior conversation turns. Groq has no
+ *  tool-calling support wired up here yet, so any `tools` param is accepted but ignored. */
+export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<TutorGenerationResult> {
   return callGroq(async () => {
     const { text } = await postToWorker<{ text: string }>('/groq/chat', {
       systemPrompt,
@@ -59,7 +60,7 @@ export async function generateTutorResponse(systemPrompt: string, history: ChatT
       temperature: GROQ_TEMPERATURE,
       maxOutputTokens: GROQ_MAX_OUTPUT_TOKENS,
     });
-    return text;
+    return { text };
   });
 }
 

@@ -5,7 +5,8 @@ import {
   GEMINI_TEMPERATURE,
   isGeminiConfigured,
 } from '../config';
-import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
+import type { FunctionCall, FunctionDeclaration } from '@google/generative-ai';
+import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult, type TutorGenerationResult } from './ai-provider';
 import { postToWorker } from './worker-client';
 
 export const GEMINI_PROVIDER_ID = 'gemini';
@@ -56,16 +57,21 @@ async function callGemini<T>(fn: () => Promise<T>): Promise<T> {
 }
 
 /** Generates a tutor response given a system prompt and prior conversation turns. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<string> {
+export async function generateTutorResponse(
+  systemPrompt: string,
+  history: ChatTurn[],
+  tools?: FunctionDeclaration[],
+): Promise<TutorGenerationResult> {
   return callGemini(async () => {
-    const { text } = await postToWorker<{ text: string }>('/gemini/chat', {
+    const { text, functionCalls } = await postToWorker<{ text: string; functionCalls?: FunctionCall[] }>('/gemini/chat', {
       systemPrompt,
       history,
       model: GEMINI_GENERATION_MODEL,
       temperature: GEMINI_TEMPERATURE,
       maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS,
+      tools,
     });
-    return text;
+    return { text, functionCalls };
   });
 }
 
@@ -78,6 +84,7 @@ export async function embedText(text: string, taskType: 'document' | 'query'): P
 
 export const geminiProvider: AiProvider = {
   id: GEMINI_PROVIDER_ID,
+  supportsTools: true,
   isConfigured: isGeminiConfigured,
   generateTutorResponse,
   embedText,
