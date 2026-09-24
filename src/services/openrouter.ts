@@ -1,3 +1,4 @@
+import type { FunctionDeclaration } from '@google/generative-ai';
 import { AiProviderError, type AiProvider, type ChatTurn, type TutorGenerationResult } from './ai-provider';
 import {
   OPENROUTER_GENERATION_MODEL,
@@ -57,23 +58,31 @@ async function callOpenRouter<T>(fn: () => Promise<T>): Promise<T> {
   }
 }
 
-/** Generates a tutor response given a system prompt and prior conversation turns. OpenRouter has
- *  no tool-calling support wired up here yet, so any `tools` param is accepted but ignored. */
-export async function generateTutorResponse(systemPrompt: string, history: ChatTurn[]): Promise<TutorGenerationResult> {
+/** Generates a tutor response given a system prompt and prior conversation turns. `tools` is
+ *  forwarded to the worker, which binds them via LangChain before invoking OpenRouter — but
+ *  "openrouter/free" auto-routes across free models, and not all of them support tool-calling,
+ *  so a turn may still come back with no function calls even when tools were offered. */
+export async function generateTutorResponse(
+  systemPrompt: string,
+  history: ChatTurn[],
+  tools?: FunctionDeclaration[],
+): Promise<TutorGenerationResult> {
   return callOpenRouter(async () => {
-    const { text } = await postToWorker<{ text: string }>('/openrouter/chat', {
+    const { text, functionCalls } = await postToWorker<TutorGenerationResult>('/openrouter/chat', {
       systemPrompt,
       history,
       model: OPENROUTER_GENERATION_MODEL,
       temperature: OPENROUTER_TEMPERATURE,
       maxOutputTokens: OPENROUTER_MAX_OUTPUT_TOKENS,
+      tools,
     });
-    return { text };
+    return { text, functionCalls };
   });
 }
 
 export const openRouterProvider: AiProvider = {
   id: OPENROUTER_PROVIDER_ID,
+  supportsTools: true,
   isConfigured: isOpenRouterConfigured,
   generateTutorResponse,
   // No embedText: OpenRouter's free-tier models here are chat-only, like Groq's.
