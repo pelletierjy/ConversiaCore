@@ -134,7 +134,7 @@ const en: TranslationDict = {
       'This feature runs on a free, rate-limited AI provider, so it may be temporarily throttled at busy times. This will be improved in the future.',
     providerLabel: 'Provider',
     modelLabel: 'Model',
-    welcomeMessage: "Hi! I'm your {subject} tutor for grade {gradeLevel}. Ask me a question, or ask for a practice problem whenever you're ready.",
+    welcomeMessage: "Hi! I'm your {subject} tutor. Ask me a question, or ask for a practice problem whenever you're ready.",
   },
   guardrails: {
     redirectMessage:
@@ -241,7 +241,7 @@ const fr: TranslationDict = {
       "Cette fonctionnalité repose sur un fournisseur d'IA gratuit à capacité limitée ; elle peut donc être temporairement ralentie aux heures d'affluence. Ce sera amélioré à l'avenir.",
     providerLabel: 'Fournisseur',
     modelLabel: 'Modèle',
-    welcomeMessage: 'Bonjour ! Je suis ton tuteur de {subject} pour la {gradeLevel}e année. Pose-moi une question, ou demande un exercice quand tu seras prêt.',
+    welcomeMessage: 'Bonjour ! Je suis ton tuteur de {subject}. Pose-moi une question, ou demande un exercice quand tu seras prêt.',
   },
   guardrails: {
     redirectMessage:
@@ -348,7 +348,7 @@ const es: TranslationDict = {
       'Esta función utiliza un proveedor de IA gratuito y de capacidad limitada, por lo que puede verse temporalmente restringida en horas de mucho uso. Esto se mejorará en el futuro.',
     providerLabel: 'Proveedor',
     modelLabel: 'Modelo',
-    welcomeMessage: '¡Hola! Soy tu tutor de {subject} para el grado {gradeLevel}. Hazme una pregunta o pide un ejercicio de práctica cuando estés listo.',
+    welcomeMessage: '¡Hola! Soy tu tutor de {subject}. Hazme una pregunta o pide un ejercicio de práctica cuando estés listo.',
   },
   guardrails: {
     redirectMessage:

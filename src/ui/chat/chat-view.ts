@@ -32,7 +32,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       id: crypto.randomUUID(),
       sessionId: session.id,
       role: 'assistant',
-      content: t('chat.welcomeMessage', { subject: session.subject, gradeLevel: String(session.gradeLevel) }),
+      content: t('chat.welcomeMessage', { subject: session.subject }),
       timestamp: Date.now(),
     };
     messages = [welcomeMessage];
