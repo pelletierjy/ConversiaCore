@@ -34,7 +34,7 @@ export function buildTutorSystemPrompt(params: {
   hasHostCommandTools?: boolean;
   hostSystemPrompt?: string;
 }): string {
-  const { difficulty, knowledgeContext, language, hasHostCommandTools, hostSystemPrompt } = params;
+  const { subject, gradeLevel, difficulty, knowledgeContext, language, hasHostCommandTools, hostSystemPrompt } = params;
 
   if (!hostSystemPrompt) {
     return [STANDALONE_EMBED_ONLY_PROMPT, `Always respond in ${language}.`].join('\n');
@@ -42,6 +42,7 @@ export function buildTutorSystemPrompt(params: {
 
   return [
     hostSystemPrompt,
+    `You are currently helping a grade ${gradeLevel} student with ${subject}.`,
     `The student's current difficulty level is "${difficulty}".`,
     'Freely explain concepts, answer questions, and work through examples with the student whenever that is what they need. When they ask for homework or practice, generate one grade-appropriate question at the current difficulty; when they answer it, evaluate correctness, explain why, and offer a hint or the solution if they are stuck.',
     'Keep responses concise and encouraging.',
