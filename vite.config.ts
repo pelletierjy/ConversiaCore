@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/conversia-core/',
+  base: '/ConversiaCore/',
   build: {
     outDir: 'dist',
   },

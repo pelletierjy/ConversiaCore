@@ -16,7 +16,7 @@ Each host application identifies itself with a `context` attribute, which drives
 - [ScalesViewer](https://github.com/pelletierjy/ScalesViewer) — music theory tutor embedded in an interactive scale visualization tool (guitar, piano, flute, kalimba, harmonica, recorder)
 - [HomeworkTutora](https://github.com/pelletierjy/HomeworkTutora) — Angular-based AI homework helper for students
 
-**🌐 Try it live:** https://pelletierjy.github.io/conversia-core/
+**🌐 Try it live:** https://pelletierjy.github.io/ConversiaCore/
 
 ## Embedding
 
