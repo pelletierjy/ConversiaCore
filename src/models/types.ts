@@ -90,6 +90,17 @@ export interface AppConfig {
   aiProviderPriority?: string[];
 }
 
+export interface HostGuardrailConfig {
+  offTopicKeywords: string[];
+  redirectMessage: string;
+}
+
+/** Per-host tutor configuration, stored at `appConfig/{contextKey}` and keyed by the host app's `context` value. */
+export interface HostAppConfig {
+  systemPrompt?: string;
+  guardrails?: HostGuardrailConfig;
+}
+
 export interface RetrievedEntry {
   entry: KnowledgeEntry;
   score: number;

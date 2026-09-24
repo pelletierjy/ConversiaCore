@@ -7,7 +7,7 @@ import type { StudentSession } from './models/types';
 const OBSERVED_ATTRIBUTES = ['theme', 'lang', 'subject', 'grade-level', 'context'] as const;
 
 /**
- * `<need-homework-app>` — the AI homework chatbot as a self-contained custom element.
+ * `<conversia-app>` — the AI homework chatbot as a self-contained custom element.
  *
  * Attributes:
  *  - `theme`: "light" | "dark" (updates live, no re-render).
@@ -17,7 +17,7 @@ const OBSERVED_ATTRIBUTES = ['theme', 'lang', 'subject', 'grade-level', 'context
  *  - `context`: the host app's execution-context key (e.g. "ScalesViewer"), independent of subject/grade.
  *    Changing it restarts the flow with a new session.
  */
-class NeedHomeworkApp extends HTMLElement {
+class ConversiaApp extends HTMLElement {
   static get observedAttributes(): readonly string[] {
     return OBSERVED_ATTRIBUTES;
   }
@@ -93,6 +93,6 @@ class NeedHomeworkApp extends HTMLElement {
   }
 }
 
-if (!customElements.get('need-homework-app')) {
-  customElements.define('need-homework-app', NeedHomeworkApp);
+if (!customElements.get('conversia-app')) {
+  customElements.define('conversia-app', ConversiaApp);
 }

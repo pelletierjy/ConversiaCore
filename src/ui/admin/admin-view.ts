@@ -6,6 +6,7 @@ import { renderLoginForm } from './login-form';
 import { renderEntryList } from './entry-list';
 import { renderEntryEditor } from './entry-editor';
 import { renderAiProvidersPanel } from './ai-providers-panel';
+import { renderHostAppsPanel } from './host-apps-panel';
 import { t } from '../../i18n/translations';
 import type { AppConfig } from '../../models/types';
 
@@ -64,13 +65,14 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
   });
 }
 
-type AdminTab = 'knowledge' | 'settings';
+type AdminTab = 'knowledge' | 'settings' | 'hostApps';
 
 async function renderAdminHome(container: HTMLElement, config: AppConfig): Promise<void> {
   container.innerHTML = `
     <div class="admin-home">
       <nav class="admin-nav">
         <button type="button" class="admin-nav-btn" data-tab="knowledge">${t('admin.knowledgeBaseNavLabel')}</button>
+        <button type="button" class="admin-nav-btn" data-tab="hostApps">${t('admin.hostAppsNavLabel')}</button>
         <button type="button" class="admin-nav-btn" data-tab="settings">${t('admin.settingsNavLabel')}</button>
       </nav>
       <div class="admin-page-container"></div>
@@ -83,6 +85,7 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
   function setActiveTab(tab: AdminTab): void {
     navButtons.forEach((btn) => btn.classList.toggle('active', btn.dataset.tab === tab));
     if (tab === 'knowledge') renderKnowledgeBasePage(pageContainer, config);
+    else if (tab === 'hostApps') renderHostAppsPage(pageContainer);
     else renderSettingsPage(pageContainer, config);
   }
 
@@ -136,4 +139,18 @@ function renderSettingsPage(container: HTMLElement, config: AppConfig): void {
 
   const aiProvidersContainer = container.querySelector('.ai-providers-container') as HTMLElement;
   renderAiProvidersPanel(aiProvidersContainer, config);
+}
+
+function renderHostAppsPage(container: HTMLElement): void {
+  container.innerHTML = `
+    <div class="admin-page">
+      <header class="admin-header">
+        <h2>${t('admin.hostAppsTitle')}</h2>
+      </header>
+      <div class="host-apps-container"></div>
+    </div>
+  `;
+
+  const hostAppsContainer = container.querySelector('.host-apps-container') as HTMLElement;
+  void renderHostAppsPanel(hostAppsContainer);
 }

@@ -14,6 +14,17 @@ export const GRADE_LEVELS = Array.from({ length: 20 }, (_, i) => i + 1);
 export const MIN_GRADE_LEVEL = 1;
 export const MAX_GRADE_LEVEL = 20;
 
+/** Sent to the AI when no host-provided system prompt is available (true standalone use, or an embedded host with no configured `appConfig/{context}` document yet). */
+export const STANDALONE_EMBED_ONLY_PROMPT =
+  'You are a demo assistant with no tutoring configuration in this context. ' +
+  'Do not attempt to answer or tutor on any topic, no matter what the user asks. ' +
+  'Explain that this tool (ConversiaCore) is designed to be embedded inside a host web app: ' +
+  'the host must load the `<conversia-app>` web component and pass a `context` attribute naming itself, ' +
+  "and an administrator must add a matching configuration document for that name under the \"Host Apps\" tab " +
+  "of this tool's /admin page (a Firestore appConfig/{context} document with a systemPrompt and guardrails). " +
+  'Always redirect the user to these instructions, whether or not it looks like the tool is already embedded — ' +
+  'from your side, "not embedded" and "embedded but not yet configured" look identical.';
+
 export function buildTutorSystemPrompt(params: {
   subject: string;
   gradeLevel: number;
@@ -21,12 +32,17 @@ export function buildTutorSystemPrompt(params: {
   knowledgeContext?: string;
   language: string;
   hasHostCommandTools?: boolean;
+  hostSystemPrompt?: string;
 }): string {
-  const { subject, gradeLevel, difficulty, knowledgeContext, language, hasHostCommandTools } = params;
+  const { difficulty, knowledgeContext, language, hasHostCommandTools, hostSystemPrompt } = params;
+
+  if (!hostSystemPrompt) {
+    return [STANDALONE_EMBED_ONLY_PROMPT, `Always respond in ${language}.`].join('\n');
+  }
+
   return [
-    `You are a patient, encouraging tutor for a grade ${gradeLevel} student studying ${subject}. Your role is to teach and help the student understand the subject, not only to hand them practice questions.`,
+    hostSystemPrompt,
     `The student's current difficulty level is "${difficulty}".`,
-    'Stay strictly focused on this subject, on teaching and homework help, and — when app-context reference material is provided below — on questions about the host application itself (its features, screens, or controls). If the student asks about anything else (games, movies, other off-topic chat), politely decline and redirect them back to learning.',
     'Freely explain concepts, answer questions, and work through examples with the student whenever that is what they need. When they ask for homework or practice, generate one grade-appropriate question at the current difficulty; when they answer it, evaluate correctness, explain why, and offer a hint or the solution if they are stuck.',
     'Keep responses concise and encouraging.',
     `Always respond in ${language}.`,
@@ -40,16 +56,3 @@ export function buildTutorSystemPrompt(params: {
     .filter(Boolean)
     .join('\n');
 }
-
-export const OFF_TOPIC_KEYWORDS = [
-  'video game',
-  'video games',
-  'movie',
-  'movies',
-  'celebrity',
-  'tiktok',
-  'instagram',
-  'youtube video',
-  'football score',
-  'song lyrics',
-];

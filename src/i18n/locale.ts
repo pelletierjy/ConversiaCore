@@ -25,7 +25,7 @@ export function getLocale(): Locale {
   return currentLocale;
 }
 
-/** Sets the active locale directly, without touching `document`. Used by the `<need-homework-app>` web component. */
+/** Sets the active locale directly, without touching `document`. Used by the `<conversia-app>` web component. */
 export function setLocale(locale: Locale): void {
   currentLocale = isSupportedLocale(locale) ? locale : 'en';
 }

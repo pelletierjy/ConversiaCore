@@ -9,10 +9,10 @@ import { HOST_COMMAND_PROTOCOL_VERSION, type HostCommand, type HostCommandEventD
 import type { ChatMessage, StudentSession } from '../../models/types';
 
 /** Dispatched from inside the widget's shadow tree; `composed: true` lets it cross the
- *  shadow boundary so a listener on the host page (outside `<need-homework-app>`) receives it. */
+ *  shadow boundary so a listener on the host page (outside `<conversia-app>`) receives it. */
 function dispatchHostCommands(container: HTMLElement, sessionId: string, commands: HostCommand[]): void {
   const detail: HostCommandEventDetail = { version: HOST_COMMAND_PROTOCOL_VERSION, sessionId, commands };
-  container.dispatchEvent(new CustomEvent('need-homework:command', { bubbles: true, composed: true, detail }));
+  container.dispatchEvent(new CustomEvent('conversia-app:command', { bubbles: true, composed: true, detail }));
 }
 
 export async function renderChatView(container: HTMLElement, session: StudentSession): Promise<void> {
