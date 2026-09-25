@@ -1,6 +1,7 @@
 import { createKnowledgeEntry, updateKnowledgeEntry } from '../../db/knowledge';
 import { saveEmbeddingVector } from '../../db/vectors';
 import { embedText } from '../../services/ai-orchestrator';
+import { MIN_GRADE_LEVEL, MAX_GRADE_LEVEL } from '../../models/constants';
 import { showToast } from '../shared/toast';
 import { t } from '../../i18n/translations';
 import type { Attachment, KnowledgeEntry } from '../../models/types';
@@ -11,11 +12,13 @@ export interface EntryEditorOptions {
   entry?: KnowledgeEntry;
   onSaved: () => void;
   subjects?: string[];
+  contextKeys?: string[];
 }
 
 export function renderEntryEditor(container: HTMLElement, options: EntryEditorOptions): void {
   const entry = options.entry;
   const subjects = options.subjects ?? [];
+  const contextKeys = options.contextKeys ?? [];
 
   const isContextEntry = entry?.entryType === 'context';
 
@@ -39,13 +42,16 @@ export function renderEntryEditor(container: HTMLElement, options: EntryEditorOp
           <input type="checkbox" name="allGrades" ${entry?.gradeLevel == null ? 'checked' : ''} />
         </label>
         <label>${t('entryEditor.gradeLevelLabel')}
-          <input type="number" name="gradeLevel" min="1" max="20" value="${entry?.gradeLevel ?? ''}"
+          <input type="number" name="gradeLevel" min="${MIN_GRADE_LEVEL}" max="${MAX_GRADE_LEVEL}" value="${entry?.gradeLevel ?? ''}"
             ${entry?.gradeLevel == null ? 'disabled' : ''} />
         </label>
       </div>
       <div class="entry-editor-context-fields" ${isContextEntry ? '' : 'hidden'}>
         <label>${t('entryEditor.contextKeyLabel')}
-          <input type="text" name="contextKey" value="${entry?.contextKey ?? ''}" ${isContextEntry ? 'required' : ''} />
+          <input list="context-key-options" type="text" name="contextKey" value="${entry?.contextKey ?? ''}" ${isContextEntry ? 'required' : ''} />
+          <datalist id="context-key-options">
+            ${contextKeys.map((k) => `<option value="${k}"></option>`).join('')}
+          </datalist>
         </label>
         <label>${t('entryEditor.isMainArticleLabel')}
           <input type="checkbox" name="isMainArticle" ${entry?.isMainArticle ? 'checked' : ''} />

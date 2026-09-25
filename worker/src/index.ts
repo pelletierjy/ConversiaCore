@@ -31,12 +31,11 @@ interface EmbedRequestBody {
   model: string;
 }
 
-const ALLOWED_ORIGINS_EXACT = new Set(['https://pelletierjy.github.io', 'https://scales-viewer.vercel.app']);
+const ALLOWED_ORIGINS_EXACT = new Set(['https://pelletierjy.github.io', 'https://scales-viewer.vercel.app', 'https://homework-tutora.vercel.app']);
 
 function isAllowedOrigin(origin: string | null): boolean {
   if (!origin) return false;
   if (ALLOWED_ORIGINS_EXACT.has(origin)) return true;
-  if (origin.endsWith('.vercel.app')) return true;
   if (origin.startsWith('http://localhost:')) return true;
   return false;
 }
