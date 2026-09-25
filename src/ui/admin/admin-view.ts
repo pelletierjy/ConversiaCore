@@ -1,5 +1,5 @@
-import { getDoc, setDoc } from 'firebase/firestore';
-import { appConfigDoc } from '../../db/firebase';
+import { getDoc, getDocs, setDoc } from 'firebase/firestore';
+import { appConfigDoc, appConfigCollection } from '../../db/firebase';
 import { isFirebaseConfigured } from '../../config';
 import { PREDEFINED_SUBJECTS } from '../../models/constants';
 import { renderLoginForm } from './login-form';
@@ -27,7 +27,7 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
     return;
   }
 
-  root.innerHTML = '<div class="admin-shell"></div>';
+  root.innerHTML = '<div class="admin-shell admin-full-width"></div>';
   const shell = root.querySelector('.admin-shell') as HTMLElement;
 
   let config: AppConfig;
@@ -84,9 +84,9 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
 
   function setActiveTab(tab: AdminTab): void {
     navButtons.forEach((btn) => btn.classList.toggle('active', btn.dataset.tab === tab));
-    if (tab === 'knowledge') renderKnowledgeBasePage(pageContainer, config);
-    else if (tab === 'hostApps') renderHostAppsPage(pageContainer);
-    else renderSettingsPage(pageContainer, config);
+    void (tab === 'knowledge' ? renderKnowledgeBasePage(pageContainer, config)
+      : tab === 'hostApps' ? renderHostAppsPage(pageContainer)
+      : renderSettingsPage(pageContainer, config));
   }
 
   navButtons.forEach((btn) =>
@@ -96,11 +96,20 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
   setActiveTab('knowledge');
 }
 
-function renderKnowledgeBasePage(container: HTMLElement, config: AppConfig): void {
+async function renderKnowledgeBasePage(container: HTMLElement, config: AppConfig): Promise<void> {
   const subjects = [...new Set([...config.predefinedSubjects, ...config.customSubjects])];
 
+  // Load available context keys from appConfig collection
+  let contextKeys: string[] = [];
+  try {
+    const snap = await getDocs(appConfigCollection());
+    contextKeys = snap.docs.map((d) => d.id).filter((id) => id !== 'global').sort();
+  } catch {
+    // Fallback to empty - dropdown filters will still work with collected values
+  }
+
   container.innerHTML = `
-    <div class="admin-page">
+    <div class="admin-page knowledge-page">
       <header class="admin-header">
         <h2>${t('admin.knowledgeBaseTitle')}</h2>
         <button type="button" class="add-entry-btn">${t('admin.addEntryButton')}</button>
@@ -116,12 +125,14 @@ function renderKnowledgeBasePage(container: HTMLElement, config: AppConfig): voi
 
   const refreshList = () =>
     renderEntryList(listContainer, {
-      onEdit: (entry) => renderEntryEditor(editorContainer, { entry, onSaved: refreshList, subjects }),
+      onEdit: (entry) => renderEntryEditor(editorContainer, { entry, onSaved: refreshList, subjects, contextKeys }),
       onDeleted: refreshList,
+      subjects,
+      contextKeys,
     });
 
   addBtn.addEventListener('click', () => {
-    renderEntryEditor(editorContainer, { onSaved: refreshList, subjects });
+    renderEntryEditor(editorContainer, { onSaved: refreshList, subjects, contextKeys });
   });
 
   void refreshList();

@@ -120,6 +120,28 @@ interface TranslationDict {
     contextBadge: string;
     mainArticleBadge: string;
     subArticleBadge: string;
+    searchLabel: string;
+    searchPlaceholder: string;
+    entryTypeFilterLabel: string;
+    allEntryTypesOption: string;
+    subjectOption: string;
+    contextOption: string;
+    subjectFilterLabel: string;
+    allSubjectsOption: string;
+    gradeFilterLabel: string;
+    allGradesOption: string;
+    contextKeyFilterLabel: string;
+    allContextKeysOption: string;
+    mainArticleFilterLabel: string;
+    allArticleTypesOption: string;
+    mainArticleOption: string;
+    subArticleOption: string;
+    resetFiltersButton: string;
+    tableTitleHeader: string;
+    tableEntryTypeHeader: string;
+    tableDetailHeader: string;
+    tableMetaHeader: string;
+    tableActionsHeader: string;
   };
 }
 
@@ -232,7 +254,7 @@ const en: TranslationDict = {
   entryList: {
     loading: 'Loading knowledge entries...',
     loadError: 'Unable to load knowledge entries.',
-    empty: 'No knowledge entries yet.',
+    empty: 'No knowledge entries match your filters.',
     editButton: 'Edit',
     deleteButton: 'Delete',
     deleteConfirm: 'Delete "{title}"?',
@@ -242,6 +264,28 @@ const en: TranslationDict = {
     contextBadge: 'Context: {key}',
     mainArticleBadge: 'Main article',
     subArticleBadge: 'Sub-article',
+    searchLabel: 'Search',
+    searchPlaceholder: 'Search by title or content...',
+    entryTypeFilterLabel: 'Entry Type',
+    allEntryTypesOption: 'All types',
+    subjectOption: 'Subject-based',
+    contextOption: 'App Context',
+    subjectFilterLabel: 'Subject',
+    allSubjectsOption: 'All subjects',
+    gradeFilterLabel: 'Grade Level',
+    allGradesOption: 'All grades',
+    contextKeyFilterLabel: 'Context Key',
+    allContextKeysOption: 'All context keys',
+    mainArticleFilterLabel: 'Article Type',
+    allArticleTypesOption: 'All articles',
+    mainArticleOption: 'Main articles only',
+    subArticleOption: 'Sub-articles only',
+    resetFiltersButton: 'Reset Filters',
+    tableTitleHeader: 'Title',
+    tableEntryTypeHeader: 'Type',
+    tableDetailHeader: 'Detail',
+    tableMetaHeader: 'Metadata',
+    tableActionsHeader: 'Actions',
   },
 };
 
@@ -354,7 +398,7 @@ const fr: TranslationDict = {
   entryList: {
     loading: 'Chargement des entrées de la base de connaissances...',
     loadError: 'Impossible de charger les entrées de la base de connaissances.',
-    empty: 'Aucune entrée dans la base de connaissances.',
+    empty: 'Aucune entrée ne correspond à vos filtres.',
     editButton: 'Modifier',
     deleteButton: 'Supprimer',
     deleteConfirm: 'Supprimer « {title} » ?',
@@ -364,6 +408,28 @@ const fr: TranslationDict = {
     contextBadge: 'Contexte : {key}',
     mainArticleBadge: 'Article principal',
     subArticleBadge: 'Article secondaire',
+    searchLabel: 'Rechercher',
+    searchPlaceholder: 'Rechercher par titre ou contenu...',
+    entryTypeFilterLabel: "Type d'entrée",
+    allEntryTypesOption: 'Tous les types',
+    subjectOption: 'Basé sur une matière',
+    contextOption: "Contexte d'application",
+    subjectFilterLabel: 'Matière',
+    allSubjectsOption: 'Toutes les matières',
+    gradeFilterLabel: 'Niveau scolaire',
+    allGradesOption: 'Tous les niveaux',
+    contextKeyFilterLabel: 'Clé de contexte',
+    allContextKeysOption: 'Toutes les clés de contexte',
+    mainArticleFilterLabel: 'Type d\'article',
+    allArticleTypesOption: 'Tous les articles',
+    mainArticleOption: 'Articles principaux uniquement',
+    subArticleOption: 'Articles secondaires uniquement',
+    resetFiltersButton: 'Réinitialiser les filtres',
+    tableTitleHeader: 'Titre',
+    tableEntryTypeHeader: 'Type',
+    tableDetailHeader: 'Détails',
+    tableMetaHeader: 'Métadonnées',
+    tableActionsHeader: 'Actions',
   },
 };
 
@@ -476,7 +542,7 @@ const es: TranslationDict = {
   entryList: {
     loading: 'Cargando entradas de la base de conocimientos...',
     loadError: 'No se pudieron cargar las entradas de la base de conocimientos.',
-    empty: 'Aún no hay entradas en la base de conocimientos.',
+    empty: 'No se encontraron entradas que coincidan con los filtros.',
     editButton: 'Editar',
     deleteButton: 'Eliminar',
     deleteConfirm: '¿Eliminar "{title}"?',
@@ -486,6 +552,28 @@ const es: TranslationDict = {
     contextBadge: 'Contexto: {key}',
     mainArticleBadge: 'Artículo principal',
     subArticleBadge: 'Artículo secundario',
+    searchLabel: 'Buscar',
+    searchPlaceholder: 'Buscar por título o contenido...',
+    entryTypeFilterLabel: 'Tipo de entrada',
+    allEntryTypesOption: 'Todos los tipos',
+    subjectOption: 'Basado en materia',
+    contextOption: 'Contexto de aplicación',
+    subjectFilterLabel: 'Materia',
+    allSubjectsOption: 'Todas las materias',
+    gradeFilterLabel: 'Nivel de grado',
+    allGradesOption: 'Todos los grados',
+    contextKeyFilterLabel: 'Clave de contexto',
+    allContextKeysOption: 'Todas las claves de contexto',
+    mainArticleFilterLabel: 'Tipo de artículo',
+    allArticleTypesOption: 'Todos los artículos',
+    mainArticleOption: 'Solo artículos principales',
+    subArticleOption: 'Solo artículos secundarios',
+    resetFiltersButton: 'Restablecer filtros',
+    tableTitleHeader: 'Título',
+    tableEntryTypeHeader: 'Tipo',
+    tableDetailHeader: 'Detalles',
+    tableMetaHeader: 'Metadatos',
+    tableActionsHeader: 'Acciones',
   },
 };
 
