@@ -7,6 +7,8 @@ interface Env {
   GEMINI_API_KEY?: string;
   GROQ_API_KEY?: string;
   OPENROUTER_API_KEY?: string;
+  DEEPSEEK_API_KEY?: string;
+  HUGGING_FACE_API_KEY?: string;
 }
 
 interface ChatTurn {
@@ -21,7 +23,7 @@ interface ChatRequestBody {
   temperature: number;
   maxOutputTokens: number;
   /** Gemini-style function declarations the model may call. Ignored by the Groq handler;
-   *  the OpenRouter handler converts them to OpenAI-style tool defs before binding. */
+   *  the OpenRouter and DeepSeek handlers convert them to OpenAI-style tool defs before binding. */
   tools?: FunctionDeclaration[];
 }
 
@@ -80,6 +82,18 @@ function toLangchainMessages(systemPrompt: string, history: ChatTurn[]): BaseMes
   ];
 }
 
+/** Converts chat turns to OpenAI-compatible message format. */
+function toOpenAiChatFormat(systemPrompt: string, history: ChatTurn[]): Array<{ role: string; content: string }> {
+  const messages: Array<{ role: string; content: string }> = [{ role: 'system', content: systemPrompt }];
+  for (const turn of history) {
+    messages.push({
+      role: turn.role === 'student' ? 'user' : 'assistant',
+      content: turn.content,
+    });
+  }
+  return messages;
+}
+
 /** Gemini's FunctionDeclaration.parameters is already OpenAPI/JSON-Schema-shaped (SchemaType's
  *  values are the lowercase JSON Schema type strings), so this is a wrapping, not a translation. */
 function toOpenAiTools(tools: FunctionDeclaration[]): Record<string, unknown>[] {
@@ -91,6 +105,15 @@ function toOpenAiTools(tools: FunctionDeclaration[]): Record<string, unknown>[] 
       parameters: tool.parameters ?? { type: 'object', properties: {} },
     },
   }));
+}
+
+/** Safely parse JSON, returning undefined on failure. */
+function safeJsonParse(text: string): Record<string, unknown> | undefined {
+  try {
+    return JSON.parse(text) as Record<string, unknown>;
+  } catch {
+    return undefined;
+  }
 }
 
 async function handleGeminiChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
@@ -136,6 +159,47 @@ async function handleGroqChat(body: ChatRequestBody, apiKey: string): Promise<{ 
   return { text: typeof result.content === 'string' ? result.content : String(result.content) };
 }
 
+/** DeepSeek API is fully OpenAI-compatible. We call the REST endpoint directly to avoid
+ *  bundling the OpenAI SDK, keeping the worker payload small. Tool-calling is supported
+ *  via OpenAI-format function definitions. */
+async function handleDeepSeekChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
+  const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: body.model,
+      messages: toOpenAiChatFormat(body.systemPrompt, body.history),
+      temperature: body.temperature,
+      max_tokens: body.maxOutputTokens,
+      tools: body.tools?.length ? toOpenAiTools(body.tools) : undefined,
+    }),
+  });
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => 'unknown');
+    throw new Error(`${response.status} ${errorText}`);
+  }
+  const data = await response.json<{
+    choices: Array<{
+      message: {
+        content?: string;
+        tool_calls?: Array<{
+          id: string;
+          type: 'function';
+          function: { name: string; arguments: string };
+        }>;
+      };
+    }>;
+  }>();
+  const choice = data.choices[0];
+  if (!choice) throw new Error('DeepSeek API returned no choices');
+  const text = choice.message.content || '';
+  const functionCalls = choice.message.tool_calls?.map((call) => ({
+    name: call.function.name,
+    args: safeJsonParse(call.function.arguments),
+  }));
+  return { text, functionCalls };
+}
+
 async function handleOpenRouterChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
   const client = new ChatOpenRouter(body.model, {
     apiKey,
@@ -153,6 +217,46 @@ async function handleOpenRouterChat(body: ChatRequestBody, apiKey: string): Prom
       ? result.tool_calls.map((call) => ({ name: call.name, args: call.args }))
       : undefined,
   };
+}
+
+/** Hugging Face Inference Providers API is OpenAI-compatible via router.huggingface.co/v1.
+ *  We call the REST endpoint directly (no SDK), keeping the worker payload small. */
+async function handleHuggingFaceChat(body: ChatRequestBody, apiKey: string): Promise<{ text: string; functionCalls?: FunctionCall[] }> {
+  const response = await fetch('https://router.huggingface.co/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: body.model,
+      messages: toOpenAiChatFormat(body.systemPrompt, body.history),
+      temperature: body.temperature,
+      max_tokens: body.maxOutputTokens,
+      tools: body.tools?.length ? toOpenAiTools(body.tools) : undefined,
+    }),
+  });
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => 'unknown');
+    throw new Error(`${response.status} ${errorText}`);
+  }
+  const data = await response.json<{
+    choices: Array<{
+      message: {
+        content?: string;
+        tool_calls?: Array<{
+          id: string;
+          type: 'function';
+          function: { name: string; arguments: string };
+        }>;
+      };
+    }>;
+  }>();
+  const choice = data.choices[0];
+  if (!choice) throw new Error('Hugging Face API returned no choices');
+  const text = choice.message.content || '';
+  const functionCalls = choice.message.tool_calls?.map((call) => ({
+    name: call.function.name,
+    args: safeJsonParse(call.function.arguments),
+  }));
+  return { text, functionCalls };
 }
 
 export default {
@@ -192,6 +296,16 @@ export default {
           if (!env.OPENROUTER_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
           const body = await request.json<ChatRequestBody>();
           return jsonResponse(await handleOpenRouterChat(body, env.OPENROUTER_API_KEY), 200, origin);
+        }
+        case '/deepseek/chat': {
+          if (!env.DEEPSEEK_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
+          const body = await request.json<ChatRequestBody>();
+          return jsonResponse(await handleDeepSeekChat(body, env.DEEPSEEK_API_KEY), 200, origin);
+        }
+        case '/huggingface/chat': {
+          if (!env.HUGGING_FACE_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
+          const body = await request.json<ChatRequestBody>();
+          return jsonResponse(await handleHuggingFaceChat(body, env.HUGGING_FACE_API_KEY), 200, origin);
         }
         default:
           return jsonResponse({ error: 'not_found' }, 404, origin);
