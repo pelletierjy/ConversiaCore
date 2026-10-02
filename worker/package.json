@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "secrets": "echo 'Run: wrangler secret put GEMINI_API_KEY / GROQ_API_KEY / OPENROUTER_API_KEY'"
+    "secrets": "echo 'Run: wrangler secret put GEMINI_API_KEY / GROQ_API_KEY / OPENROUTER_API_KEY / DEEPSEEK_API_KEY / HUGGING_FACE_API_KEY'"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -15,8 +15,8 @@
     "@langchain/openrouter": "^0.4.13"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250101.0",
+    "@cloudflare/workers-types": "^5.20261002.1",
     "typescript": "^5.7.0",
-    "wrangler": "^3.90.0"
+    "wrangler": "^4.146.0"
   }
 }

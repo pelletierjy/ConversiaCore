@@ -27,6 +27,13 @@ export const OPENROUTER_GENERATION_MODEL = 'openrouter/free';
 export const OPENROUTER_MAX_OUTPUT_TOKENS = 2048;
 export const OPENROUTER_TEMPERATURE = 0.7;
 
+// Verified against the live api.deepseek.com/docs on 2026-10-01. DeepSeek's free tier
+// gives ~10M tokens/day with 10 requests/minute, making it a reliable fallback when
+// OpenRouter's 50-request daily quota is exhausted. Fully OpenAI-compatible endpoint.
+export const DEEPSEEK_GENERATION_MODEL = 'deepseek-chat';
+export const DEEPSEEK_MAX_OUTPUT_TOKENS = 2048;
+export const DEEPSEEK_TEMPERATURE = 0.7;
+
 export const FIREBASE_CONFIG = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY as string,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN as string,
@@ -45,6 +52,21 @@ export function isGroqConfigured(): boolean {
 }
 
 export function isOpenRouterConfigured(): boolean {
+  return Boolean(WORKER_BASE_URL);
+}
+
+export function isDeepSeekConfigured(): boolean {
+  return Boolean(WORKER_BASE_URL);
+}
+
+// Hugging Face Inference Providers: free $0.10/mo credit, OpenAI-compatible endpoint,
+// access to models like Qwen3, Gemma 4, DeepSeek-V4.1-Flash. Verified live 2026-10-02.
+// Uses "google/gemma-4-28b-it" as a good balance of quality and availability.
+export const HUGGING_FACE_GENERATION_MODEL = 'Qwen3-235B-A22B-Instruct-2507';
+export const HUGGING_FACE_MAX_OUTPUT_TOKENS = 2048;
+export const HUGGING_FACE_TEMPERATURE = 0.7;
+
+export function isHuggingFaceConfigured(): boolean {
   return Boolean(WORKER_BASE_URL);
 }
 

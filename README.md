@@ -43,6 +43,7 @@ Changing `subject`, `grade-level`, or `context` restarts the flow with a new ses
 
 - Vite + TypeScript (vanilla, no UI framework)
 - Multi-provider AI with automatic fallback: Google Gemini (primary), Groq and OpenRouter (fallback)
+- DeepSeek (additional free fallback — ~10 req/min, ~10M tokens/day) and Hugging Face (free $0.10/mo credit)
 - Cloudflare Worker proxy (see `worker/`) — manages API keys, token budgeting, and provider failover
 - Firebase Firestore — shared knowledge base, embeddings, and admin config (per-host system prompts & guardrails)
 - IndexedDB (via `idb`) — private, on-device student chat history
@@ -67,6 +68,8 @@ Changing `subject`, `grade-level`, or `context` restarts the flow with a new ses
    - `GROQ_API_KEY` — a Groq API key (fallback chat provider; free tier — see https://console.groq.com)
    - `OPENROUTER_API_KEY` — an OpenRouter API key (fallback chat provider; free tier — see https://openrouter.ai/keys)
    - `VITE_WORKER_BASE_URL` — your Cloudflare Worker URL
+   - `DEEPSEEK_API_KEY` — a DeepSeek API key (fallback chat provider; free tier — see https://api.deepseek.com)
+   - `HUGGING_FACE_API_KEY` — a Hugging Face access token (fallback chat provider; free tier — see https://huggingface.co/settings/tokens)
    - `VITE_FIREBASE_*` — config values from a Firebase project with Cloud Firestore enabled (Project Settings → General → Your apps). Set Firestore rules to allow public reads and admin-gated writes on `knowledgeEntries`, `embeddingVectors`, `appConfig`, and `hostAppConfigs`.
 
 3. **Run the dev server**
