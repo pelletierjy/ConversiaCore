@@ -1,5 +1,6 @@
 import { renderMessageList } from './message-list';
 import { renderInputBar, setInputBarDisabled } from './input-bar';
+import { welcomeMessageFor } from './welcome-message';
 import { addMessage, getMessagesForSession, updateSession } from '../../db/chat';
 import { sendStudentMessage } from '../../services/homework';
 import { AiProviderError } from '../../services/ai-provider';
@@ -39,7 +40,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       id: crypto.randomUUID(),
       sessionId: session.id,
       role: 'assistant',
-      content: t('chat.welcomeMessage', { subject: session.subject }),
+      content: welcomeMessageFor(session),
       timestamp: Date.now(),
     };
     messages = [welcomeMessage];

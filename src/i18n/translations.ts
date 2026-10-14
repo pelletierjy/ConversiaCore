@@ -30,6 +30,7 @@ interface TranslationDict {
     providerLabel: string;
     modelLabel: string;
     welcomeMessage: string;
+    welcomeMessageGeneral: string;
   };
   admin: {
     firebaseNotConfiguredTitle: string;
@@ -172,6 +173,7 @@ const en: TranslationDict = {
     providerLabel: 'Provider',
     modelLabel: 'Model',
     welcomeMessage: "Hi! I'm your {subject} tutor. Ask me a question, or ask for a practice problem whenever you're ready.",
+    welcomeMessageGeneral: "Hi! I'm here to help. Ask me your questions if you need help with using the {appName}!",
   },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase is not configured',
@@ -316,6 +318,7 @@ const fr: TranslationDict = {
     providerLabel: 'Fournisseur',
     modelLabel: 'Modèle',
     welcomeMessage: 'Bonjour ! Je suis ton tuteur de {subject}. Pose-moi une question, ou demande un exercice quand tu seras prêt.',
+    welcomeMessageGeneral: "Salut ! Je suis là pour aider. Pose-moi tes questions si tu as besoin d'aide pour utiliser {appName} !",
   },
   admin: {
     firebaseNotConfiguredTitle: "Firebase n'est pas configuré",
@@ -460,6 +463,7 @@ const es: TranslationDict = {
     providerLabel: 'Proveedor',
     modelLabel: 'Modelo',
     welcomeMessage: '¡Hola! Soy tu tutor de {subject}. Hazme una pregunta o pide un ejercicio de práctica cuando estés listo.',
+    welcomeMessageGeneral: '¡Hola! Estoy aquí para ayudarte. ¡Hazme tus preguntas si necesitas ayuda para usar {appName}!',
   },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase no está configurado',
