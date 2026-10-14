@@ -53,6 +53,8 @@ interface TranslationDict {
     saveOrderButton: string;
     orderSavedToast: string;
     orderSaveFailedError: string;
+    providerEnabledLabel: string;
+    allProvidersDisabledError: string;
     hostAppsNavLabel: string;
     hostAppsTitle: string;
     hostAppsDescription: string;
@@ -194,9 +196,11 @@ const en: TranslationDict = {
       'Order in which AI providers are tried. The first configured provider in this list handles each request; if it fails, the next one is tried.',
     moveUpButton: 'Move up',
     moveDownButton: 'Move down',
-    saveOrderButton: 'Save Order',
-    orderSavedToast: 'Provider order saved.',
-    orderSaveFailedError: 'Failed to save provider order.',
+    saveOrderButton: 'Save Changes',
+    orderSavedToast: 'Provider settings saved.',
+    orderSaveFailedError: 'Failed to save provider settings.',
+    providerEnabledLabel: 'Enabled',
+    allProvidersDisabledError: 'Enable at least one provider before saving.',
     hostAppsNavLabel: 'Host Apps',
     hostAppsTitle: 'Host Apps',
     hostAppsDescription:
@@ -339,9 +343,11 @@ const fr: TranslationDict = {
       "Ordre dans lequel les fournisseurs IA sont essayés. Le premier fournisseur configuré de cette liste traite chaque requête ; s'il échoue, le suivant est essayé.",
     moveUpButton: 'Monter',
     moveDownButton: 'Descendre',
-    saveOrderButton: "Enregistrer l'ordre",
-    orderSavedToast: "Ordre des fournisseurs enregistré.",
-    orderSaveFailedError: "Échec de l'enregistrement de l'ordre des fournisseurs.",
+    saveOrderButton: 'Enregistrer les modifications',
+    orderSavedToast: 'Paramètres des fournisseurs enregistrés.',
+    orderSaveFailedError: "Échec de l'enregistrement des paramètres des fournisseurs.",
+    providerEnabledLabel: 'Activé',
+    allProvidersDisabledError: "Activez au moins un fournisseur avant d'enregistrer.",
     hostAppsNavLabel: 'Applications hôtes',
     hostAppsTitle: 'Applications hôtes',
     hostAppsDescription:
@@ -484,9 +490,11 @@ const es: TranslationDict = {
       'Orden en que se prueban los proveedores de IA. El primer proveedor configurado de esta lista maneja cada solicitud; si falla, se prueba el siguiente.',
     moveUpButton: 'Subir',
     moveDownButton: 'Bajar',
-    saveOrderButton: 'Guardar orden',
-    orderSavedToast: 'Orden de proveedores guardado.',
-    orderSaveFailedError: 'No se pudo guardar el orden de proveedores.',
+    saveOrderButton: 'Guardar cambios',
+    orderSavedToast: 'Configuración de proveedores guardada.',
+    orderSaveFailedError: 'No se pudo guardar la configuración de proveedores.',
+    providerEnabledLabel: 'Activado',
+    allProvidersDisabledError: 'Activa al menos un proveedor antes de guardar.',
     hostAppsNavLabel: 'Apps anfitrionas',
     hostAppsTitle: 'Apps anfitrionas',
     hostAppsDescription:

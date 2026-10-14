@@ -88,6 +88,9 @@ export interface AppConfig {
   predefinedSubjects: string[];
   /** Admin-configured AI provider try-order (provider ids). Defaults to registry order when unset. */
   aiProviderPriority?: string[];
+  /** Admin-disabled provider ids — excluded from the chat try-order (see resolveProviderOrder).
+   *  Unset or empty means every provider is enabled. */
+  aiDisabledProviders?: string[];
 }
 
 export interface HostGuardrailConfig {
