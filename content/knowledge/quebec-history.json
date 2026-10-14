@@ -1,0 +1,525 @@
+{
+  "subject": "Quebec History",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Quebec History: My Community, My Family, and Its Story",
+      "contentBody": "In Grade 1, students begin to explore history through their own lives, their families, and their community. The central idea is that every place has a story and that people who lived before us shaped the world we see today. Students learn that a community is the group of people who live, work, and share places together in a town, a neighbourhood, or a city in Quebec. They talk about who lives in their community today and who lived there in the past, often by interviewing parents, grandparents, or elders about their childhood. Students learn simple time words such as before, after, long ago, yesterday, and today, and they begin to place personal events in order, for example by making a timeline of their own life with drawings of their birth, their first day of school, and family celebrations. They explore local landmarks such as a church, a school, a park, a statue, or an old building, and they understand that these places help tell the story of the community. Students hear simple stories about the First Peoples of Quebec, including the Wendat, Innu, Algonquin, and Mohawk nations, and they learn that these nations have lived on this land for thousands of years, long before the first French settlers arrived. They learn respectful words such as First Nations and that Indigenous peoples have their own languages, stories, and traditions. Students also learn that French is the main language of Quebec and that many families celebrate traditions such as Saint-Jean-Baptiste Day. The goal is not memorizing dates but building the idea that history is about people, their lives, and how communities change over time.",
+      "pedagogicalNotes": "Use concrete, local anchors: class walks around the neighbourhood, photos of the school through the decades, and family interviews sent in as drawings or short recordings. Young students confuse story time (long ago) with personal memory, so constantly model timelines with the student's own life first. Avoid abstract dates; sequence events instead. Reinforce respectful vocabulary for First Nations (a nation, not a costume or a fairy tale). Common misconception: children may think history means only kings and battles, so emphasize everyday people.",
+      "exampleProblems": [
+        {
+          "problem": "Put these events in order from long ago to today: (A) your grandmother was a little girl, (B) the first house was built in your town, (C) you were born.",
+          "solution": "Long ago: (B) the first house was built in your town. Then: (A) your grandmother was a little girl. Today: (C) you were born.",
+          "explanation": "We order events from the most distant in the past to the most recent. Towns are usually built before the people who live in them now were born, and grandparents were children before their grandchildren.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Name two places in your community that help tell its story and explain why each one is important.",
+          "solution": "Example answer: The old church is important because families gathered there for weddings and holidays long ago. The park is important because children have played there for many years.",
+          "explanation": "Landmarks are places that carry memories of the people who used them. Any two local places with a reason count, because the point is connecting a place to the people of the past.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Maya says only people from books can be part of history. Is she right? Give one reason.",
+          "solution": "Maya is not right. Her own grandparents are part of history because they lived in the past, and one day Maya's own story will be part of history too.",
+          "explanation": "History is made of real people's lives, not only famous figures in books. Everyone who lived before us shapes the community we live in today.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Quebec History: Long Ago in Our Region, First Peoples and Early Days",
+      "contentBody": "In Grade 2, students deepen their understanding of the past by looking at their region of Quebec long ago. They learn that before towns and roads existed, the land was home to First Nations who lived by hunting, fishing, gathering, and travelling with the seasons. Students are introduced to the idea that there are several distinct First Nations in Quebec, each with its own territory, language, and way of life. They may hear about the Wendat of the St. Lawrence valley, the Innu of the north shore, the Algonquin of the Ottawa valley, and the Mohawk of the Montreal region, always in simple terms focused on daily life: homes such as the longhouse or the birchbark tent (tshishuuan), canoes for travel on rivers, and respect for animals and nature. Students learn that rivers and the St. Lawrence were the highways of the past, used for travel and trade long before cars and trains. They compare life long ago with life today: how people heated their homes, cooked food, travelled, and communicated. Students build simple timelines using pictures and captions and learn that a timeline moves from the past on the left to the present on the right. They also learn about the first French explorers and settlers arriving in the St. Lawrence valley in the early 1600s in the simplest terms: people crossed the ocean in wooden ships to start new lives, and they met and traded with First Nations who were already here. Vocabulary includes past, present, long ago, explorer, settlement, and trade. The focus remains on daily life and change over time rather than exact dates.",
+      "pedagogicalNotes": "Anchor comparisons in concrete objects: show a picture of a birchbark canoe next to a motorboat, a longhouse next to an apartment. Use local museums or Indigenous cultural centres when possible, and always present First Nations in the present tense too, since a common misconception is that Indigenous peoples only existed in the past. Scaffold timelines with picture cards before introducing words or dates.",
+      "exampleProblems": [
+        {
+          "problem": "Name one way the First Peoples travelled long ago and one way people in your region travel today. How are the two ways alike?",
+          "solution": "Long ago: travelling by birchbark canoe on the river. Today: travelling by car on a highway. Both are alike because they are ways to move people and goods from one place to another.",
+          "explanation": "Comparing past and present focuses on the same need (transportation) met with different tools and technologies.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Fill in the blank: The St. Lawrence River was like a ________ long ago because ________.",
+          "solution": "The St. Lawrence River was like a highway long ago because people used canoes and boats to travel and carry goods along it.",
+          "explanation": "Before roads, rivers were the main travel and trade routes in Quebec, which is why many early settlements grew along their banks.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Sam says the First Nations were not in Quebec before the French arrived. Is Sam correct? Use one fact from your studies.",
+          "solution": "Sam is not correct. First Nations such as the Wendat, Innu, Algonquin, and Mohawk had lived on this land for thousands of years before the first French settlers arrived in the early 1600s.",
+          "explanation": "Recognizing that Indigenous peoples were here first is essential to understanding Quebec history and correcting a widespread misconception.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Quebec History: Quebec City, Samuel de Champlain, and New France Begins",
+      "contentBody": "In Grade 3, students study the founding of Quebec City and the beginnings of New France. They learn that in 1608 Samuel de Champlain founded a habitation at Quebec, a place the First Nations called Kebec, meaning where the river narrows. Quebec City became the first permanent French settlement in North America and the heart of the colony that would be called New France. Students learn that Champlain was an explorer, mapmaker, and the founder of Quebec, and that he built relationships with the Wendat, Algonquin, and Innu nations, who traded furs, especially beaver pelts, with the French in exchange for tools, cloth, and other goods. The fur trade is introduced as the reason the colony grew: Europeans wanted beaver hats, and First Nations were expert hunters and trappers. Students explore what life was like in the early settlement: small wooden buildings, a hard first winter with scurvy and cold, and the importance of help from Indigenous allies. They learn that Quebec City's location on the cliff above the St. Lawrence made it a strong and strategic place. Students create and read timelines of early Quebec history using the big dates 1608 (founding of Quebec City) and simple sequences of events. They also learn about other early settlements such as Montreal, founded in 1642. The stories of Indigenous peoples continue alongside the colonial story, and students learn that the fur trade brought both cooperation and change to First Nations ways of life. Vocabulary includes colony, settlement, fur trade, explorer, habitation, and ally.",
+      "pedagogicalNotes": "The date 1608 is a good anchor but pair it with a story (Champlain's winter, help from Indigenous allies) so it sticks. Students often mix up Champlain with later figures or think he discovered an empty land; explicitly say the land was already inhabited and named by First Nations. A simple map activity locating Quebec City where the river narrows reinforces why the site was chosen.",
+      "exampleProblems": [
+        {
+          "problem": "Who founded Quebec City, and in what year? Why was the location a good choice?",
+          "solution": "Samuel de Champlain founded Quebec City in 1608. The location was good because the river narrows there, making it easier to cross and control traffic, and the cliff above the river offered protection.",
+          "explanation": "Geography shaped history: settlements grew where rivers, trade routes, and defensible ground met, and Quebec City's site gave it both trade access and a strong position.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain in two sentences why the fur trade mattered to both the French settlers and the First Nations.",
+          "solution": "For the French, furs such as beaver pelts were valuable goods to sell in Europe and helped the colony survive. For First Nations, the trade brought useful European tools and goods, though it also changed their traditional ways of life.",
+          "explanation": "Trade involves two partners with different reasons for taking part. Good answers name a benefit for each side and can also note that the relationship had costs as well as gains.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Put these events in order: (A) Montreal is founded, (B) Quebec City is founded, (C) Champlain makes alliances with First Nations.",
+          "solution": "First: (C) Champlain makes alliances with First Nations around the time he arrived in the region. Then: (B) Quebec City is founded in 1608. Later: (A) Montreal is founded in 1642.",
+          "explanation": "Alliances with Indigenous nations came as the French arrived and established themselves; Quebec City's founding in 1608 preceded Montreal's founding in 1642 by more than thirty years.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Quebec History: Daily Life in New France, Settlers and First Nations",
+      "contentBody": "In Grade 4, students discover what everyday life was like in New France during the 1600s and 1700s. They learn that the colony grew slowly along the shores of the St. Lawrence, with most people living on farms called seigneuries, long strips of land granted to settlers by a seigneur. Families were large because many hands were needed for farming, and children helped with planting, harvesting, and household chores. Students explore the roles of different people: habitants (farmers), the seigneur, priests and nuns who built schools and hospitals, coureurs des bois who travelled deep into the interior to trade furs, and merchants in towns like Quebec and Montreal. They learn that daily life was shaped by the seasons: harsh winters, spring flooding, summer farming, and autumn harvests. Religion, especially the Catholic Church, played a central role in community life. Students also learn about the continuing presence and role of First Nations: the fur trade connected French traders with the Wendat, Algonquin, Innu, and Mohawk, and many Indigenous communities kept their own territories and ways of life. Some First Nations converted to Christianity and adopted European goods, while others kept their traditions. Students compare family life then and now: schools, food, clothing, housing, and work. They practice reading simple primary sources such as pictures of an idealized New France farm or descriptions of a habitation, and they build timelines of the colony's growth. Vocabulary includes seigneur, seigneurie, habitant, fur trade, colony, and parish.",
+      "pedagogicalNotes": "Daily life is relatable: compare a New France farm family's chores to the student's own day. Watch for the misconception that everyone in New France lived in town or that life was easy; hardship, cold, and hard farm work were the norm. Present First Nations as active participants in the fur trade, not scenery. Visual sources (engravings, maps of seigneuries) support reading practice at this level.",
+      "exampleProblems": [
+        {
+          "problem": "Describe one way a child's daily life on a New France farm was different from a child's life today.",
+          "solution": "A child on a New France farm helped with chores like feeding animals and harvesting crops instead of going to school full time. Today, children attend school every day and use modern tools and machines at home.",
+          "explanation": "Comparing daily routines shows how work, school, and technology changed over time while family life remained important in both eras.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "What was a seigneurie, and why did farms take the shape of long strips of land?",
+          "solution": "A seigneurie was a large land grant given to a seigneur, who then granted strips of land to settler families. The strips were long so that many farms had access to the river, which was the main route for transport and trade.",
+          "explanation": "The long-lot pattern of Quebec's countryside still visible today comes directly from this system, showing how history shapes the landscape students see.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Emma says that everyone in New France was French. Using what you know, correct her with two facts.",
+          "solution": "New France included many First Nations such as the Wendat, Algonquin, Innu, and Mohawk, who were essential trading partners. It was also home to coureurs des bois and settlers from many backgrounds who mixed and worked with Indigenous peoples across the territory.",
+          "explanation": "The colony was a meeting place of several nations and cultures, not a purely French society. Recognizing this diversity is key to understanding the era.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Quebec History: Explorers, the Fur Trade Routes, and New France Expands",
+      "contentBody": "In Grade 5, students follow the great explorers and the trade routes that stretched New France across North America. They learn how explorers such as Jacques Cartier, who reached the St. Lawrence in 1534 and 1535, and later Samuel de Champlain pushed into the interior, mapping rivers and lakes and building relationships with First Nations. Students trace how the fur trade created a vast network: furs travelled by canoe from the Great Lakes and the interior to Montreal and Quebec, and then across the ocean to Europe. They learn about the coureurs des bois and the voyageurs, who paddled enormous canoes loaded with fur bales and supplies over thousands of kilometres, and about the trading posts and forts that became future cities. Students study a map of New France at its largest and see that the colony claimed territory from the Atlantic to the Great Lakes and beyond. They also learn how alliances and conflicts with First Nations shaped events: the French allied with the Wendat and Algonquin, while rivalries with the Haudenosaunee (Mohawk) Confederacy brought warfare and diplomacy. Students explore what goods were exchanged: furs, especially beaver, for metal tools, kettles, cloth, and firearms. They build multi-event timelines and read simple historical maps, developing skills of sequencing and geographic thinking. The unit closes by noting that this expanding colony set the stage for the later struggle between France and Britain for control of North America. Vocabulary includes explorer, trade route, voyageur, canoe, alliance, and territory.",
+      "pedagogicalNotes": "Map work is the anchor skill here: have students trace the canoe routes from the Great Lakes to Quebec and mark the future cities at trading posts. Misconception alert: explorers did not travel through empty land, and many routes were already known to First Nations guides. Use physical props or videos of voyageur canoes to make the scale of the journeys tangible. Emphasize cause and effect: the fur trade caused settlement to spread along the rivers.",
+      "exampleProblems": [
+        {
+          "problem": "Why did the French build trading posts and forts along the rivers and lakes of the interior?",
+          "solution": "They built them to trade for furs with First Nations, to store goods, and to control the canoe routes that carried furs to Montreal and Quebec for shipment to Europe.",
+          "explanation": "Trade routes need resting, storage, and exchange points, so posts grew along the water highways and many later became towns and cities.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain why beaver furs were so valuable to the French and how the fur trade changed life for First Nations.",
+          "solution": "Beaver fur could be made into felt hats that were fashionable and expensive in Europe, so merchants paid well for the pelts. For First Nations, the trade brought new tools and goods and strengthened some alliances, but it also increased competition and conflict between nations.",
+          "explanation": "A single demand in Europe (hats) created economic activity thousands of kilometres away, showing how trade links distant places and changes societies on both ends.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A canoe brigade leaves Montreal and reaches a post on Lake Huron weeks later. Using what you know of the voyageurs, give two reasons the trip took so long and one reason the rivers were still the best route.",
+          "solution": "The trip took weeks because the canoes were heavy and slow, and the voyageurs had to carry the canoes and cargo around rapids and waterfalls (portages). Rivers were still the best route because there were no roads through the forest and water carried heavy loads far more easily than over land.",
+          "explanation": "Geography and technology limited travel speed, yet water routes were far more efficient than any overland alternative in the 1600s and 1700s. Trade-offs like these explain why settlement followed the waterways.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Quebec History: New France, the British Conquest, and the Treaty of Paris",
+      "contentBody": "In Grade 6, students study the height of New France and the dramatic change that came with the British Conquest. They learn how New France was organized as a colony: a governor representing the king, an intendant managing daily affairs, and the Catholic Church running schools and hospitals, while most people lived on seigneurial farms along the St. Lawrence. Tensions grew between France and Britain as both empires competed for control of the rich fur trade and territory in North America. The decisive conflict was the Seven Years' War (1756-1763), fought in Europe and in North America, where it is sometimes called the French and Indian War. Students study the key events on Quebec soil: the Battle of the Plains of Abraham in September 1759, where British troops under General Wolfe defeated the French forces of General Montcalm on the fields just outside Quebec City; both generals died in the battle. After the fall of Quebec, Montreal surrendered in 1760, and by the Treaty of Paris in 1763 France gave up almost all of its North American empire to Britain. Students examine what this meant for the roughly 70,000 French-speaking inhabitants, the Canadiens, who suddenly became subjects of the British Crown, and for First Nations whose alliances and territories were reshaped by the change of empire. The unit highlights continuity as well as change: French language, civil law, and the Catholic religion survived under British rule. Students practice building timelines of the war and reading historical maps showing the shift from French to British control. Vocabulary includes colony, Seven Years' War, Conquest, Treaty of Paris, and sovereignty.",
+      "pedagogicalNotes": "Frame the Conquest as a turning point, not the end of French presence, since a common misconception is that the French left Quebec after 1763. Use maps before and after 1763 to make the transfer of power visible. Discuss the battle from both French and British perspectives, and note that the outcome was shaped as much by naval control of the St. Lawrence as by the battle itself.",
+      "exampleProblems": [
+        {
+          "problem": "What happened at the Battle of the Plains of Abraham in 1759, and why was it important?",
+          "solution": "British forces under General Wolfe defeated French forces under General Montcalm outside Quebec City, and both generals died. It was important because it led to the fall of Quebec City and paved the way for the British taking control of New France.",
+          "explanation": "A single battle can decide the fate of a colony when it captures the key stronghold; Quebec City's fall in 1759 was followed by Montreal's surrender in 1760.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Under the Treaty of Paris (1763), France gave up New France to Britain. Name two ways daily life could stay the same and one way it changed for French-speaking Canadiens.",
+          "solution": "Stayed the same: most people continued to farm their seigneuries and to speak French and practise the Catholic religion. Changed: they were now subjects of the British Crown and had to obey a British governor and British laws.",
+          "explanation": "Conquests change rulers and political power first, while language, religion, and daily habits often continue, which is why Quebec remained French-speaking under British rule.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain one reason France and Britain went to war in North America in the 1750s and one way First Nations were affected by the result.",
+          "solution": "The empires fought over control of the fur trade and of North American territory, each allied with different First Nations. After Britain won, First Nations lost the ability to play the two empires against each other and saw their territories increasingly threatened by British expansion.",
+          "explanation": "Imperial wars in North America were driven by economic rivalry, and Indigenous nations were active participants whose bargaining power was weakened when only one empire remained.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Quebec History: The British Regime, the Quebec Act, and Loyalists",
+      "contentBody": "In Grade 7, students examine how Quebec changed under British rule after 1763. At first the British governed the French-speaking Catholic colony with British laws and tried to assimilate the Canadiens, which created tension. In 1774, the British Parliament passed the Quebec Act, a landmark law that allowed Canadiens to keep French civil law and the free practice of the Catholic religion, restored the seigneurial system, and expanded the colony's territory into the Ohio Valley. For many Canadiens the Quebec Act secured their rights, though some British colonists to the south saw it as an insult and listed it among their grievances in the lead-up to the American Revolution. Students learn how the American Revolution reached Quebec: in 1775-1776 American forces invaded and captured Montreal and besieged Quebec City, but they failed to win over most Canadiens and withdrew. After the war, thousands of Loyalists, colonists who had stayed loyal to the British Crown, fled north into Quebec and other British colonies. Their arrival changed the population balance: the colony now had a large English-speaking minority that wanted British laws and elected assemblies. In response, the British divided the colony with the Constitutional Act of 1791 into Upper Canada (mostly English-speaking) and Lower Canada (mostly French-speaking, present-day Quebec). Students explore how these events created the two main language groups whose relationship would shape the next century. Vocabulary includes Loyalist, Quebec Act, Constitutional Act, assimilate, Upper Canada, and Lower Canada. Map work and timelines of 1763-1791 reinforce cause-and-effect reasoning.",
+      "pedagogicalNotes": "Chain-of-causation thinking is the skill to build: American Revolution leads to Loyalist migration, which leads to the 1791 division. Students often assume the British immediately oppressed everything French; the Quebec Act shows the picture was more complicated. Clarify that Lower Canada is today's Quebec and Upper Canada is today's Ontario.",
+      "exampleProblems": [
+        {
+          "problem": "Name two rights the Quebec Act of 1774 gave to French-speaking Canadiens.",
+          "solution": "The Quebec Act let Canadiens keep French civil law and practise the Catholic religion freely. It also restored the seigneurial system of land ownership.",
+          "explanation": "After the Conquest, Britain could have forced assimilation; instead the Quebec Act preserved key institutions, which helped keep French language and culture alive in Quebec.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Who were the Loyalists, and how did their arrival change Quebec?",
+          "solution": "The Loyalists were colonists who stayed loyal to Britain during the American Revolution and moved north afterward. Their arrival added a large English-speaking population to Quebec, which pushed Britain to create an elected assembly and to split the colony in 1791.",
+          "explanation": "Migration changes population balance and political demands. The Loyalists' presence made the old, mostly French colony bilingual and bicultural, setting up conflicts about who should govern.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain how the American Revolution led to the division of Quebec in 1791. Use at least two links in the chain of events.",
+          "solution": "The American Revolution caused Loyalists to flee north into Quebec, where they formed a large English-speaking population that wanted British laws and an elected assembly. To satisfy both groups, Britain passed the Constitutional Act of 1791, splitting the colony into Upper Canada for English speakers and Lower Canada for French speakers.",
+          "explanation": "Historical events often produce results through chains of cause and effect: a war elsewhere changes migration, which changes population, which forces a political solution.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Quebec History: Lower Canada, the Patriots, and the Rebellions of 1837-1838",
+      "contentBody": "In Grade 8, students study political conflict in Lower Canada that led to the Rebellions of 1837-1838. Under the Constitutional Act of 1791, Lower Canada had an elected Legislative Assembly, but the British governor and the appointed Legislative Council, controlled by a small English-speaking group known as the Château Clique, held the real power. The Assembly could not control the colony's budget or appoint its leaders, and this frustrated many French-speaking Canadiens. A new voice emerged: Louis-Joseph Papineau, leader of the Patriote movement, who demanded democratic reforms such as an elected council and control over taxes. The Parti patriote won majorities in the Assembly and presented the Ninety-Two Resolutions in 1834, listing their grievances and demands. Britain answered with the Russell Resolutions in 1837, refusing most demands, and tensions boiled over. In November 1837, armed clashes broke out in the countryside around Montreal, at Saint-Denis, Saint-Charles, and Saint-Eustache; the British troops crushed the uprising and Papineau fled to the United States. A second rebellion in 1838, linked to a declaration of independence, was also suppressed, and many Patriots were imprisoned or deported. Britain then sent Lord Durham to investigate; his famous Report on the Affairs of British North America recommended uniting the Canadas and assimilating the French, though assimilation failed and the union of 1840 created the Province of Canada. Students weigh the Patriots' fight for democracy against the violence and failure of the rebellions, and they consider how this memory still marks Quebec identity today. Vocabulary includes Patriote, rebellion, reform, Legislative Assembly, Ninety-Two Resolutions, and Durham Report.",
+      "pedagogicalNotes": "Students easily see the Patriots as pure heroes or pure rebels; push for evidence-based judgment. Distinguish the reform movement (political demands) from the armed uprisings (1837-1838). Emphasize that the Assembly existed but was powerless, which is why representation alone did not satisfy reformers. Connecting Papineau and the Patriots to today's place names, monuments, and the Fête nationale keeps the topic alive.",
+      "exampleProblems": [
+        {
+          "problem": "What were the main demands of the Patriote movement led by Louis-Joseph Papineau?",
+          "solution": "The Patriots demanded democratic reforms: an elected Legislative Council instead of an appointed one, control by the elected Assembly over the colony's budget and taxes, and fairer government for the French-speaking majority of Lower Canada.",
+          "explanation": "The conflict was about power and representation: the elected Assembly had legitimacy but little real authority, which fueled the reform movement of the 1830s.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Describe two events of the Rebellions of 1837-1838 and one outcome.",
+          "solution": "In November 1837 armed clashes occurred at Saint-Denis, Saint-Charles, and Saint-Eustache and were defeated by British troops. In 1838 a second uprising, tied to a declaration of independence, was also crushed. Outcome: many Patriots were imprisoned or deported and Britain sent Lord Durham to investigate, leading to the union of the Canadas in 1840.",
+          "explanation": "The two uprisings failed militarily but pushed Britain to reform colonial government, showing that defeated movements can still change politics over time.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The Patriots lost the rebellions. Give one reason the movement is still remembered positively by many Quebecers and one reason some historians criticize it.",
+          "solution": "It is remembered for defending democracy and the rights of French-speaking Canadiens against an unelected ruling group. Some historians criticize it because it turned to armed violence, was poorly organized, and brought harsh repression and prison and deportation onto its supporters.",
+          "explanation": "Historical judgment requires weighing values and consequences: the Patriots' democratic ideals are admired even when the means and the results are questioned.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Quebec History: Confederation, Quebec in Canada, and Industrialization",
+      "contentBody": "In Grade 9, students study how Quebec became part of Canada and how industrialization transformed the province. After the union of the Canadas in 1840, political deadlock between Canada East (Quebec) and Canada West (Ontario) led to meetings in the 1860s where leaders such as George-Étienne Cartier of Quebec and John A. Macdonald designed a new federation. On July 1, 1867, the British North America Act created the Dominion of Canada, uniting Quebec, Ontario, Nova Scotia, and New Brunswick. Quebec entered Confederation as a province with protected powers over education, civil law, language, and property, with French and English as official languages of the new country. Not everyone agreed: some politicians, later called the Rouges, opposed Confederation as a betrayal of Quebec's interests, while many priests and conservatives supported it. Students examine why Quebec's leaders accepted the deal: guarantees for language and religion, and a voice in a larger country facing American expansion. The second half of the unit follows industrialization from the 1870s to the early 1900s: railways linked Quebec to the rest of Canada, textile mills and shoe factories grew in cities like Montreal, Sherbrooke, and Trois-Rivières, and thousands of French-Canadian families left the poor countryside for factory work and city life. This migration created a new urban working class that faced long hours, low wages, and dangerous conditions, and it also produced anglophone business owners and francophone workers, sharpening class and language divides. Students connect these changes to the growth of labour unions and to Quebec's distinct identity within Canada. Vocabulary includes Confederation, province, federation, industrialization, urbanization, and working class.",
+      "pedagogicalNotes": "The key idea is a bargain: Quebec joined Confederation in exchange for protected powers, and students should evaluate what was gained and lost. Link rural-to-urban migration to students' own family histories when possible. Misconception alert: Canada in 1867 was a small federation of four provinces, not today's ten provinces and three territories. Use graphs of population and factory growth to support the industrialization section.",
+      "exampleProblems": [
+        {
+          "problem": "Name two powers the province of Quebec kept when it joined Confederation in 1867.",
+          "solution": "Quebec kept control over education and over civil law (the legal system for private matters). It also protected the French language and the Catholic religion within its jurisdiction.",
+          "explanation": "Confederation divided powers between the federal and provincial governments, and Quebec's leaders insisted on guarantees for the institutions that protected French-Canadian culture.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain two reasons many French-Canadian families moved from the countryside to Quebec's cities between 1870 and 1900.",
+          "solution": "Factory jobs in textile mills and shoe companies offered wages that farms no longer provided, as the farmland was divided into ever smaller plots. Railways also made cities and jobs easier to reach, so rural families migrated to Montreal, Sherbrooke, and other industrial centres.",
+          "explanation": "Push factors (rural poverty, tiny farm plots) and pull factors (factory wages, railways, city opportunity) together drove urbanization, and this migration reshaped Quebec society.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Some Quebec politicians opposed Confederation in 1867. Give one argument for joining and one argument against, then say which you find stronger and why.",
+          "solution": "For: joining Canada guaranteed protections for French language, civil law, and religion and created a country strong enough to resist the United States. Against: Quebec risked being outvoted by the English-speaking majority and losing control over its own affairs. A strong answer picks a side with reasons, for example favouring the guarantees because they preserved the institutions that let Quebec keep its identity inside Canada.",
+          "explanation": "Historical decisions involve trade-offs. Students should argue from evidence on both sides rather than assume the outcome was inevitable or obvious to people at the time.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Quebec History: Duplessis, the Great Depression, and the Quiet Revolution",
+      "contentBody": "In Grade 10, students study Quebec from the Great Depression through the Quiet Revolution, the era that shaped modern Quebec. During the 1930s, the global economic crisis brought unemployment, poverty, and hardship to Quebec, and the Union Nationale leader Maurice Duplessis became premier, holding power for most of the period from 1936 to 1959. His era, often called the Grande Noirceur (Great Darkness) by critics, was marked by conservative social values, a strong role for the Catholic Church in schools and hospitals, support for business and foreign investment, and suspicion of unions and left-wing movements; Duplessis used padlock laws and provincial police against strikers and dissidents. Yet many Quebecers valued the era's stability, rural traditions, and family policies. After Duplessis died in 1959 and Quebec society had modernized through urbanization, education, and media, voters elected Jean Lesage's Liberals in 1960, launching the Quiet Revolution. The slogan Maîtres chez nous (Masters in our own house) captured the mood: the state took over education and health care from the Church, created Hydro-Québec and the Caisse de dépôt to direct the economy, promoted French in the workplace, and expanded universities and civil service jobs. The era also saw rising nationalism, new feminist and union movements, and the emergence of the separatist movement, culminating in the founding of the Parti Québécois by René Lévesque in 1968 and the 1980 sovereignty referendum. Students evaluate the legacy of both eras: Duplessis's Quebec versus the modernizing state of the 1960s, and how debates over identity, language, and independence continue today with laws such as the Charter of the French Language (1977). Vocabulary includes Grande Noirceur, Quiet Revolution, secularization, nationalism, sovereignty, and referendum.",
+      "pedagogicalNotes": "The Duplessis era is often caricatured; present both its repression and its popularity to avoid one-note narratives. Anchor the Quiet Revolution in concrete changes students can check (Hydro-Québec, secular schools, French language laws). The sovereignty debate remains sensitive and political; teach it as an ongoing democratic debate with strong arguments on both sides, not as a settled question. Chronology matters: 1960 election, 1977 Charter, 1980 referendum.",
+      "exampleProblems": [
+        {
+          "problem": "Identify two major changes the Quiet Revolution brought to Quebec society in the 1960s.",
+          "solution": "The state took over education and health care from the Catholic Church, making schools and hospitals public and secular. The government also created or expanded public enterprises such as Hydro-Québec to give Quebecers more control over the economy and promoted French as the main language of work.",
+          "explanation": "The Quiet Revolution shifted power from the Church and private interests to the provincial state, modernizing Quebec's institutions in barely a decade.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Compare the Duplessis era and the Quiet Revolution on two points: the role of the Catholic Church and the role of the provincial government.",
+          "solution": "Under Duplessis, the Catholic Church ran most schools and hospitals and social policy was conservative, while the government favoured business and limited intervention. During the Quiet Revolution, the state replaced the Church in education and health care and intervened strongly in the economy through public bodies like Hydro-Québec.",
+          "explanation": "The contrast shows a rapid shift in who holds authority in society, from church and private elites to the modern provincial state, within roughly one generation.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The slogan Maîtres chez nous (Masters in our own house) summarized the Quiet Revolution. Explain what it meant and give one argument a federalist opponent might have used against Quebec nationalism at the time.",
+          "solution": "It meant Quebecers wanted to control their own economy, institutions, and cultural life, ending dependence on English-Canadian and American owners and on Church authority. A federalist opponent might argue that independence or strong nationalism risked Quebec's economic ties to Canada, its share of federal programs, and political stability inside a country that protected its language rights.",
+          "explanation": "Nationalism and federalism reflect genuinely competing values, self-determination versus shared institutions and economic security. Strong answers state both positions fairly before judging, since this debate still shapes Quebec politics today.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Quebec History: The Sovereignty Movement and the 1980 Referendum",
+      "contentBody": "In Grade 11, students study the rise of the sovereignty movement in Quebec and the first referendum on independence in 1980. The Quiet Revolution of the 1960s had produced a new nationalism that went beyond cultural protection to political sovereignty: the idea that Quebec should become its own country, associated with Canada only through an economic partnership. The movement split into parties and groups, from the Rassemblement pour l'indépendance nationale to the Parti Québécois, founded in 1968 by René Lévesque, a former Liberal minister who argued that political independence was the only way to protect French and to pursue social democracy. The most radical wing turned to direct action: the Front de libération du Québec (FLQ) planted bombs in the 1960s, and in October 1970 its members kidnapped British diplomat James Cross and Quebec cabinet minister Pierre Laporte, who was murdered. Prime Minister Pierre Trudeau invoked the War Measures Act, sending soldiers into Quebec and arresting hundreds of people without charges; the crisis shocked the province and weakened support for violent nationalism while boosting the democratic sovereigntist option. The Parti Québécois won power in 1976 and passed the Charter of the French Language (Bill 101) in 1977, making French the official language of Quebec in government, business, and education. Then, on May 20, 1980, the PQ held a referendum asking for a mandate to negotiate sovereignty-association with Canada. The federal side, with Claude Ryan leading the Non campaign and Trudeau promising to renew the federation, won with about 60 percent of the vote. Students analyze the campaign arguments, the meaning of sovereignty-association, and why Lévesque accepted the result and prepared to try again. Vocabulary includes sovereignty, sovereignty-association, referendum, War Measures Act, and Bill 101.",
+      "pedagogicalNotes": "Students often confuse sovereignty with provincial autonomy; stress that sovereignty meant a new political status, not just more powers within Canada. The October Crisis is emotionally charged: present the facts of the kidnappings and the murder of Laporte alongside debate about the scale of the War Measures Act response. Use the 1980 referendum question wording itself as a primary source, since its phrasing about a mandate to negotiate was itself contested.",
+      "exampleProblems": [
+        {
+          "problem": "What was sovereignty-association as proposed by the Parti Québécois before the 1980 referendum?",
+          "solution": "Sovereignty-association meant Quebec would become a fully independent state with its own laws and international voice, while keeping an economic association with Canada, such as a common market and shared currency. It was a middle path between staying a province and a complete break.",
+          "explanation": "The formula tried to answer the economic fear of separation by pairing political independence with continued economic ties, which became the central point of debate in 1980.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Describe two events of the October Crisis of 1970 and explain its effect on the sovereignty movement.",
+          "solution": "The FLQ kidnapped diplomat James Cross and cabinet minister Pierre Laporte, and Laporte was murdered. The federal government invoked the War Measures Act, sending troops to Quebec and arresting hundreds. The crisis discredited violent nationalism and pushed many Quebecers toward the Parti Québécois's democratic, electoral path to sovereignty.",
+          "explanation": "Political violence can discredit a cause in the short term while strengthening its moderate wing; the PQ's electoral rise after 1970 followed this pattern.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The Non side won about 60 percent of the vote in 1980. Give two reasons voters rejected sovereignty-association and one reason the result did not end the debate.",
+          "solution": "Many voters feared economic disruption, such as lost jobs and trade with Canada, and trusted promises to renew the federation, which Trudeau and Ryan made during the campaign. The debate continued because René Lévesque explicitly said the question would return, federal reform promises were only partly fulfilled, and nationalism remained strong, which led to a second referendum in 1995.",
+          "explanation": "A referendum result settles a question for a moment, not forever; the meaning of the 1980 vote, a rejection of independence but not of Quebec's demands, kept the national question alive.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Quebec History: Bill 101, the Constitution, and the Meech and Charlottetown Accords",
+      "contentBody": "In Grade 12, students examine how language law and constitutional politics defined Quebec's place in Canada from the late 1970s to the 1990s. The Charter of the French Language, Bill 101, passed by the Parti Québécois in 1977, made French the official language of Quebec: the language of government, the workplace, commerce, and public signage, and the language of instruction for most children in French schools. The law aimed to reverse the dominance of English in Montreal's economy and to integrate immigrants into French-speaking society. It was contested: the Supreme Court of Canada struck down some provisions, notably the ban on English signage and the restriction of English schooling, and the federal Official Languages Act set up a counterweight of bilingualism. Students learn the compromise of Bill 101 today, strong protections for French with courts protecting minority rights. In parallel, the constitutional question dominated politics. In 1982, Prime Minister Pierre Trudeau patriated the Constitution with a Charter of Rights and Freedoms, and Quebec, under René Lévesque, refused to sign because it feared the new charter would weaken its language laws and because the deal was made without its consent. Restoring Quebec's signature became the goal of the Meech Lake Accord of 1987, which would have recognized Quebec as a distinct society and given provinces more power, but it failed in 1990 when two provincial legislatures did not ratify it in time, a deep disappointment in Quebec. The broader Charlottetown Accord of 1992, which proposed a distinct society clause, a Canada clause, and Senate reform, was rejected by Canadians in a national referendum. Students trace how each failure fed support for sovereignty right up to the 1995 referendum. Vocabulary includes patriation, Charter of Rights and Freedoms, distinct society, Meech Lake Accord, and ratification.",
+      "pedagogicalNotes": "The chain from 1982 to Meech to Charlottetown to 1995 is the spine of this unit; students should be able to narrate it with dates. A common misconception is that Bill 101 banned English entirely; clarify that it established French as the public common language while courts later guaranteed access to English schooling for eligible children. Constitutional law is abstract, so use concrete examples, a language-of-signs case, a school-access case, to make the stakes visible.",
+      "exampleProblems": [
+        {
+          "problem": "State two main rules of the Charter of the French Language (Bill 101, 1977).",
+          "solution": "Bill 101 made French the official language of Quebec, required French in government services and public signage, and set French as the normal language of instruction in schools and of work in medium and large businesses.",
+          "explanation": "The law used state power to make French the common public language of Quebec after decades of English dominance in the Montreal economy.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Why did Quebec refuse to sign the Constitution of 1982, and what was the Meech Lake Accord meant to fix?",
+          "solution": "Quebec, under René Lévesque, refused because the Constitution was patriated without its consent and because it feared the Charter of Rights would override language laws like Bill 101. The Meech Lake Accord of 1987 was meant to bring Quebec in by recognizing it as a distinct society and giving provinces more powers, but it failed when two legislatures did not ratify it by the 1990 deadline.",
+          "explanation": "The 1982 patriation created a legitimacy gap for many Quebecers, and the failed attempts to close it through Meech and Charlottetown pushed some federalists toward the sovereignty option.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Trace the chain of events from the 1982 patriation to the 1992 Charlottetown Accord, and explain how these failures affected Quebec politics.",
+          "solution": "In 1982 the Constitution was patriated without Quebec's signature. In 1987 the Meech Lake Accord promised a distinct society clause and more provincial powers, but it died in 1990 without full ratification. The broader Charlottetown Accord of 1992, put to a national referendum, was rejected by Canadian voters. Each failure deepened Quebec nationalism and strengthened the Parti Québécois, leading directly to the 1995 sovereignty referendum.",
+          "explanation": "Constitutional politics can radicalize a population when repeated compromise offers fail; the sequence is the main reason support for sovereignty surged in the mid-1990s.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Quebec History: The 1995 Referendum and the Near Victory of Sovereignty",
+      "contentBody": "In Grade 13, students study the 1995 referendum on Quebec sovereignty, the closest vote in Canadian history. After winning the 1994 provincial election, the Parti Québécois government of Jacques Parizeau prepared a new referendum, held on October 30, 1995. The question asked for a mandate to offer Quebec a new partnership with Canada based on equality, a softer formula than the 1980 sovereignty-association proposal. The campaign was intense and emotional. The Yes side, led by Parizeau, Lucien Bouchard, the charismatic leader of the Bloc Québécois who had nearly died of a rare illness during the campaign, and Mario Dumont of the Action démocratique, argued that Quebec had been rebuffed on the constitution and that a sovereign Quebec could negotiate a partnership covering trade, currency, and free movement. The No side, led by federal Intergovernmental Affairs Minister Stéphane Dion and Quebec federalists such as Daniel Johnson and Jean Chrétien, argued that sovereignty risked the economy, Quebec's share of federal programs such as equalization and employment insurance, and partnership with a country that had made concessions on language and identity. The result on October 30 was razor-thin: 50.58 percent No to 49.42 percent Yes, a gap of about 54,000 votes out of nearly 4.7 million cast. A massive unity rally in Montreal days before the vote helped the No side, and turnout exceeded 93 percent. The aftermath was turbulent: Parizeau resigned after controversial remarks attributing the loss to money and the ethnic vote, Chrétien's government referred the secession question to the Supreme Court, and Parliament passed the Clarity Act in 2000 requiring a clear question and clear majority in any future referendum. Students evaluate the arguments of both sides and the democratic significance of such a close result. Vocabulary includes referendum, sovereignty, partnership, Clarity Act, secession, and majority.",
+      "pedagogicalNotes": "Students may not grasp how close 50.58 to 49.42 really is; convert it into concrete terms, roughly 54,000 votes, about one person in a small town, to make the margin vivid. Keep the classroom neutral on the outcome; the point is analyzing arguments and evidence on both sides. Note the turnout figure, over 93 percent, as evidence of democratic engagement. The Clarity Act raises a genuine federalism debate: who decides how a province leaves?",
+      "exampleProblems": [
+        {
+          "problem": "What was the result of the October 30, 1995 referendum on Quebec sovereignty?",
+          "solution": "The No side won with 50.58 percent of the vote against 49.42 percent for Yes, a margin of about 54,000 votes out of nearly 4.7 million cast. Turnout was over 93 percent.",
+          "explanation": "The result is remembered as the closest vote in Canadian history, which is why it kept the national question alive rather than settling it.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Give two arguments used by the Yes side and two used by the No side in the 1995 campaign.",
+          "solution": "Yes: Quebec had been rebuffed on the constitution, for example after Meech Lake, and a sovereign Quebec would negotiate a partnership covering trade and currency while gaining full control over its own affairs. No: sovereignty risked jobs and investment, threatened Quebec's share of federal programs such as equalization and employment insurance, and partnership with Canada was not guaranteed after a Yes vote.",
+          "explanation": "The campaign weighed political dignity and self-determination against economic risk and shared institutions; strong answers present both sets of arguments before judging.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain how the close 1995 result led to the Clarity Act of 2000, and give one argument for and one against the law.",
+          "solution": "After the near victory of Yes and the Supreme Court reference, which said Quebec could not unilaterally secede but that a clear vote would create a duty to negotiate, Parliament passed the Clarity Act requiring a clear question and a clear majority in any future referendum. For: it protects democratic clarity and prevents separation on a confusing question or a razor-thin margin. Against: it lets the federal Parliament judge the clarity of a question on Quebec's own future, which Quebecers see as interference in their right to self-determination.",
+          "explanation": "The Clarity Act turns a political dispute into rules about democratic procedure, and reasonable people disagree about whether such rules protect democracy or limit it.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Quebec History: Federal-Provincial Relations, National Unity, and Indigenous Issues in Quebec",
+      "contentBody": "In Grade 14, students analyze the ongoing relationship between Quebec and the federal government, and the place of Indigenous nations within Quebec. Since 1995, Quebec has remained in Canada but keeps a distinct constitutional stance: it has not signed the 1982 Constitution, and provincial governments of different parties have continued to demand recognition of Quebec's specificity, more powers over immigration and culture, and protection for the French language. Students study the machinery of federal-provincial relations: first ministers' conferences, equalization payments that redistribute wealth to less wealthy provinces, and disputes over health care funding, where Quebec insists on the right to run its own programs with federal money. Federal political parties reflect the divide: the Bloc Québécois runs only in Quebec and advocates sovereignty in the House of Commons, while national parties must build coalitions that include Quebec voters. Students also examine how national unity debates affected policy in the rest of Canada, from the rise of the Reform Party in the West to the Clarity Act. A crucial dimension is Indigenous issues in Quebec. Quebec's territory largely covers the ancestral lands of First Nations such as the Cree, Inuit, Atikamekw, Wendat, and Kanien'kehá:ka, and of the Inuit of Nunavik. During the 1995 referendum, Cree and Inuit leaders held their own votes and overwhelmingly rejected being partitioned out of Canada, complicating the sovereignty claim. Key agreements include the James Bay and Northern Quebec Agreement of 1975, a landmark modern treaty following the La Grande hydroelectric project, and more recent agreements on governance and resources. Students consider how Indigenous self-determination intersects with both Quebec nationalism and Canadian federalism, including debates over the duty to consult on resource projects and the legacy of residential schools. Vocabulary includes federalism, equalization, modern treaty, duty to consult, and self-determination.",
+      "pedagogicalNotes": "Students tend to see federal-provincial relations as purely about language; highlight money, health care funding, and immigration as equally concrete sources of conflict. For Indigenous content, avoid treating First Nations as a footnote to Quebec nationalism; give their own votes, treaties, and governance projects full standing. The 1995 Cree and Inuit counter-votes are an excellent case study in competing claims to self-determination.",
+      "exampleProblems": [
+        {
+          "problem": "What are equalization payments, and why are they relevant to Quebec's place in Canada?",
+          "solution": "Equalization payments are federal transfers that give less wealthy provinces enough revenue to provide public services at a reasonably comparable level. They matter to Quebec because it receives transfers while also insisting on the right to design its own programs, so the debate mixes solidarity with provincial autonomy.",
+          "explanation": "Money is a concrete dimension of federalism; debates about sovereignty always involve who pays for and who controls public services.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "How did Cree and Inuit communities respond to the 1995 sovereignty referendum, and why does this matter?",
+          "solution": "Cree and Inuit leaders organized their own community votes in which the overwhelming majority rejected being separated from Canada. This matters because it shows that Quebec's territory includes Indigenous homelands with their own claims to self-determination, so a Quebec Yes vote would not settle the status of those lands and peoples.",
+          "explanation": "Competing self-determination claims can overlap on the same territory; Quebec nationalism must be analyzed alongside Indigenous rights, not instead of them.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain two sources of tension between the Quebec and federal governments since 1995, and assess which you consider most serious with reasons.",
+          "solution": "Quebec has not signed the 1982 Constitution and demands recognition of its distinct status, while Ottawa promotes the Charter of Rights and Canadian official bilingualism. The two governments also clash over funding and control, especially health care transfers and Quebec's management of immigration. A strong assessment weighs them, for example arguing that language and immigration are most serious because they affect daily life and Quebec's demographic weight inside Canada.",
+          "explanation": "Tensions range from symbolic recognition to concrete powers and money; assessing seriousness requires judging long-term impact, not just the loudest headlines.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Quebec History: Quebec Historiography and How Interpretations of Quebec History Change",
+      "contentBody": "In Grade 15, students move from learning events to studying how historians have interpreted Quebec history differently over time, an introduction to historiography. Earlier generations of historians, often clerics and conservatives like Thomas Chapais, presented the Conquest as a tragedy survived through faith, language, and the Church, and celebrated figures like Montcalm and confessional institutions. In the mid-twentieth century, the nationalist school associated with Groulx's disciples framed history around the survival of the French-Canadian nation, emphasizing conquest, resistance, and the duty to reproduce and defend the collectivity. The Quiet Revolution brought new approaches: social historians influenced by the Annales school examined ordinary people, workers, women, and families rather than elites, while Marxist-influenced scholars like those of the Montreal labour school analyzed class conflict and industrial capitalism. From the 1970s onward, historians debated whether Quebec history is best understood as a national struggle or through class, gender, and ethnicity; writers such as Fernand Ouellet argued for economic and social determinism, provoking nationalist critics. Post-1990 scholarship increasingly incorporates immigration, Indigenous perspectives, and transnational approaches, questioning the old two-solitudes narrative and the image of a homogeneous French-Canadian society. Students learn that each generation writes history in dialogue with its present: the Quiet Revolution produced histories of modernization, the referendum era produced histories of the national question. Skills include identifying a historian's school of thought, comparing interpretations of the same event, such as the 1837 Rebellions or the Conquest, and recognizing how sources, archives, and silences shape narratives. Vocabulary includes historiography, interpretation, thesis, primary source, and school of thought.",
+      "pedagogicalNotes": "The big idea is that history is argued, not simply told: two honest historians can read the same events differently. A productive exercise is assigning two contrasting accounts of one event and asking students to find each author's thesis and evidence. Warn against relativism: interpretations can be tested against sources and can be better or worse, not merely different. Vocabulary like thesis and historiography is new at this level and needs explicit modeling.",
+      "exampleProblems": [
+        {
+          "problem": "What is historiography, and why is it useful to a student of Quebec history?",
+          "solution": "Historiography is the study of how history has been written and interpreted over time, which questions historians have asked, and which schools of thought have shaped their answers. It helps a student see that narratives about Quebec, survival of the nation, class struggle, or cultural diversity, reflect both evidence and the historian's own era.",
+          "explanation": "Once students see interpretations as arguments, they can read any history text critically instead of treating it as a neutral list of facts.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Compare how a nationalist historian of the mid-twentieth century and a social historian of the 1970s might each interpret the industrialization of Quebec.",
+          "solution": "A nationalist historian would emphasize how anglophone ownership and rural exodus threatened French-Canadian survival, framing industry as a cultural challenge. A social historian would focus on working conditions, class conflict, strikes, and the lives of women and children in factories. The first centers the nation, the second centers social groups and economics.",
+          "explanation": "The same event supports different narratives depending on the historian's central question, which is why identifying a work's school of thought is a core historical skill.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain how the era in which a historian writes can shape the history they produce, using one example from Quebec historiography.",
+          "solution": "Historians write from the concerns of their own time. For example, historians working before the Quiet Revolution often told a story of French-Canadian survival centered on the Church and the nation, because that was the central preoccupation of their society. After 1960, histories of modernization, labour, and women appeared as those movements became visible. So the same past is reinterpreted as the present changes. Strong answers name the era, the concern, and the resulting narrative shift.",
+          "explanation": "Historiography shows history as an ongoing conversation between past evidence and present questions, not a fixed story handed down once and for all.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Quebec History: Social History of Women, Labour, and Working Life in Quebec",
+      "contentBody": "In Grade 16, students explore the social history of Quebec through the lives of women and workers, groups often left out of political narratives. The history of women in Quebec is marked by the long dominance of the Civil Code, which treated married women as legal dependents, and by clerical influence on family policy; women gained the provincial vote only in 1940, later than in most of Canada, partly because of conservative and clerical opposition. The Quiet Revolution opened a new phase: the 1964 reform of the Civil Code gave married women full legal capacity, the Royal Commission on the Status of Women (1970) and Quebec's own Conseil du statut de la femme (1973) pushed for equality, and the 1980s brought state-funded day care and advances in reproductive rights. Feminist thinkers such as Simone de Beauvoir's Quebec readers, and movements around the Fédération des femmes du Québec, linked women's rights to broader social change, including debates where nationalist and feminist priorities sometimes aligned and sometimes clashed. The labour history of Quebec runs from the harsh factory regime of the late nineteenth century, with its long hours, child labour, and dangerous mills, through the rise of unions: the Knights of Labour, Catholic syndicalism embodied in the Confédération des travailleurs catholiques du Canada founded in 1921, which fused faith and class defence, and the secular Centrale des travailleurs du Québec after the Quiet Revolution. Landmark conflicts include the Asbestos strike of 1949, seen as a first crack in the Duplessis order, the Louiseville textile strike, and public-sector strikes of the 1960s and 1970s that built the modern welfare state. Students use these cases to analyze class, gender, and power together, asking whose voices appear in the archives and whose do not. Vocabulary includes patriarchy, suffrage, syndicalism, strike, and class.",
+      "pedagogicalNotes": "Social history rewards concrete lives: use case studies such as a single strike or a legal change rather than sweeping surveys. A common misconception is that women's equality arrived with the vote; stress that legal capacity, work rights, and family law came later. Show that Quebec's union movement had a distinctive Catholic strand, unlike the more secular unions elsewhere in North America, and connect past labour struggles to today's public-sector unions.",
+      "exampleProblems": [
+        {
+          "problem": "Name two milestones in the history of women's rights in Quebec and give the approximate decade of each.",
+          "solution": "Women gained the right to vote in provincial elections in 1940, and the 1964 reform of the Civil Code gave married women full legal capacity. Other valid answers include the creation of the Conseil du statut de la femme in 1973 or the development of public day care in the 1990s.",
+          "explanation": "Progress came in stages, political rights first, then legal equality within the family, then social supports like child care, and students should sequence rather than bundle these changes.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "What was distinctive about Quebec's Catholic union movement, and what did the 1949 Asbestos strike show?",
+          "solution": "The Confédération des travailleurs catholiques du Canada, founded in 1921, defended workers while accepting Church authority and rejecting open class war, a model different from secular unions. The Asbestos strike of 1949 against an American-owned mine showed that workers could challenge both capital and the conservative Duplessis government, and it is often seen as the beginning of the end of the old order.",
+          "explanation": "Quebec's labour history blends class and religion; the 1949 strike marks a turning point where labour protest fed into the coming modernization of the 1960s.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Using one example, explain how a social historian's focus on women or workers changes the story of a period you have studied, compared with a political narrative.",
+          "solution": "Take the Quiet Revolution: a political narrative emphasizes Lesage, Hydro-Québec, and constitutional politics, while a social history approach examines women entering the workforce and universities, the expansion of day care, and public-sector strikes that built the welfare state. The same decade looks different: institutional change in one account, transformed daily lives in the other. Strong answers name the example and explain the difference in what becomes visible.",
+          "explanation": "Whose history is told shapes the conclusions; social history recovers groups excluded from elite political narratives and revises our judgment of the period.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Quebec History: Immigration, Diversity, and the Challenges of Integration",
+      "contentBody": "In Grade 17, students examine immigration to Quebec from the great waves of the nineteenth century to the present, and how the province has tried to integrate newcomers into a French-speaking society. In the industrial era, immigrants from Ireland, Britain, Italy, and Eastern Europe arrived to work in mines, railways, and factories, often settling in Montreal, where English served as the language of business. The Irish, decimated by the famine of the 1840s, became a large community that partly assimilated into French-Canadian society through shared Catholicism. After the Second World War, immigration diversified to include Jewish communities, Greeks, Portuguese, and later Haitians, Latin Americans, and people from Asia and the Maghreb, especially after the end of the Duplessis era and the opening of Quebec's immigration selection powers. The Quiet Revolution gave Quebec its own immigration role, and Bill 101 steered immigrant children into French schools, a policy that has made French the language of integration for most newcomers, though Montreal remains notably bilingual. Students analyze the concept of interculturalism, Quebec's official alternative to Canadian multiculturalism: a model that promotes French as the common public language while recognizing diversity and encouraging exchange among communities. Contemporary debates include reasonable accommodation, sparked by the Bouchard-Taylor Commission of 2007 after controversies over religious symbols, and more recent tensions around secularism and identity. Students study census and language data, the experience of second-generation immigrants, and the question of who counts as a Quebecer, examining how communities such as the Haitian, Maghrebi, and Chinese communities have shaped Montreal's culture. Vocabulary includes immigration, integration, interculturalism, multiculturalism, diaspora, and accommodation.",
+      "pedagogicalNotes": "Frame integration as a two-way process, what society offers and what newcomers bring, not as a test newcomers must pass. Students may assume immigration to Quebec is recent; show the long history, Irish and Italian communities have deep roots. Use concrete data, census language tables, school enrollment, to ground debates. The interculturalism versus multiculturalism distinction is subtle: model it with examples rather than definitions alone.",
+      "exampleProblems": [
+        {
+          "problem": "What does it mean that Bill 101 made French the language of integration for immigrants in Quebec?",
+          "solution": "It means that immigrant children are generally required to attend French-language schools and that French is the common language of public life and work, so newcomers integrate into the francophone majority rather than into separate English-speaking institutions.",
+          "explanation": "Quebec chose school language rules as its main integration tool, because schools shape the language of the next generation, which is why this provision of Bill 101 was so contested.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain the difference between Quebec's interculturalism and Canadian multiculturalism.",
+          "solution": "Canadian multiculturalism, adopted by federal policy in 1971 and the charter in 1982, recognizes all cultures as equal within a bilingual framework. Quebec's interculturalism promotes French as the common public language and integrates diversity around that shared reference, while still protecting cultural rights and encouraging exchange between communities. One centers pluralism of cultures, the other centers a common French-speaking public culture with room for diversity.",
+          "explanation": "The difference flows from each society's founding reality: a bilingual federation protecting minorities versus a French-speaking majority seeking to integrate newcomers into its language and public life.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The Bouchard-Taylor Commission (2007) examined reasonable accommodation. Describe one controversy that prompted it and assess whether commissions like this strengthen or weaken social cohesion.",
+          "solution": "Controversies included religious accommodation requests, such as prayer space in schools or kirpans in class, which some saw as excessive and others as ordinary rights. Bouchard and Taylor recommended keeping most accommodations while restricting religious symbols only for authority figures like judges and police. A strong assessment argues either way with reasons: commissions can cool tensions through public deliberation and evidence, or they can amplify conflict by giving fringe cases national attention.",
+          "explanation": "Handling diversity involves real trade-offs between rights and shared norms; the value of a commission lies in public reasoning rather than in any single recommendation.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Quebec History: The National Question in Depth, Debates on Secularism and Language",
+      "contentBody": "In Grade 18, students tackle advanced analysis of the Quebec national question and the contemporary debates over secularism and language that continue to shape it. They revisit the concept of the nation in Quebec thought: from the ethnic nationalism of the early twentieth century to the civic, territorial nationalism of the Quiet Revolution, and the debate among thinkers such as Fernand Dumont, Charles Taylor, and Jocelyn Létourneau about what binds Quebecers together and how collective identity is built. The sovereignty movement is studied in depth, not just as events but as a body of thought: René Lévesque's democratic socialism, the argument that sovereignty is an unfinished decolonization, and federalist responses, from asymmetrical federalism to the recognition of a nation within Canada, which the House of Commons symbolically did in 2006. Students analyze why support for sovereignty has declined since 1995 while national identity remains strong, examining demographics, the integration of newcomers into French, and generational change. Contemporary policy debates supply the case material. Secularism: Quebec's policy of laïcité, culminating in the Act respecting the laicity of the State of 2019, which bars some public servants in positions of authority from wearing religious symbols, follows the Bouchard-Taylor report and the failed Charter of Values of 2013. Proponents see it as protecting state neutrality and gender equality; critics, including civil liberties groups and the English-speaking minority, see it as targeting religious minorities, especially Muslim women. Language: Bill 96 of 2021 strengthened the Charter of the French Language, reinforcing French in the workplace, government, and CEGEPs, against a backdrop of French's declining share in Montreal and debates over the survival of French in North America. Students weigh these policies using evidence, rights frameworks, and historical perspective, and they practice articulating strong versions of positions they may not share. Vocabulary includes nation, laïcité, secularism, asymmetrical federalism, and language regime.",
+      "pedagogicalNotes": "These topics are live political debates; the tutor must stay neutral and grade the quality of reasoning, not the position taken. Require students to articulate the strongest version of each side before judging, steel-manning, a key skill at this level. Distinguish identity, how people feel, from policy, what the state does, since students often collapse them. Use legal texts and commission reports as sources so claims are grounded.",
+      "exampleProblems": [
+        {
+          "problem": "Explain the difference between ethnic and civic conceptions of the Quebec nation, and say which better fits the Quiet Revolution era.",
+          "solution": "An ethnic conception defines the nation by ancestry, language, and descent, common in early French-Canadian nationalism. A civic or territorial conception defines it by shared citizenship and life in Quebec regardless of origin, the dominant view since the Quiet Revolution and the Parti Québécois's definition of a Québécois as anyone who lives in Quebec and wants to be one. The civic conception fits the Quiet Revolution, which deliberately recast nationalism as modern and inclusive.",
+          "explanation": "How a nation is defined determines who belongs and which policies follow, so this conceptual shift explains much about later debates on immigration and identity.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "State two arguments for and two arguments against Quebec's 2019 law on state secularism restricting religious symbols for some public servants.",
+          "solution": "For: the state should appear neutral toward all religions, and many citizens see gender equality and secularism as values worth enforcing in authority roles. Against: the law restricts religious freedom and disproportionately affects Muslim women who wear hijabs, and in a liberal democracy state neutrality should mean neutrality between citizens, not banning their personal expression. Strong answers present all four before weighing them.",
+          "explanation": "The debate is a genuine clash between collective values and individual rights, and reasonable people weigh these principles differently, which is why evidence and proportionality matter.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Support for sovereignty fell after 1995 while Quebec national identity remained strong. Propose two explanations and assess which is best supported by evidence.",
+          "solution": "Possible explanations include: demographic change, as immigrants integrated into French-speaking society but were less inclined to support independence, and generational change, as younger Quebecers take language protections for granted and see independence as economically risky. Another explanation is that federal accommodations and the day-to-day reality of autonomy satisfied most needs. A strong assessment cites evidence, such as polling by age and origin or surveys on identity, and argues which factor carries the most weight. There is no single agreed answer; the quality of the reasoning is what matters.",
+          "explanation": "Distinguishing identity from political preference is central to understanding modern Quebec; the question rewards students who can support an interpretation with observable evidence.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Quebec History: Historical Research Methods and Sources on Quebec",
+      "contentBody": "In Grade 19, students learn how professional historians research Quebec's past, moving from consuming narratives to constructing arguments from sources. They study the organization of Quebec archives and libraries: Bibliothèque et Archives nationales du Québec (BAnQ), with its vast notarial, judicial, and civil records, parish registers that record baptisms, marriages, and burials from the seventeenth century onward, the archives of religious communities that ran schools and hospitals, and municipal and court records. Digital tools have transformed access: the BAnQ digital collections, the Programme de recherche en démographie historique databases, census records on Library and Archives Canada, and newspapers such as La Presse and Le Devoir. Students learn source criticism: distinguishing primary from secondary sources, checking provenance, purpose, and audience, reading against the grain to recover voices that left few records, such as workers, women, immigrants, and Indigenous peoples, and triangulating claims across multiple sources. They practice constructing a research question, writing a historiographic essay with a thesis, and citing sources properly. Methodological problems specific to Quebec are examined: parish registers and civil status records require paleography and knowledge of French notarial conventions, the Duplessis era left records shaped by censorship and repression, the October Crisis raises questions about state surveillance files, and residential school records involve trauma-informed protocols and Indigenous data sovereignty. Students also consider oral history methods, especially valuable for immigrant communities and for events of living memory like the 1995 referendum, along with the ethical rules of consent and interpretation. A short research project, for example tracing one family's migration through census and parish records or analyzing one newspaper's coverage of the 1980 referendum, applies the full method. Vocabulary includes primary source, archive, paleography, oral history, thesis, and historiography.",
+      "pedagogicalNotes": "Method is best learned by doing, so the research project is the core of this course, not an add-on. Students struggle with the density of old French records and pre-1900 handwriting; scaffold with sample transcriptions and dictionaries. Emphasize ethics early: oral history requires consent, and Indigenous records may have cultural restrictions. Teach citation as part of argument, a claim without a source is an opinion.",
+      "exampleProblems": [
+        {
+          "problem": "Name two types of primary sources a historian could use to study daily life in nineteenth-century Quebec, and one limitation of each.",
+          "solution": "Parish registers record baptisms, marriages, and burials, but they capture only the Catholic majority and only key life events. Notarial records, such as wills and marriage contracts, reveal property and family arrangements, but they represent people wealthy enough to use notaries and were written for legal purposes, not for historians. Other valid pairs include censuses, newspapers, or court records with appropriate limitations.",
+          "explanation": "Every source has a purpose and a blind spot; source criticism means asking who created it, why, and who is missing from it.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain what reading against the grain means and give one example with a Quebec source.",
+          "solution": "Reading against the grain means examining a source for evidence its creators did not intend to reveal, especially about marginalized people. For example, a Duplessis-era government file on a strike was written to justify police action, but a historian can read it for workers' demands and organizing strategies that the file otherwise silences. The historian extracts the workers' voice from a document written against them.",
+          "explanation": "Powerful groups leave abundant records; recovering other voices requires creativity and critical reading rather than waiting for a balanced archive.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Design a small research project on how one Quebec newspaper covered the 1995 referendum. State your question, sources, and one methodological challenge.",
+          "solution": "Question: how did the editorial framing of sovereignty change between the campaign's start and referendum day. Sources: editorials and front pages from the newspaper's digital archive over a defined period, plus letters to the editor for reader response, compared with one opposing newspaper for control. Methodological challenge: editorials reflect the owner's line, not public opinion, so coverage must be triangulated with polls and the framing categories must be defined in advance to avoid cherry-picking. A strong answer includes a clear question, a bounded corpus, and an explicit plan for coding or comparison.",
+          "explanation": "Research design is the heart of method: a well-posed question and controlled sources turn a topic into an argument that can be checked by others.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Quebec History: Specialized Periods, Thematic Depth, and the Historian's Craft",
+      "contentBody": "In Grade 20, students work at an introductory college level on specialized periods and themes in Quebec history, synthesizing method and content into independent historical argument. A seminar-style unit selects a period for close study, options include the Rebellions of 1837-1838 in depth, the economic history of New France and the fur trade, the urban history of Montreal from the industrial metropolis to the present-day cultural capital, or the intellectual history of Quebec nationalism from Lionel Groulx to Charles Taylor. Each period is examined through primary sources and competing interpretations. For the Rebellions, students read the Patriote press, government proclamations, and trial records, and debate whether 1837 was a democratic revolt, a national uprising, or a peasant jacquerie. For New France, they weigh the relative importance of the fur trade, the seigneurial system, and Indigenous alliances, using traders' accounts, Jesuit relations, and recent ethnohistorical scholarship. For Montreal, they analyze fire insurance plans, census microdata, and photographs to reconstruct class and ethnic geography. A second strand develops thematic depth: the history of the family and demography, where Quebec's exceptional fertility before the Quiet Revolution and its rapid decline afterward are explained through pronatalism, the Quiet Revolution, and women's changing roles; the environmental history of the St. Lawrence, from resource use to the James Bay project and modern sovereignty debates over water; or the cultural history of memory, from the Patriots' cult to the Quiet Revolution's rewriting of national symbols and debates over monuments today. Students write a substantial research essay using primary sources and historiography, defend their thesis in a seminar presentation, and practice peer review. The course ends by reflecting on history as a discipline: how arguments are evaluated, how evidence constrains interpretation, and why Quebec's past remains a living public debate. Vocabulary includes seminar, historiography, thesis, synthesis, demography, and memory.",
+      "pedagogicalNotes": "At this level the tutor acts as a seminar guide: ask probing questions, demand evidence for every claim, and push students to engage specific historians rather than generic views. The research essay is the main assessment; enforce staged deadlines, question, bibliography, draft, to prevent last-minute work. When topics touch identity, keep discussion civil and source-based. Students should leave able to read a scholarly article and summarize its argument and evidence accurately.",
+      "exampleProblems": [
+        {
+          "problem": "Summarize two competing interpretations of the Rebellions of 1837-1838 and the evidence each relies on.",
+          "solution": "One interpretation, rooted in nationalist tradition, presents the Patriots as democrats fighting an unjust colonial oligarchy, citing the Ninety-Two Resolutions, the elected Assembly's lack of power, and the repression that followed. A social interpretation reads 1837 as a rural and class conflict, citing the involvement of habitants, seigneurial tensions, and economic grievances in the countryside. Both draw on Patriote petitions, court records, and correspondence, but they weigh political and social evidence differently.",
+          "explanation": "The same events support different arguments depending on the question asked and the evidence prioritized; identifying both is the first step of historiographic analysis.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain the rapid decline of the birth rate in Quebec between 1960 and 1980 using at least two factors, and say what kind of sources would test your explanation.",
+          "solution": "The Quiet Revolution secularized society, reducing the Church's influence over family norms and pronatalism, while women's access to education, work, contraception, and legal equality reshaped family choices. To test this, a historian would use census and vital statistics for fertility rates, the Royal Commission on the Status of Women and the Conseil du statut de la femme reports for policy context, and oral histories or surveys for family decisions. A strong answer links causes to specific measurable sources.",
+          "explanation": "Demographic change is a classic case where interpretation must be tested against quantitative and qualitative evidence together, not asserted from narrative alone.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Using one theme from Quebec history, such as memory of the Patriots, James Bay, or Montreal's ethnic geography, outline a research essay: give your thesis, two primary sources, one historian you would engage, and one counterargument you would address.",
+          "solution": "Example on memory of the Patriots: thesis, the public memory of the Patriots shifted from religious-national martyrdom under Groulx to a civic-democratic symbol after the Quiet Revolution, and this shift reflects each era's political needs. Primary sources: Fête nationale speeches or parade programs from the 1930s versus the 1970s. Historian engaged: Gérard Bouchard on national myth-making. Counterargument: that the shift reflects new historical research rather than political utility, which the essay must answer with evidence on timing and emphasis. Any well-supported example on the other themes earns full credit.",
+          "explanation": "A mature historical argument states a contestable thesis, grounds it in sources, engages existing scholarship, and anticipates objections; outlining before writing is what makes that structure achievable.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

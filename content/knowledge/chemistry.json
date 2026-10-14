@@ -1,0 +1,525 @@
+{
+  "subject": "Chemistry",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Chemistry: Exploring Materials, Properties, and Sorting by Observable Features",
+      "contentBody": "In grade 1, chemistry appears as the science of materials: the everyday stuff objects are made of. Students explore what things are made of and how those materials look, feel, and behave. They learn to observe with their senses, noting color, texture, shininess, hardness, flexibility, and whether something is rough or smooth. Students sort and classify objects by material, for example groups of wood, metal, plastic, cloth, and paper, and they learn that a material is what an object is made of while the object itself is the finished thing, so a table and a wooden spoon share the material wood. They describe materials with simple words and begin a vocabulary of properties: hard, soft, stretchy, bendy, rough, smooth, shiny, dull, transparent, opaque. Students test materials for simple purposes, asking which material would be best for an umbrella, a window, or a warm coat, which introduces the idea that materials have properties that make them useful for particular jobs. They watch simple changes, such as ice melting to water or a wet towel drying, and notice that some changes can be undone, like water freezing and melting again. Safety habits begin here: we look and smell carefully, never taste, and tell the teacher if something spills. Key vocabulary: material, property, object, wood, metal, plastic, fabric, glass, hard, soft, rough, smooth, shiny, transparent, sort, classify, observe.",
+      "pedagogicalNotes": "Use real objects from the classroom, not pictures, so children can touch and compare. Model sentence starters such as 'This is made of ___ and it feels ___'. Common misconception: children think objects are made of a single named thing ('plastic') and never consider that a toy can combine materials; deliberately compare multi-material objects like a crayon or a paintbrush. Expect the word 'texture' to be new; connect it to 'feels like'. Keep testing playful and short, and praise careful observation over correct guessing.",
+      "exampleProblems": [
+        {
+          "problem": "Maya has a metal spoon, a wooden block, and a rubber ball. Sort them into groups and name one property of the metal spoon.",
+          "solution": "Group 1: metal objects — the spoon. Group 2: wood objects — the block. Group 3: rubber objects — the ball. One property of the metal spoon: it is hard and shiny.",
+          "explanation": "Sorting by material means asking 'What is this made of?'. Each item belongs to one material group, and properties describe how the material looks or feels.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Sam needs to choose a material for a window. Should he pick wood, glass, or fabric? Explain your choice using a property.",
+          "solution": "Sam should choose glass. Glass is transparent, so light can pass through it and people can see outside. Wood and fabric are opaque and block the view.",
+          "explanation": "We match the job to a material's property. A window needs a transparent material; the other materials would make the room dark.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Look at a crayon and a paintbrush. Why is it hard to put each one into just one material group?",
+          "solution": "Both objects are made of more than one material. A crayon has a wax part and a paper wrapper; a paintbrush has wooden, metal, and bristle parts, so each object needs more than one group.",
+          "explanation": "Objects can combine materials, and each material has its own properties. This is why we name the material of each part, not just the whole object.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Chemistry: How Materials Change with Heating and Cooling, and Simple Mixing",
+      "contentBody": "In grade 2 chemistry, students watch materials change and start to describe what happens before, during, and after a change. The central example is water in its forms: ice, liquid water, and steam. Students observe ice melting in a warm room and water freezing in a cold place, learning that heating and cooling cause these changes and that the same material can look very different in different conditions. They record what they see with drawings and simple words such as solid, cold, melt, freeze, and drip. Students also mix materials and notice that mixing is not magic: some mixtures look different from the starting materials, like salt stirred into water, while others, like sand stirred into water, settle again when left standing. They separate simple mixtures by hand picking, using a sieve to catch large pieces, or letting sand sink and pouring off the water, called pouring off or decanting. Students compare materials for uses connected to change, for example why we make ice lollies from liquid juice or why a wax crayon melts on warm paper. Safety rules are reinforced: no tasting anything in science, careful hands near warm water, and telling an adult about spills. Key vocabulary: melt, freeze, solid, liquid, gas, steam, warm, cold, heat, cool, mix, mixture, dissolve, sand, salt, sieve, separate, change, before, after.",
+      "pedagogicalNotes": "Run melting ice and warm-water demonstrations side by side so children see temperature as the cause, not time of day. Common misconception: children think melted ice has disappeared or turned into something new; press them to say it is still water in a different form. Use 'before and after' drawings as the core assessment. For mixing, let children predict first, then test; expect them to claim salt 'disappears' forever, which plants the seed for dissolving in grade 3. Keep vocabulary oral and repeated daily.",
+      "exampleProblems": [
+        {
+          "problem": "Lena puts an ice cube on the playground on a hot day. What does she see after one hour, and what caused the change?",
+          "solution": "After one hour the ice cube has melted into liquid water. The warm air heated the ice and caused it to change from solid to liquid.",
+          "explanation": "Heating makes ice melt. The material is still water; only its form changed from solid to liquid.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Tom stirs sand into a glass of water and then leaves the glass on the table. What happens after ten minutes, and how can he get the sand back?",
+          "solution": "The sand sinks to the bottom and the water looks clear again. Tom can pour the water off into another glass, or strain the mixture through a sieve or paper towel to catch the sand.",
+          "explanation": "Sand does not dissolve in water, so it settles and can be separated again by pouring off or straining. This shows that some mixtures can be undone.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Ava makes ice lollies by pouring juice into a mold and freezing it. Later she leaves one on a plate and it turns back into juice. What does this tell us about the change?",
+          "solution": "The change can be undone: freezing turns liquid juice into a solid lolly, and warming turns the solid back into liquid juice. Heating and cooling drive the change in both directions.",
+          "explanation": "Some changes are reversible, meaning we can get back to the starting material by heating or cooling. This is different from changes we cannot undo, which students meet in grade 4.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Chemistry: Solids, Liquids, and Gases, Dissolving, and Separating Mixtures",
+      "contentBody": "In grade 3 chemistry, students organize matter into three states: solids, liquids, and gases. Solids hold their own shape, liquids take the shape of their container but keep the same amount, and gases fill the space available and can be squeezed. Students describe each state with everyday examples such as a rock, water, and the air inside a balloon, and they learn that heating and cooling move materials between states through melting, freezing, boiling, and condensing. A major focus is dissolving: when salt or sugar is stirred into water it seems to vanish, but students discover the material is still there because the water tastes sweet or salty, or because evaporating the water in a warm place leaves the salt behind as white grains. Not everything dissolves: oil, sand, and flour do not, so students compare solutes and learn the words solution and mixture. They separate mixtures using techniques matched to the ingredients: filtering to catch undissolved crumbs, evaporating to recover dissolved salt, and simple sieving for dry mixes like flour and beads. Fair testing begins here: change only one thing, such as water temperature, when asking whether sugar dissolves faster in warm or cold water, and keep the amount of sugar and water the same. Key vocabulary: solid, liquid, gas, state, melt, freeze, boil, evaporate, condense, dissolve, solution, mixture, filter, sieve, evaporate, fair test, predict.",
+      "pedagogicalNotes": "Do the evaporation-to-recover-salt investigation over several days so students see the dissolved material return; this is the single most powerful antidote to the 'dissolved means gone forever' misconception. Use clear containers so gas and liquid levels are visible. Expect difficulty with gases being matter: weigh a balloon before and after squeezing, or balance a sealed bag, to show air has mass. For fair tests, model one variable at a time explicitly and let students critique a deliberately flawed test before designing their own.",
+      "exampleProblems": [
+        {
+          "problem": "Classify each item as solid, liquid, or gas: a wooden ruler, milk in a carton, and the air inside a soccer ball.",
+          "solution": "Wooden ruler: solid, keeps its own shape. Milk: liquid, takes the shape of the carton and can be poured. Air in the ball: gas, fills the space inside and can be squeezed.",
+          "explanation": "We classify by how the matter behaves: shape-holding, flowing to fill a container bottom, or expanding to fill the whole container.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Nia stirs two spoons of salt into a glass of water and the salt seems to disappear. Design a way to show the salt is still in the water.",
+          "solution": "Leave the salt water in a warm shallow dish for a few days. The water evaporates and white salt grains reappear in the dish. Alternatively, taste a tiny amount on a clean fingertip with teacher permission: the water is salty.",
+          "explanation": "Dissolving spreads the salt through the water so it is invisible, but it does not destroy it. Recovering the salt by evaporation proves the salt was there all along.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Ben has a mixture of iron filings, sand, and salt. Describe an order of steps to separate all three, and say what property each step uses.",
+          "solution": "Step 1: stir the mixture with a magnet and lift out the iron filings, using the property that iron is magnetic. Step 2: stir the remaining sand and salt into water; the salt dissolves and the sand does not. Step 3: filter to catch the sand. Step 4: evaporate the water to recover the salt.",
+          "explanation": "Each step exploits a different property: magnetism, solubility in water, then the difference between a dissolved solid and a liquid. Order matters because each step must leave the rest separable.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Chemistry: Reversible and Irreversible Changes, Heating Effects, and Everyday Chemical Changes",
+      "contentBody": "In grade 4 chemistry, students compare changes they can undo with changes they cannot undo. Reversible changes include melting ice, dissolving salt and recovering it by evaporation, and stretching a rubber band, while irreversible changes include baking a cake, toasting bread, burning paper, and rusting iron. Students watch everyday chemical changes carefully and safely: vinegar and baking soda fizz and make a gas that can blow up a balloon, steel wool left on a damp cloth turns orange-brown with rust over several days, and bread dough rises and then bakes into something with a new texture and color. They learn to look for evidence that something new has formed, such as a gas bubbling away, a color change, a temperature change, or a new smell, rather than judging by shape alone. Heating is explored as a cause of change: water boils to steam and can condense back, but cooking an egg cannot be undone, which introduces the idea that some rearrangements of materials are permanent. Students begin to record results in simple tables and to separate mixtures from changed materials: sand and water can be filtered apart, but baked cake cannot be unbaked. Safety is central: no tasting science mixtures, teacher supervision near heat, and safe observation of fumes from a distance. Key vocabulary: reversible, irreversible, change, evidence, gas, fizz, rust, burn, bake, chemical change, physical change, heat, cool, condense, new material.",
+      "pedagogicalNotes": "Anchor every discussion in observable evidence, and insist students name the evidence for a new material: gas, color change, temperature change, smell change. Common misconceptions: melting is treated as a chemical change because the look changes so much, and dissolving is treated as chemical; contrast melting and dissolving with baking and rusting using the 'can we get it back?' test. The rusting investigation takes a week, so start it early and photograph daily. Keep burning demonstrations teacher-led and emphasize that irreversible changes need care because they cannot be undone.",
+      "exampleProblems": [
+        {
+          "problem": "Sort these changes as reversible or irreversible: ice melting in a drink, a bicycle left outside until its chain rusts, sugar dissolving in tea.",
+          "solution": "Ice melting: reversible, the water can be frozen again. Chain rusting: irreversible, the orange rust is a new material and cannot be turned back into iron by cooling or stirring. Sugar dissolving: reversible, evaporating the tea leaves the sugar behind.",
+          "explanation": "The test is whether the original material can be recovered. Melting and dissolving keep the same material; rusting makes a new material.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Ava mixes baking soda and vinegar and sees bubbles that inflate a balloon. What evidence shows a chemical change happened?",
+          "solution": "Evidence one: a gas is produced, seen as bubbles and shown by the balloon inflating. Evidence two: the mixture fizzes and feels different, and if smelled carefully it has a new sour smell. The gas pushing the balloon is a new material made during the change.",
+          "explanation": "A chemical change makes at least one new material. Bubbles of gas escaping from a solid and liquid mixture are strong evidence, because the gas was not there before.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Tom says, 'Melting an ice cube is the same kind of change as baking a cake, because both look totally different afterward.' Explain why he is only partly right.",
+          "solution": "He is right that both changes make the material look different. But melting ice is physical and reversible: refreeze the water and get the ice back. Baking a cake is chemical and irreversible: the heat changes the dough into new materials with new smells, colors, and textures that cannot be changed back into raw dough.",
+          "explanation": "Looking different is not the test. The test is whether the starting material returns. That separates physical changes like melting from chemical changes like baking.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Chemistry: Solutions and Saturation, Evaporation and Condensation, and Careful Investigations",
+      "contentBody": "In grade 5 chemistry, students refine their understanding of dissolving and of the water cycle as a set of material changes. They measure how much solute dissolves in a fixed amount of water and discover saturation: after a certain point, extra sugar or salt simply sits at the bottom, because the water can only hold so much dissolved material at that temperature. They compare solvents in simple terms, noting that some things dissolve in water but not in oil, which grounds the idea that dissolving depends on the pair of materials. Students design fair tests around dissolving, changing one variable such as temperature, particle size, or stirring rate, and presenting results in tables and bar charts. Evaporation and condensation are investigated as reversible partners: water left in a saucer disappears into the air, and steam on a cold windowpane turns back into droplets, connecting classroom science to dew, fog, and rain without yet invoking particles. Students separate more complex mixtures by combining techniques, for example filtering then evaporating to recover dissolved salt from salty water with sand in it, and they evaluate which technique fits which mixture. They also revisit irreversible changes such as rusting and burning, comparing evidence and reinforcing safety rules around hot plates, matches, and unknown substances. Key vocabulary: solution, solute, solvent, dissolve, saturation, saturated, temperature, stir, particle size, evaporate, condense, filter, residue, filtrate, fair test, variable, results table.",
+      "pedagogicalNotes": "Use precise measurement (spoons or grams, fixed water volumes) so saturation is discovered, not asserted; students who never measure conclude 'it all dissolves eventually'. Common misconceptions: warm water always dissolves everything better, and stirring breaks the solute into invisibility rather than spreading it. Draw and label the evaporation and condensation cycle repeatedly and have students narrate it. Encourage graphing results and asking whether the data supports their prediction; the shift from opinion to evidence is the big win at this grade.",
+      "exampleProblems": [
+        {
+          "problem": "In 100 mL of water at 20 degrees Celsius, Kaya dissolves 36 g of salt and no more will dissolve, with grains left at the bottom. She adds another 10 g. What happens, and what is this point called?",
+          "solution": "The extra 10 g stays undissolved at the bottom. The solution is saturated: it already holds the maximum amount of salt that dissolves at that temperature, so adding more salt does not increase the dissolved amount.",
+          "explanation": "Saturation is a limit set by the temperature and the pair of materials. The leftover grains are the visible sign that the limit has been reached.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Design a fair test to find out whether sugar dissolves faster in warm water or cold water.",
+          "solution": "Use two identical beakers, each with 100 mL of water: one warm, one cold. Add one sugar cube to each at the same time and stir at the same steady rate. Time how long each cube takes to disappear. Repeat three times and compare the averages. Keep the water volume, sugar amount, and stirring the same, changing only the temperature.",
+          "explanation": "A fair test changes exactly one variable, the water temperature. Repetition and averaging reduce the effect of odd results, and identical equipment keeps everything else equal.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Sam has salty water with sand in it. Describe how to recover both the clean water and the dry salt, and explain what happens to the sand at each step.",
+          "solution": "First filter the mixture: the sand is trapped as residue on the filter paper while salty water passes through as filtrate. Next heat the filtrate gently or leave it in a warm shallow dish so the water evaporates and condenses on a cool surface if collected. The dry salt remains in the dish. The sand stays behind at the filtering step and is collected separately.",
+          "explanation": "Filtering separates an undissolved solid from the solution; evaporation separates the dissolved solid from the water. Each step removes one component using a different property, and the order works because filtering happens before the water is driven off.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Chemistry: Properties of Acids and Bases, Indicators, Conservation of Mass, and Reaction Rates",
+      "contentBody": "In grade 6 chemistry, students meet acids and bases through everyday materials and begin to see chemical reactions as rearrangements that follow rules. Using indicators such as red cabbage juice, litmus paper, or universal indicator, they test lemon juice, vinegar, soap, baking soda solution, and water, learning that acids and bases sit at opposite ends of a scale and that indicators change color to reveal which is which. They observe neutralization in simple terms: adding baking soda to vinegar stops the fizzing when the acid is used up. A second theme is conservation of mass: when baking soda and vinegar react inside a sealed plastic bag, the total mass measured on a balance stays the same, because nothing entered or left, even though a gas was made and the contents changed completely. In an open cup the mass appears to drop, and students explain that the carbon dioxide gas escaped into the air rather than vanishing. Third, students explore reaction rates by changing one condition: crushed versus whole antacid tablets, warm versus cold water, or more versus less stirring, and they graph how fast gas bubbles form or a tablet disappears. They connect faster reactions to smaller pieces, warmer temperature, and more mixing, foreshadowing collision ideas later. Safety includes wearing eye protection when handling acids and bases, no tasting, and careful use of balances and warm water. Key vocabulary: acid, base, indicator, neutral, neutralization, conservation of mass, gas, escape, sealed, reactant, product, reaction rate, speed up, surface area, temperature.",
+      "pedagogicalNotes": "The sealed-bag mass demo is essential: balance a sealed system before and after reaction to make conservation of mass visible, then contrast with the open cup so students explain the mass difference with the escaping gas, not with mass being destroyed. Common misconceptions: mass is lost because the product looks like less, and gases weigh nothing. For reaction rates, require one-variable tests and insist students use their data to justify claims. Red cabbage indicator is memorable and cheap; pre-make and freeze batches.",
+      "exampleProblems": [
+        {
+          "problem": "Maya drops red cabbage indicator into three cups: lemon juice, soap solution, and water. What colors should she expect, and what does each tell her?",
+          "solution": "Lemon juice is an acid, so the indicator turns reddish pink. Soap solution is a base, so it turns greenish yellow. Water is neutral, so the indicator stays purple or shows only a faint color shift.",
+          "explanation": "Indicators change color depending on whether the material is acidic or basic. Comparing all three cups against the purple of plain indicator gives a simple acid-base scale.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A sealed bag containing baking soda and vinegar is weighed before and after mixing on a balance. The fizzing stops and the mass reads exactly the same, 42 g both times. Explain why, and predict what would happen in an open cup.",
+          "solution": "In the sealed bag, the gas produced by the reaction is trapped, so nothing leaves or enters and the total mass stays 42 g: mass is conserved. In an open cup, the carbon dioxide gas escapes into the air, so the balance would show a lower mass afterward, around 41 g.",
+          "explanation": "Mass is conserved in every reaction; the total mass of products equals the total mass of reactants. Apparent mass loss only happens when a gas, or anything else, leaves the system.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Ben drops one whole antacid tablet and one crushed antacid tablet into identical beakers of the same temperature water. Which reacts faster, and why? Name the variable he changed.",
+          "solution": "The crushed tablet reacts faster. The variable changed is particle size or surface area. Crushing exposes more of the tablet to the water at once, so the reaction can happen at more places simultaneously and gas bubbles appear sooner.",
+          "explanation": "Reaction rate depends on how often reacting materials meet. Smaller pieces mean more contact area with the water, which increases the rate without changing the amount of antacid.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Chemistry: Matter Made of Particles, Elements and Compounds, and Patterns in Chemical Change",
+      "contentBody": "In grade 7 chemistry, students take their first big step from observing changes to explaining them with the particle idea. They learn that all matter is made of tiny particles too small to see: particles of solids are packed tightly and vibrate in place, particles of liquids are close but slide past one another, and particles of gases are far apart and move freely, which explains melting, boiling, expansion, and compression. Dissolving is revisited as particles of solute spreading between particles of solvent, and evaporation as the fastest liquid particles escaping the surface. Students classify materials as elements, compounds, and mixtures using simple definitions: an element is one kind of particle only, like iron or oxygen; a compound is two or more elements chemically joined in fixed proportions, like water or carbon dioxide, with new properties; a mixture holds different materials physically mixed and separable. They see that chemical change means particles rearrange into new groupings, which is why new substances appear, while physical change keeps the particles themselves intact. Everyday reactions are examined for patterns: rusting needs iron, oxygen, and water together; burning needs fuel and oxygen and produces carbon dioxide and water; baking soda and acid produce a gas. Students describe reactants and products and start to write word equations such as iron plus oxygen gives rust. Key vocabulary: particle, element, compound, mixture, atom, substance, rearrange, reactant, product, word equation, oxygen, carbon dioxide, property, compression, expansion, state change.",
+      "pedagogicalNotes": "Use particle diagrams constantly and require students to draw before and after pictures for every change; the drawings reveal misconceptions words hide. Common misconceptions: particles are tiny versions of the visible material, they change size during state changes, and dissolving destroys particles. Be strict that elements and compounds are substances while mixtures are combinations, and that compounds have new properties while mixture ingredients keep theirs. Word equations should stay word-based here; symbol equations come in grade 9.",
+      "exampleProblems": [
+        {
+          "problem": "Classify each as element, compound, or mixture: iron nail, glass of salt water, and carbon dioxide gas.",
+          "solution": "Iron nail: element, made of only iron particles. Salt water: mixture, salt and water are physically mixed and can be separated by evaporation. Carbon dioxide: compound, made of carbon and oxygen chemically joined with new properties different from either element.",
+          "explanation": "The test is how many kinds of substance are present and whether they are chemically joined. Elements are single substances, compounds are chemically joined, and mixtures are physically combined and separable.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Use the particle idea to explain why a metal pan expands when heated.",
+          "solution": "When heated, the metal particles vibrate faster and push slightly farther apart. The spacing between particles grows, so the whole pan takes up more space and expands. The particles themselves do not get bigger.",
+          "explanation": "Temperature measures how fast particles move. Faster-moving particles need more room, so the material expands; this same idea explains thermometers and gaps left in railway tracks.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write a word equation for the rusting of iron, and explain why this is a chemical change rather than a physical one.",
+          "solution": "Iron plus oxygen plus water gives rust. This is a chemical change because the iron and oxygen particles rearrange and join to form a new substance, rust, which has different properties: it is orange-brown, flaky, and brittle, unlike shiny strong iron.",
+          "explanation": "Chemical changes rearrange particles into new substances with new properties. Physical changes like melting iron only change how the same particles are arranged in space, not what they are.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Chemistry: Atoms and Elements, the Periodic Table Introduction, and Physical versus Chemical Change",
+      "contentBody": "In grade 8 chemistry, students meet the atom as the building block of all matter and begin using the periodic table as chemistry's map. They learn that each element is made of one kind of atom, defined by the number of protons, called the atomic number, and that the symbol for each element is a shorthand such as H for hydrogen, O for oxygen, C for carbon, and Fe for iron. Students read simple periodic table information: atomic number, element name, symbol, and roughly where metals, nonmetals, and metalloids sit, with metals on the left, nonmetals on the right, and a staircase line between them. They explore why elements in the same group behave similarly, for example the reactive alkali metals in group 1 or the unreactive noble gases in group 18, without yet using electron configurations. Mixtures versus compounds is studied with new precision: mixtures have variable proportions and are physically separable by distillation, filtration, or chromatography, while compounds have fixed proportions and require chemical reactions to break apart. Students classify everyday changes as physical or chemical with explicit evidence tests: no new substance for melting, dissolving, and cutting; new substance for burning, rusting, cooking, and fizzing with a gas. States of matter and changes of state are reviewed with energy language: heating gives particles energy to overcome attractions, cooling removes it. Key vocabulary: atom, element, proton, atomic number, symbol, periodic table, group, metal, nonmetal, metalloid, noble gas, mixture, compound, fixed proportion, physical change, chemical change, energy.",
+      "pedagogicalNotes": "Give students their own printed periodic tables to annotate repeatedly; familiarity grows through use, not a single lesson. Common misconceptions: element symbols always match the English name (Na, Fe, K contradict this), atoms of the same element look visibly different in bulk samples, and chemical symbols stand for atoms only rather than the element itself. Anchor physical versus chemical change in the evidence question 'Is a new substance with new properties formed?'. Avoid electron shells in detail here; name that electrons drive bonding and save the structure for grade 9-10.",
+      "exampleProblems": [
+        {
+          "problem": "An element has 6 protons in each of its atoms. Name the element, give its symbol, and say where it sits in the periodic table.",
+          "solution": "Six protons means atomic number 6, which is carbon, symbol C. Carbon sits in group 14 in the upper-middle part of the periodic table, among the nonmetals near the staircase line.",
+          "explanation": "The number of protons defines the element: change the proton count and the element changes. Reading atomic number then symbol from the periodic table is the core lookup skill.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A student separates a mixture of ethanol and water by distillation and gets both liquids back. Could she separate water into hydrogen and oxygen by distillation? Explain.",
+          "solution": "No. Distillation is a physical separation method that exploits different boiling points and only works on mixtures. Water is a compound: its hydrogen and oxygen are chemically joined, so breaking it apart needs a chemical process such as electrolysis, not boiling or distilling.",
+          "explanation": "Mixtures separate by physical means because ingredients keep their identities. Compounds require chemical change to break the bonds between elements, which is the key difference between the two.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Sort these changes and justify each: slicing bread, toasting bread, dissolving sugar in water, and leaving a bicycle to rust in the rain.",
+          "solution": "Slicing bread: physical, only shape changes and the bread is still bread. Dissolving sugar: physical, the sugar can be recovered by evaporation. Toasting bread: chemical, heat browns the surface and makes new flavors and compounds that cannot be un-toasted. Rusting bicycle: chemical, iron plus oxygen and water form rust, a new orange-brown substance.",
+          "explanation": "Each decision uses the evidence test: is a new substance formed? Size and appearance changes are physical; browning, fizzing, gas release, and rust signal chemical change.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Chemistry: Atomic Structure, Ions, Chemical Formulas, and Balancing Equations",
+      "contentBody": "In grade 9 chemistry, students build a working model of atomic structure and use it to write and balance chemical equations. Atoms contain protons and neutrons in a small central nucleus and electrons in energy levels around it; protons carry positive charge, electrons negative, and neutrons none, so a neutral atom has equal protons and electrons. Students calculate atomic mass by adding protons and neutrons and read the periodic table for both atomic number and mass number. They meet ions as atoms that gained or lost electrons: metals lose electrons to form positive ions, nonmetals gain to form negative ions, and ionic compounds form because opposite charges attract, while covalent compounds share electron pairs between nonmetal atoms. Chemical formulas are learned as counting recipes: H2O means two hydrogen atoms and one oxygen atom per molecule, and students name simple compounds using prefixes and classic names such as carbon dioxide, sodium chloride, and calcium carbonate. The major skill is balancing equations: atoms are neither created nor destroyed, so each element must have the same count on both sides. Students balance using coefficients, the numbers in front of formulas, never by changing subscripts, and they check each element in turn. They classify reaction types introduced at this level: synthesis, decomposition, single replacement, and combustion, predicting products in simple cases. Key vocabulary: nucleus, proton, neutron, electron, energy level, ion, charge, ionic, covalent, formula, molecule, coefficient, subscript, balance, reactant, product, conservation of atoms, combustion.",
+      "pedagogicalNotes": "Balance equations with physical or drawn atom counters before writing symbols, so conservation of atoms is felt, not memorized. Common misconceptions: changing subscripts to balance (H2O to H3O is a different compound), coefficients change the substance, and the total number of molecules must match rather than atoms of each element. Insist on the atom-inventory table as a checking habit. For ions, anchor charge on group number: group 1 forms 1+ ions, group 17 forms 1- ions. Keep formulas limited to common substances to protect the balancing skill.",
+      "exampleProblems": [
+        {
+          "problem": "An atom has 11 protons, 12 neutrons, and 11 electrons. Name the element, give its mass number, and state its charge.",
+          "solution": "11 protons identifies the element as sodium, Na. Mass number = protons + neutrons = 11 + 12 = 23. With 11 electrons equal to 11 protons, the charges cancel, so the atom is neutral with charge 0.",
+          "explanation": "Proton count decides the element; mass number counts the nuclear particles; charge comes from comparing electrons with protons. If it lost one electron it would be a Na+ ion with charge 1+.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Balance the equation: __H2 + __O2 → __H2O.",
+          "solution": "Step 1: inventory atoms: left has 2 H and 2 O; right has 2 H and 1 O. Step 2: balance oxygen by putting a coefficient of 2 in front of H2O: 2 H2O has 2 O. Now the right has 4 H. Step 3: balance hydrogen by putting 2 in front of H2: left now has 4 H. Final: 2H2 + O2 → 2H2O, checked as 4 H and 2 O on each side.",
+          "explanation": "Coefficients scale whole formulas so atom counts match without changing the identity of any substance. Oxygen-first balancing is a reliable habit because O2's subscript forces an even count.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Predict the products and balance: methane (CH4) burns in oxygen (O2). Which type of reaction is this?",
+          "solution": "Combustion of a hydrocarbon produces carbon dioxide and water: CH4 + O2 → CO2 + H2O. Balance C: 1 on each side already. Balance H: 4 on the left, so put 2 in front of H2O giving 4 H. Balance O: right now has 2 + 2 = 4, so put 2 in front of O2. Final: CH4 + 2O2 → CO2 + 2H2O. This is a combustion reaction.",
+          "explanation": "Combustion combines a fuel with oxygen, releasing energy and forming CO2 and H2O. The balancing order carbon first, then hydrogen, then oxygen works reliably for hydrocarbon fuels.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Chemistry: Electron Configuration, Periodic Trends, and Ionic and Covalent Bonding",
+      "contentBody": "In grade 10 chemistry, students connect atomic structure to how and why atoms bond. Electrons occupy energy levels, and the outermost electrons, called valence electrons, decide bonding behavior. Students write electron configurations using shells, for example 2,8,1 for sodium and 2,8,7 for chlorine, and relate group number to valence electrons: group 1 has one, group 17 has seven, group 18 has full outer shells and is unreactive. Periodic trends follow from this structure: atomic radius decreases across a period because more protons pull electrons tighter, and increases down a group because new shells are added; ionization energy generally rises across a period and falls down a group; metals sit left, nonmetals right. Bonding is studied in two families. Ionic bonding transfers electrons from a metal to a nonmetal, forming oppositely charged ions that pack into crystal lattices, giving high melting points, brittleness, and conductivity when molten or dissolved. Covalent bonding shares electron pairs between nonmetals, forming molecules with low melting points and no conductivity; students draw simple dot-and-cross diagrams for diatomic molecules and common compounds such as water, methane, ammonia, and carbon dioxide. Metallic bonding is described as positive ions in a sea of delocalized electrons, explaining conductivity and malleability. Students also use electronegativity qualitatively to distinguish bond types and predict molecular shape basics such as linear and bent arrangements. Key vocabulary: valence electron, energy level, electron configuration, ionization energy, atomic radius, electronegativity, ionic bond, covalent bond, metallic bond, lattice, molecule, dot-and-cross, transfer, share, delocalized.",
+      "pedagogicalNotes": "Have students draw dot-and-cross diagrams repeatedly and check octet completion for each atom; this is the highest-yield habit of the grade. Common misconceptions: atoms want to be stable so they gain a full shell rather than following energy rules, ionic compounds exist as separate molecules rather than lattices, and shared electrons belong to one atom. Trends must be justified by structure (proton pull, shell count), not memorized as arrows. Contrast physical properties of sodium chloride, copper, and carbon dioxide to tie bonding to observable behavior.",
+      "exampleProblems": [
+        {
+          "problem": "Write the electron configuration of chlorine (17 electrons) and explain why it forms a 1- ion.",
+          "solution": "Chlorine's configuration is 2,8,7: two electrons in the first shell, eight in the second, seven in the third. With seven valence electrons it needs one more to complete its outer shell of eight, so it gains one electron, making one more electron than protons and giving a 1- charge.",
+          "explanation": "Nonmetals close to a full shell gain electrons to reach a stable octet. Gaining one electron adds one unit of negative charge without changing proton count, so the ion is Cl-.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Use dot-and-cross reasoning to describe the bonding in sodium chloride, NaCl, and predict two physical properties.",
+          "solution": "Sodium (2,8,1) transfers its single valence electron to chlorine (2,8,7). Sodium becomes Na+, chlorine becomes Cl-, and the opposite charges attract into a giant ionic lattice. Predicted properties: high melting point, because many strong ion-ion attractions must be broken, and electrical conductivity when molten or dissolved in water, because the ions can move and carry charge.",
+          "explanation": "Electron transfer creates ions, and the lattice structure explains the properties. Solid ionic compounds do not conduct because ions are locked in place, but freeing the ions lets current flow.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain why atomic radius decreases from sodium (Na) to chlorine (Cl) across period 3, even though chlorine has more electrons.",
+          "solution": "Across the period, electrons are added to the same outer energy level while protons are added to the nucleus. The increasing nuclear charge pulls all the electron shells closer, so despite having more electrons, chlorine's atoms are smaller than sodium's. Sodium, at the left with fewer protons holding its shells, has the larger radius.",
+          "explanation": "Radius across a period is a tug-of-war: same shells, stronger nuclear pull. Shell count dominates down a group instead, which is why radius grows down group 1 from lithium to cesium.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Chemistry: Molecular Geometry, Polarity, and Intermolecular Forces",
+      "contentBody": "Grade 11 chemistry deepens the bonding picture from grade 10 by asking how molecules are shaped and how those shapes govern the way molecules attract each other. Using the VSEPR model, students count electron regions around a central atom and predict shapes: two regions give linear, three give trigonal planar, four give tetrahedral, five give trigonal bipyramidal, and six give octahedral arrangements. Lone pairs occupy regions too but are invisible in the molecular shape name, so water has four electron regions yet a bent shape, and ammonia has four regions yet a trigonal pyramidal shape. Bond angles follow from the shapes: 180 degrees in linear molecules, about 109.5 degrees in tetrahedral ones, and slightly less where lone pairs push bonding pairs together. Students then connect shape to polarity. A bond is polar when the two atoms differ in electronegativity, and a molecule is polar only when the bond dipoles fail to cancel. Carbon dioxide is linear so its two polar bonds cancel and the molecule is nonpolar, while water is bent so its dipoles add up and the molecule is strongly polar. With polarity established, students study intermolecular forces: London dispersion forces exist between all molecules and grow with the number of electrons; dipole-dipole attractions occur between polar molecules; and hydrogen bonding, the strongest of the three, occurs when hydrogen is bonded directly to nitrogen, oxygen, or fluorine. These attractions explain boiling points, solubility, and why oil and water separate. Like dissolves like: polar solvents dissolve polar or ionic solutes, and nonpolar solvents dissolve nonpolar solutes. Key vocabulary: VSEPR, electron region, lone pair, molecular shape, bond angle, dipole, polarity, electronegativity, nonpolar, London dispersion, dipole-dipole, hydrogen bond, intermolecular force, solubility.",
+      "pedagogicalNotes": "Have students draw Lewis structures first, then count electron regions, then name shape and judge polarity in that fixed order; the routine prevents the common error of calling bent molecules linear because they only look at the formula. Classic misconceptions: lone pairs do not affect shape, polar bonds always make polar molecules, and hydrogen bonding happens inside the molecule rather than between molecules. Use physical marshmallow-and-toothpick models, and contrast carbon dioxide (polar bonds, nonpolar molecule) with water every single time polarity is discussed.",
+      "exampleProblems": [
+        {
+          "problem": "Predict the molecular shape and bond angle of methane, CH4, and of water, H2O, using VSEPR.",
+          "solution": "In CH4 the central carbon has four bonding electron regions and no lone pairs, so the shape is tetrahedral with bond angles near 109.5 degrees. In H2O the central oxygen has four electron regions: two bonding pairs and two lone pairs. The electron geometry is tetrahedral, but the molecular shape, counting atoms only, is bent, with an angle of about 104.5 degrees because lone pairs compress the bonding pairs.",
+          "explanation": "Shape is determined by repulsion between electron regions. Lone pairs occupy space and push bonding pairs closer together, so they change the angle even though they are not named in the shape.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Carbon dioxide (CO2) and water (H2O) both contain polar bonds, yet only water is a polar molecule. Explain why.",
+          "solution": "CO2 is linear: O=C=O. The two bond dipoles point in opposite directions with equal strength, so they cancel and the molecule has no net dipole; it is nonpolar. Water is bent at about 104.5 degrees. Its two O-H dipoles point at an angle and add together, giving the molecule a net dipole; it is polar.",
+          "explanation": "Bond polarity depends on electronegativity differences, but molecular polarity depends on geometry. Symmetric shapes cancel bond dipoles; asymmetric shapes do not.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Rank these by expected boiling point from lowest to highest and justify with intermolecular forces: He, HCl, H2O, CH3OH (methanol).",
+          "solution": "He < HCl < CH3OH < H2O. Helium is a single atom with only very weak London dispersion forces, so it boils lowest. HCl is polar and has dipole-dipole forces plus dispersion, so it boils higher. Methanol has hydrogen bonding through its O-H group. Water has two O-H groups per molecule and an extensive hydrogen-bonding network, giving the strongest attractions and the highest boiling point of the set.",
+          "explanation": "Boiling requires overcoming attractions between molecules, so stronger intermolecular forces mean higher boiling points. Hydrogen bonding beats dipole-dipole, which beats plain dispersion forces.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Chemistry: The Mole Concept, Molar Mass, and Stoichiometry",
+      "contentBody": "Grade 12 chemistry introduces the central counting unit of chemistry: the mole. One mole contains Avogadro's number of particles, 6.022 times 10 to the 23rd, whether those particles are atoms, molecules, ions, or formula units. The mole bridges the invisible world of atoms and the visible world of grams on a balance. Molar mass, read from the periodic table in grams per mole, is the conversion key: carbon has a molar mass of 12.01 g/mol, water 18.02 g/mol, and glucose 180.18 g/mol. Students practice conversions among mass, moles, and number of particles using dimensional analysis, setting up conversion factors so unwanted units cancel. Percent composition by mass follows, comparing the mass of each element in a compound to the compound's total molar mass, and empirical formulas are derived from percent composition by assuming a 100 gram sample, converting to moles, and dividing by the smallest mole value. Molecular formulas are recovered by comparing the empirical formula mass to the measured molar mass. The second major theme is stoichiometry: balanced equations are read as mole ratios. In 2H2 plus O2 gives 2H2O, two moles of hydrogen react with one mole of oxygen to make two moles of water, and those ratios let students convert from any species to any other. Limiting reactant problems require converting each reactant to moles, using the ratio to find which runs out first, and reporting the amount of product from that reactant. Theoretical yield is the maximum product predicted by stoichiometry, and percent yield compares actual to theoretical yield as a percentage. Key vocabulary: mole, Avogadro's number, molar mass, dimensional analysis, percent composition, empirical formula, molecular formula, mole ratio, stoichiometry, limiting reactant, excess reactant, theoretical yield, percent yield.",
+      "pedagogicalNotes": "The mole is the single hardest conceptual jump in school chemistry; treat it like a dozen for atoms and rehearse the three-part map of grams to moles to particles until it is automatic. Common misconceptions: molar mass is the same as atomic mass with no units, coefficients in equations are gram amounts, and the reactant with the smaller mass is always limiting. Insist on units in every step of dimensional analysis so cancellation is visible, and always require students to identify the limiting reactant by moles, never by eye.",
+      "exampleProblems": [
+        {
+          "problem": "How many moles are in 36.04 g of water, H2O? How many molecules is that?",
+          "solution": "Molar mass of H2O = 2(1.008) + 16.00 = 18.02 g/mol. Moles = 36.04 g divided by 18.02 g/mol = 2.000 mol. Molecules = 2.000 mol times 6.022 times 10 to the 23rd molecules/mol = 1.204 times 10 to the 24th molecules.",
+          "explanation": "Mass converts to moles using molar mass, then moles convert to particles using Avogadro's number. Each step cancels units so the setup is self-checking.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Iron reacts with oxygen gas to form iron(III) oxide: 4Fe + 3O2 gives 2Fe2O3. If 10.0 g of Fe reacts with 6.00 g of O2, which is the limiting reactant and what mass of Fe2O3 forms?",
+          "solution": "Moles of Fe = 10.0 g / 55.85 g/mol = 0.179 mol. Moles of O2 = 6.00 g / 32.00 g/mol = 0.188 mol. The ratio needed is 4 mol Fe to 3 mol O2. For 0.179 mol Fe you need 0.179 times 3/4 = 0.134 mol O2; you have 0.188 mol, so O2 is in excess and Fe is limiting. Product follows Fe: 0.179 mol Fe times 2 mol Fe2O3 / 4 mol Fe = 0.0895 mol Fe2O3. Mass = 0.0895 mol times 159.7 g/mol = 14.3 g Fe2O3.",
+          "explanation": "The limiting reactant is the one that runs out first, and it alone determines the product amount. Comparing required moles to available moles identifies it reliably.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A student burns 4.00 g of hydrogen in excess oxygen and collects 28.5 g of water. The theoretical yield is 35.7 g. Calculate the percent yield and give one realistic reason it is below 100 percent.",
+          "solution": "Percent yield = actual / theoretical times 100 = 28.5 g / 35.7 g times 100 = 79.8 percent. Realistic reasons include water vapor escaping during the experiment, product left behind on glassware, or incomplete reaction and side reactions.",
+          "explanation": "Percent yield measures experimental efficiency. Values below 100 percent are normal because real transfers and reactions are never perfect; values above 100 percent usually indicate impure or wet product.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Chemistry: Types of Chemical Reactions, Redox, and Acids and Bases",
+      "contentBody": "Grade 13 chemistry organizes reactions into recognizable families and adds the electron-transfer view of reactivity. Students classify synthesis reactions where two substances combine into one, decomposition where one substance breaks apart, single replacement where an element displaces another from a compound, double replacement where two compounds trade partners, and combustion where a fuel burns in oxygen to give carbon dioxide and water. Precipitation reactions in solution are examined through solubility rules: mixing solutions of sodium chloride and silver nitrate produces solid silver chloride, and the full molecular equation is condensed into a net ionic equation that shows only the species that actually change, with spectator ions cancelled. The second theme is oxidation and reduction. Oxidation numbers bookkeep electrons: oxidation is a loss of electrons and an increase in oxidation number, reduction is a gain and a decrease, and the two always occur together. Students balance simple redox equations by separating oxidation and reduction half-reactions, balancing atoms, then electrons, then combining. The activity series ranks metals by ease of oxidation and predicts which single replacements occur: zinc displaces copper from copper sulfate, but copper does not displace zinc. Third, acids and bases are treated with both the Arrhenius and Bronsted-Lowry definitions. An acid donates hydrogen ions and a base accepts them, conjugate pairs differ by one hydrogen ion, and strong acids and bases ionize completely while weak ones reach equilibrium. The pH scale quantifies acidity as the negative logarithm of the hydrogen ion concentration, with pH 7 neutral at 25 degrees Celsius, lower values acidic, higher values basic. Neutralization produces water and a salt, and titrations use that reaction to find unknown concentrations. Key vocabulary: synthesis, decomposition, single replacement, double replacement, precipitation, solubility, spectator ion, net ionic equation, oxidation, reduction, oxidation number, half-reaction, activity series, Arrhenius, Bronsted-Lowry, conjugate pair, strong acid, pH, neutralization, titration.",
+      "pedagogicalNotes": "Reaction-type recognition is pattern practice; drill with the same reaction shown in word, formula, and ionic form. Common misconceptions: oxidation means adding oxygen, the ionic equation includes every ion in the beaker, and a 0.1 M weak acid solution has the same hydrogen ion concentration as a 0.1 M strong acid. For redox, make students label oxidation numbers before balancing anything. Emphasize that pH is a logarithmic scale, so pH 3 is ten times more acidic than pH 4, and keep acid safety rules explicit: dilute acids still require goggles and slow dilution of acid into water, never the reverse.",
+      "exampleProblems": [
+        {
+          "problem": "Classify each reaction type: (a) 2Mg + O2 gives 2MgO, (b) 2H2O2 gives 2H2O + O2, (c) Zn + CuSO4 gives ZnSO4 + Cu.",
+          "solution": "(a) Synthesis: two reactants combine into a single product. (b) Decomposition: one reactant breaks into two products. (c) Single replacement: the element zinc displaces copper from its compound, which the activity series predicts because zinc is more reactive than copper.",
+          "explanation": "Naming the reaction type is a matter of counting and rearranging: two into one is synthesis, one into many is decomposition, and an element trading places in a compound is replacement.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Write the net ionic equation for the reaction between aqueous silver nitrate and aqueous sodium chloride, which forms solid silver chloride.",
+          "solution": "Molecular equation: AgNO3(aq) + NaCl(aq) gives AgCl(s) + NaNO3(aq). Full ionic: Ag+ plus NO3- plus Na+ plus Cl- gives AgCl(s) plus Na+ plus NO3-. Spectator ions Na+ and NO3- cancel, leaving the net ionic equation: Ag+(aq) + Cl-(aq) gives AgCl(s).",
+          "explanation": "Net ionic equations strip away ions that do not participate and show the actual chemical change: silver ions meet chloride ions and form an insoluble solid.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A solution has a hydrogen ion concentration of 1.0 times 10 to the minus 3 moles per liter. Find its pH, say whether it is acidic or basic, and state how its hydrogen ion concentration compares to a solution of pH 5.",
+          "solution": "pH = negative log of (1.0 times 10 to the minus 3) = 3.0. A pH of 3 is below 7, so the solution is acidic. Compared to a pH 5 solution, its hydrogen ion concentration is 10 to the power (5 minus 3) = 100 times greater.",
+          "explanation": "pH is the negative logarithm of hydrogen ion concentration, so each whole pH unit corresponds to a tenfold change. This logarithmic nature is the most commonly tested feature of the scale.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Chemistry: Gas Laws and Thermochemistry",
+      "contentBody": "Grade 14 chemistry unites the behavior of gases with the energy changes of reactions. The kinetic molecular theory describes gases as tiny particles in constant random motion with negligible volume and no attractions between them, and pressure arising from collisions with container walls. From this model come the gas laws. Boyle's law states that pressure and volume are inversely related at constant temperature; Charles's law states that volume and temperature in kelvin are directly related at constant pressure; and Avogadro's law states that volume is proportional to the amount of gas at fixed temperature and pressure. These combine into the ideal gas law, PV equals nRT, where the gas constant R is 0.08206 liter atmospheres per mole kelvin when pressure is in atmospheres and volume in liters. Absolute temperature in kelvin is mandatory. Students also use the combined gas law for changing conditions, Dalton's law of partial pressures for gas mixtures collected over water, and molar volume: one mole of an ideal gas occupies 22.4 liters at standard temperature and pressure. Gas stoichiometry links moles from balanced equations to volumes via the ideal gas law. Thermochemistry then addresses energy. Exothermic reactions release heat to the surroundings and have negative enthalpy change; endothermic reactions absorb heat and have positive enthalpy change. Calorimetry measures heat with q equals m c delta T, where c is specific heat capacity, and enthalpy of reaction can be scaled by the moles in the balanced equation. Hess's law states that total enthalpy change is independent of pathway, so target reactions can be built by adding known steps. Bond enthalpies estimate reaction enthalpy as energy in minus energy out: breaking bonds absorbs energy and forming bonds releases it. Key vocabulary: pressure, kelvin, kinetic molecular theory, Boyle's law, Charles's law, ideal gas law, partial pressure, standard temperature and pressure, exothermic, endothermic, enthalpy, calorimetry, specific heat, Hess's law, bond enthalpy, heat of reaction.",
+      "pedagogicalNotes": "Temperature in gas law calculations must always be converted to kelvin; catching this error early saves most lost marks. Common misconceptions: gas particles attract each other as they condense, exothermic means hot, and heat and temperature are the same thing. Make the sign convention for enthalpy explicit with a diagram: negative delta H means energy leaves the system. For calorimetry, insist students write q = m c delta T with units in every factor, and note that q of the reaction equals negative q of the solution.",
+      "exampleProblems": [
+        {
+          "problem": "A gas occupies 2.50 L at 25 degrees Celsius and 1.00 atm. What volume does it occupy at 50 degrees Celsius and 2.00 atm?",
+          "solution": "Convert temperatures: T1 = 298 K, T2 = 323 K. Use the combined gas law: P1V1/T1 = P2V2/T2. Rearranged: V2 = P1V1T2 / (P2T1) = (1.00 atm times 2.50 L times 323 K) / (2.00 atm times 298 K) = 807.5 / 596 = 1.35 L.",
+          "explanation": "Doubling the pressure halves the volume while raising temperature increases it slightly; the net result is a volume between the two effects. Using kelvin and tracking units prevents sign and scale errors.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 50.0 g sample of water at 22.0 degrees Celsius absorbs 2.09 kJ of heat. The specific heat of water is 4.18 J per gram degree Celsius. What is the final temperature?",
+          "solution": "q = m c delta T gives delta T = q / (m c) = 2090 J / (50.0 g times 4.18 J per gram degree Celsius) = 2090 / 209 = 10.0 degrees Celsius. Final temperature = 22.0 + 10.0 = 32.0 degrees Celsius.",
+          "explanation": "Rearranging q = m c delta T answers any calorimetry question with three knowns. The positive sign of q means heat was absorbed and the temperature rose.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Using bond enthalpies, estimate the enthalpy change for H2 plus Cl2 gives 2HCl. Bond enthalpies: H-H 436 kJ/mol, Cl-Cl 242 kJ/mol, H-Cl 431 kJ/mol.",
+          "solution": "Bonds broken: one H-H (436 kJ) and one Cl-Cl (242 kJ), total absorbed = 678 kJ. Bonds formed: two H-Cl (2 times 431 = 862 kJ), total released = 862 kJ. Delta H = energy in minus energy out = 678 minus 862 = negative 184 kJ, so the reaction is exothermic.",
+          "explanation": "Breaking bonds always costs energy and forming bonds always releases it. The reaction enthalpy is the difference, and a negative value signals heat released to the surroundings.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Chemistry: Chemical Equilibrium and Le Chatelier's Principle",
+      "contentBody": "Grade 15 chemistry introduces chemical equilibrium, the state where forward and reverse reaction rates become equal so that concentrations of reactants and products remain constant even though both reactions continue. Dynamic equilibrium is reached in reversible reactions, written with a double arrow, and is characterized not by equal amounts but by constant amounts. The equilibrium expression follows from the balanced equation: for aA plus bB in equilibrium with cC plus dD, Kc equals the product of product concentrations each raised to their coefficient power divided by the product of reactant concentrations each raised to their coefficient power, with pure solids and liquids omitted. Kp uses partial pressures for gas reactions and is related to Kc through the ideal gas law and the change in moles of gas. The magnitude of K tells the story of the equilibrium position: K much greater than 1 favors products, K much less than 1 favors reactants, and K near 1 means comparable amounts of both. Reaction quotient Q compares current concentrations to K to predict the direction of shift: Q less than K means the reaction proceeds forward, Q greater than K means it reverses, and Q equal to K means the system is at equilibrium. Le Chatelier's principle organizes how systems respond to disturbance: adding reactant or removing product shifts equilibrium toward products; increasing pressure shifts toward the side with fewer moles of gas; raising temperature shifts in the endothermic direction because heat can be treated as a reactant or product; and catalysts change nothing about the position, only the speed of reaching equilibrium. Students calculate K from equilibrium concentrations and solve simple ICE tables for initial, change, and equilibrium amounts. Key vocabulary: reversible reaction, dynamic equilibrium, equilibrium constant, Kc, Kp, reaction quotient, ICE table, equilibrium position, Le Chatelier's principle, disturbance, shift, homogeneous, heterogeneous, catalyst.",
+      "pedagogicalNotes": "The most persistent misconception is that equilibrium means equal amounts of reactants and products; hammer that it means constant amounts and equal rates. Other traps: including pure solids or liquids in K expressions, forgetting to square or cube concentrations, and thinking a catalyst increases yield. Use ICE tables early and consistently, and demonstrate Le Chatelier with the cobalt chloride equilibrium, whose color shift makes the abstract idea visible. Always ask students to justify the direction of shift with the reaction equation, not just memorized phrases.",
+      "exampleProblems": [
+        {
+          "problem": "Write the Kc expression for the reaction N2(g) + 3H2(g) in equilibrium with 2NH3(g), and state what a very large Kc would mean.",
+          "solution": "Kc = [NH3] squared divided by ([N2] times [H2] cubed). A very large Kc means that at equilibrium the numerator dominates: the equilibrium position lies far to the right and the mixture is mostly ammonia, with only small amounts of nitrogen and hydrogen remaining.",
+          "explanation": "Products go on top and reactants on the bottom, each raised to the power of its coefficient. The size of K describes the equilibrium position, not the speed of the reaction.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "For an exothermic reaction at equilibrium, predict the shift when (a) product is removed, (b) temperature is raised, (c) a catalyst is added. Justify each.",
+          "solution": "(a) Removing product disturbs the equilibrium, so the system shifts forward to replace it, producing more product. (b) Raising temperature adds heat; since the reaction is exothermic, heat is a product, so the system shifts backward toward reactants, and K decreases. (c) A catalyst speeds both forward and reverse rates equally, so there is no shift and no change in K; the system just reaches equilibrium sooner.",
+          "explanation": "Le Chatelier's principle says a system at equilibrium counteracts an imposed change. Only temperature changes the value of K; concentration and pressure changes shift position but leave K constant.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 1.00 L vessel at equilibrium contains 0.50 mol H2, 0.50 mol I2, and 0.76 mol HI for the reaction H2 + I2 in equilibrium with 2HI. Calculate Kc.",
+          "solution": "Concentrations in the 1.00 L vessel equal the mole values: [H2] = 0.50 M, [I2] = 0.50 M, [HI] = 0.76 M. Kc = [HI] squared / ([H2][I2]) = (0.76) squared / (0.50 times 0.50) = 0.5776 / 0.25 = 2.31. Kc is about 2.3.",
+          "explanation": "In a one liter vessel moles and molarity are numerically equal, which simplifies the arithmetic. Kc near 1 to 3 means appreciable amounts of both reactants and products at equilibrium.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Chemistry: Reaction Kinetics and Acid-Base Equilibrium",
+      "contentBody": "Grade 16 chemistry studies how fast reactions happen and how acid-base systems reach equilibrium. Kinetics begins with collision theory: reactions occur when particles collide with proper orientation and energy at or above the activation energy. Reaction rate is measured as change in concentration per unit time and can be followed by gas volume, mass loss, color change, or conductivity. Factors that increase rate are higher concentration, higher temperature, greater surface area, and catalysts. Temperature works because it increases both collision frequency and, far more importantly, the fraction of collisions exceeding activation energy. Catalysts provide an alternative pathway with lower activation energy and are not consumed; enzymes are biological catalysts with remarkable specificity. Rate laws express rate as k times the concentration of each reactant raised to its order, determined experimentally, not from the balanced equation. Zero-order reactions have constant rate, first-order reactions show exponential decay with a constant half-life, and second-order reactions decay faster with half-life dependent on concentration. Energy profiles show reactants, products, activation energy humps, and the effect of a catalyst, with exothermic and endothermic reactions distinguished by relative energy levels. The second theme is acid-base equilibrium. Weak acids and bases establish equilibrium described by Ka and Kb; larger Ka means a stronger weak acid. The relationship Kw equals Ka times Kb holds for conjugate pairs, where Kw is 1.0 times 10 to the minus 14 at 25 degrees Celsius. Buffers resist pH change because they contain a weak acid and its conjugate base, and the Henderson-Hasselbalch equation, pH equals pKa plus log of base over acid, lets students calculate buffer pH. Titrations of weak acids with strong bases are analyzed from their curves: the equivalence point sits above pH 7 for a weak acid titrated with a strong base, and half-equivalence gives pH equals pKa. Key vocabulary: reaction rate, collision theory, activation energy, rate law, reaction order, half-life, catalyst, energy profile, Ka, Kb, Kw, conjugate pair, buffer, Henderson-Hasselbalch, pKa, titration curve, equivalence point.",
+      "pedagogicalNotes": "Make students distinguish rate from position: a catalyst changes how fast equilibrium arrives, never where it lands. Common misconceptions: rate depends on the balanced equation coefficients, all reactions with the same reactant concentrations have the same rate, and buffers keep pH constant regardless of added acid. For kinetics, have students extract half-life graphs and identify order from them. For buffers, pair the calculation with a physical demo of a buffer versus water resisting pH change, and stress that Henderson-Hasselbalch is valid only when the approximation of negligible dissociation holds.",
+      "exampleProblems": [
+        {
+          "problem": "A first-order reaction has a half-life of 20 minutes. Starting from 8.0 M, what concentration remains after 60 minutes?",
+          "solution": "60 minutes is three half-lives. After one half-life: 4.0 M. After two: 2.0 M. After three: 1.0 M. So 1.0 M remains after 60 minutes.",
+          "explanation": "First-order half-lives are constant regardless of concentration, so concentration simply halves each half-life. This doubling pattern is the fastest way to solve such problems.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Calculate the pH of a buffer that is 0.20 M in acetic acid and 0.30 M in sodium acetate. The pKa of acetic acid is 4.76.",
+          "solution": "Use Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]) = 4.76 + log(0.30/0.20) = 4.76 + log(1.5) = 4.76 + 0.176 = 4.94.",
+          "explanation": "The buffer pH depends on the ratio of conjugate base to weak acid, not on their absolute amounts. Because the ratio is close to 1, the pH sits near the pKa, which is exactly where buffers work best.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain why a catalyst speeds up a reaction but does not change the equilibrium constant or the yield of product.",
+          "solution": "A catalyst lowers the activation energy by providing an alternative reaction pathway, so more collisions are successful and both the forward and reverse reactions speed up equally. Because both directions accelerate by the same factor, the ratio of forward to reverse rates is unchanged, so the equilibrium position and Kc stay the same. The system simply reaches equilibrium in less time. Yield is set by thermodynamics and the value of K, not by how fast equilibrium arrives.",
+          "explanation": "Catalysts are kinetic tools, not thermodynamic ones. This is a standard exam trap: any claim that a catalyst increases yield or changes K is false.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Chemistry: Electrochemistry and Introduction to Organic Chemistry",
+      "contentBody": "Grade 17 chemistry connects redox reactions to electrical energy and opens the study of carbon compounds. Electrochemistry starts from the fact that redox reactions involve electron transfer, and if the transfer is routed through a wire, the flow of electrons becomes current. Galvanic or voltaic cells convert spontaneous redox reactions into electricity: the anode is where oxidation occurs and is the negative electrode, the cathode is where reduction occurs and is the positive electrode, and electrons travel through the external circuit from anode to cathode while ions move through the salt bridge to maintain charge balance. Standard reduction potentials, measured in volts against the standard hydrogen electrode, allow prediction of cell voltage: the cell potential equals the cathode potential minus the anode potential, and a positive value means the reaction is spontaneous. The Nernst equation extends this to nonstandard concentrations. Electrolytic cells do the reverse, using external electrical energy to drive nonspontaneous reactions, which underlies electroplating, aluminum refining, and the charging of batteries. Faraday's laws relate charge to the amount of substance produced. Corrosion, such as rusting, is framed as slow electrochemistry, prevented by coatings, galvanizing, and sacrificial anodes. The second theme is organic chemistry: carbon forms four bonds and builds chains, branches, and rings. Students learn the alkanes, alkenes, and alkynes with single, double, and triple carbon-carbon bonds; naming by IUPAC rules with prefixes meth, eth, prop, but; structural, condensed, and skeletal formulas; and structural isomers. Functional groups define families: alcohols with hydroxyl, carboxylic acids with carboxyl, esters, amines, aldehydes, and ketones, each with characteristic reactions. Homologous series share general formulas and gradual property trends. Introductory reaction types include combustion of hydrocarbons, addition across double bonds, and the esterification of an alcohol with an acid. Key vocabulary: redox, anode, cathode, galvanic cell, electrolytic cell, salt bridge, standard reduction potential, cell potential, Nernst equation, electrolysis, corrosion, hydrocarbon, alkane, alkene, functional group, IUPAC naming, isomer, homologous series, esterification.",
+      "pedagogicalNotes": "The anode-cathode and oxidation-reduction pairings are the classic confusion point; use the mnemonic OIL RIG and the AN OX / RED CAT rhyme and repeat it every lesson. Common misconceptions: electrons flow through the salt bridge, the anode is positive in every cell, and all carbon compounds are organic in the same way. For organic nomenclature, drill structure before naming and require drawing every isomer of small alkanes, since isomer counting is a favorite assessment item. Emphasize that a negative cell potential means the reaction is nonspontaneous and requires energy input.",
+      "exampleProblems": [
+        {
+          "problem": "In a galvanic cell based on zinc and copper, Zn is oxidized to Zn2+ and Cu2+ is reduced to Cu. Identify the anode and cathode and state the direction of electron flow in the wire.",
+          "solution": "Oxidation occurs at the anode, so the zinc electrode is the anode and is the negative terminal. Reduction occurs at the cathode, so the copper electrode is the cathode and is the positive terminal. Electrons flow through the external wire from the zinc anode to the copper cathode.",
+          "explanation": "Oxidation releases electrons at the anode, and those electrons travel through the wire to the cathode where reduction consumes them. The salt bridge completes the circuit by carrying ions, never electrons.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Name and give the molecular formula of the alkane with four carbon atoms, and draw one of its structural isomers.",
+          "solution": "Four carbons with the alkane general formula CnH2n+2 gives C4H10, named butane. Its structural isomer is 2-methylpropane (isobutane): a three-carbon chain with a methyl branch on the middle carbon, still C4H10 but with a different connectivity and a lower boiling point than butane.",
+          "explanation": "Isomers share a molecular formula but differ in atom connectivity, which gives them different physical properties. IUPAC names encode the longest chain and the position of branches.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A student claims that in an electrolytic cell the anode is negative and electrons flow toward it. Correct the claim and explain the difference from a galvanic cell.",
+          "solution": "In an electrolytic cell the anode is the positive electrode and the cathode is the negative one, because an external power source forces electrons to the cathode, where reduction occurs, and pulls them from the anode, where oxidation occurs. In a galvanic cell the signs are reversed: the anode is negative because the spontaneous reaction pushes electrons out of it. The anode is always the site of oxidation and the cathode always the site of reduction; only the polarity and the energy source change.",
+          "explanation": "Electrode definitions depend on the chemistry, oxidation at the anode, reduction at the cathode, while the sign of the electrode depends on whether the cell produces or consumes energy. Keeping these two facts separate resolves most exam confusion.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Chemistry: Chemical Thermodynamics, Entropy, and Gibbs Free Energy",
+      "contentBody": "Grade 18 chemistry moves from heat changes to the deeper question of why reactions happen at all. Enthalpy alone is insufficient: some endothermic processes occur spontaneously because of disorder. Entropy, S, measures the dispersal of energy and matter, the number of microscopic arrangements available to a system. Entropy increases when solids melt, liquids vaporize, gases form from solids, solutes dissolve, temperature rises, or the number of gas moles increases. The second law of thermodynamics states that the total entropy of the universe increases for any spontaneous process, and the third law states that a perfect crystal at absolute zero has zero entropy. Standard molar entropies allow calculation of entropy change of a reaction as products minus reactants. Gibbs free energy combines enthalpy and entropy: delta G equals delta H minus T delta S, with all terms in consistent units so temperature in kelvin multiplies entropy in kJ per mole kelvin. A negative delta G means the process is spontaneous in the forward direction, zero means equilibrium, and positive means nonspontaneous. This single equation yields four regimes: exothermic with increasing entropy is always spontaneous, endothermic with decreasing entropy is never spontaneous, and the other two combinations are temperature-dependent, with the crossover temperature at delta H divided by delta S. Standard free energies of formation give delta G for a reaction as products minus reactants, and delta G relates to the equilibrium constant through delta G degrees equals negative R T ln K, and to cell potential through delta G equals negative n F E. This links thermodynamics to the equilibrium and electrochemistry topics of earlier grades. Students distinguish spontaneous from fast: thermodynamics predicts feasibility, kinetics predicts speed, and diamond converting to graphite is spontaneous but immeasurably slow. Key vocabulary: entropy, second law, third law, microstate, Gibbs free energy, spontaneous, standard entropy, free energy of formation, equilibrium constant, crossover temperature, enthalpy-entropy compensation, exergonic, endergonic.",
+      "pedagogicalNotes": "The word spontaneous is itself a misconception magnet: students hear fast, when it means no ongoing energy input is required. Confront this with the diamond-graphite example immediately. Other traps: forgetting to convert delta S to kJ units before subtracting, applying delta G to nonstandard conditions without the correction, and assuming endothermic reactions never occur. Teach the four sign combinations as a two-by-two table and drill predicting spontaneity at high and low temperature before any calculation. Show the unified diagram connecting delta G, K, and E cell so students see the same driving force described three ways.",
+      "exampleProblems": [
+        {
+          "problem": "For a reaction with delta H = negative 92 kJ and delta S = negative 190 J per kelvin, calculate delta G at 298 K and state whether the reaction is spontaneous.",
+          "solution": "First convert delta S: negative 190 J per kelvin equals negative 0.190 kJ per kelvin. Delta G = delta H minus T delta S = negative 92 minus 298 times (negative 0.190) = negative 92 plus 56.6 = negative 35.4 kJ. Delta G is negative, so the reaction is spontaneous at 298 K.",
+          "explanation": "Unit consistency is the make-or-break step here; entropy is usually quoted in joules while enthalpy is in kilojoules. The negative entropy term opposes spontaneity, so it shrinks the favorable enthalpy driving force.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A process has delta H = positive 40 kJ and delta S = positive 120 J per kelvin. At what temperature does it become spontaneous?",
+          "solution": "Convert delta S to 0.120 kJ per kelvin. Spontaneity requires delta G < 0, so T > delta H / delta S = 40 / 0.120 = 333 K. Above about 333 K, roughly 60 degrees Celsius, the process is spontaneous because the T delta S term outweighs the positive enthalpy.",
+          "explanation": "Endothermic processes driven by a large entropy increase run only at high temperature. The crossover temperature delta H over delta S is where delta G equals zero and the system sits at equilibrium.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain how delta G degrees relates to the equilibrium constant K, and predict whether a reaction with K much greater than 1 has a positive or negative delta G degrees.",
+          "solution": "The relationship is delta G degrees equals negative R T ln K. When K is much greater than 1, ln K is positive, so negative R T ln K is negative and delta G degrees is negative. A negative standard free energy change corresponds to a reaction that favors products at standard conditions, consistent with a large K. When K equals 1, delta G degrees is zero; when K is small, delta G degrees is positive.",
+          "explanation": "This equation is the bridge between thermodynamics and equilibrium: the sign of delta G degrees tells which side the equilibrium favors, while its magnitude sets how far. It mirrors the electrochemical relation delta G equals negative n F E.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Chemistry: Introduction to Quantum Chemistry and Atomic Spectra",
+      "contentBody": "Grade 19 chemistry replaces the simple Bohr orbits of earlier grades with the quantum mechanical model of the atom. The story begins with the failures of classical physics: blackbody radiation, the photoelectric effect, and atomic emission spectra could not be explained by classical theory. Planck quantized energy, Einstein described light as photons with energy E equals h times frequency, and Bohr explained hydrogen's line spectrum with quantized energy levels but failed for larger atoms. De Broglie proposed wave-particle duality with wavelength equals Planck's constant divided by momentum, and Heisenberg's uncertainty principle states that a particle's position and momentum cannot both be known exactly. Schrodinger's wave equation replaced precise electron orbits with orbitals, three-dimensional probability regions where an electron is likely to be found. Orbitals are labeled by three quantum numbers: the principal quantum number n gives the energy level and size, the angular momentum quantum number l gives the sublevel and shape with values 0 to n minus 1 corresponding to s, p, d, f, and the magnetic quantum number ml gives the orientation with values minus l to plus l. A fourth, the spin quantum number ms, is plus or minus one half. The Pauli exclusion principle states that no two electrons in an atom share all four quantum numbers, which caps each orbital at two electrons with opposite spins. Hund's rule states that electrons fill degenerate orbitals singly first with parallel spins. Orbital filling order follows the Aufbau principle, and the resulting configurations explain the periodic table's block structure: s-block groups 1 and 2, p-block groups 13 to 18, d-block transition metals, and f-block inner transition metals, with exceptions such as chromium and copper arising from half-filled and filled sublevel stability. Atomic spectra are explained as electrons transitioning between levels, absorbing or emitting photons whose energy exactly matches the level difference. Key vocabulary: photon, wave-particle duality, uncertainty principle, orbital, quantum number, principal energy level, sublevel, Pauli exclusion principle, Hund's rule, Aufbau principle, electron configuration, emission spectrum, energy transition, degenerate.",
+      "pedagogicalNotes": "Students must abandon the idea of electron orbits and adopt orbitals as probability clouds; every drawing exercise should reinforce this. Common misconceptions: electrons circle the nucleus like planets, s orbitals are flat circles, and filling order is simply 1s 2s 2p 3s 3p 3d. Teach the n, l, ml, ms set as an address system with an explicit counting rule, and derive the periodic table's structure from configurations rather than memorizing it separately. Quantum mechanics is abstract; anchor each idea in its experimental evidence, especially spectra, since flame tests and discharge tubes make quantization visible.",
+      "exampleProblems": [
+        {
+          "problem": "Write the full electron configuration of chlorine (Z = 17) and the shorthand noble gas configuration.",
+          "solution": "Chlorine has 17 electrons. Filling in order: 1s2 2s2 2p6 3s2 3p5. The noble gas core is neon (1s2 2s2 2p6), so the shorthand is [Ne] 3s2 3p5. The seven valence electrons in 3s and 3p match chlorine's position in group 17.",
+          "explanation": "Electrons fill from lowest energy upward following the Aufbau principle, and each orbital holds at most two electrons. The shorthand exposes valence electrons, which control bonding.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "List a valid set of four quantum numbers for an electron in a 3p orbital, and state how many electrons can occupy all 3p orbitals combined.",
+          "solution": "For a 3p electron: n = 3, l = 1 (since p corresponds to l = 1), ml can be minus 1, 0, or plus 1, and ms is plus or minus one half. One example set is n = 3, l = 1, ml = 0, ms = plus one half. The 3p sublevel has three orbitals (three ml values), each holding two electrons, so six electrons total.",
+          "explanation": "Quantum numbers form an address: n the shell, l the sublevel shape, ml the orientation, ms the spin. Counting ml values and multiplying by two for spin gives sublevel capacity directly.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain, using quantum principles, why the observed emission spectrum of hydrogen consists of discrete lines rather than a continuous rainbow.",
+          "solution": "Electrons in hydrogen occupy only specific quantized energy levels. When an electron drops from a higher level to a lower one, it emits a photon whose energy exactly equals the difference between the two levels, and photon energy is proportional to frequency. Because only certain level differences exist, only certain frequencies are emitted, each producing one line in the spectrum. A continuous rainbow would require arbitrary energy differences, which quantization forbids. Series such as Lyman and Balmer correspond to transitions ending on particular levels.",
+          "explanation": "Discrete spectral lines are direct evidence for quantized energy levels, and this was historically the observation that classical physics could not explain. The same reasoning works in reverse for absorption spectra.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Chemistry: Advanced Equilibrium, Buffers, and Solubility Equilibria",
+      "contentBody": "Grade 20 chemistry integrates equilibrium with quantitative rigor across acid-base, solubility, and complex ion systems. Acid-base equilibria are treated in full: polyprotic acids such as phosphoric acid ionize in steps with successive Ka values, and the pH of amphiprotic species is approximated by averaging pKa values. Buffer capacity is quantified as the amount of strong acid or base a buffer can absorb before its pH shifts by one unit, maximal when the conjugate acid-base ratio is near one and the total concentration is high. Titration curves are analyzed point by point: before any base is added, the pH follows the weak acid dissociation; in the buffer region the Henderson-Hasselbalch equation applies; at half-equivalence pH equals pKa; at equivalence the conjugate base determines pH; and beyond equivalence excess strong base dominates. Indicators are chosen so their transition range brackets the equivalence point pH. Solubility equilibria introduce the solubility product constant Ksp for saturated solutions of sparingly soluble salts such as silver chloride and calcium fluoride. Solubility in grams per liter is converted to Ksp and vice versa, with stoichiometry of the salt dictating the exponents and the common ion effect suppressing solubility. The ion product Q predicts precipitation: Q greater than Ksp precipitates, Q less than Ksp does not, and Q equals Ksp is saturated. Le Chatelier's principle explains selective precipitation for separating ions and the dissolution of precipitates by pH change when the anion is basic, for example calcium carbonate in acid. Complex ion formation with ligands such as ammonia and cyanide increases solubility by removing free metal ions, quantified by formation constants Kf. The relationship between free energy and equilibrium closes the loop: delta G degrees equals negative R T ln K applies to Ksp and Kf as readily as to Kc. Multi-equilibrium problems are solved by combining steps: overall K values multiply when reactions add. Key vocabulary: polyprotic acid, buffer capacity, titration curve, indicator range, solubility product, Ksp, sparingly soluble, common ion effect, ion product, selective precipitation, complex ion, ligand, formation constant, coupled equilibria.",
+      "pedagogicalNotes": "This level demands disciplined bookkeeping: always write the dissolution equation and the Ksp expression from it before touching numbers, because the exponent errors are the most common failure. Misconceptions to target: solubility and Ksp are the same thing, a small Ksp means a small molar solubility in all cases (compare AgCl and Ag2CrO4 stoichiometries), and buffers work best at high dilution. Teach titration curve regions as a labeled map rather than a single formula, and use selective precipitation as a motivating real application, such as qualitatively analyzing an unknown ion mixture. Multi-equilibrium problems reward students who keep a running table of known and unknown quantities instead of chaining equations in their heads.",
+      "exampleProblems": [
+        {
+          "problem": "The Ksp of silver chloride is 1.8 times 10 to the minus 10. Calculate its molar solubility in pure water.",
+          "solution": "Dissolution: AgCl(s) in equilibrium with Ag+(aq) + Cl-(aq). If solubility is s moles per liter, then [Ag+] = s and [Cl-] = s. Ksp = s times s = s squared. So s = square root of (1.8 times 10 to the minus 10) = 1.3 times 10 to the minus 5 moles per liter.",
+          "explanation": "For a 1:1 salt, molar solubility is simply the square root of Ksp. The ion concentrations equal s because each formula unit releases one of each ion, a stoichiometry that changes the exponent for other salt types.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Will a precipitate form when 100 mL of 0.0020 M silver nitrate is mixed with 100 mL of 0.0020 M sodium chloride? Ksp of AgCl is 1.8 times 10 to the minus 10.",
+          "solution": "Mixing doubles the volume, halving each concentration: [Ag+] = 0.0010 M and [Cl-] = 0.0010 M. The ion product Q = (0.0010)(0.0010) = 1.0 times 10 to the minus 6. Compare with Ksp = 1.8 times 10 to the minus 10. Since Q is greater than Ksp, the solution is supersaturated and silver chloride precipitates until Q falls to Ksp.",
+          "explanation": "Dilution on mixing must be accounted for; skipping it is a frequent error. Q versus Ksp is the standard test: Q exceeding Ksp means precipitation occurs.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain why silver chloride dissolves in aqueous ammonia even though its Ksp is tiny, and identify the equilibria that couple.",
+          "solution": "Two equilibria couple. First, AgCl dissolves sparingly: AgCl(s) in equilibrium with Ag+(aq) + Cl-(aq), governed by Ksp. Second, ammonia complexes the silver ion: Ag+(aq) + 2NH3(aq) in equilibrium with Ag(NH3)2+(aq), governed by a large formation constant Kf. Complexation removes free Ag+ from solution, so by Le Chatelier's principle the dissolution equilibrium shifts right to replace it, and more AgCl dissolves. The overall equilibrium constant is Ksp times Kf, which is large enough to make dissolution favorable.",
+          "explanation": "Coupled equilibria multiply their constants when the reactions add, and a large overall K explains an observation that neither equilibrium predicts alone. The same logic explains why acids dissolve carbonate precipitates and why cyanide leaches gold.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
