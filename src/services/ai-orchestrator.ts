@@ -1,16 +1,13 @@
 import type { FunctionCall, FunctionDeclaration } from '@google/generative-ai';
 import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
-import { AI_PROVIDERS } from './ai-provider-registry';
-import { getProviderPriority } from './ai-provider-config';
+import { getDisabledProviders, getProviderPriority } from './ai-provider-config';
+import { resolveProviderOrder } from './provider-order';
 
 const RETRYABLE_KINDS = new Set(['not_configured', 'unauthorized', 'rate_limited', 'unavailable', 'network']);
 
 async function resolveOrder(): Promise<AiProvider[]> {
-  const priority = await getProviderPriority();
-  const byId = new Map(AI_PROVIDERS.map((p) => [p.id, p]));
-  const ordered = priority.map((id) => byId.get(id)).filter((p): p is AiProvider => Boolean(p));
-  for (const p of AI_PROVIDERS) if (!ordered.includes(p)) ordered.push(p); // newly-registered providers not yet in saved order
-  return ordered;
+  const [priority, disabled] = await Promise.all([getProviderPriority(), getDisabledProviders()]);
+  return resolveProviderOrder(priority, disabled);
 }
 
 /** Result of a successful tutor response, including which provider actually served it. */

@@ -18,6 +18,11 @@ export const GRADE_LEVELS = Array.from({ length: 20 }, (_, i) => i + 1);
 export const MIN_GRADE_LEVEL = 1;
 export const MAX_GRADE_LEVEL = 20;
 
+/** Subject value for sessions that must NOT hit the knowledge base (embedded app-assistant
+ * hosts such as GlobalVstHost): no knowledge entry is ever filed under it, so retrieval returns
+ * empty and the tutor answers from the host system prompt alone. */
+export const NO_KB_SUBJECT = 'Others';
+
 /** Sent to the AI when no host-provided system prompt is available (true standalone use, or an embedded host with no configured `appConfig/{context}` document yet). */
 export const STANDALONE_EMBED_ONLY_PROMPT =
   'You are a demo assistant with no tutoring configuration in this context. ' +

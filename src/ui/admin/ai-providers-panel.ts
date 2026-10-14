@@ -11,6 +11,7 @@ export function renderAiProvidersPanel(container: HTMLElement, config: AppConfig
     ? [...config.aiProviderPriority].filter((id) => AI_PROVIDERS.some((p) => p.id === id))
     : AI_PROVIDERS.map((p) => p.id);
   for (const p of AI_PROVIDERS) if (!order.includes(p.id)) order.push(p.id); // newly-added providers appear at the end
+  const disabled = new Set(config.aiDisabledProviders ?? []);
 
   function render(): void {
     container.innerHTML = `
@@ -23,6 +24,10 @@ export function renderAiProvidersPanel(container: HTMLElement, config: AppConfig
               (id, i) => `
             <li data-id="${id}">
               <span>${id}</span>
+              <label class="ai-providers-enabled">
+                <input type="checkbox" data-action="toggle" ${disabled.has(id) ? '' : 'checked'} />
+                ${t('admin.providerEnabledLabel')}
+              </label>
               <div class="ai-providers-actions">
                 <button type="button" data-action="up" data-index="${i}" ${i === 0 ? 'disabled' : ''}>${t('admin.moveUpButton')}</button>
                 <button type="button" data-action="down" data-index="${i}" ${i === order.length - 1 ? 'disabled' : ''}>${t('admin.moveDownButton')}</button>
@@ -50,12 +55,29 @@ export function renderAiProvidersPanel(container: HTMLElement, config: AppConfig
         render();
       }),
     );
+    container.querySelectorAll('[data-action="toggle"]').forEach((input) =>
+      input.addEventListener('change', () => {
+        const checkbox = input as HTMLInputElement;
+        const id = checkbox.closest('li')?.getAttribute('data-id');
+        if (!id) return;
+        if (checkbox.checked) disabled.delete(id);
+        else disabled.add(id);
+      }),
+    );
 
     const statusEl = container.querySelector('.ai-providers-status') as HTMLElement;
     container.querySelector('.ai-providers-save')?.addEventListener('click', async () => {
+      // Persist only ids the registry still knows — self-heals stale entries from
+      // retired providers instead of accumulating them forever.
+      const disabledIds = order.filter((id) => disabled.has(id));
+      if (disabledIds.length === order.length) {
+        statusEl.textContent = t('admin.allProvidersDisabledError');
+        return;
+      }
       try {
-        await setDoc(appConfigDoc(), { ...config, aiProviderPriority: order }, { merge: true });
+        await setDoc(appConfigDoc(), { ...config, aiProviderPriority: order, aiDisabledProviders: disabledIds }, { merge: true });
         config.aiProviderPriority = order;
+        config.aiDisabledProviders = disabledIds;
         invalidateProviderPriorityCache();
         showToast(t('admin.orderSavedToast'), 'success');
       } catch (error) {
