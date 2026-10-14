@@ -23,8 +23,21 @@ import {
   type KnowledgeFile,
   type ContentEntry,
 } from './lib/validate-knowledge-content';
+import { PREDEFINED_SUBJECTS } from '../src/models/constants';
 
 const CONTENT_DIR = join(__dirname, '..', 'content', 'knowledge');
+
+// The Cloudflare Worker rejects requests without an allowed Origin header
+// (403 origin_not_allowed). Node's fetch sends no Origin, so we inject an
+// allowed localhost one for worker calls only. Script-local shim — app code untouched.
+const realFetch = globalThis.fetch.bind(globalThis);
+globalThis.fetch = ((input: RequestInfo | URL, init?: RequestInit) => {
+  const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
+  if (WORKER_BASE_URL && url.startsWith(WORKER_BASE_URL)) {
+    init = { ...init, headers: { ...(init?.headers as Record<string, string> | undefined), Origin: 'http://localhost:5173' } };
+  }
+  return realFetch(input, init);
+}) as typeof fetch;
 const args = process.argv.slice(2);
 const has = (flag: string) => args.includes(flag);
 const opt = (name: string) => {
@@ -114,7 +127,7 @@ async function verify(): Promise<void> {
       `${subject.padEnd(18)} ${row.grades.size}/20 grades  ${row.vectors} vectors  model=${[...row.models].join(',') || 'NONE'}`,
     );
   }
-  console.log(`TOTAL: ${total}/160 entries`);
+  console.log(`TOTAL: ${total}/${PREDEFINED_SUBJECTS.length * 20} entries`);
 }
 
 async function probe(subject: string, gradeLevel: number, query: string): Promise<void> {
