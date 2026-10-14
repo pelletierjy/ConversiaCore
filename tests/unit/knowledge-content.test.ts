@@ -32,6 +32,13 @@ describe('validateKnowledgeFile', () => {
     expect(problems.some((p) => p.path === 'subject')).toBe(true);
   });
 
+  it('accepts the French and Canadian history subjects', () => {
+    for (const subject of ['French', 'Quebec History', 'Ontario History', 'Canada History']) {
+      const f = { ...validFile(), subject };
+      expect(validateKnowledgeFile(f)).toEqual([]);
+    }
+  });
+
   it('rejects a missing grade', () => {
     const f = validFile();
     f.entries = f.entries.filter((e) => e.gradeLevel !== 7);
