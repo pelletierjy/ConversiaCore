@@ -1,0 +1,525 @@
+{
+  "subject": "French",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Français niveau 1 : sons, syllabes, premiers mots et phrases",
+      "contentBody": "Au niveau 1 en français, l'élève découvre que les lettres représentent des sons et que ces sons s'assemblent pour former des syllabes, des mots puis des phrases. En lecture, il apprend l'alphabet, les voyelles et les consonnes, puis les syllabes simples comme ma, mi, mu, pa, ri. Il s'entraîne à lire des mots réguliers composés de ces syllabes, par exemple mami, riz, pipe, puis de courtes phrases très simples comme « Il lit. » ou « Papa a un livre. ». Il apprend aussi des mots fréquents qui ne se lisent pas tout à fait comme ils s'écrivent, comme est, et, je, le. En écriture, il copie des mots puis des phrases, trace les lettres majuscules et minuscules, et commence à écrire sous la dictée de mots connus. Il découvre la majuscule en début de phrase et le point à la fin. En grammaire, il repère simplement que le nom désigne une personne, un animal ou une chose, et que le verbe dit ce que l'on fait. Il observe l'accord le plus élémentaire entre un déterminant et un nom, par exemple un chat et deux chats, avec le pluriel des noms courants. En vocabulaire, il enrichit son lexique sur des thèmes familiers : la famille, l'école, la maison, les animaux, les couleurs et les nombres. Il apprend des contraires comme grand et petit, des synonymes simples et le champ lexical d'un thème. À l'oral, il récite des comptines, raconte une courte histoire à partir d'images et répond à de simples questions après l'écoute d'un texte lu par l'enseignant. L'objectif global est que l'élève prenne confiance en lui, qu'il associe plaisir et lecture, et qu'il comprenne que l'écrit sert à transmettre un message à quelqu'un.",
+      "pedagogicalNotes": "Travailler les sons de façon systématique et cumulative, en révisant les sons déjà vus avant d'introduire un nouveau. Utiliser le doigt sous le mot pour relier l'oral et l'écrit. Malentendu fréquent : l'élève pense que les lettres se prononcent toujours de la même façon, alors que les graphies comme ou ou an se prononcent d'un seul son. Étayage : lire le texte à voix haute d'abord, puis faire lire l'élève en chœur avant la lecture individuelle, et valoriser chaque réussite pour construire la confiance.",
+      "exampleProblems": [
+        {
+          "problem": "Lis la phrase suivante et souligne le mot qui commence par le son ma : « Maman a un manteau rouge. »",
+          "solution": "Le mot souligné est « manteau ». On retrouve aussi le son ma au début de « Maman ».",
+          "explanation": "Le son ma s'entend au début de manteau et de Maman. Les autres mots, a, un et rouge, ne commencent pas par ce son.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Complète la phrase avec le mot qui convient : « Le chat dort sur le ___ . » (lit, riz, mur)",
+          "solution": "Le mot qui convient est « lit ».",
+          "explanation": "Le mot lit donne un sens à la phrase, car un chat peut dormir sur un lit. Le mot riz ne convient pas et le mot mur, bien que possible dans la vie réelle, ne complète pas la phrase de façon attendue dans cet exercice de lecture guidée.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Écris la phrase correctement : « il a un ballon »",
+          "solution": "« Il a un ballon. »",
+          "explanation": "Une phrase commence par une majuscule et se termine par un point. Le mot il devient donc Il, et on ajoute un point après ballon.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Français niveau 2 : sons complexes, lecture de phrases et accords simples",
+      "contentBody": "Au niveau 2, l'élève consolide la lecture de mots et de phrases et découvre des sons plus complexes comme ou, on, an, ch, ou et les syllabes composées. Il lit des mots de deux ou trois syllabes, par exemple maison, chaton, école, et de courts textes de quelques phrases avec des images d'appui. Il commence à comprendre ce qu'il lit : il identifie les personnages, le lieu et ce qui se passe dans l'histoire, puis répond à des questions simples. En écriture, il copie des phrases puis écrit des phrases courtes de son cru, en respectant la majuscule et le point. Il commence à accorder le déterminant et le nom : un ou une, le ou la, un livre et des livres. Il découvre que certains noms changent de forme au pluriel, comme cheval et chevaux, chat et chats. En conjugaison, il travaille le présent de l'indicatif avec les verbes courants être, avoir, aller, faire, jouer, manger et regarder : je suis, tu as, il va, nous jouons. Il apprend aussi les pronoms je, tu, il, elle, nous, vous, ils, elles. En orthographe, il distingue les sons proches, comme son et sont, et apprend l'accent aigu dans les mots comme école ou été. En vocabulaire, il étudie les familles de mots, les synonymes, les contraires et le champ lexical de thèmes comme la ville, les transports, le temps qui passe ou les métiers. À l'oral, il raconte un épisode d'une histoire dans l'ordre chronologique et écoute un texte pour en retenir l'essentiel.",
+      "pedagogicalNotes": "Faire relire les phrases entières plutôt que mot à mot pour développer la fluidité. Malentendu fréquent : l'élève accorde selon la fin du mot entendu à l'oral plutôt que selon la règle, par exemple il écrit « une ballon » parce qu'il entend la voyelle devant. Étayage : manipuler des cartes déterminant plus nom pour visualiser l'accord, et afficher une liste de verbes au présent dans la classe. Ne pas surcharger la dictée : viser cinq à dix mots nouveaux par séance.",
+      "exampleProblems": [
+        {
+          "problem": "Complète avec un ou une : « J'ai ___ idée et ___ vélo. »",
+          "solution": "« J'ai une idée et un vélo. »",
+          "explanation": "Idée est un nom féminin : on dit une idée. Vélo est un nom masculin : on dit un vélo. Le déterminant s'accorde en genre avec le nom.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Mets au pluriel : « Le chat gris court dans le jardin. »",
+          "solution": "« Les chats gris courent dans le jardin. »",
+          "explanation": "Au pluriel, le devient les, chat devient chats avec un s, et le verbe court s'accorde avec le sujet les chats et devient courent. L'adjectif gris prend aussi un s.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Conjugue le verbe avoir au présent : « Nous ___ une nouvelle maîtresse. »",
+          "solution": "« Nous avons une nouvelle maîtresse. »",
+          "explanation": "Au présent, le verbe avoir se conjugue ainsi : j'ai, tu as, il a, nous avons, vous avez, ils ont. Avec le pronom nous, la forme est avons.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Français niveau 3 : compréhension de textes, rédaction et accords",
+      "contentBody": "Au niveau 3, l'élève lit des textes plus longs, de dix à quinze lignes, et travaille la compréhension de lecture de manière plus structurée. Il identifie le début, le milieu et la fin d'un récit, repère les personnages principaux et secondaires, et dégage la idée générale d'un texte. Il commence à faire des inférences simples : comprendre ce que pense un personnage à partir de ses actions, ou deviner la suite d'une histoire. En écriture, il rédige de courts textes de trois à cinq phrases à partir d'un plan donné ou d'une image séquentielle, en respectant l'ordre chronologique avec des mots de liaison comme d'abord, ensuite, puis et enfin. Il apprend à relire et à corriger son texte : majuscule, point, accord des noms et des déterminants. En grammaire, il étudie les natures des mots : nom, verbe, adjectif, déterminant et pronom. Il travaille l'accord sujet-verbe au présent et au pluriel, par exemple « les oiseaux chantent ». Il découvre le féminin des noms de métiers et d'animaux, comme acteur et actrice, chat et chatte. En conjugaison, il maîtrise le présent des verbes réguliers en er et des verbes être, avoir, aller, faire, venir et voir. En orthographe, il s'entraîne aux sons complexes comme eau, ail, gn et aux accents. En vocabulaire, il travaille les expressions imagées simples, comme avoir un cœur d'or, et enrichit son lexique par la lecture quotidienne. À l'oral, il raconte un souvenir et pose des questions après une lecture. En fin d'année, il sait résumer un texte en une phrase et reformuler une consigne avec ses propres mots.",
+      "pedagogicalNotes": "Guider la compréhension avec des questions de plus en plus ouvertes : qui, quoi, où, puis pourquoi. Malentendu fréquent : l'élève récite le texte au lieu de reformuler avec ses propres mots ; lui demander de raconter à un camarade qui n'a pas lu l'histoire l'oblige à reformuler. Étayage : fournir une trame de rédaction avec une phrase d'amorce par paragraphe, puis l'effacer progressivement. Pour l'accord sujet-verbe, faire pointer le sujet avant d'écrire le verbe.",
+      "exampleProblems": [
+        {
+          "problem": "Lis la phrase et souligne l'adjectif : « La petite fille porte une robe bleue. »",
+          "solution": "Les adjectifs sont « petite » et « bleue ».",
+          "explanation": "Un adjectif décrit un nom. Ici, petite décrit fille et bleue décrit robe. Les deux adjectifs s'accordent au féminin avec les noms qu'ils décrivent.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Conjugue le verbe faire au présent : « Les enfants ___ leurs devoirs. »",
+          "solution": "« Les enfants font leurs devoirs. »",
+          "explanation": "Faire est un verbe irrégulier. Au présent : je fais, tu fais, il fait, nous faisons, vous faites, ils font. Le sujet les enfants est à la troisième personne du pluriel, donc la forme est font.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Rédige une phrase avec les mots d'abord, ensuite, pour raconter ce qui se passe : Léo se réveille, puis il prend son petit déjeuner.",
+          "solution": "« D'abord, Léo se réveille. Ensuite, il prend son petit déjeuner. »",
+          "explanation": "Les mots de liaison comme d'abord et ensuite placent les actions dans l'ordre où elles se produisent. Chaque phrase commence par une majuscule et se termine par un point.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Français niveau 4 : paragraphes, accords dans le groupe nominal, passé composé",
+      "contentBody": "Au niveau 4, l'élève lit des textes narratifs et documentaires courts et apprend à en dégager les informations essentielles. Il distingue le récit de fiction et le texte documentaire, repère le narrateur et le point de vue simple, et justifie ses réponses en citant un passage du texte. En écriture, il rédige un paragraphe de cinq à huit phrases sur un thème familier, avec une phrase d'ouverture, des phrases de développement et une phrase de conclusion. Il utilise des mots de liaison variés : mais, car, donc, parce que, alors que. Il apprend à planifier son texte avec un brouillon, à le rereadre et à le corriger. En grammaire, il approfondit le groupe nominal et l'accord entre le déterminant, le nom et l'adjectif : un petit bateau blanc, de petits bateaux blancs. Il étudie le singulier et le pluriel des noms et des adjectifs, le masculin et le féminin, et les cas particuliers comme beau, beau, bel, belle, beaux, belles. En conjugaison, il découvre le passé composé avec les auxiliaires avoir et être : j'ai mangé, je suis allé, et apprend l'accord du sujet avec le verbe au passé composé avec être : elle est partie. Il révise le présent et apprend le futur simple des verbes courants : je mangerai, nous serons. En orthographe, il travaille les homophones courants comme et, est, ces, ses, son, sont. En vocabulaire, il étudie les synonymes, les antonymes et le registre de langue familier par rapport au registre neutre. Il révise aussi la ponctuation du dialogue et l'emploi du tiret pour introduire les répliques.",
+      "pedagogicalNotes": "Insister sur la différence entre le temps du récit au présent et au passé : raconter une histoire vécue appelle le passé composé. Malentendu fréquent : l'élève utilise être et avoir de façon interchangeable au passé composé ; mémoriser la liste des verbes courants avec être et faire des accords à l'oral avant l'écrit. Étayage : donner une banque de mots de liaison et un modèle de paragraphe, puis retirer les amorces. Pour l'accord de l'adjectif, faire manipuler des cartes pour montrer que l'adjectif change avec le nom.",
+      "exampleProblems": [
+        {
+          "problem": "Accorde l'adjectif : « Elle porte une ___ (joli) écharpe. »",
+          "solution": "« Elle porte une jolie écharpe. »",
+          "explanation": "L'adjectif joli s'accorde avec le nom écharpe, qui est féminin singulier. On écrit donc jolie avec un e au lieu de joli.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Mets au passé composé : « Hier, nous ___ (aller) au marché. »",
+          "solution": "« Hier, nous sommes allés au marché. »",
+          "explanation": "Le verbe aller se conjugue au passé composé avec l'auxiliaire être : nous sommes allés. Le participe passé allés s'accorde avec le sujet nous, qui contient des personnes des deux sexes, donc on met un s.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Choisis le bon mot : « Mon frère et sa sœur ont rangé ___ chambre et ___ jouets. » (son, ses)",
+          "solution": "« Mon frère et sa sœur ont rangé leur chambre et leurs jouets. »",
+          "explanation": "Son et ses s'accordent avec le nom qui suit et non avec le sujet. Chambre est singulier : sa chambre. Jouets est pluriel : ses jouets. Avec deux personnes qui partagent, on emploie plutôt leur, et leurs si chacun a ses propres affaires.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Français niveau 5 : lecture suivie, rédaction structurée, temps du verbe",
+      "contentBody": "Au niveau 5, l'élève lit des textes suivis de plus d'une page et développe une compréhension plus fine. Il dégage la structure d'un récit : situation initiale, problème, péripéties, dénouement, et repère les procédés simples du narrateur, comme le dialogue ou la description. Il compare deux personnages ou deux textes sur un même thème et exprime son avis en argumentant avec des exemples tirés de sa lecture. En écriture, il rédige un texte de dix à quinze phrases organisé en paragraphes, avec une introduction, un développement et une conclusion. Il travaille la description précise, l'emploi des temps du récit et la ponctuation, y compris le point d'exclamation, le point d'interrogation et les guillemets dans les dialogues. En grammaire, il maîtrise les accords dans le groupe nominal et l'accord sujet-verbe à tous les temps étudiés. En conjugaison, il consolide le présent, le passé composé et le futur simple, et apprend les verbes irréguliers courants : prendre, voir, pouvoir, vouloir, devoir, dire et écrire. Il distingue les trois groupes de verbes et connaît les terminaisons du futur en erai, irai, rai. En orthographe, il traite les accords difficiles, comme le pluriel des noms composés (des chefs-d'œuvre) et les doublements de consonnes (elle, elle, pomme). En vocabulaire, il étudie les familles de mots, l'origine de quelques mots et les expressions idiomatiques, comme avoir le cafard. À l'oral, il lit un texte à voix haute de façon expressive et participe à un débat réglé en classe. Il commence à justifier ses choix d'auteur et à écrire un court texte d'opinion sur un sujet qui le touche.",
+      "pedagogicalNotes": "Encourager la lecture plaisir en dehors des textes scolaires pour enrichir le vocabulaire et le sens de la structure narrative. Malentendu fréquent : l'élève mélange imparfait et passé composé même s'il n'a pas encore vu l'imparfait en détail ; anticiper en montrant que le passé composé raconte une action terminée et précise. Étayage : fournir un canevas de texte structuré et une liste de critères de relecture. Pour les verbes irréguliers, privilégier les listes courtes et la révision espacée plutôt que l'apprentissage massif.",
+      "exampleProblems": [
+        {
+          "problem": "Conjugue au futur simple : « Demain, je ___ (écrire) une lettre à ma grand-mère. »",
+          "solution": "« Demain, j'écrirai une lettre à ma grand-mère. »",
+          "explanation": "Le verbe écrire est du troisième groupe. Au futur simple, la forme est j'écrirai. On élide je en j' devant une voyelle, et la phrase porte un marqueur de temps futur, demain.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Transforme au passé composé : « Chaque été, nous visitons nos cousins. » (raconter un événement précis de l'été passé)",
+          "solution": "« L'été dernier, nous avons visité nos cousins. »",
+          "explanation": "Le verbe visiter est du premier groupe et se conjugue au passé composé avec avoir : nous avons visité. On remplace chaque été par l'été dernier pour marquer une action terminée.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Corrige la phrase : « Les chevals blanc galopent dans les prés verts. »",
+          "solution": "« Les chevaux blancs galopent dans les prés verts. »",
+          "explanation": "Le pluriel de cheval est chevaux, avec un x et non un s. L'adjectif blanc s'accorde avec le nom chevaux au masculin pluriel : blancs. Le nom prés est déjà au pluriel et l'adjectif verts s'accorde avec lui.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Français niveau 6 : imparfait et passé composé, accords, genres littéraires",
+      "contentBody": "Au niveau 6, l'élève consolide sa compréhension de lecture avec des textes plus longs et plus variés : récits, nouvelles courtes, poésies et textes documentaires. Il repère les éléments du récit, le narrateur et la focalisation simple, et justifie ses interprétations en citant le texte. Il découvre les grands genres littéraires : le conte, la poésie, le roman, la nouvelle et le théâtre, avec leurs caractéristiques de base, comme les vers et les strophes pour la poésie, ou les didascalies pour le théâtre. En écriture, il rédige un paragraphe narratif ou descriptif d'une dizaine de phrases, en utilisant les temps du récit de façon cohérente. En grammaire, il étudie l'opposition entre l'imparfait et le passé composé : l'imparfait pour la description, la durée et l'habitude, le passé composé pour les actions ponctuelles qui font avancer l'histoire. Il apprend les accords du participe passé de base : accord avec le sujet quand le verbe est conjugué avec être, et pas d'accord avec le COD quand le verbe est conjugué avec avoir et que le COD est placé après. En conjugaison, il maîtrise le présent, le passé composé, l'imparfait et le futur simple des verbes des trois groupes, ainsi que les verbes irréguliers fréquents. En orthographe, il travaille les pluriels particuliers, les homophones comme quand et quant, et les participes passés irréguliers courants : pris, fait, écrit, mis, dit, vu, pu. En vocabulaire, il distingue le sens propre et le sens figuré, et reconnaît quelques figures de style simples comme la comparaison et la métaphore.",
+      "pedagogicalNotes": "Faire visualiser la ligne du temps d'un récit pour placer les actions au passé composé et les descriptions à l'imparfait. Malentendu fréquent : l'élève met tout au passé composé parce qu'il raconte au passé ; utiliser des coloriages de texte, une couleur pour chaque temps. Étayage : donner une banque de marqueurs de temps et faire des exercices de discrimination orale avant l'écrit. Pour le participe passé, commencer par la question « avec quel auxiliaire ? » avant de penser à l'accord.",
+      "exampleProblems": [
+        {
+          "problem": "Complète avec l'imparfait ou le passé composé : « Quand je ___ (être) petit, je ___ (jouer) au parc chaque dimanche. Hier, j'y ___ (aller) avec mon cousin. »",
+          "solution": "« Quand j'étais petit, je jouais au parc chaque dimanche. Hier, j'y suis allé avec mon cousin. »",
+          "explanation": "Être et jouer décrivent une habitude dans le passé, donc à l'imparfait : j'étais, je jouais. L'action d'aller au parc hier est un événement ponctuel et terminé, donc au passé composé avec être : je suis allé.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Accorde le participe passé : « Les fleurs que j'ai ___ (cueillir) sont fanées. »",
+          "solution": "« Les fleurs que j'ai cueillies sont fanées. »",
+          "explanation": "Le verbe cueillir est conjugué avec avoir. Le COD les fleurs est placé avant le verbe, repris par le relatif que. Le participe passé s'accorde donc avec ce COD au féminin pluriel : cueillies.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Identifie le genre littéraire et un indice : « Il était une fois un roi qui vivait dans un château au fond d'une forêt enchantée. »",
+          "solution": "C'est un conte. L'indice principal est la formule d'ouverture « Il était une fois ».",
+          "explanation": "Le conte commence souvent par une formule traditionnelle comme « Il était une fois » et met en scène des personnages stéréotypés, un roi, une forêt enchantée, dans un monde merveilleux. C'est le genre narratif oral transmis puis écrit.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Français niveau 7 : lecture analytique, rédaction guidée, accords avancés",
+      "contentBody": "Au niveau 7, l'élève passe à une lecture plus analytique : il observe comment un texte est construit, quel effet produisent le choix des mots, la ponctuation et la structure des phrases. Il compare des extraits de genres différents, par exemple un passage de roman et un extrait de pièce de théâtre, et identifie ce qui relève de la description, du récit et du dialogue. En écriture, il rédige des textes courts de plus en plus structurés : un portrait, un récit d'aventure, une scène de théâtre simple, un compte rendu de lecture. Il apprend à réviser son texte à partir de critères précis : cohérence des temps, variété du vocabulaire, accord, ponctuation. En grammaire, il approfondit les accords du participe passé : avec être, le participe s'accorde avec le sujet ; avec avoir, il s'accorde avec le COD seulement si celui-ci est placé avant ; les verbes pronominaux suivent la règle du verbe pronominal, où le participe s'accorde généralement avec le sujet. Il révise les homophones grammaticaux complexes, comme ces et ses, leur et leurs, a et à, on et ont. En conjugaison, il distingue clairement les quatre temps du récit étudiés : présent, passé composé, imparfait et futur simple, et travaille les verbes à participe passé irrégulier : prendre, apprendre, comprendre, boire, conduire, peindre. En vocabulaire, il analyse les familles de mots, les préfixes et les suffixes, et commence à étudier les registres de langue : familier, courant, soutenu. À l'oral, il joue une scène de théâtre en respectant le ton et les indications de mise en scène.",
+      "pedagogicalNotes": "Présenter l'analyse de texte comme une enquête : que cherche-t-on à comprendre et quels indices le texte donne-t-il ? Malentendu fréquent : l'élève croit que l'adjectif s'accorde toujours au nom le plus proche ; il faut lui faire repérer le nom que l'adjectif qualifie. Étayage : fournir des grilles d'analyse avec des questions-guides, puis les retirer. Pour le participe passé, faire poser systématiquement la question du COD et sa position avant de décider de l'accord.",
+      "exampleProblems": [
+        {
+          "problem": "Accorde le participe passé : « Elles se sont ___ (parler) au téléphone pendant une heure. »",
+          "solution": "« Elles se sont parlé au téléphone pendant une heure. »",
+          "explanation": "Le verbe se parler est un verbe pronominal. Ici, parler est transitif indirect : on parle à quelqu'un, il n'y a pas de COD. Le participe passé reste donc invariable : parlé.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Complète avec ces, ses, a, à ou ont : « ___ élèves ___ ___ devoirs ___ faire et ___ parents les attendent. »",
+          "solution": "« Ces élèves ont à faire leurs devoirs et ses parents les attendent. » Réponses dans l'ordre : ces, ont, à, faire (déjà donné), ses.",
+          "explanation": "Ces est un déterminant pluriel qui désigne les élèves. Ont est la conjugaison du verbe avoir au pluriel. À est la préposition devant l'infinitif faire. Ses est le possessif qui accompagne parents. L'exercice entraîne à distinguer ces homophones par leur fonction dans la phrase.",
+          "difficulty": "hard"
+        },
+        {
+          "problem": "Transforme cette phrase en une question qui demande une précision : « Lucas a lu trois livres pendant les vacances. »",
+          "solution": "« Combien de livres Lucas a-t-il lus pendant les vacances ? »",
+          "explanation": "Pour demander une précision sur la quantité, on emploie combien de. Le COD combien de livres est placé devant le verbe, donc le participe lu s'accorde avec lui et prend un s : lus. On ajoute le pronom inversé t-il pour la forme interrogative soutenue.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Français niveau 8 : argumentation, figures de style, maîtrise des accords",
+      "contentBody": "Au niveau 8, l'élève développe son esprit critique face aux textes. Il distingue les faits et les opinions, repère les arguments d'un texte persuasif et évalue leur solidité. Il découvre l'argumentation simple : thèse, arguments, exemples, et rédige un texte court pour défendre un point de vue sur un sujet familier, en organisant ses idées en paragraphes et en utilisant des connecteurs logiques comme d'une part, d'autre part, en revanche, cependant, ainsi. Il analyse des figures de style : comparaison, métaphore, personnification, hyperbole, et explique l'effet qu'elles produisent sur le lecteur. En lecture, il travaille sur des œuvres plus ambitieuses : un roman jeunesse intégral, des nouvelles, des poèmes de différentes époques, et il apprend à dégager les thèmes d'une œuvre, comme l'amitié, la quête ou la justice. En grammaire, il maîtrise les accords du participe passé dans toutes les configurations étudiées et les accords complexes de l'adjectif, notamment les adjectifs à forme variable comme beau, vieux, nouveau. Il étudie la valeur des temps, l'emploi du conditionnel présent pour la politesse et l'hypothèse, et les modes infinitif et impératif. En orthographe, il traite les difficultés persistantes : les doublements de consonnes, les accents sur les mots en é, è, ê, et les participes passés irréguliers. En vocabulaire, il enrichit son expression par la lecture et travaille la précision lexicale. Il commence à rédiger une réponse à une question de compréhension en mobilisant des citations courtes et en les reliant à son analyse. Il sait également distinguer le narrateur du personnage et expliquer comment un point de vue influence le récit.",
+      "pedagogicalNotes": "Faire argumenter à l'oral avant l'écrit : un débat court en classe aide à structurer la pensée. Malentendu fréquent : l'élève confond opinion et argument ; un argument est une raison qui se justifie par un exemple, une opinion est un simple jugement. Étayage : fournir une banque de connecteurs et un modèle de plan en trois parties. Pour les figures de style, partir d'exemples publicitaires ou de chansons que les élèves connaissent déjà.",
+      "exampleProblems": [
+        {
+          "problem": "Identifie la figure de style : « Ses yeux étaient des étoiles. »",
+          "solution": "C'est une métaphore.",
+          "explanation": "La métaphore compare deux choses sans mot de comparaison comme ou tel. Ici, les yeux sont directement présentés comme des étoiles pour exprimer leur éclat. Si la phrase disait « Ses yeux brillaient comme des étoiles », ce serait une comparaison.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Conjugue au conditionnel présent : « Si j'avais le temps, je ___ (lire) davantage. »",
+          "solution": "« Si j'avais le temps, je lirais davantage. »",
+          "explanation": "Le conditionnel présent se forme avec le radical du futur et les terminaisons de l'imparfait : je lirais. Dans une phrase avec si qui exprime l'hypothèse, la première partie est à l'imparfait et la seconde au conditionnel présent.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Corrige les accords : « Les deux plus beau hôtels de la ville ont reçu une nouvelle distinction et les invités sont très satisfait de leur séjour. »",
+          "solution": "« Les deux plus beaux hôtels de la ville ont reçu une nouvelle distinction et les invités sont très satisfaits de leur séjour. »",
+          "explanation": "Beau s'accorde avec hôtels, masculin pluriel : beaux. Satisfait s'accorde avec invités, masculin pluriel : satisfaits. Nouvelle s'accorde avec distinction, féminin singulier, et était déjà correct.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Français niveau 9 : littérature, rédaction argumentée, style et registres",
+      "contentBody": "Au niveau 9, l'élève aborde la littérature de manière plus structurée. Il situe des œuvres et des extraits dans leur contexte, découvre quelques grands courants littéraires de façon simple, comme le romantisme ou le réalisme, et comprend qu'un texte répond à une époque et à un genre. Il lit des romans, des nouvelles, des pièces de théâtre et des poèmes, et rédige des réponses développées à des questions de compréhension et d'analyse : thème, procédés, effet, interprétation personnelle argumentée. En écriture, il produit des textes argumentatifs d'une quinzaine de phrases, avec une introduction qui présente le sujet, un développement organisé en paragraphes thématiques et une conclusion qui ouvre la réflexion. Il écrit aussi des textes narratifs travaillés, avec un point de vue choisi, des descriptions précises et une gestion consciente des temps du récit. En grammaire, il révise l'ensemble des accords, y compris les participes passés irréguliers et les cas subtils, comme le participe passé des verbes pronominaux et des verbes impersonnels. Il étudie les propositions : principales, coordonnées et subordonnées relatives, et leur effet sur le rythme de la phrase. Il travaille les registres de langue et le ton, et adapte son style à la situation de communication. En vocabulaire, il distingue connotation et dénotation, analyse les champs lexicaux d'un texte et emploie un lexique précis et soutenu dans ses rédactions. À l'oral, il soutient un exposé structuré et participe à un débat en respectant les règles de la discussion. Il sait aussi résumer un texte sans en dénaturer le sens et repérer les implicites d'un énoncé.",
+      "pedagogicalNotes": "Ne pas noyer l'élève dans l'histoire littéraire : privilégier la lecture attentive de quelques textes forts plutôt qu'une longue liste de mouvements. Malentendu fréquent : l'élève résume l'œuvre au lieu de répondre à la question posée ; exiger que chaque réponse reprenne les mots de la question et cite un exemple précis. Étayage : modéliser une bonne réponse à voix haute, montrer la structure question, réponse, preuve, commentaire. Pour l'argumentation, utiliser des sujets proches de l'expérience des élèves.",
+      "exampleProblems": [
+        {
+          "problem": "Donne la valeur du temps souligné : « Il pleuvait depuis le matin quand l'orage ___ (éclater). » (éclata / éclaté / éclatait)",
+          "solution": "« Il pleuvait depuis le matin quand l'orage éclata. »",
+          "explanation": "L'imparfait pleuvait décrit une situation en cours, et le passé simple éclata marque l'événement ponctuel qui l'interrompt. Dans un récit au passé simple, ce sont les deux temps classiques du récit d'événements.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Accorde le participe passé : « Les lettres qu'elle a ___ (recevoir) hier sont arrivées en retard. »",
+          "solution": "« Les lettres qu'elle a reçues hier sont arrivées en retard. »",
+          "explanation": "Le verbe recevoir est conjugué avec avoir. Le COD les lettres est placé avant le verbe, repris par que. Le participe reçu s'accorde avec lui au féminin pluriel : reçues.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Transforme cette phrase en une phrase complexe avec une subordonnée relative : « J'ai visité un musée. Ce musée expose des tableaux impressionnistes. »",
+          "solution": "« J'ai visité un musée qui expose des tableaux impressionnistes. »",
+          "explanation": "La subordonnée relative qui expose des tableaux impressionnistes remplace la seconde phrase en précisant le musée. Elle est introduite par le pronom relatif qui et rattachée au nom musée, appelé antécédent.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Français niveau 10 : analyse littéraire, dissertation, maîtrise de l'écrit",
+      "contentBody": "Au niveau 10, l'élève consolide tout ce qu'il a appris en vue des études secondaires supérieures. Il lit et analyse des œuvres littéraires significatives, des extraits de classiques comme Molière, Hugo ou des auteurs contemporains, et apprend à construire une analyse de texte structurée : présentation de l'extrait, analyse des procédés, interprétation, mise en relation avec l'œuvre entière. Il rédige des textes argumentatifs développés, proches de la dissertation simple : problématique, plan en deux ou trois parties, arguments illustrés d'exemples précis, conclusion personnelle. Il écrit aussi des textes créatifs maîtrisés : nouvelle, scène de théâtre, poème en vers libres ou rimés, en jouant avec les registres et les figures de style. En grammaire, il a une vision d'ensemble de la langue : la phrase complexe, la subordination, la cohérence des temps dans le récit, l'accord du participe passé dans tous les cas, y compris les verbes pronominaux et les constructions avec en. Il traite les difficultés d'orthographe avancées et révise les règles fondamentales de façon systématique. En vocabulaire, il travaille la polysémie, l'étymologie, les faux amis et le registre soutenu, et il affine le style par la variation des structures de phrase et le choix des mots. À l'oral, il présente une œuvre, défend une interprétation et écoute celle des autres pour la discuter avec respect. L'objectif est un lecteur autonome, un scripteur clair et un esprit critique capable de lire entre les lignes. Il prépare ainsi les exigences des études supérieures : autonomie, rigueur et goût de la lecture.",
+      "pedagogicalNotes": "Insister sur la méthode : une bonne dissertation repose sur une problématique claire et un plan qui répond à la question, pas sur une accumulation de connaissances. Malentendu fréquent : l'élève traite le sujet de façon générale sans analyser les mots du sujet ; toujours commencer par définir les termes et reformuler la problématique. Étayage : proposer des plans types, corriger des copies réelles ensemble, et donner un barème transparent. Pour la littérature, laisser l'élève défendre une interprétation personnelle tant qu'il la justifie par le texte.",
+      "exampleProblems": [
+        {
+          "problem": "Reformule cette phrase avec un registre soutenu : « Il a dit qu'il ne pouvait pas venir. »",
+          "solution": "« Il a fait savoir qu'il ne lui serait pas possible de venir. » ou, plus soutenu : « Il nous a fait part de l'impossibilité où il était de venir. »",
+          "explanation": "Le registre soutenu emploie des tournures impersonnelles, un vocabulaire plus abstrait et évite les formes trop directes. Le sens reste le même, mais le ton est plus formel, adapté à une lettre officielle ou à un discours.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Accorde le participe passé : « Les fleurs qu'on lui a ___ (envoyer) se sont ___ (faner) en deux jours. »",
+          "solution": "« Les fleurs qu'on lui a envoyées se sont fanées en deux jours. »",
+          "explanation": "Envoyer est conjugué avec avoir et son COD les fleurs, repris par que, est placé avant : le participe envoyées s'accorde au féminin pluriel. Se faner est un verbe pronominal qui exprime un changement d'état ; son participe s'accorde avec le sujet les fleurs : fanées.",
+          "difficulty": "hard"
+        },
+        {
+          "problem": "Propose une problématique et un plan en deux parties pour le sujet suivant : « Faut-il avoir vécu pour bien écrire ? »",
+          "solution": "Problématique : « L'écriture exige-t-elle une expérience de la vie, ou l'imagination et la lecture suffisent-elles à faire un bon écrivain ? » Plan possible : première partie, l'expérience vécue nourrit l'écriture (exemples des auteurs qui écrivent leur vécu) ; deuxième partie, l'imagination et la lecture permettent d'écrire sur ce que l'on n'a pas vécu (exemples de romans fantastiques ou historiques).",
+          "explanation": "Une bonne problématique reformule le sujet sous forme de question qui révèle une tension. Le plan en deux parties fait progresser la réflexion : chaque argument est illustré d'un exemple précis, et la conclusion propose une réponse nuancée plutôt qu'un choix tranché.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Français niveau 11 : analyse littéraire, subjonctif et accords du participe passé",
+      "contentBody": "Au niveau 11, l'élève entre dans l'analyse littéraire : il ne se contente plus de raconter l'histoire, il explique comment le texte produit ses effets. Il lit surtout des nouvelles québécoises et francophones, par exemple des textes de Gabrielle Roy ou des récits contemporains portant sur la jeunesse, la famille et le territoire. Il apprend à repérer la situation d'énonciation, le narrateur et le point de vue, à dégager le thème et l'idée principale, puis à justifier une interprétation par des citations précises. En écriture, il rédige un texte argumentatif court : introduction avec une problématique, deux ou trois arguments appuyés d'exemples, conclusion. Il apprend aussi à résumer un texte sans déformation et à reformuler avec ses propres mots. En grammaire, le subjonctif fait son entrée : après les expressions de volonté, de nécessité, de doute et de sentiment, comme il faut que, bien que, je doute que, je veux que. Il l'oppose à l'indicatif après les verbes d'affirmation et de certitude. Il travaille le conditionnel présent dans les phrases d'hypothèse avec si et l'imparfait. Les accords du participe passé deviennent plus complexes : accord avec le COD placé avant le verbe, participe employé avec être, et pièges des participes en u comme lu, vu, cru, pu. En orthographe, il corrige les homophones grammaticaux : a et à, ou et où, son et sont, ces et ses. En compréhension, il distingue le sens littéral du sens figuré et commence à nommer les figures de style : métaphore, comparaison, personnification, hyperbole. Le vocabulaire s'enrichit par la lecture suivie et par l'étude des champs lexicaux d'un texte.",
+      "pedagogicalNotes": "Malentendu fréquent : l'élève confond expliquer l'histoire et analyser le texte ; toujours lui demander « comment l'auteur s'y prend-il ? » plutôt que « que se passe-t-il ? ». Pour le subjonctif, faire mémoriser des amorces d'exemple plutôt que des règles abstraites. Étayage : fournir une grille d'analyse (situation d'énonciation, thème, procédés, citation) et modéliser une analyse complète à voix haute avant de laisser l'élève travailler seul. Pour les accords du participe passé, faire systématiquement poser la question « quel mot est le COD et où est-il placé ? ».",
+      "exampleProblems": [
+        {
+          "problem": "Complète avec le mode correct : « Il faut que tu ___ (venir) demain et que tu ___ (apporter) ton dossier. »",
+          "solution": "« Il faut que tu viennes demain et que tu apportes ton dossier. »",
+          "explanation": "L'expression il faut que exprime la nécessité et commande le subjonctif. Au subjonctif présent, venir donne viennes à la deuxième personne du singulier, et apporter donne apportes. L'indicatif serait une faute.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Accorde le participe passé : « Les romans que j'ai ___ (lire) pendant l'été m'ont beaucoup marqué. »",
+          "solution": "« Les romans que j'ai lus pendant l'été m'ont beaucoup marqué. »",
+          "explanation": "Le verbe lire est conjugué avec avoir. Le COD les romans est placé avant le verbe, repris par le relatif que. Le participe passé s'accorde donc avec lui au masculin pluriel : lus. Sans le relatif antéposé, on écrirait j'ai lu beaucoup de romans, sans accord.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Dans la phrase « Le vent pleurait dans les peupliers de la route », identifie la figure de style et explique son effet.",
+          "solution": "Il s'agit d'une personnification : le vent, être inanimé, est présenté comme un être humain qui pleure. L'effet est de créer une atmosphère de tristesse et de faire ressentir le paysage comme un paysage intérieur.",
+          "explanation": "La personnification attribue des comportements humains à un élément non humain. Ici, le verbe pleurait oriente toute la lecture du passage : la nature devient le miroir de l'état émotionnel du personnage ou du narrateur. L'élève doit toujours nommer la figure ET son effet sur le sens ou sur l'émotion.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Français niveau 12 : roman québécois, argumentation, accords complexes",
+      "contentBody": "Au niveau 12, l'élève approfondit l'analyse de romans et de nouvelles québécoises. Il découvre des œuvres comme Bonheur d'occasion de Gabrielle Roy ou Trente arpents de Ringuet, ainsi que des extraits de romans contemporains portant sur l'identité, la ville, la campagne et l'immigration. Il étudie la construction d'un personnage : caractérisation directe et indirecte, évolution au fil du récit, rôle dans l'intrigue et lien avec le thème. Il analyse aussi le décor et le milieu comme éléments signifiants : dans Bonheur d'occasion, le quartier Saint-Henri devient presque un personnage. En écriture, il produit un texte argumentatif structuré : il formule une problématique, hiérarchise ses arguments, utilise des connecteurs logiques comme d'abord, en outre, toutefois, enfin, et intègre un contre-argument pour mieux le réfuter. Il travaille l'accroche de l'introduction et la phrase finale de la conclusion. En grammaire, il traite les accords du participe passé dans toutes leurs formes : avec avoir et le COD antérieur, avec être, et avec les verbes pronominaux. Il étudie le discours rapporté et la concordance des temps qui l'accompagne. En conjugaison, il maîtrise le conditionnel présent et passé, le subjonctif présent et les temps composés du subjonctif. L'hypothèse au passé prend la forme si j'avais su, je serais venu. En orthographe, il s'exerce sur les noms composés et leurs pluriels. En compréhension, il justifie ses interprétations en citant le texte et en analysant le choix précis des mots, en particulier les connotations du vocabulaire. Il commence aussi à comparer deux textes traitant d'un même thème, par exemple la ville et la campagne, et à relever les points de vue divergents des auteurs. En vocabulaire, il étudie la connotation des mots et les champs lexicaux qui structurent une œuvre.",
+      "pedagogicalNotes": "Faire rédiger les introductions et conclusions séparément, avec des modèles annotés, car l'élève a souvent de la difficulté à cadrer son propos. Malentendu fréquent : croire qu'un exemple remplace une explication ; exiger que chaque citation soit suivie d'une phrase qui l'analyse. Pour les verbes pronominaux, rappeler que l'accord se fait avec le sujet quand il n'y a pas de COD antérieur, et que beaucoup de verbes pronominaux sont à la voix active réfléchie. Étayage : utiliser un code couleur pour retrouver le COD avant le participe.",
+      "exampleProblems": [
+        {
+          "problem": "Complète : « Si j'avais connu ton adresse, je ___ (venir) te voir avant ton départ. »",
+          "solution": "« Si j'avais connu ton adresse, je serais venu te voir avant ton départ. »",
+          "explanation": "Une hypothèse sur le passé se construit avec si et le plus-que-parfait dans la proposition de condition, et le conditionnel passé dans la proposition principale. Venir conjugué avec être donne serais venu, avec l'accord au masculin singulier si le sujet est je masculin.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Accorde le participe passé : « Les lettres que nous avons ___ (écrire) ont été envoyées hier. »",
+          "solution": "« Les lettres que nous avons écrites ont été envoyées hier. »",
+          "explanation": "Écrire est conjugué avec avoir. Le COD les lettres est placé avant le verbe grâce au relatif que. Le participe s'accorde au féminin pluriel : écrites. À noter que ont été envoyées s'accorde avec le sujet les lettres, car être est un auxiliaire d'accord.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "À l'affirmation « Les devoirs à la maison sont toujours utiles pour les élèves », formule un contre-argument plausible, puis une phrase de nuance qui le réintègre dans une argumentation.",
+          "solution": "Contre-argument : « Les devoirs à la maison ne profitent pas également à tous les élèves, car tous ne disposent pas d'un environnement calme ni d'aide parentale, ce qui creuse les inégalités. » Nuance : « Toutefois, une pratique régulière et bien dosée à la maison reste utile pour ancrer les apprentissages, à condition qu'elle soit courte, ciblée et soutenue par l'école. »",
+          "explanation": "Un contre-argument efficace attaque la généralisation du propos, ici le mot toujours, en montrant une limite concrète. La nuance évite la confrontation frontale : elle ramène la thèse à une version plus modérée et défendable. Cette structure est le cœur du texte argumentatif de niveau secondaire avancé.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Français niveau 13 : poésie québécoise et francophone, versification, discours rapporté",
+      "contentBody": "Au niveau 13, l'élève découvre la poésie québécoise et francophone. Il lit des poèmes d'Émile Nelligan, de Gaston Miron et de poètes de la francophonie comme Aimé Césaire ou Léopold Sédar Senghor. Il apprend les bases de la versification : le vers et son nombre de syllabes, la strophe, la rime, le poème en prose, le vers libre. Il analyse les figures de style en profondeur : anaphore, métaphore filée, personnification, symbole, hyperbole, et il explique comment elles construisent le sens et l'émotion du poème. Il rédige un texte explicatif sur un poème ou une œuvre, en structurant son propos en paragraphes thématiques. En grammaire, il étudie la concordance des temps et le discours indirect libre, ce mode de narration où la voix du personnage se mêle à celle du narrateur sans guillemets ni incise. Il découvre le passé simple en contexte littéraire et reconnaît ses valeurs. En conjugaison, il consolide le subjonctif et le conditionnel dans toutes leurs valeurs : réalité, hypothèse, souhait, politesse, atténuation. En orthographe, il travaille les accents, les doubles consonnes et les familles de mots. En compréhension, il identifie l'implicite : ce que le texte suggère sans le dire, les présupposés et les non-dits. Le vocabulaire poétique est enrichi par l'étude des registres et des connotations. L'élève apprend enfin à rédiger une courte présentation orale sur un poème, à en lire un passage de façon expressive, et à faire des liens entre la poésie étudiée et sa propre expérience du monde. Chaque poème étudié devient ainsi un objet d'analyse, mais aussi une occasion d'enrichir sa sensibilité et son expression personnelle.",
+      "pedagogicalNotes": "Lire les poèmes à voix haute est indispensable : le sens naît souvent du rythme et de la musicalité. Malentendu fréquent : l'élève croit qu'un poème cache un sens unique à deviner ; lui apprendre qu'une interprétation valide se justifie par le texte. Pour la versification, commencer par compter les syllabes à l'oral avant d'écrire. Étayage : fournir une banque de figures de style avec un exemple de chaque et faire des exercices de repérage en binôme avant l'analyse écrite. Pour le discours indirect libre, faire comparer un passage en discours direct et sa transformation.",
+      "exampleProblems": [
+        {
+          "problem": "Repère la figure de style et nomme-la : « Le printemps revient, le printemps frappe aux portes, le printemps emplit les rues de ses parfums. »",
+          "solution": "C'est une anaphore : la répétition du groupe le printemps en début de trois segments successifs, combinée à une personnification (frappe aux portes).",
+          "explanation": "L'anaphore est la répétition d'un même mot ou groupe de mots au début de phrases ou de segments voisins. Elle crée un rythme, une insistance, souvent une accumulation émotive. Ici, elle sert aussi à magnifier le retour du printemps, renforcé par la personnification.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Transforme au discours indirect libre : « Marie rangea sa chambre. Elle devait absolument finir avant le retour de sa mère, sinon tout serait gâché. »",
+          "solution": "« Marie rangea sa chambre. Elle devait absolument finir avant le retour de sa mère, sinon tout serait gâché. » est déjà au discours indirect libre : la pensée de Marie est exprimée sans guillemets ni verbe de parole, mêlée à la voix du narrateur, par le jeu des temps de la concordance (devait, serait).",
+          "explanation": "Le discours indirect libre se reconnaît à l'absence de verbe introducteur comme elle pensa que, à la conservation du temps de la narration, et aux marqueurs de la subjectivité comme absolument et sinon tout serait gâché, qui relèvent du point de vue du personnage.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explique l'effet de la métaphore filée dans cet extrait : « Dans la nuit de son âme, une petite flamme tremblait, mais le vent du doute soufflait sans relâche sur la mèche. »",
+          "solution": "La métaphore filée déploie un réseau d'images de la lumière et du feu pour parler de l'espoir et du doute : la nuit de l'âme est l'obscurité intérieure, la petite flamme est l'espoir fragile, le vent du doute est la menace qui veut l'éteindre. Le système d'images tient sur plusieurs mots, ce qui rend l'abstrait concret et l'émotion visible.",
+          "explanation": "Une métaphore filée prolonge une image sur plusieurs termes cohérents d'un même champ lexical, ici celui de la lumière et du vent. L'élève doit identifier le champ, expliquer la correspondance terme à terme entre l'image et l'idée abstraite, puis dégager l'effet : ici, la fragilité de l'espoir.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Français niveau 14 : théâtre québécois, registres de langue, argumentation avancée",
+      "contentBody": "Au niveau 14, l'élève étudie le théâtre québécois, notamment Michel Tremblay et Les belles-sœurs. Il apprend à lire une pièce : la différence entre le texte de théâtre et le roman, le rôle des didascalies, l'importance de la réplique et du silence, la construction de la tension dramatique par le dialogue. Il analyse les personnages-types, les conflits et les thèmes sociaux : la condition féminine, la pauvreté, la langue comme marqueur d'appartenance. Une part importante du cours porte sur les registres de langue : soutenu, courant, familier, et le joual comme choix littéraire assumé chez Tremblay. L'élève réfléchit au rapport entre langue et identité. En écriture, il produit un texte argumentatif avancé : problématique précise, plan en deux ou trois parties, arguments hiérarchisés, exemples tirés des œuvres étudiées, contre-argumentation et phrase de conclusion ouverte. Il travaille la cohérence textuelle et la progression des idées. En grammaire, il rencontre le subjonctif imparfait dans les textes littéraires et comprend sa valeur de distance ou de littérarité. Il étudie les accords dans les comparatives, l'ellipse et les phrases complexes à plusieurs subordonnées. En conjugaison, il distingue les valeurs du conditionnel : hypothèse, souhait, information non vérifiée, politesse. En orthographe, il révise les accords difficiles de l'adjectif et les pièges des homophones comme ces, ses, c'est, sait. Il travaille aussi la prise de parole : lecture expressive de répliques, débat en classe, et reformulation orale d'une argumentation. En vocabulaire, il distingue les registres lexicaux et repère les mots à forte connotation sociale dans les pièces étudiées.",
+      "pedagogicalNotes": "Faire jouer des scènes en classe transforme la compréhension du théâtre : l'élève perçoit alors la portée des didascalies et des silences. Malentendu fréquent : croire que le joual est un français incorrect ; montrer qu'il s'agit d'un choix esthétique et idéologique délibéré de l'auteur. Pour l'argumentation, faire annoter des textes modèles en repérant la thèse, les arguments et les connecteurs. Étayage : offrir des plans tout faits que l'élève remplit d'abord, puis retirer progressivement la structure.",
+      "exampleProblems": [
+        {
+          "problem": "Dans cet échange, identifie le registre de langue et justifie : « Ça fait qu'on part, OK? Ben voyons donc, tu sais ben que t'as pas le choix. »",
+          "solution": "Le registre est familier, proche du joual québécois. Les indices sont les tournures orales (Ça fait qu', Ben voyons donc), les contractions (t'as, t'es), l'apocope de tu et le marqueur OK.",
+          "explanation": "Le registre familier se reconnaît à l'oralité, aux contractions, aux mots d'appui comme ben, donc, et à la syntaxe relâchée. Au théâtre, ce registre caractérise les personnages et ancre l'action dans un milieu social réel, ce qui est une intention de l'auteur et non une faute.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explique la différence de valeur entre les deux phrases : « Il faudrait que tu viennes. » et « Peut-être que tu viendrais. »",
+          "solution": "La première emploie le subjonctif après il faudrait que : c'est une demande atténuée, polie, mais qui relève de la nécessité. La seconde emploie le conditionnel après peut-être que : c'est une supposition sur une action éventuelle, sans obligation ni demande directe.",
+          "explanation": "Le subjonctif marque le rapport du locuteur à la volonté ou à la nécessité, même atténuée par le conditionnel sur le verbe principal. Le conditionnel, lui, situe l'action dans l'éventuel. Les deux phrases sont correctes, mais elles ne font pas le même geste de communication.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Rédige le plan détaillé d'un texte argumentatif répondant à la question : « Le théâtre peut-il faire changer la société ? » avec thèse, deux arguments et un contre-argument.",
+          "solution": "Thèse : oui, le théâtre peut contribuer au changement social en rendant visibles des réalités ignorées. Argument 1 : en donnant la parole à des personnages ordinaires, comme dans Les belles-sœurs, il dénonce des injustices sociales. Argument 2 : la représentation crée une expérience collective qui suscite le débat et la prise de conscience. Contre-argument et réfutation : on objecte qu'une pièce ne change pas les lois ; mais elle transforme d'abord les mentalités, condition de tout changement politique.",
+          "explanation": "Le plan doit être démonstratif : la thèse répond directement à la problématique, les arguments sont ordonnés du plus concret au plus général, et le contre-argument, introduit dans la dernière partie, est réfuté pour renforcer la thèse. Chaque argument devra être illustré par un exemple précis tiré des œuvres au programme.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Français niveau 15 : analyse avancée, poésie de la Révolution tranquille, dissertation",
+      "contentBody": "Au niveau 15, l'élève passe à une analyse littéraire avancée. Il étudie la poésie de la Révolution tranquille, surtout Gaston Miron et L'Homme rapaillé, ainsi que les liens entre la littérature et la société québécoise des années 1960. Il découvre comment une œuvre peut porter un projet collectif : langue, territoire, identité, décolonisation culturelle. L'analyse porte davantage sur l'énonciation : qui parle, à qui, avec quelle posture, et comment la voix poétique se construit. Il rédige une introduction à la dissertation littéraire : problématique, annonce du plan, et développement avec citation commentée. Il apprend à construire un paragraphe argumenté : idée principale, développement, exemple, citation, analyse, phrase de liaison. En grammaire, il maîtrise les valeurs des modes : indicatif pour le réel, subjonctif pour le possible ou le souhaité, conditionnel pour l'éventuel, impératif pour l'ordre. Il traite les accords complexes du participe passé avec les verbes pronominaux et les formes impersonnelles. Il étudie aussi les figures de pensée : ironie, antithèse, oxymore, prétérition. En orthographe, il travaille la francisation des emprunts et les difficultés de l'accord du participe en contexte soutenu. En compréhension, il identifie les présupposés d'un texte et la portée idéologique d'un choix de mots. Son vocabulaire devient plus abstrait et plus précis. Il s'entraîne à l'analyse de citations isolées : replacer une citation dans son contexte, en dégager l'idée, nommer les procédés et expliquer leur portée. Il apprend aussi à réviser ses textes en profondeur : la réécriture devient une étape habituelle de son travail. Il développe enfin son attention au choix des mots, condition d'une lecture fine et d'une écriture toujours plus précise.",
+      "pedagogicalNotes": "Aider l'élève à formuler une vraie problématique : une question qui se joue dans le texte, pas une question de cours. Malentendu fréquent : plaquer des connaissances historiques à la place de l'analyse du texte ; rappeler que l'histoire littéraire éclaire l'œuvre sans la remplacer. Étayage : faire rédiger les paragraphes avec une trame imposée (idée, exemple, citation, analyse, transition), puis alléger la trame. Faire travailler par paires la reformulation des problématiques.",
+      "exampleProblems": [
+        {
+          "problem": "Transforme la phrase en hypothèse sur le présent avec le conditionnel : « Tu as peut-être raison, mais je ne suis pas d'accord. »",
+          "solution": "« Tu aurais peut-être raison, mais je ne suis pas d'accord. »",
+          "explanation": "Le conditionnel présent exprime ici une information non vérifiée, une réserve : avoir raison devient aurais raison. C'est une des valeurs du conditionnel distinctes de l'hypothèse avec si : il atténue l'affirmation plutôt qu'elle ne pose une condition.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Accorde le participe passé : « Elles se sont ___ (parler) longuement avant de se séparer. »",
+          "solution": "« Elles se sont parlé longuement avant de se séparer. »",
+          "explanation": "Le verbe se parler est pronominal. Dans ce cas, parler est transitif indirect (parler à quelqu'un) : le pronom se n'est pas un COD mais un COI. Il n'y a donc pas de COD antérieur et le participe reste invariable : parlé, sans accord avec elles.",
+          "difficulty": "hard"
+        },
+        {
+          "problem": "Explique la portée de l'oxymore dans l'expression « une éclatante noirceur » utilisée pour décrire l'époque décrite par un poète.",
+          "solution": "L'oxymore réunit deux termes contradictoires, éclatante et noirceur, pour dire une réalité paradoxale : une oppression si massive qu'elle devient spectaculaire, ou un désespoir qui illumine la conscience. La figure crée une tension qui oblige le lecteur à dépasser le sens littéral et à penser la contradiction vécue par le poète.",
+          "explanation": "L'oxymore n'est pas un simple ornement : il exprime une expérience contradictoire que la langue ordinaire ne peut pas dire directement. L'analyse doit identifier les deux termes en tension, expliquer le sens nouveau produit par leur choc, puis relier ce sens au propos de l'œuvre.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Français niveau 16 : littérature québécoise contemporaine et dissertation",
+      "contentBody": "Au niveau 16, l'élève explore la littérature québécoise contemporaine : Marie-Claire Blais, Dany Laferrière, Suzanne Jacob, Denise Bombardier, et des auteurs de la relève. Il analyse des romans complets ou de longs extraits en portant attention à la construction narrative : focalisation variable, narration non linéaire, ellipse, fragmentation, et à l'intertextualité, c'est-à-dire les renvois implicites à d'autres œuvres. Il étudie les grands thèmes de la prose actuelle : identité, mémoire, migration, langue, solitude, transmission. En écriture, il produit une dissertation littéraire complète : introduction avec accroche, présentation du contexte, problématique et annonce du plan, développement en deux ou trois parties équilibrées, conclusion avec bilan et ouverture. Il apprend à citer correctement, à intégrer les citations dans sa propre syntaxe et à les commenter sans les répéter. En grammaire, il approfondit les valeurs du conditionnel dans la presse et la littérature : futur du passé, hypothèse, atténuation, discours journalistique. Il étudie la syntaxe de l'effet : l'ordre des mots, la mise en relief, les phrases longues et courtes, l'effet de rythme. Les accords du participe passé sont traités dans des contextes piégés : participes à valeur d'adjectif, verbes composés à deux infinitifs, accord dans les temps composés du subjonctif. En orthographe, il se perfectionne sur les difficultés persistantes : accord du groupe nominal, pluriel des expressions, anglicismes à éviter. La compréhension porte sur l'implicite, l'ironie narrative et le point de vue. Il s'entraîne également à la reformulation critique : exprimer avec ses mots la position d'un auteur sans la trahir, puis la confronter à une autre lecture du même texte.",
+      "pedagogicalNotes": "La dissertation fait peur : la décomposer en compétences isolées (problématiser, citer, commenter, transitionner) avant la production intégrée. Malentendu fréquent : l'élève résume l'intrigue au lieu d'analyser ; exiger que chaque paragraphe porte sur un procédé ou une idée, jamais sur la suite des événements. Étayage : banque de connecteurs et de verbes d'introduction des citations, correction progressive avec une grille explicite. Pour l'intertextualité, partir des références que l'élève repère spontanément et lui donner le vocabulaire critique.",
+      "exampleProblems": [
+        {
+          "problem": "Identifie la valeur du conditionnel : « Le ministre a annoncé que les tarifs augmenteraient au printemps. »",
+          "solution": "C'est un conditionnel de futur du passé : la hausse est un futur par rapport au moment passé de l'annonce, rapportée au moment où l'on parle.",
+          "explanation": "Dans le discours rapporté au passé, le futur simple se transforme en conditionnel présent. Il ne s'agit ni d'hypothèse ni de politesse, mais d'une simple concordance des temps. L'élève doit se demander par rapport à quel moment le verbe se situe.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Intègre la citation dans une phrase qui la commente : « Ce quartier n'était pas un décor, il était une mémoire. » (inventé, d'après Gabrielle Roy)",
+          "solution": "Exemple d'intégration : Le narrateur confère au quartier une valeur mémorielle quand il affirme que « ce quartier n'était pas un décor, il était une mémoire », ce qui transforme le lieu en personnage collectif et fait porter au récit une dimension identitaire.",
+          "explanation": "Une bonne citation est introduite par un verbe d'énonciation, reliée à la phrase par une subordonnée ou une incise, puis commentée : le commentaire doit expliquer ce que la citation prouve et ce qu'elle apporte à l'analyse, sans la paraphraser.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explique l'effet de la phrase courte en fin d'un long paragraphe descriptif terminant par : « Tout avait changé. »",
+          "solution": "Après une description ample et détaillée, la phrase courte crée un brusque coup de rythme : elle résume et frappe, comme un verdict. Elle donne au lecteur le temps de sentir la rupture entre le monde décrit et la conscience du personnage, et elle marque un tournant dans le récit.",
+          "explanation": "La syntaxe de l'effet repose sur le contraste rythmique : à la phrase longue qui accumule les détails répond la phrase courte qui tranche. L'analyse doit relier la forme au sens : ici, la brièveté mime l'évidence soudaine du changement.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Français niveau 17 : histoire littéraire du Canada français, essayisme, registres",
+      "contentBody": "Au niveau 17, l'élève situe les œuvres dans l'histoire littéraire du Canada français et du Québec : l'École littéraire de Montréal et Émile Nelligan, le roman du terroir avec Ringuet et Claude-Henri Grignon, la Révolution tranquille et la modernité littéraire, Refus global et la révolte artistique, l'essayisme avec Hubert Aquin et Fernand Dumont, puis les écritures contemporaines de l'identité et de la mémoire. Il comprend qu'une œuvre dialogue avec son époque et avec les autres œuvres. L'analyse stylistique se précise : il travaille les registres de langue comme outil littéraire, le sociolecte, la variation diatopique du français québécois, et l'effet des choix de langue sur le personnage et le lecteur. Il rédige une dissertation dialectique : thèse, antithèse, dépassement, avec problématique construite et transitions explicites. Il apprend aussi l'essai comme genre : thèse défendue, argumentation personnelle, ton, et la façon dont l'essayiste engage sa subjectivité. En grammaire, il étudie la polyphonie énonciative : les voix qui traversent un énoncé, les ironies et les modalisateurs. Il traite les accords complexes en contexte soutenu et les difficultés de la ponctuation dans les longues phrases littéraires. En orthographe, il distingue les usages québécois et les usages français de France sans hiérarchiser, et il maîtrise les difficultés de la langue écrite standard. La compréhension porte sur l'implicite idéologique et la portée sociale des œuvres. Il travaille enfin la lecture critique de textes courts de presse et d'essais, en repérant la thèse, les appuis et les procédés d'influence, ce qui alimente directement son écriture argumentée.",
+      "pedagogicalNotes": "Éviter que l'histoire littéraire devienne une liste d'auteurs à mémoriser : toujours relier un mouvement à un enjeu, un texte, une question. Malentendu fréquent : croire qu'il existe un seul français correct et que le français québécois est fautif ; travailler la distinction entre norme écrite, usage oral et choix esthétique. Étayage : frise historique commentée, tableaux comparatifs des mouvements, modèles de dissertation dialectique annotés. Pour les registres, faire comparer la même scène traitée en deux registres.",
+      "exampleProblems": [
+        {
+          "problem": "Situe le mouvement littéraire lié à la publication du manifeste Refus global en 1948 et explique son importance.",
+          "solution": "Refus global est un manifeste du mouvement automatiste, mené par Paul-Émile Borduas, qui marque la rupture avec le conservatisme artistique et religieux de l'époque. Il revendique la liberté de création et annonce la modernité culturelle du Québec, dans le sillage de laquelle s'inscrira la Révolution tranquille.",
+          "explanation": "Un manifeste est un texte qui engage publiquement des créateurs et fixe une orientation esthétique et idéologique. L'élève doit pouvoir relier le texte à sa date, à ses auteurs, à l'adversaire qu'il combat et aux conséquences artistiques qu'il a eues.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Compare l'effet de ces deux formulations sur le personnage : « Je ne sais pas quoi faire. » et « Faut que j'fasse quequ'chose, d'abord. »",
+          "solution": "La première est en français standard neutre : le personnage paraît indéterminé socialement. La seconde, en registre familier québécois, situe immédiatement le personnage dans un milieu populaire et donne à sa voix une authenticité et une émotion plus fortes. Le choix de la langue devient un outil de caractérisation.",
+          "explanation": "Le registre de langue porte des informations sociales et affectives. Au théâtre et dans le roman, l'auteur choisit la langue de ses personnages pour les faire vivre dans un milieu réel. L'analyse doit relier la variation linguistique à l'effet de réel et à la portée sociale du texte.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Construis la problématique et le plan dialectique d'une dissertation sur la question : « L'écrivain québécois doit-il écrire pour son peuple ? »",
+          "solution": "Problématique : Dans quelle mesure l'écrivain québécois est-il tenu par une mission collective, sans que cela nuise à sa liberté de création ? Thèse : oui, l'écrivain témoigne de sa société et participe à la construction de son identité, comme le montre le roman du terroir puis la littérature de la Révolution tranquille. Antithèse : l'art ne se réduit pas à la mission ; l'écrivain écrit d'abord pour lui et l'universel, comme le revendique Refus global. Dépassement : l'écrivain sert son peuple justement en refusant les assignations, en écrivant une œuvre libre qui porte une voix singulière reconnue ailleurs.",
+          "explanation": "La problématique doit rendre visible la tension de la question. Le plan dialectique avance une thèse, l'examine dans sa limite, puis dépasse l'opposition par une position nuancée. Chaque étape s'appuie sur des œuvres précises du programme et sur des citations commentées.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Français niveau 18 : stylistique, littérature comparée, communication professionnelle",
+      "contentBody": "Au niveau 18, l'abord devient collégial ou universitaire. L'élève étudie la stylistique : science de l'effet des choix de langue dans un texte. Il analyse l'énonciation, la polyphonie, les modalisateurs, l'ironie, et les grandes figures de style regroupées en figures d'analogie, de substitution, d'accumulation et de rupture, comme la synecdoque, la métonymie, le chiasme, la prétérition, l'anacoluthe. Il apprend à décrire finement un passage littéraire et à relier chaque procédé à son effet de sens et de lecture. En littérature comparée, il aborde la méthode : choisir un corpus de textes de langues ou d'époques différentes autour d'un thème commun, par exemple le territoire chez Gaston Miron et chez des poètes francophones d'Afrique, et dégager convergences et divergences. Il découvre les notions de genre, de mouvement, de filiation et d'influence. En communication professionnelle, il rédige des documents de travail : note de synthèse, courriel professionnel, compte rendu de réunion, rapport structuré. Il apprend l'écriture claire et efficace : phrases directes, paragraphes aérés, objets explicites, ton adapté au destinataire, et les règles de la politesse professionnelle écrite. En grammaire, il traite la syntaxe complexe de la phrase littéraire et les effets de la ponctuation. En linguistique, il découvre les premières notions : langue et parole, signifiant et signifié, variation linguistique. La rédaction académique fait son entrée : problématique, hypothèse, bibliographie, citation des sources. Il découvre enfin les bases de l'argumentation dans l'espace public : discours, éditorial, débat, et la façon dont les mêmes idées se réécrivent selon les destinataires et les médias.",
+      "pedagogicalNotes": "En stylistique, exiger la précision du vocabulaire : nommer exactement le procédé, sans dire vague figure de style. Malentendu fréquent : confondre communication professionnelle et écriture scolaire ; le texte professionnel va à l'essentiel et sert une action. Étayage : corpus d'exemples de documents professionnels commentés, grilles d'analyse stylistique progressivement vidées de leur contenu, bibliothèque de ressources pour la citation des sources. Insister tôt sur l'honnêteté intellectuelle et la citation pour prévenir le plagiat.",
+      "exampleProblems": [
+        {
+          "problem": "Identifie la figure de style : « Les mains de la vieille femme racontaient toute une vie de labeur. »",
+          "solution": "C'est une métonymie douce d'une personnification : les mains sont mises pour la personne entière et son histoire. On peut aussi y voir une personnification, les mains étant dotées de la capacité de raconter.",
+          "explanation": "La métonymie désigne une chose par une autre qui lui est associée, ici la partie pour le tout. La personnification attribue une action humaine à une partie du corps. L'effet est de condenser en une image toute une histoire de travail, sans exposition.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Réécris ce passage de courriel professionnel de façon claire et efficace : « Je me permets de vous solliciter relativement au fait que, comme vous le savez sans doute, la réunion qui était prévue, et bien, elle a été déplacée. »",
+          "solution": "« La réunion prévue est déplacée. Voici les nouvelles coordonnées : [date, heure, lieu]. Merci de confirmer votre disponibilité avant vendredi. »",
+          "explanation": "L'écriture professionnelle privilégie la phrase directe, l'information utile en premier, et une demande explicite. Les formules de politesse alourdies, les incises et les ambiguïtés nuisent à la lecture. Le ton reste courtois, mais le texte doit servir l'action.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Analyse l'effet du chiasme dans la phrase : « Il faut manger pour vivre, et non vivre pour manger. »",
+          "solution": "Le chiasme inverse l'ordre des termes de deux segments symétriques : manger pour vivre devient vivre pour manger. Cette inversion met en évidence le renversement du sens : la première proposition est présentée comme la sagesse, la seconde comme la dérive. L'effet est à la fois mnémotechnique, rythmique et argumentatif.",
+          "explanation": "Le chiasme croise deux structures AB puis BA. Sa force vient de la symétrie qui fait ressortir la différence de sens entre les deux segments. L'analyse doit décrire la structure, expliquer le contraste qu'elle produit et montrer comment elle sert la pensée de l'auteur, ici une maxime morale.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Français niveau 19 : littérature comparée, linguistique, communication professionnelle avancée",
+      "contentBody": "Au niveau 19, l'élève approfondit la littérature comparée. Il constitue et analyse un corpus : par exemple, le thème de l'aliénation chez Hubert Aquin et Albert Camus, ou celui de l'exil chez Dany Laferrière et les écrivains de la francophonie. Il pratique les outils comparatifs : l'analyse thématique, la comparaison des formes, la mise en perspective historique et culturelle, et il rédige un essai littéraire structuré avec thèse personnelle, appuyé sur des citations précises. En linguistique, il découvre les niveaux d'analyse de la langue : la phonologie et ses variations du français québécois, la morphologie et la formation des mots, la syntaxe et les structures de la phrase, la sémantique et les relations entre les mots, comme les champs lexicaux, la synonymie et la polysémie. Il relie ces outils à l'analyse littéraire : la phonologie éclaire le vers, la syntaxe éclaire le rythme, la sémantique éclaire les connotations. En communication professionnelle, il produit des documents avancés : dossier de présentation, mémo décisionnel, présentation orale structurée avec supports visuels, et compte rendu analytique. Il travaille l'adaptation au destinataire, la hiérarchisation de l'information, et la prise de parole en public. En grammaire, il examine les variations grammaticales du français parlé et la norme écrite, sans confusion entre registre et faute. En rédaction académique, il perfectionne la problématique, la revue de littérature, la méthode et la citation selon une norme reconnue. Il apprend aussi à soutenir oralement une analyse devant un auditoire : articulation, gestion du temps, réponse aux questions, et reformulation claire des enjeux du texte étudié.",
+      "pedagogicalNotes": "En littérature comparée, le piège classique est le catalogue : deux analyses juxtaposées sans comparaison réelle. Exiger des phrases de comparaison explicites à chaque étape. En linguistique, montrer que les outils servent la lecture des textes, sinon la matière paraît abstraite. Étayage : gabarits d'essai, grilles de comparaison, séances d'entraînement à la présentation orale avec rétroaction. Pour la communication professionnelle, faire travailler sur des situations réelles : demandes, décisions, comptes rendus d'équipe.",
+      "exampleProblems": [
+        {
+          "problem": "Donne deux mots de la même famille lexicale que le mot territoire et explique le lien entre eux.",
+          "solution": "Par exemple territorial et territorialisé. Le radical commun est territ- ; le suffixe -al forme un adjectif (qui concerne le territoire), et le suffixe -iser suivi de -é forme un participe passé (qui a été marqué, organisé par le territoire).",
+          "explanation": "La famille lexicale regroupe des mots construits sur un même radical. Identifier les préfixes et suffixes permet d'enrichir le vocabulaire et de deviner le sens des mots inconnus. C'est un outil de base de l'analyse morphologique et de la compréhension en lecture.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Dans deux vers, l'un de Gaston Miron sur le pays et l'un de Léopold Sédar Senghor sur la patrie, quel critère de comparaison choisiras-tu et pourquoi ?",
+          "solution": "On peut choisir le thème de la relation entre la voix poétique et la terre comme critère. Il est pertinent parce qu'il est présent dans les deux poèmes et qu'il permet de comparer les images, le rythme et l'émotion : chez Miron, une attache douloureuse à un pays à reconquérir ; chez Senghor, une célébration sensuelle de la patrie retrouvée. Le critère doit être précis, commun aux deux textes, et ouvrir sur une vraie question.",
+          "explanation": "Un bon critère de comparaison est thématique ou formel, opératoire, et assez précis pour produire des observations comparables. Sans critère clair, la comparaison devient une juxtaposition. L'élève doit formuler le critère avant de commencer l'analyse.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Rédige un mémo décisionnel de cinq lignes à l'intention d'une directrice pour lui proposer de repousser la date limite d'un projet, avec au moins deux arguments et une recommandation claire.",
+          "solution": "Objet : Proposition de report de la date limite du projet X. La date limite du 15 novembre compromet la qualité des livrables : les tests d'intégration, planifiés après le 5 novembre, laisseraient moins de cinq jours pour corriger les anomalies. De plus, deux membres clés de l'équipe sont absents du 8 au 12 novembre. Je recommande de reporter la date limite au 29 novembre et d'en informer les parties prenantes cette semaine. Je reste disponible pour en discuter.",
+          "explanation": "Un mémo décisionnel présente le contexte, les arguments vérifiables, une recommandation explicite et une offre de suivi. Le ton est professionnel, les phrases sont directes, et l'information la plus importante, la recommandation, est formulée sans ambiguïté pour permettre une décision rapide.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Français niveau 20 : sociolinguistique, stylistique avancée, rédaction académique",
+      "contentBody": "Au niveau 20, l'élève aborde la sociolinguistique : la variation du français selon les lieux, les groupes sociaux et les situations. Il étudie le français québécois et ses variétés, le français de France et de la francophonie mondiale, les enjeux de la norme, de l'aménagement linguistique et de l'attitude linguistique. Il réfléchit aux questions de langue et d'identité, à la notion de joual, aux débats sur la qualité de la langue, et à l'impact des médias et de la communication numérique sur les usages. En stylistique avancée, il approfondit la narratologie : narrateur, focalisation, temps du récit, ordre, durée, fréquence, et l'analyse du discours : présupposés, sous-entendus, argumentation implicite. Il produit une analyse fine d'un corpus littéraire en mobilisant ces outils. En rédaction académique, il écrit un travail de recherche court : question de recherche, revue de littérature, méthodologie d'analyse, développement, conclusion, bibliographie selon une norme de citation. Il apprend l'éthique intellectuelle : citer, paraphraser, distinguer ses idées de celles des sources. En communication professionnelle et publique, il rédige pour des audiences variées et travaille la vulgarisation : rendre accessible un contenu complexe sans le déformer. La grammaire est réinvestie dans la perspective de la variation : comprendre pourquoi des formes considérées comme fautives relèvent en fait de régularités d'un usage. La lecture couvre des essais critiques et des textes théoriques accessibles. L'élève devient capable de tenir une position argumentée sur la langue et la littérature. Il révise et consolide l'ensemble des acquis de grammaire, d'orthographe et de rédaction, en vue des exigences de l'université ou du milieu professionnel.",
+      "pedagogicalNotes": "En sociolinguistique, éviter tout jugement de valeur déguisé : distinguer explicitement norme prescrite, usage réel et attitudes sociales. Malentendu fréquent : croire que la linguistique sert à corriger les fautes ; elle sert d'abord à décrire et comprendre les usages. Étayage : extraits de débats sur la langue, données authentiques de variation, modèles de travaux de recherche annotés, séances d'écriture accompagnée. Sur le plagiat, expliquer les pratiques plutôt que menacer : montrer comment citer enrichit le propos.",
+      "exampleProblems": [
+        {
+          "problem": "Explique la différence entre une attitude linguistique et une règle grammaticale, avec un exemple québécois.",
+          "solution": "Une règle grammaticale décrit une régularité de la langue, par exemple l'accord du participe passé avec le COD antérieur. Une attitude linguistique est un jugement social porté sur un usage, par exemple considérer que la prononciation de certaines voyelles est moins belle ou moins correcte. La première relève de la description ; la seconde relève de la perception et des rapports sociaux.",
+          "explanation": "Confondre les deux conduit à traiter des usages réguliers comme des fautes. La sociolinguistique montre que les jugements sur la langue portent souvent sur les locuteurs et leurs groupes autant que sur les formes elles-mêmes.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Dans un récit, la phrase suivante appartient au narrateur ou au personnage ? Justifie : « Il avait encore raté son coup, le pauvre imbécile. »",
+          "solution": "L'évaluation le pauvre imbécile relève de la focalisation interne : elle est perçue à travers la conscience du personnage lui-même ou celle d'un autre personnage, mêlée à la voix du narrateur. C'est un cas de discours indirect libre ou de narrateur à focalisation interne : le jugement est intégré au récit sans incise.",
+          "explanation": "Pour trancher, il faut repérer les marques de subjectivité et leur source possible. Les évaluations affectives, les adverbes et les modalisateurs indiquent souvent un point de vue interne. L'élève doit relier ces indices à la théorie de la focalisation.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Formule une question de recherche précise sur le thème de la langue et de l'identité dans la littérature québécoise contemporaine, puis esquisse les trois étapes de sa méthodologie d'analyse.",
+          "solution": "Question : Comment les romans québécois publiés depuis 2000 utilisent-ils la variation linguistique pour construire l'identité de leurs personnages ? Méthodologie : 1) constitution d'un corpus de trois romans présentant des variations de langue marquées ; 2) relevé et classification des formes variantes selon leur registre et leur fonction de caractérisation ; 3) analyse des effets de sens produits par ces choix, appuyée sur des citations et sur les outils de la narratologie.",
+          "explanation": "Une bonne question de recherche est précise, délimitée dans le temps et le corpus, et analytique plutôt que descriptive. La méthodologie doit annoncer des étapes reproductibles : corpus, outils d'analyse, mode d'interprétation. C'est la structure attendue d'un travail de recherche introductif.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
