@@ -1,0 +1,465 @@
+{
+  "subject": "Mathematics",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Mathematics: Counting to 100, Addition, Subtraction, and Basic Shapes",
+      "contentBody": "In grade 1 mathematics, students build the foundation of number sense. They learn to count, read, and write numbers to 100, and understand place value for two-digit numbers (tens and ones). Addition and subtraction are introduced within 20, first with concrete objects and pictures, then with equations; students should master +/- within 10 by memory and use strategies (counting on, making ten, doubles) within 20. Key vocabulary: add, subtract, sum, difference, equals, more, less, number line. Geometry work covers naming and describing basic 2D shapes (circle, square, triangle, rectangle, hexagon) and 3D solids (cube, sphere, cone, cylinder) by their attributes (sides, corners, faces). Measurement topics include comparing length, weight, and capacity with non-standard units, telling time to the hour and half hour, and recognizing coins (penny, nickel, dime, quarter). Data work is introductory: simple picture graphs and bar graphs with up to four categories. Throughout the year, students should explain their reasoning with words, drawings, and equations, moving from 'how many' toward 'why is that true'.",
+      "pedagogicalNotes": "Use manipulatives and drawings before symbols; expect slow progress on place value. Common misconception: treating the equals sign as 'the answer comes next' rather than 'both sides are the same'. Celebrate strategy variety (counting on vs. doubles) instead of speed. Keep word problems concrete and story-based.",
+      "exampleProblems": [
+        {
+          "problem": "Sam has 7 stickers and gets 5 more. How many stickers does Sam have now?",
+          "solution": "7 + 5 = 12 stickers.",
+          "explanation": "Model with counters: start at 7, count on 5 more (8, 9, 10, 11, 12). Alternatively make ten: 7 + 3 = 10, then +2 = 12.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "There are 15 birds on a fence. 6 fly away. How many birds are left?",
+          "solution": "15 - 6 = 9 birds.",
+          "explanation": "Subtract by counting back from 15, or think '6 + ? = 15' and use the related addition fact: 6 + 9 = 15.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Mathematics: Place Value to 1,000, Multi-Digit Addition and Subtraction, Money, and Time",
+      "contentBody": "In grade 2 mathematics, students extend number sense to 1,000. They read, write, and compare three-digit numbers and solidify place value for hundreds, tens, and ones, including skip-counting by 5s, 10s, and 100s. Addition and subtraction within 100 use place value strategies such as breaking numbers apart, using number lines, and adding tens then ones; operations within 1,000 are introduced with models before the standard algorithms, and regrouping (trading ten ones for one ten) is understood concretely rather than as a rote carry or borrow step. Fluency with sums and differences within 20 is expected by year end. Key vocabulary: place value, hundred, ten, one, regroup, estimate, sum, difference, number line, greater than, less than. Measurement expands to standard units: inches, feet, centimeters, meters, pounds, kilograms, liters, and grams; students measure objects, estimate lengths, and solve length word problems. Money work covers counting collections of coins and bills and making change. Time telling extends to five-minute intervals with a.m. and p.m. In geometry, students draw and partition rectangles, squares, and triangles, and understand halves, thirds, and fourths as equal shares of shapes. Data work includes line plots, picture graphs, and bar graphs with single-unit scales, and students answer comparison and sum questions about the data. Problem solving emphasizes explaining why an answer is reasonable by estimating first.",
+      "pedagogicalNotes": "Keep base-ten blocks in use until regrouping is understood; rushing to the algorithm creates lasting errors. Common misconceptions: a longer number is always bigger, and regrouping means 'carry the one' without knowing what the one represents. Emphasize estimation before computing so students can judge reasonableness. Align digits carefully in written work.",
+      "exampleProblems": [
+        {
+          "problem": "Mia has 47 marbles and buys 38 more. How many marbles does she have?",
+          "solution": "47 + 38 = 85 marbles.",
+          "explanation": "Add tens first: 40 + 30 = 70. Then ones: 7 + 8 = 15. Combine: 70 + 15 = 85. Alternatively decompose 38 as 3 + 35 to make 50 + 35 = 85.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A book costs 72 dollars. Devon pays with a 100-dollar bill. How much change does Devon get?",
+          "solution": "100 - 72 = 28 dollars.",
+          "explanation": "Count up from 72 to 100 on a number line: 72 to 80 is 8, and 80 to 100 is 20, so the total difference is 8 + 20 = 28.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Mathematics: Multiplication and Division, Fractions, Area, and Perimeter",
+      "contentBody": "In grade 3 mathematics, multiplication and division become the central operations. Students understand multiplication as equal groups and arrays and division as sharing and grouping, and they develop fluency with facts up to 10 times 10. Properties of operations (commutative, associative, and distributive) are used as strategies, and two-step word problems are solved with equations and drawings, including problems with unknown values in any position. Key vocabulary: multiply, divide, factor, product, quotient, array, equation, property. Fractions are introduced as numbers: unit fractions (one fourth, one third), fractions built from unit fractions, fractions on a number line, and whole numbers expressed as fractions. Students compare fractions with the same numerator or the same denominator using visual models and explain their comparisons. Measurement topics include mass and volume in grams, kilograms, and liters, telling time to the minute, and elapsed time. In geometry, area is measured with unit squares and connected to multiplication (rows times columns), while perimeter is measured as distance around a shape; students must distinguish the two and solve real problems involving both. Data work uses scaled picture graphs and bar graphs where each symbol represents more than one item. By year end, students should reason about multiplication and division as inverse operations and use that relationship to find unknown facts.",
+      "pedagogicalNotes": "Anchor facts in equal groups and arrays before memorization; use fact families to show that multiplication and division undo each other. Common misconception: confusing area with perimeter because both are computed on the same shape; have students cover a figure with tiles for area and trace the border for perimeter. Expect fraction comparison to stay model-based; formal cross-multiplication is premature here.",
+      "exampleProblems": [
+        {
+          "problem": "There are 6 bags of apples with 7 apples in each bag. How many apples are there in all?",
+          "solution": "6 x 7 = 42 apples.",
+          "explanation": "Six equal groups of seven is 42. If a student does not know 6 x 7, they can use 5 x 7 = 35 and add one more group of 7 to get 42.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A rectangle is 8 units long and 5 units wide. What are its area and perimeter?",
+          "solution": "Area = 8 x 5 = 40 square units; perimeter = 8 + 5 + 8 + 5 = 26 units.",
+          "explanation": "Area counts unit squares covering the rectangle (8 rows of 5), while perimeter adds the lengths of the four sides. The units differ too: square units for area, plain units for perimeter.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Mathematics: Multi-Digit Multiplication, Long Division, Fractions, and Decimals",
+      "contentBody": "In grade 4 mathematics, students generalize place value understanding to 1,000,000, round multi-digit numbers, and use place value to explain multi-digit computation. They multiply up to four digits by one digit and two digits by two digits, and divide up to four-digit dividends by one-digit divisors, interpreting remainders in context. Factors, multiples, prime numbers, and composite numbers are studied, including finding all factor pairs of a number. Fractions deepen substantially: students generate equivalent fractions, compare fractions with unlike denominators by reasoning about size, add and subtract fractions and mixed numbers with like denominators, and multiply a fraction by a whole number. Decimal notation connects to fraction work, as students express tenths and hundredths as decimals, compare decimals, and relate decimal fractions such as three tenths and thirty hundredths. Key vocabulary: factor, multiple, prime, composite, equivalent, mixed number, decimal, tenths, hundredths, dividend, divisor, quotient, remainder. Measurement includes converting larger units to smaller units (feet to inches, meters to centimeters) and solving multi-step measurement problems. In geometry, students use a protractor to measure and sketch angles, understand angle additivity, and classify triangles and quadrilaterals by their properties, including parallel and perpendicular lines. Data work continues with line plots displaying data in fractional units of half and quarter.",
+      "pedagogicalNotes": "Push for place-value reasoning in the standard algorithms instead of digit-by-digit rote moves. Common misconceptions: thinking equivalent fractions must look the same, and believing that more digits after the decimal point means a bigger number (0.5 vs 0.45). Insist students model and estimate products before computing so place-value errors are caught early. Revisit why division with remainders is not always the final answer in context.",
+      "exampleProblems": [
+        {
+          "problem": "A school orders 24 boxes of pencils with 36 pencils in each box. How many pencils did the school order?",
+          "solution": "24 x 36 = 864 pencils.",
+          "explanation": "Break 24 into 20 + 4: 20 x 36 = 720 and 4 x 36 = 144, and 720 + 144 = 864. Estimating 25 x 36 = 900 first shows the answer should be near 900.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write two fractions equivalent to 3/4 and compare 3/4 with 5/8.",
+          "solution": "Equivalent fractions include 6/8 and 9/12. Since 3/4 = 6/8 and 6/8 > 5/8, then 3/4 > 5/8.",
+          "explanation": "Multiply numerator and denominator by the same number to get equivalent fractions. Comparing 3/4 to 5/8 is easiest when both share a denominator of 8, so 6/8 versus 5/8 shows 3/4 is larger.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Mathematics: Fraction Operations, Decimal Operations, Volume, and the Coordinate Plane",
+      "contentBody": "In grade 5 mathematics, students become fluent with fraction and decimal operations. They add and subtract fractions with unlike denominators by finding common denominators, multiply fractions and whole numbers, and interpret fraction division with visual models, including dividing a unit fraction by a whole number and a whole number by a unit fraction. Decimal place value extends to thousandths, and students add, subtract, multiply, and divide decimals to hundredths using strategies grounded in place value and the relationship between decimals and fractions. Key vocabulary: common denominator, equivalent fraction, mixed number, tenths, hundredths, thousandths, quotient, volume, cubic unit, coordinate plane, x-axis, y-axis, ordered pair. Numerical expressions introduce the order of operations, including parentheses, and students evaluate and write simple expressions without solving for unknowns yet. In geometry, volume is measured by packing unit cubes and then computed as length times width times height, with additive reasoning for composite solids. Students plot points in the first quadrant of the coordinate plane to solve real-world and graphing problems. Classification of two-dimensional shapes becomes hierarchical: students see that a square is a special rectangle and a rectangle is a special parallelogram, and they classify triangles and quadrilaterals by angle and side properties. Measurement conversions among units within a system (for example, feet to inches, kilograms to grams) support multi-step problems.",
+      "pedagogicalNotes": "Fraction division is the hardest idea of the year; use visual models and story contexts (how many halves fit in three?) before any reciprocal rule. Common misconception: adding numerators and denominators separately (1/2 + 1/3 = 2/5); anchor on common denominators with fraction strips. Keep decimals connected to fractions and money to prevent place-value slips when multiplying and dividing decimals.",
+      "exampleProblems": [
+        {
+          "problem": "Compute 2/3 + 1/4.",
+          "solution": "2/3 + 1/4 = 8/12 + 3/12 = 11/12.",
+          "explanation": "Rewrite both fractions with a common denominator of 12, then add the numerators while keeping the denominator. The result 11/12 is already in simplest form.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A box is 5 units long, 4 units wide, and 3 units high. What is its volume? How many unit cubes fill it?",
+          "solution": "Volume = 5 x 4 x 3 = 60 cubic units, so 60 unit cubes fill the box.",
+          "explanation": "The base holds 5 x 4 = 20 cubes per layer, and the box is 3 layers high, so 20 x 3 = 60. Volume counts how many unit cubes fit inside, which is why the units are cubic.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Mathematics: Ratios, Percent, Integers, Expressions, and Statistics",
+      "contentBody": "In grade 6 mathematics, students connect arithmetic to algebra through ratio reasoning. They understand ratio language, use ratio tables and double number lines, compute unit rates including unit pricing, and solve percent problems (finding a percent of a quantity, percent as a rate per 100). Division of fractions is formalized: students divide fractions by fractions using models and the invert-and-multiply procedure, and they divide multi-digit numbers and decimals fluently. The number system expands to include negative numbers: students locate integers on the number line, understand absolute value as distance, and order rational numbers. Key vocabulary: ratio, rate, unit rate, percent, rational number, integer, absolute value, exponent, variable, expression, equation, inequality, statistical question. Expressions and equations introduce variables, the properties of operations for rewriting expressions, one-step equations and inequalities, and exponents for repeated multiplication; students distinguish an expression from an equation and evaluate both. Statistics focuses on data distributions: students pose statistical questions, and display data with dot plots, histograms, and box plots, describing shape, center (mean, median, and mode), and spread (range, interquartile range, mean absolute deviation), and describing how removing or adding a data point affects the measures. Geometry covers area of triangles, parallelograms, and trapezoids and surface area of nets, while the coordinate plane extends to all four quadrants for graphing and polygon problems.",
+      "pedagogicalNotes": "Ratios must be distinguished from fractions: 3:2 compares two quantities, while 3/2 can name a single number. Common misconception: treating negative numbers as 'smaller numbers that behave like positives', leading to errors like -3 + (-5) = 8 on the number line; spend real time on directed number addition before multiplication. Introduce mean absolute deviation as average distance from the center, not as a formula to memorize.",
+      "exampleProblems": [
+        {
+          "problem": "A recipe uses 3 cups of flour for 2 cups of sugar. At the same rate, how much flour goes with 5 cups of sugar?",
+          "solution": "The ratio of flour to sugar is 3:2, so flour = (3/2) x 5 = 7.5 cups.",
+          "explanation": "Scale the ratio to the new quantity: the unit rate is 1.5 cups of flour per cup of sugar, so 5 cups of sugar needs 5 x 1.5 = 7.5 cups of flour.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Compute -7 + 12 - 9 and place the result on a number line.",
+          "solution": "-7 + 12 = 5, and 5 - 9 = -4.",
+          "explanation": "Move right for addition of a positive and left for subtraction. On the number line: start at -7, move 12 right to 5, then move 9 left to -4, so the result is 4 units left of zero.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Mathematics: Proportional Relationships, Rational Numbers, and Probability",
+      "contentBody": "In grade 7 mathematics, proportional relationships become the central theme. Students recognize proportional relationships in tables, graphs, and equations of the form y = kx, identify the constant of proportionality, and distinguish proportional from non-proportional relationships. Percent problems extend to increase, decrease, tax, tips, markups, discounts, and simple interest, all framed as proportional reasoning. Scale drawings and scale factors connect geometry to ratio. Operations with rational numbers become general: students add, subtract, multiply, and divide positive and negative numbers and solve real-world problems with signed quantities. Key vocabulary: proportional, constant of proportionality, scale factor, rational number, discount, tax, simple interest, complementary and supplementary angles, theoretical probability, compound event. Algebra work includes solving multi-step equations and inequalities with rational coefficients and writing inequalities to represent constraints. Geometry covers angle relationships (vertical, complementary, supplementary, angles formed by parallel lines cut by a transversal), the fact that a triangle's angles sum to 180 degrees, area and circumference of circles with pi, and surface area and volume of prisms, pyramids, cylinders, and composite solids. In statistics and probability, students use random sampling to draw inferences about populations, compare samples informally, develop uniform and non-uniform probability models, compute probabilities of compound events with lists, tables, and tree diagrams, and use simulations to estimate probabilities of chance processes.",
+      "pedagogicalNotes": "Emphasize the unit rate k as the meaning of proportionality in every representation (table, graph, equation). Common misconceptions: 'the line through the origin is always proportional' (it is, but students overgeneralize to all linear graphs), and setting up proportions with mismatched units, producing nonsense answers. Teach percent change as multiplication by a scaling factor (1 + r) rather than separate formulas. Probability should stay experimental before theoretical.",
+      "exampleProblems": [
+        {
+          "problem": "A shirt costs 40 dollars and is on sale for 25 percent off. What is the sale price?",
+          "solution": "Discount = 0.25 x 40 = 10 dollars, so the sale price is 40 - 10 = 30 dollars.",
+          "explanation": "Paying 75 percent of the original price gives the same answer in one step: 0.75 x 40 = 30. Framing percent-off as a multiplier of 0.75 generalizes to repeated percent changes.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Solve for x: 3x - 5 = 16, and interpret the solution if x is the number of hours worked at 3 dollars per hour minus a 5-dollar fee.",
+          "solution": "3x = 21, so x = 7 hours.",
+          "explanation": "Add 5 to both sides to isolate the term with x, then divide both sides by 3. In context, 7 hours of work at 3 dollars per hour earns 21 dollars, which is 16 dollars after the 5-dollar fee, matching the equation.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Mathematics: Linear Functions, Systems of Equations, Transformations, and the Pythagorean Theorem",
+      "contentBody": "In grade 8 mathematics, students formalize linear functions and their graphs. They work with integer exponents and scientific notation for very large and small quantities, then study linear equations in slope-intercept form, interpreting slope as rate of change and y-intercept as the initial value, comparing proportional and non-proportional relationships, and deriving the equation of a line from a graph, a table, or two points. Systems of linear equations are solved by graphing, substitution, and elimination, with attention to the meaning of a solution (one intersection, parallel lines, or the same line). Key vocabulary: slope, rate of change, y-intercept, system of equations, substitution, elimination, transformation, translation, rotation, reflection, dilation, congruent, similar, exponent, scientific notation. Geometry emphasizes transformations: students describe and perform translations, rotations, reflections, and dilations on the coordinate plane, and use transformations to establish congruence and similarity. The Pythagorean theorem is proved by area arguments and applied to find missing side lengths, distances between points, and real problems involving right triangles. Volume formulas for cones, cylinders, and spheres are used to solve problems. In statistics, students construct and interpret scatter plots, describe associations (positive, negative, linear, nonlinear), fit lines informally, judge closeness of fit, and use two-way tables to summarize categorical data and relative frequencies.",
+      "pedagogicalNotes": "Make slope tangible as 'rise over run equals rate of change equals constant difference in a table' so it stops being three unrelated facts. Common misconception: confusing the slope and intercept in y = mx + b, and thinking a steeper-looking line always has bigger numbers attached without checking units. Use transformations to explain why angle measures and side lengths behave as they do in congruent and similar figures. Insist students verify system solutions in both original equations.",
+      "exampleProblems": [
+        {
+          "problem": "Find the equation of the line through the points (2, 7) and (6, 19).",
+          "solution": "Slope m = (19 - 7)/(6 - 2) = 12/4 = 3. Using y = 3x + b and the point (2, 7): 7 = 3(2) + b, so b = 1. The equation is y = 3x + 1.",
+          "explanation": "The slope is the change in y divided by the change in x. Substituting either point into y = mx + b then reveals the intercept. Check with the other point: 3(6) + 1 = 19, which matches.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Solve the system: x + y = 10 and 2x - y = 5.",
+          "solution": "Adding the equations eliminates y: 3x = 15, so x = 5. Then 5 + y = 10 gives y = 5. The solution is (5, 5).",
+          "explanation": "Elimination works because the y terms are opposites. Substituting x = 5, y = 5 into both original equations confirms the point where the two lines intersect.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Mathematics: Algebra I - Equations, Functions, Polynomials, and Quadratics",
+      "contentBody": "In grade 9 mathematics, students take a full first course in algebra. They solve linear equations and inequalities with multiple steps, including those with variables on both sides and with rational coefficients, solve literal equations for a specified variable, and write and graph inequalities in one and two variables. Functions are defined precisely: students use function notation, identify domain and range from equations, graphs, and contexts, and distinguish functions from non-functions using tables and the vertical line test. Linear functions are analyzed through slope, intercepts, and rate of change, and arithmetic sequences are connected to linear functions. Systems of equations and inequalities are solved algebraically and graphically, with interpretation of solution regions. Key vocabulary: function, domain, range, function notation, slope, arithmetic sequence, polynomial, degree, term, coefficient, factor, quadratic, parabola, vertex, root, discriminant. Exponent rules (product, quotient, power, zero, and negative exponents) are established for integer exponents. Polynomial work covers naming by degree, adding, subtracting, multiplying (including special products such as difference of squares and perfect square trinomials), and factoring out a greatest common factor and factoring simple trinomials. Quadratic functions are studied through graphs (parabolas, vertex and axis of symmetry, intercepts), solving by factoring and by taking square roots, and the quadratic formula is derived or introduced and used, with the discriminant describing the number of real solutions. Data analysis includes fitting lines to scatter plots and interpreting residuals informally.",
+      "pedagogicalNotes": "Function notation is a language barrier: students read f(x) as 'f times x' and need repeated verbalization like 'f of x means the output when the input is x'. Common misconceptions: treating exponent rules as additive (x^2 x^3 = x^6) and canceling terms instead of factors when simplifying rational expressions. Require students to check solutions by substitution. Spend time connecting the factored form of a quadratic to its x-intercepts so graphing and solving reinforce each other.",
+      "exampleProblems": [
+        {
+          "problem": "Solve for x: 2(x - 3) + 5 = 3x - 4.",
+          "solution": "2x - 6 + 5 = 3x - 4, so 2x - 1 = 3x - 4. Subtracting 2x gives -1 = x - 4, so x = 3.",
+          "explanation": "Distribute first, then collect variable terms on one side and constants on the other. Substituting x = 3 back into the original equation gives 5 = 5, confirming the solution.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Solve by factoring: x^2 - 5x + 6 = 0, and state the vertex of the parabola y = x^2 - 5x + 6.",
+          "solution": "Factor: (x - 2)(x - 3) = 0, so x = 2 or x = 3. The vertex is at x = 5/2, and y = (5/2)^2 - 5(5/2) + 6 = -1/4, giving vertex (5/2, -1/4).",
+          "explanation": "Factoring uses two numbers multiplying to 6 and adding to -5, namely -2 and -3. The vertex lies midway between the roots at x = (2 + 3)/2 = 5/2; substituting this x gives the minimum value since the parabola opens upward.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Mathematics: Geometry - Proofs, Congruence, Similarity, and Right-Triangle Trigonometry",
+      "contentBody": "In grade 10 mathematics, students study geometry in a deductive framework. The course opens with logic and proof: conditional statements, converses, counterexamples, and the structure of two-column and paragraph proofs. Angle relationships formed by parallel lines and transversals (corresponding, alternate interior, same-side interior) are proved and applied, and the triangle angle sum theorem is established. Triangle congruence criteria (SSS, SAS, ASA, AAS, and HL) are proved and used, and CPCTC (corresponding parts of congruent triangles are congruent) supports proofs about segments and angles. Similarity is developed through AA, side ratios, the triangle proportionality theorem, and the relationships among perimeters and areas of similar figures. Key vocabulary: theorem, proof, congruent, similar, CPCTC, bisector, median, altitude, midpoint, parallel, perpendicular, transversal, sine, cosine, tangent, hypotenuse, opposite, adjacent, arc, chord, tangent, inscribed. Right triangle trigonometry introduces the tangent, sine, and cosine ratios, solving right triangles, special right triangles (45-45-90 and 30-60-90), and simple applications involving angles of elevation and depression. Circle theorems cover radii, chords, tangents, inscribed angles, central angles, and arc length and sector area. Polygons and quadrilaterals are classified by properties (parallelogram, rectangle, rhombus, square, trapezoid), with proofs about their diagonals and angles. Coordinate proofs and transformations connect to algebra, and surface area and volume of three-dimensional solids are computed in real problems.",
+      "pedagogicalNotes": "Proof is the major hurdle: students are fluent with computation but not with chains of justification. Build proof gradually by first asking for reasons informally, then structured two-column proofs. Common misconception: assuming a diagram is to scale or that an unstated property (like a line being straight) may be used; insist every claim comes from a definition, postulate, or theorem. In trigonometry, students mix up which side is opposite or adjacent; keep marking triangles consistently before any calculator work.",
+      "exampleProblems": [
+        {
+          "problem": "In triangle ABC, angle A = 40 degrees and angle B = 75 degrees. Find angle C and classify the triangle by its angles.",
+          "solution": "Angle C = 180 - 40 - 75 = 65 degrees. Since all angles are less than 90 degrees, the triangle is acute.",
+          "explanation": "The triangle angle sum theorem states that a triangle's angles total 180 degrees. Because 40, 75, and 65 are all under 90, the triangle contains no right or obtuse angle.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "In a right triangle with a 30-degree angle, the side opposite the 30-degree angle is 7. Find the hypotenuse and the other leg.",
+          "solution": "In a 30-60-90 triangle the hypotenuse is twice the shorter leg: hypotenuse = 14. The longer leg is 7 x sqrt(3), approximately 12.12.",
+          "explanation": "The 30-60-90 special right triangle has side ratios 1 : sqrt(3) : 2. The side opposite 30 degrees is the short leg, so doubling gives the hypotenuse, and multiplying the short leg by sqrt(3) gives the long leg.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Mathematics: Algebra II, Polynomials, Complex Numbers, and Quadratic Functions",
+      "contentBody": "In grade 11 mathematics, students enter Algebra II, extending the symbolic fluency built in earlier grades to higher-degree and non-linear relationships. The course deepens work with quadratics: students solve quadratic equations by factoring, completing the square, and the quadratic formula, and they connect each method to the graph of a parabola. The discriminant is used to classify roots before solving, and students move fluidly among standard form, factored form, and vertex form, reading intercepts, axis of symmetry, and end behavior from each.\n\nPolynomials are studied in general. Students add, subtract, multiply, and divide polynomials, apply the Remainder and Factor Theorems, use synthetic division, and find zeros including complex conjugate pairs. Graphs of higher-degree polynomials are sketched using degree, leading coefficient, multiplicity of roots, and end behavior. Key vocabulary: polynomial, degree, leading coefficient, multiplicity, complex number, discriminant, vertex form, synthetic division, conjugate, extraneous solution.\n\nThe number system extends to complex numbers: students compute with the imaginary unit i, solve quadratics with negative discriminants, and understand that non-real roots of real polynomials occur in conjugate pairs. Rational expressions are simplified, added, subtracted, multiplied, and divided; students solve rational equations while checking for extraneous solutions introduced by multiplying through by a variable expression. Radical and absolute value equations round out the equation work. Systems extend to linear-quadratic and quadratic-quadratic systems solved both algebraically and graphically, with attention to the number of intersection points. Sequences are introduced: arithmetic and geometric sequences are written with recursive and explicit formulas and connected to linear and exponential functions. Throughout, students justify each solution step, interpret solutions in context, and use graphing technology to verify algebraic results.",
+      "pedagogicalNotes": "Insist that every quadratic be approached with a method choice, not a single rote procedure; students overuse the quadratic formula when factoring is instant. Common misconceptions: assuming complex roots come in pairs that are negatives of each other (they are conjugates), and canceling common factors in a rational equation without excluding the values that make them zero. Scaffold polynomial graphing by having students predict end behavior from the leading term before plotting points.",
+      "exampleProblems": [
+        {
+          "problem": "Solve by factoring: x^2 - 5x + 6 = 0.",
+          "solution": "(x - 2)(x - 3) = 0, so x = 2 or x = 3.",
+          "explanation": "Find two numbers that multiply to 6 and add to -5: they are -2 and -3. By the zero product property, each factor set to zero gives one root, and both can be verified by substitution.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Use the quadratic formula to solve 2x^2 + 3x - 5 = 0.",
+          "solution": "x = (-3 +/- sqrt(9 + 40)) / 4 = (-3 +/- 7) / 4, so x = 1 or x = -2.5.",
+          "explanation": "With a = 2, b = 3, c = -5, the discriminant is b^2 - 4ac = 49, a perfect square, so the roots are rational. The formula gives (-3 + 7)/4 = 1 and (-3 - 7)/4 = -2.5, both verifiable by substitution.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The polynomial p(x) = x^3 - 4x^2 + x + 6 has a zero at x = 2. Find all zeros of p.",
+          "solution": "Synthetic division by (x - 2) yields x^2 - 2x - 3 = (x - 3)(x + 1), so the zeros are x = 2, x = 3, and x = -1.",
+          "explanation": "Divide out the known factor: dividing the cubic by x - 2 leaves the quadratic x^2 - 2x - 3, which factors as (x - 3)(x + 1). Because a degree-three polynomial has exactly three zeros counting multiplicity, the list is complete.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Mathematics: Functions, Transformations, Inverses, and Exponential Models",
+      "contentBody": "In grade 12 mathematics, functions become the organizing object of the course. Students work with function notation, evaluate and compose functions, determine domain and range from equations and graphs, and interpret statements such as f(a) = b as statements about a situation. The course systematizes transformations: horizontal and vertical shifts, stretches and compressions, and reflections are expressed as changes to the formula of a function, and students describe the effect of each change on the graph and on key features such as intercepts, extrema, and asymptotes.\n\nSymmetry and behavior are classified: students identify even and odd functions algebraically and graphically, describe increasing and decreasing intervals, and distinguish local from global extrema. Inverse functions are developed as reversibility: students decide whether a function is one-to-one by the horizontal line test, restrict domains when necessary, find inverses algebraically, and verify that composition of a function with its inverse returns the input. Key vocabulary: domain, range, composition, inverse, one-to-one, asymptote, base, exponent, logarithm, growth factor, decay factor, continuous growth.\n\nExponential and logarithmic functions receive sustained attention. Students derive the laws of exponents and their logarithmic counterparts, convert between exponential and logarithmic form, solve exponential and logarithmic equations, and apply these models to compound interest, population growth, radioactive decay, and pH or decibel scales. The natural base e and continuous growth are introduced. Curve sketching integrates all skills: students assemble graphs of rational, piecewise, and transformed functions, identifying discontinuities and end behavior, and use regression with technology to fit exponential and linear models to data, comparing fit quality.",
+      "pedagogicalNotes": "Students routinely reverse the direction of horizontal shifts: inside the function, x - 3 shifts the graph right, not left. Emphasize function composition order (f of g applies g first) with numerical examples before algebraic ones. When finding inverses, always pair the algebra with a domain restriction discussion; common error is declaring an inverse exists for a function like x^2 without restricting the domain. Logarithm equations must be checked for domain, since algebra can produce values that make the original log undefined.",
+      "exampleProblems": [
+        {
+          "problem": "If f(x) = 2x^2 - 3x, find f(-2).",
+          "solution": "f(-2) = 2(4) - 3(-2) = 8 + 6 = 14.",
+          "explanation": "Substitute -2 for x, taking care with signs: the square gives 4 and the product -3(-2) is +6, so the value of the function at x = -2 is 14.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Find the inverse of f(x) = (3x + 2)/(x - 1) and state its domain.",
+          "solution": "f inverse (x) = (x + 2)/(x - 3), with domain all real x except 3.",
+          "explanation": "Write y = (3x + 2)/(x - 1), swap roles, and solve for x: y(x - 1) = 3x + 2 gives yx - y = 3x + 2, so x(y - 3) = y + 2 and x = (y + 2)/(y - 3). The excluded value y = 3 becomes the domain restriction of the inverse, matching the range of the original function.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Solve 2^(3x - 1) = 5^(x + 2) exactly for x.",
+          "solution": "Taking natural logs: (3x - 1) ln 2 = (x + 2) ln 5, so x = (2 ln 5 + ln 2) / (3 ln 2 - ln 5), which is approximately 8.32.",
+          "explanation": "Because the bases differ, logarithms are the only route to the variable in the exponent. Distribute the log on both sides, collect the x terms on one side, factor, and divide. The exact form is preferred; a decimal approximation around 8.32 can be verified by substitution into the original equation.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Mathematics: Trigonometry, the Unit Circle, and Triangle Laws",
+      "contentBody": "In grade 13 mathematics, trigonometry expands from the right-triangle ratios of earlier grades to functions defined for all real numbers. Radian measure is introduced as a natural way to measure angles by arc length, and students convert fluently between degrees and radians. The unit circle is the central tool: students define sine and cosine as coordinates of a point on the unit circle, extend tangent, cosecant, secant, and cotangent from these, evaluate the trigonometric functions at the quadrantal and special angles, and use reference angles and symmetry to find values in any quadrant.\n\nGraphing follows from the circle. Students sketch graphs of sine, cosine, and tangent, identifying amplitude, period, phase shift, and vertical shift in the general forms y = A sin(Bx - C) + D and its cosine counterpart, and they model periodic phenomena such as tides, sound waves, and Ferris wheel heights. Key vocabulary: radian, unit circle, reference angle, amplitude, period, phase shift, frequency, amplitude, identity, reciprocal function, angle of elevation, oblique triangle.\n\nCore identities are established: reciprocal identities, quotient identities, the Pythagorean identities, and even-odd properties. Students use these to simplify expressions and verify other identities, and they solve basic trigonometric equations over a specified interval, finding all solutions using the periodic nature of the functions. Triangle trigonometry generalizes to oblique triangles through the Law of Sines and the Law of Cosines, including the ambiguous case of the Law of Sines. Applications include finding unknown sides and angles, computing the area of a triangle using one half the product of two sides and the sine of the included angle, and solving navigation and surveying problems.",
+      "pedagogicalNotes": "Radian measure often feels arbitrary; motivate it by wrapping a radius-length string around the unit circle so one radian is visible as an arc. Common misconceptions: applying right-triangle ratios to non-right triangles instead of the Laws of Sines or Cosines, and forgetting that solving sin x = k yields two families of solutions per period. When verifying identities, work on one side only and treat it as a puzzle; students who cross-multiply lose the habit of logical equivalence.",
+      "exampleProblems": [
+        {
+          "problem": "Find the exact values of sin(5pi/6) and cos(5pi/6).",
+          "solution": "sin(5pi/6) = 1/2 and cos(5pi/6) = -sqrt(3)/2.",
+          "explanation": "The angle 5pi/6 is 150 degrees, in quadrant II with reference angle pi/6. Sine is positive in quadrant II and cosine is negative there, so the values match sin(pi/6) = 1/2 and cos(pi/6) = sqrt(3)/2 with the cosine sign flipped.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Solve 2 sin x - 1 = 0 for x in [0, 2pi).",
+          "solution": "sin x = 1/2, so x = pi/6 or x = 5pi/6.",
+          "explanation": "Isolate sine to get sin x = 1/2. The reference angle is pi/6, and sine is positive in quadrants I and II, giving the two solutions pi/6 and pi/6 reflected across the y-axis, which is 5pi/6. No other solutions lie in [0, 2pi).",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "In triangle ABC, side a = 7, side b = 10, and angle C = 60 degrees. Find side c.",
+          "solution": "By the Law of Cosines, c^2 = 49 + 100 - 2(7)(10) cos 60 = 149 - 70 = 79, so c = sqrt(79), about 8.89.",
+          "explanation": "The Law of Cosines generalizes the Pythagorean theorem to any triangle: c^2 = a^2 + b^2 - 2ab cos C. With cos 60 = 0.5, the correction term is exactly 70, so c is slightly less than the right-triangle value sqrt(149), as expected for an acute included angle.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Mathematics: Probability, Counting, Distributions, and Statistical Inference",
+      "contentBody": "In grade 14 mathematics, students develop a rigorous treatment of probability and statistics. Counting techniques open the course: the multiplication principle, permutations, and combinations are distinguished by whether order matters, and students use factorial notation and the binomial coefficient. These tools feed directly into probability: students define sample spaces and events, compute probabilities using equally likely outcomes, apply the addition and complement rules, distinguish independent from mutually exclusive events, and compute conditional probabilities with two-way tables and the multiplication rule.\n\nRandom variables are introduced as numerical summaries of chance outcomes. Students build probability distributions for discrete random variables, compute expected value and variance, and study the binomial distribution as a model for repeated independent trials with a fixed success probability. Key vocabulary: sample space, event, conditional probability, independence, random variable, expected value, variance, binomial distribution, normal distribution, z-score, sampling variability, confidence interval, hypothesis test, p-value.\n\nThe normal distribution is central: students use the empirical rule, standardize values to z-scores, find probabilities and percentiles from tables or technology, and apply normal approximation to binomial counts. Statistical inference follows: students distinguish sample from population, describe sampling distributions and the central limit theorem informally, construct and interpret confidence intervals for a mean or proportion, and run one-sample hypothesis tests, stating null and alternative hypotheses and interpreting a p-value in context. Study design matters as well: students identify bias in surveys and experiments, explain the protective role of random assignment, and critique data-based claims. Students also compare designed experiments with observational studies and describe how sample size affects the width of a confidence interval.",
+      "pedagogicalNotes": "Combination versus permutation confuses students constantly; anchor the choice in a concrete question such as does a lineup order matter. Frequent misconception: adding probabilities of events that overlap, so drill inclusion-exclusion with Venn diagrams first. For inference, the biggest error is interpreting a p-value as the probability the null hypothesis is true; instead frame it as the probability of data this extreme assuming the null is true. Keep confidence interval language precise: the method captures the parameter 95 percent of the time, not this interval with 95 percent probability.",
+      "exampleProblems": [
+        {
+          "problem": "In how many ways can a committee of 3 be chosen from 8 people?",
+          "solution": "C(8, 3) = 8! / (3! 5!) = 56 ways.",
+          "explanation": "Committee roles are identical, so order does not matter and a combination is correct. The count is (8 x 7 x 6) / (3 x 2 x 1) = 56.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A fair coin is flipped 5 times. Find the probability of exactly 3 heads.",
+          "solution": "P = C(5, 3) (1/2)^5 = 10/32 = 5/16, about 0.3125.",
+          "explanation": "This is a binomial setting with n = 5 trials, k = 3 successes, and success probability one half. There are C(5,3) = 10 sequences with exactly 3 heads, each with probability (1/2)^5 = 1/32, so the total is 10/32.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Test scores are normally distributed with mean 72 and standard deviation 8. What score marks the top 10 percent?",
+          "solution": "The 90th percentile has z about 1.28, so the cutoff is 72 + 1.28(8) = 82.24, about 82.2 points.",
+          "explanation": "Top 10 percent means 90 percent of scores lie below the cutoff. The z-score with cumulative area 0.90 is approximately 1.28; converting back with x = mean + z times standard deviation gives 72 + 10.24 = 82.24.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Mathematics: Precalculus, Function Analysis, Sequences, and Series",
+      "contentBody": "In grade 15 mathematics, students consolidate prior work into a precalculus framework that prepares for calculus. Polynomial functions are analyzed in depth: students use the Fundamental Theorem of Algebra to relate degree to the number of zeros, apply the rational root theorem, factor over the complex numbers, and describe end behavior, turning points, and intervals of increase and decrease. Rational functions are analyzed through intercepts, vertical asymptotes from zeros of the denominator, horizontal and oblique asymptotes from comparing degrees, and holes from removable discontinuities; students sketch complete graphs and interpret long-run behavior in applied contexts such as average cost.\n\nSequences and series receive systematic treatment. Students distinguish arithmetic from geometric sequences, write both recursive and explicit formulas, use sigma notation, compute finite sums of arithmetic and geometric series, find the sum of an infinite geometric series when the common ratio has magnitude less than one, and apply the binomial theorem to expand powers of binomials. Key vocabulary: asymptote, end behavior, multiplicity, removable discontinuity, sigma notation, common ratio, convergent series, binomial coefficient, local maximum, intermediate value.\n\nFunction analysis unifies the course: the intermediate value theorem and extreme value theorem are stated and used to justify the existence of solutions and extrema, and students use these to locate zeros numerically. Piecewise-defined functions, absolute value functions, and transformations are graphed and combined. Parametric ideas and limit intuition are introduced: students estimate limits from tables and graphs, discuss one-sided limits and continuity, and describe the difference quotient as an average rate of change. Technology supports curve fitting and the exploration of rates of change, but students must justify key features analytically.",
+      "pedagogicalNotes": "Students treat asymptotes as lines that graphs never touch, but a graph can cross a horizontal asymptote and even a hole can be approached from both sides; ground asymptotic behavior in limits, not visual rules of thumb. In series, the most common error is applying the finite geometric sum formula to a divergent infinite series; check the common ratio first. Scaffolding: have students narrate end behavior in words before writing it symbolically, and require a sign chart of numerator and denominator before sketching any rational function.",
+      "exampleProblems": [
+        {
+          "problem": "Find the 20th term of the arithmetic sequence with first term 3 and common difference 5.",
+          "solution": "a(20) = 3 + 19(5) = 98.",
+          "explanation": "The explicit formula for an arithmetic sequence is a(n) = a(1) + (n - 1)d. Nineteen steps of size 5 beyond the first term 3 gives 95 + 3 = 98.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Find the sum of the first 6 terms of the geometric series 2 + 6 + 18 + ...",
+          "solution": "S(6) = 2(3^6 - 1) / (3 - 1) = (729 - 1) = 728.",
+          "explanation": "With first term 2 and ratio 3, the finite geometric sum formula gives S(n) = a(r^n - 1)/(r - 1). Here that is 2(728)/2 = 728; summing 2 + 6 + 18 + 54 + 162 + 486 confirms the result.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Find all vertical and horizontal asymptotes of f(x) = (2x^2 + x - 3)/(x^2 - 4).",
+          "solution": "Vertical asymptotes at x = 2 and x = -2; horizontal asymptote at y = 2. There are no holes.",
+          "explanation": "Factor: numerator (2x + 3)(x - 1), denominator (x - 2)(x + 2). No factors cancel, so both denominator zeros give vertical asymptotes. Since numerator and denominator share degree 2, the horizontal asymptote is the ratio of leading coefficients, y = 2.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Mathematics: Trigonometric Identities, Polar Coordinates, and Vectors",
+      "contentBody": "In grade 16 mathematics, trigonometry reaches full depth. Students master the identity toolkit: sum and difference formulas for sine, cosine, and tangent, double-angle and half-angle formulas, and product-to-sum and sum-to-product conversions. They use these to find exact values of angles such as 15 and 75 degrees, simplify complicated trigonometric expressions, and verify identities by transforming one side of an equation into the other. Solving trigonometric equations becomes systematic: students use identities to rewrite equations in terms of a single function, factor when possible, and express complete solution sets using periodicity rather than listing only solutions in one interval.\n\nThe coordinate systems broaden. Students convert between rectangular and polar coordinates, sketch polar curves such as circles, cardioids, limacons, and rose curves, and convert equations between the two systems. Complex numbers are expressed in polar form and multiplied using their moduli and arguments, laying groundwork for later work with roots of complex numbers. Key vocabulary: double angle, half angle, identity, polar coordinates, pole, polar axis, modulus, argument, component, dot product, magnitude, bearing, parametric equations.\n\nVectors are developed as both algebraic and geometric objects: students add vectors graphically and component-wise, multiply by scalars, find magnitude and direction, resolve vectors into components, and compute the dot product to find angles between vectors and to test for perpendicularity. Parametric equations describe motion in the plane: students graph curves defined parametrically, eliminate the parameter to relate x and y, and interpret the parameter as time in problems involving projectile motion, computing launch angle, range, and maximum height. Applications include navigation problems with bearings and resultant forces in physics contexts.",
+      "pedagogicalNotes": "Identity verification frustrates students because there is no single algorithm; insist on a strategy checklist: convert everything to sine and cosine, factor, or use a Pythagorean identity. Common errors: applying a double-angle formula as if sin(2x) were 2 sin x, and mishandling half-angle signs, which depend on the quadrant. In polar work, students plot points with negative radii incorrectly; require a conversion back to rectangular coordinates as a check. For parametric projectile problems, make students label which equation governs height versus distance before computing anything.",
+      "exampleProblems": [
+        {
+          "problem": "Find the exact value of sin(75 degrees).",
+          "solution": "sin(75) = sin(45 + 30) = (sqrt(6) + sqrt(2)) / 4.",
+          "explanation": "Apply the sum formula sin(A + B) = sin A cos B + cos A sin B with A = 45 and B = 30. Substituting the special-angle values gives (sqrt(2)/2)(sqrt(3)/2) + (sqrt(2)/2)(1/2), which combines to (sqrt(6) + sqrt(2))/4, about 0.966, consistent with the calculator value.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Convert the polar point (4, pi/3) to rectangular coordinates.",
+          "solution": "x = 4 cos(pi/3) = 2 and y = 4 sin(pi/3) = 2 sqrt(3).",
+          "explanation": "The conversion formulas x = r cos theta and y = r sin theta come directly from right-triangle trigonometry on the segment from the pole. With cos(pi/3) = 1/2 and sin(pi/3) = sqrt(3)/2, the rectangular point is (2, 2 sqrt(3)), which lies at distance 4 from the origin in the first quadrant as required.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Solve cos(2x) = cos x for x in [0, 2pi).",
+          "solution": "x = 0, 2pi/3, and 4pi/3.",
+          "explanation": "Rewrite cos(2x) with the double-angle identity as 2 cos^2 x - 1, giving 2 cos^2 x - cos x - 1 = 0. Factoring: (2 cos x + 1)(cos x - 1) = 0, so cos x = -1/2 or cos x = 1. The first yields x = 2pi/3 and 4pi/3; the second yields x = 0 within the interval. All three satisfy the original equation by substitution.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Mathematics: Analytical Geometry and Introduction to Calculus",
+      "contentBody": "In grade 17 mathematics, analytical geometry and the foundations of calculus meet. Conic sections are studied as geometric loci and as equations: students derive and use the standard forms of parabolas, ellipses, and hyperbolas, identifying vertices, foci, directrices, axes of symmetry, eccentricity, and asymptotes, and they translate and rotate conics by completing the square. Applications include orbital paths, reflective properties of parabolas in satellite dishes, and acoustic properties of ellipses. Three-dimensional analytic geometry is introduced with coordinates in space, the distance formula, and equations of spheres and planes.\n\nCurves beyond functions enter the toolkit. Parametric curves are graphed and analyzed, cycloid and Lissajous examples build intuition, and polar curves are revisited with area in polar coordinates. Vectors extend to three dimensions with components, dot and cross products, and equations of lines and planes. Key vocabulary: conic section, focus, directrix, eccentricity, asymptote, completing the square, sphere, plane, cross product, limit, one-sided limit, continuity, difference quotient, tangent line, derivative.\n\nCalculus proper begins with limits. Students evaluate limits numerically, graphically, and algebraically using factoring, rationalization, and limit laws; they examine one-sided limits, infinite limits, limits at infinity, and vertical and horizontal asymptotes as limit statements. Continuity is defined precisely, with classification of discontinuities and the intermediate value theorem applied to root finding. The derivative appears as the limit of the difference quotient: students compute average rates of change, interpret the derivative as instantaneous rate of change and as the slope of the tangent line, find tangent line equations by the limit definition, and distinguish differentiability from continuity.",
+      "pedagogicalNotes": "Conic sections drown in formulas; anchor every equation in its focus-directrix or distance definition so students can rebuild a form they forget. Common misconception: treating the limit as the value the function never quite reaches, rather than the value the outputs approach regardless of the function's value at the point. Squeeze theorem and piecewise examples fix this. When introducing the derivative, keep the geometry visible: the secant line collapsing to the tangent line should be drawn at several h values before any algebra. Students also assume continuity implies differentiability; the absolute value corner is the standard counterexample.",
+      "exampleProblems": [
+        {
+          "problem": "Identify the conic x^2/9 + y^2/25 = 1 and find its foci.",
+          "solution": "It is an ellipse centered at the origin with semi-minor axis 3 along x and semi-major axis 5 along y; the foci are at (0, 4) and (0, -4).",
+          "explanation": "Both squared terms are positive with different denominators, so the curve is an ellipse. The larger denominator sits under y, so the major axis is vertical. Since c^2 = a^2 - b^2 = 25 - 9 = 16, the focal distance is c = 4 along the major axis.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Evaluate the limit as x approaches 2 of (x^2 - 4)/(x - 2).",
+          "solution": "The limit equals 4.",
+          "explanation": "Direct substitution gives 0/0, an indeterminate form signaling a removable discontinuity. Factor the numerator as (x - 2)(x + 2), cancel the common factor for x not equal to 2, and evaluate the simplified expression x + 2, which approaches 4. The function equals the line y = x + 2 with a hole at x = 2.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Use the definition of the derivative to find f prime of x for f(x) = x^2 - 3x, and find the tangent line at x = 1.",
+          "solution": "f prime of x = 2x - 3 by the limit definition; at x = 1 the slope is -1 and the tangent line is y = -x.",
+          "explanation": "The difference quotient is ((x + h)^2 - 3(x + h) - x^2 + 3x)/h = (2xh + h^2 - 3h)/h = 2x + h - 3, which approaches 2x - 3 as h approaches 0. At x = 1, f(1) = -2 and the slope is -1, so the tangent line is y + 2 = -1(x - 1), that is y = -x - 1.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Mathematics: Differential Calculus, Derivatives, and Applications",
+      "contentBody": "In grade 18 mathematics, differential calculus is developed as a complete computational and conceptual discipline. Students master derivative rules: the power rule, constant multiple and sum rules, the product and quotient rules, and the chain rule, differentiating polynomials, rational, radical, trigonometric, exponential, and logarithmic functions with fluency. Implicit differentiation extends the technique to curves defined implicitly, enabling the differentiation of inverse functions and the derivation of formulas for the derivatives of inverse trigonometric functions. Logarithmic differentiation handles variable-exponent expressions.\n\nApplications dominate the second half of the course. Related rates problems connect several changing quantities through the chain rule, with careful attention to which quantities are functions of time. Optimization problems translate verbal situations into models with constraints, and students use the first and second derivative tests to classify critical points as local maxima, minima, or neither. Key vocabulary: derivative, critical point, inflection point, concavity, chain rule, implicit differentiation, related rates, optimization, linearization, mean value theorem, L'Hopital's rule, antiderivative.\n\nCurve sketching synthesizes the analysis: domain, intercepts, symmetry, asymptotes, intervals of increase and decrease, local extrema, concavity, and inflection points are assembled into a coherent graph. The mean value theorem is stated and applied to justify claims about motion and rates, and L'Hopital's rule resolves indeterminate forms of type 0/0 and infinity over infinity. Linearization and differentials support estimation of small changes and error. Students also study velocity and acceleration as derivatives of position, interpreting the second derivative as acceleration and connecting the sign of velocity to direction of motion. Differentials also support linear approximations of function values near a known point, and students compare the estimate with the exact value to judge when the approximation is trustworthy.",
+      "pedagogicalNotes": "The chain rule is the single most failure-prone procedure; drill it on compositions that are visibly nested before mixing in trigonometric and exponential outer functions. In related rates, the standard error is differentiating a constant that should have become zero or plugging in a value before differentiating; require symbolic differentiation first, substitution last. Optimization students often skip the verification step, so mandate a first or second derivative test plus a check of endpoints for closed intervals. Keep interpreting answers in the problem context, since a naked critical point is not a maximum area or a fastest speed.",
+      "exampleProblems": [
+        {
+          "problem": "Differentiate f(x) = 4x^3 - 5x^2 + 2x - 7.",
+          "solution": "f prime of x = 12x^2 - 10x + 2.",
+          "explanation": "Apply the power rule term by term: the derivative of 4x^3 is 12x^2, of -5x^2 is -10x, of 2x is 2, and the constant -7 differentiates to zero. No product or chain rule is needed for a polynomial in standard form.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A circular ripple has its radius increasing at 3 cm per second. How fast is the area increasing when the radius is 10 cm?",
+          "solution": "dA/dt = 2 pi r dr/dt = 2 pi (10)(3) = 60 pi square cm per second, about 188.5.",
+          "explanation": "The area of a circle is A = pi r^2 with both A and r depending on time. Differentiating implicitly with respect to t gives dA/dt = 2 pi r dr/dt. Substituting r = 10 and dr/dt = 3 only after differentiating yields 60 pi square cm per second.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A farmer fences three sides of a rectangular field along a river, using 400 m of fencing, with no fence along the river. What dimensions maximize the area?",
+          "solution": "Sides perpendicular to the river are 100 m each, the parallel side is 200 m, and the maximum area is 20000 square meters.",
+          "explanation": "Let x be each side perpendicular to the river; then the parallel side is 400 - 2x and the area is A(x) = x(400 - 2x) = 400x - 2x^2. Setting A prime of x = 400 - 4x = 0 gives x = 100, and the second derivative -4 is negative, confirming a maximum. The parallel side is 400 - 200 = 200 m, giving area 20000 square meters.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Mathematics: Integral Calculus and Infinite Series",
+      "contentBody": "In grade 19 mathematics, integral calculus completes the fundamental theorem framework. Students begin with antiderivatives and the indefinite integral, then develop the definite integral as the limit of Riemann sums, interpreting it as signed area and as accumulated change. The Fundamental Theorem of Calculus links the two halves of the subject: evaluating definite integrals via antiderivatives, and differentiating integral functions defined with variable limits. The substitution rule is drilled to fluency for integrals of composite functions.\n\nTechniques of integration are systematically expanded: integration by parts for products, trigonometric integrals and substitutions, partial fraction decomposition for rational functions, and handling of improper integrals through limits. Applications include area between curves, volumes of solids of revolution by disks and washers, average value of a function, and physical applications such as work and fluid pressure. Key vocabulary: antiderivative, Riemann sum, definite integral, integrand, substitution, integration by parts, partial fractions, washer method, arc length, improper integral, convergence, power series.\n\nInfinite sequences and series close the course. Students distinguish convergence from divergence, use the nth term test, geometric series, p-series, the integral test, comparison and limit comparison tests, the ratio and root tests, and the alternating series test. Taylor and Maclaurin polynomials approximate functions, with attention to error, and power series are treated with interval and radius of convergence. Throughout, students connect integration to accumulation problems in economics and science and justify convergence claims with precise reasoning. Numerical integration methods such as the trapezoid rule and Simpson's rule are compared with exact antiderivatives, and students discuss how the error shrinks as the number of subintervals grows.",
+      "pedagogicalNotes": "Substitution is the gatekeeping skill: students look for the inner function and its derivative being present up to a constant; if not, they should try integration by parts. Frequent errors include forgetting the constant of integration on indefinite integrals and dropping the limits of integration when substituting, which produces wrong definite values; changing the limits with the substitution prevents this. In series, most mistakes come from applying a test whose hypotheses fail, so always run the nth term test first and check for geometric or p-series forms before reaching for the ratio test. For volumes, require a sketch with the representative slice before any integral is written.",
+      "exampleProblems": [
+        {
+          "problem": "Find the indefinite integral of 6x^2 - 4x + 3 with respect to x.",
+          "solution": "2x^3 - 2x^2 + 3x + C.",
+          "explanation": "Integrate term by term with the power rule in reverse: the integral of 6x^2 is 6x^3/3 = 2x^3, of -4x is -2x^2, and of 3 is 3x. The constant of integration C accounts for the whole family of antiderivatives that differ by a constant.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Evaluate the definite integral from 0 to 2 of (3x^2 + 1) dx.",
+          "solution": "[x^3 + x] evaluated from 0 to 2 = (8 + 2) - 0 = 10.",
+          "explanation": "An antiderivative of 3x^2 + 1 is x^3 + x. The Fundamental Theorem of Calculus says to evaluate it at the upper limit and subtract the value at the lower limit: 10 - 0 = 10. This equals the area under the curve from 0 to 2, which is positive since the integrand is positive.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Compute the integral of x e^x dx.",
+          "solution": "x e^x - e^x + C, equivalently e^x (x - 1) + C.",
+          "explanation": "Use integration by parts with u = x and dv = e^x dx, so du = dx and v = e^x. The formula integral of u dv = uv minus integral of v du gives x e^x minus the integral of e^x dx, which is x e^x - e^x + C. Differentiating the answer recovers x e^x, confirming the result.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Mathematics: Linear Algebra, Probability Theory, and Rigorous Modeling",
+      "contentBody": "In grade 20 mathematics, students meet two pillars of modern quantitative study: linear algebra and probability theory. Linear algebra opens with vectors in n-dimensional space, the algebra of vectors, span, linear independence, and the geometry of lines and planes. Matrices represent systems of linear equations; students solve systems with Gaussian elimination and Gauss-Jordan reduction, classify systems as consistent or inconsistent, and express solution sets parametrically. Matrix arithmetic, inverses, and determinants are developed, with the determinant tested for invertibility and computed by cofactor expansion. Eigenvalues and eigenvectors are introduced through their defining equation and applied to simple dynamical systems and quadratic forms. Key vocabulary: vector, span, linear independence, matrix, row echelon form, determinant, eigenvalue, eigenvector, basis, dimension, sample space, conditional probability, Bayes theorem, random variable, expectation, variance, law of large numbers, central limit theorem.\n\nProbability theory is treated with equal rigor. Students formalize sample spaces and events, derive conditional probability and Bayes theorem, and distinguish independence from disjointness. Discrete random variables are studied with probability mass functions, expectation, variance, and named distributions including the binomial, geometric, and Poisson. Continuous distributions follow with probability density functions, cumulative distribution functions, and the uniform and normal models. The law of large numbers and the central limit theorem connect theory to statistics, and moment generating functions and joint distributions are introduced for the multivariate case. Applications include risk analysis, Markov chains, and statistical estimation. Connections between the two pillars are drawn wherever possible: covariance appears as a dot product of centered data vectors, and least-squares regression is derived as a projection problem solved with the normal equations.",
+      "pedagogicalNotes": "In linear algebra, the leap is from computing with numbers to reasoning about structure; students can row-reduce yet cannot say what a basis means, so pair every algorithm with a geometric reading, such as span as a reachable set. Common error: treating eigenvectors as unique rather than defined up to scalar multiples, and forgetting the zero vector is never an eigenvector. In probability, the classic mistake is assuming independence from a small observed table or confusing disjoint events with independent events; disjoint events with positive probabilities are always dependent. Bayes theorem should always be anchored by a tree diagram or frequency table before formulas, because base-rate neglect is a human bias as well as a student error.",
+      "exampleProblems": [
+        {
+          "problem": "Solve the system 2x + y = 5 and x - y = 1.",
+          "solution": "Adding the equations gives 3x = 6, so x = 2 and then y = 1.",
+          "explanation": "Adding eliminates y because its coefficients are opposites: 3x = 6 yields x = 2. Substituting into the second equation gives 2 - y = 1, so y = 1. Checking both equations confirms the unique solution (2, 1), the intersection point of the two lines.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "For the matrix A with rows [2, 3] and [1, 4], find the determinant and the inverse, or state why none exists.",
+          "solution": "det(A) = 2(4) - 3(1) = 5, which is nonzero, so A is invertible and A inverse is (1/5) times the matrix with rows [4, -3] and [-1, 2].",
+          "explanation": "For a 2 by 2 matrix [a, b; c, d], the determinant is ad - bc = 8 - 3 = 5. A nonzero determinant guarantees invertibility, and the inverse formula swaps the diagonal entries, negates the off-diagonal entries, and divides by the determinant, giving rows [4/5, -3/5] and [-1/5, 2/5]. Multiplying A by this matrix yields the identity, confirming the result.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A disease has prevalence 1 percent. A test detects it with probability 0.95 when present and falsely flags 5 percent of healthy people. Given a positive test, what is the probability of having the disease?",
+          "solution": "P(disease | positive) = (0.01 x 0.95) / (0.01 x 0.95 + 0.99 x 0.05) = 0.0095 / 0.059, about 0.161 or 16.1 percent.",
+          "explanation": "By Bayes theorem, the posterior odds equal the likelihood ratio times the prior odds. Numerator: true positives at 0.0095. Denominator: all positives, true plus false, at 0.0095 + 0.0495 = 0.059. Despite the accurate test, the low base rate means most positives are false, which is why the probability is only about 16 percent; out of 10000 people, 95 of 100 diseased test positive while 495 of 9900 healthy also test positive.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "subject": "Biology",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Biology: Living and Nonliving Things, Plants, Animals, and the Human Body",
+      "contentBody": "In grade 1 biology, students begin to sort the world into living and nonliving things. Living things include plants, animals, and people; they all need food or nutrients, water, air, and a place to live, and they grow and change over time. Nonliving things such as rocks, water, toys, and the sun do not grow, do not need food, and do not reproduce. Students learn the basic external parts of plants: roots, stem, leaves, and flowers, and that roots take in water while leaves use sunlight to help the plant make food. They learn the basic external parts of animals: head, body, legs, wings, fins, and tails, and that different animals have body parts suited to where they live, such as fins for fish in water and wings for birds in the air. The human body is introduced through the five senses: sight with the eyes, hearing with the ears, smell with the nose, taste with the tongue, and touch with the skin. Students also practice healthy habits such as washing hands, eating fruits and vegetables, brushing teeth, sleeping, and exercising. Simple observation is the scientific skill of the year: looking closely, describing with color, size, shape, and texture words, drawing what is seen, and comparing two living things. Key vocabulary: living, nonliving, grow, needs, roots, stem, leaves, flower, animal parts, senses, observe, compare, healthy.",
+      "pedagogicalNotes": "Anchor every idea in real objects: bring in a plant, a rock, and a toy for sorting. Common misconception: students think anything that moves is alive (cars, clouds) or that plants are not alive because they do not move. Scaffold with concrete examples before the abstract living/nonliving rule, use drawings instead of writing for assessment, and emphasize that living things need things and grow rather than memorized lists. Celebrate careful observation over correct terminology at this stage.",
+      "exampleProblems": [
+        {
+          "problem": "Sort these things into living and nonliving: a dog, a chair, a sunflower, a river stone.",
+          "solution": "Living: dog, sunflower. Nonliving: chair, river stone.",
+          "explanation": "A dog and a sunflower both need food and water, grow, and can make new plants or animals. The chair and the stone never grow and need nothing to live.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A fish has fins and a bird has wings. Why does each animal have these body parts?",
+          "solution": "Fins help the fish swim in water; wings help the bird fly in the air.",
+          "explanation": "Each animal's body parts match the place where it lives and how it moves. The fish would not fly well with wings and the bird would not swim well with fins, so different homes lead to different body parts.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Biology: Animal and Plant Needs, Life Cycles, Habitats, and Healthy Habits",
+      "contentBody": "In grade 2 biology, students study what plants and animals need to survive and how living things change through simple life cycles. All animals need air, water, food, and shelter, and plants need sunlight, water, air, and nutrients from soil; students discover that a habitat is the place where a plant or animal gets everything it needs to live. Common examples are a pond, a forest, a garden, and a desert, and each habitat has its own mix of plants, animals, water, and sunlight. Students follow simple life cycles: a bean plant grows from a seed into a seedling, then a mature plant that makes new seeds, and animals such as chickens and dogs grow from babies to adults. They compare parents and offspring and notice that young animals resemble their parents in body shape, color, and size while still being smaller or different in some ways. Health lessons build daily habits: eating from different food groups, drinking water, sleeping enough, exercising and playing actively, and washing hands to keep germs from spreading. Students continue developing observation skills by recording how a plant changes over weeks with dated drawings and by measuring growth with cubes or string. Key vocabulary: habitat, shelter, nutrients, soil, seed, seedling, life cycle, offspring, parent, resemble, germ, food group, exercise, record, grow.",
+      "pedagogicalNotes": "Grow a fast plant such as a bean in the classroom so life cycles are observed directly. Common misconceptions: students believe plants get food from the soil instead of making it with sunlight and water, and that a habitat is simply an animal's body or cage rather than an environment providing needs. Scaffold life cycles with picture sequencing cards before introducing the terms. Emphasize that living things need multiple resources, not just food, and that offspring are related to but not identical to parents. Keep health habits positive and routine-based.",
+      "exampleProblems": [
+        {
+          "problem": "Name two things a rabbit needs from its habitat and explain what would happen without them.",
+          "solution": "For example: food (plants to eat) and shelter (bushes to hide in). Without food the rabbit would starve; without shelter it could be caught by predators or exposed to bad weather.",
+          "explanation": "A habitat must supply all an animal's needs. If any one need disappears, the animal must move away or it will not survive, which is why destroying habitats harms animals.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A bean plant starts as a seed. Put these stages in order: seed, seedling with roots and leaves, mature plant with flowers and new seeds, sprout.",
+          "solution": "Seed, sprout, seedling with roots and leaves, mature plant with flowers and new seeds.",
+          "explanation": "A life cycle shows the order of changes as a living thing grows. The plant first breaks out of the seed as a sprout, then develops roots and leaves to gather water and sunlight, and finally makes flowers and seeds so the cycle can start again.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Biology: Life Cycles of Insects and Frogs, Habitats and Adaptations, Vertebrates",
+      "contentBody": "In grade 3 biology, students explore complete metamorphosis and incomplete metamorphosis in insects, the frog life cycle, and the idea that body structures are adaptations that help living things survive in their habitats. The butterfly life cycle is the classic example of complete metamorphosis with four stages: egg, larva or caterpillar, pupa or chrysalis, and adult butterfly, where the caterpillar looks nothing like the adult and mostly eats and grows while the adult reproduces. Grasshoppers show incomplete metamorphosis with three stages: egg, nymph, and adult, where the nymph looks like a small adult without wings. The frog life cycle connects to habitats: eggs laid in water hatch into tadpoles that breathe with gills and swim with tails, then tadpoles grow legs, lose their tails, develop lungs, and become adult frogs that live both in water and on land. Adaptations are introduced as features such as thick fur for cold climates, long necks for reaching high leaves, camouflage coloring for hiding, and webbed feet for swimming. Students classify animals into two broad groups: vertebrates with backbones and invertebrates without backbones, and they meet the five vertebrate groups at a simple level: fish, amphibians, reptiles, birds, and mammals. Key vocabulary: metamorphosis, larva, pupa, nymph, tadpole, adaptation, camouflage, vertebrate, invertebrate, backbone, gills, lungs, climate, survive.",
+      "pedagogicalNotes": "Use live or video observation of caterpillars or tadpoles whenever possible; sequencing real photos beats textbook diagrams. Common misconception: students think the caterpillar turns into a baby butterfly inside the chrysalis, when in fact the body breaks down and rebuilds into the adult form. Also clarify that a tadpole is the same animal as the frog, not a different species. Scaffold vocabulary by pairing each term with a labeled drawing. Emphasize that adaptations solve survival problems in specific habitats, laying groundwork for natural selection later.",
+      "exampleProblems": [
+        {
+          "problem": "List the four stages of a butterfly's life cycle in order.",
+          "solution": "Egg, larva (caterpillar), pupa (chrysalis), adult butterfly.",
+          "explanation": "This is complete metamorphosis because the young looks completely different from the adult and passes through a resting pupa stage where its body is remade. The order matters because each stage has its own job: eating and growing in the larva stage, changing in the pupa stage, and reproducing as an adult.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A frog has webbed feet and a thick-furred arctic fox has white fur. Explain how each feature is an adaptation.",
+          "solution": "Webbed feet help the frog swim efficiently in water; white fur camouflages the fox against snow so it can hunt and hide.",
+          "explanation": "An adaptation is any body structure that helps an organism survive and reproduce in its particular habitat. The same logic applies to both animals: the feature matches the demands of the place where the animal lives.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Biology: Ecosystems and Food Chains, Plant Parts and Photosynthesis, Insect and Amphibian Cycles",
+      "contentBody": "In grade 4 biology, students see that living things depend on each other in ecosystems. A food chain shows how energy moves from one organism to the next: plants called producers make their own food using sunlight, animals called consumers eat plants or other animals, and decomposers such as fungi and bacteria break down dead material and return nutrients to the soil. Food chains are often drawn as arrows pointing from the food source to the eater, and the arrows represent the flow of energy rather than the animals chasing each other. Students learn the parts of a plant in more detail and what each part does: roots anchor the plant and absorb water and minerals, the stem carries water up and food down, leaves make food, and flowers attract pollinators and produce seeds. Photosynthesis is introduced as the process by which green plants use sunlight, water, and carbon dioxide from the air to make sugar food and release oxygen; plants then use that sugar for energy and growth. Students compare producers, herbivores, carnivores, and omnivores and study how insect and amphibian life cycles fit into their ecosystems as pollinators, prey, and pest controllers. They also examine how changes to an ecosystem, such as pollution, drought, or removing a species, affect the whole food chain. Key vocabulary: ecosystem, food chain, producer, consumer, decomposer, energy, photosynthesis, carbon dioxide, oxygen, herbivore, carnivore, omnivore, pollinator, nutrients.",
+      "pedagogicalNotes": "Build food chains with picture cards and yarn arrows before drawing them in notebooks; insist arrows point from food to eater since energy flow direction is a persistent misconception. Common errors: students think plants get food from the soil rather than making it via photosynthesis, and that decomposers are unimportant. Stress that energy starts with the Sun and that every organism, including predators and decomposers, has a role. Scaffold photosynthesis with a simple word equation (sunlight plus water plus carbon dioxide gives sugar plus oxygen) rather than chemical formulas at this grade.",
+      "exampleProblems": [
+        {
+          "problem": "Build a food chain from these organisms: grass, rabbit, fox, Sun.",
+          "solution": "Sun -> grass -> rabbit -> fox.",
+          "explanation": "The grass is a producer that captures energy from the Sun through photosynthesis. The rabbit is a consumer that eats the grass, and the fox is a consumer that eats the rabbit. Each arrow shows energy moving to the next organism.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A farmer removes all the frogs from a pond ecosystem. Predict what happens to the insect population and the plants.",
+          "solution": "Insect numbers would likely increase because frogs eat insects; if insects multiply, the plants they feed on could decrease.",
+          "explanation": "Removing one species in a food chain affects the others because organisms are connected by who eats whom. This shows why ecosystems are balanced and why losing a single member can cause a cascade of changes.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Biology: Energy Flow in Ecosystems, Animal Classification, Inherited Traits, Body Systems",
+      "contentBody": "In grade 5 biology, students deepen their study of ecosystems by looking at food webs, energy pyramids, and the roles organisms play. A food web is made of many overlapping food chains and shows that most organisms eat and are eaten by several others, which makes ecosystems more stable. Energy decreases at each level of a food chain because much of it is used for life processes such as movement and body heat, so there are usually far fewer top predators than producers. Students classify animals using observable traits into major groups: mammals have fur and nurse young, birds have feathers and lay eggs, reptiles have scales, amphibians live part of life in water, and fish have fins and gills; invertebrate groups include insects, spiders, worms, and mollusks. Heredity is introduced through inherited traits versus learned behaviors: young animals inherit body features like eye color, fur patterns, and size from parents, while skills such as hunting techniques or tricks are learned from experience or teaching. Students study the human body at a systems level: the digestive system breaks food into nutrients, the circulatory system moves blood carrying oxygen and nutrients, the respiratory system brings in air, the skeletal and muscular systems support and move the body, and the nervous system with the brain sends messages. Key vocabulary: food web, energy pyramid, classification, trait, inherit, learned behavior, mammal, reptile, amphibian, digestive, circulatory, respiratory, skeletal, nervous system.",
+      "pedagogicalNotes": "Use the energy pyramid with a demonstration of how little energy passes upward (for example, 100 units of plant energy becomes about 10 units of herbivore energy) to make the abstract idea concrete. Common misconceptions: students think predators are evil or useless, that traits are chosen rather than inherited, and that all animals with four legs are mammals. Scaffold classification with dichotomous key activities sorting classroom objects first. Emphasize distinguishing inherited traits from learned behaviors by asking whether the trait is present at birth or gained through experience.",
+      "exampleProblems": [
+        {
+          "problem": "Explain why a grassland supports many more rabbits than foxes.",
+          "solution": "Energy is lost at each step of the food chain, so there is far less energy available for foxes than for rabbits.",
+          "explanation": "Rabbits eat plants and get the largest share of the energy the plants captured from the Sun. Foxes get only the energy stored in rabbits after most was used for the rabbits' own survival, so only a few foxes can be supported per many rabbits.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Sort these traits as inherited or learned: eye color in kittens, a dog sitting on command, a bird's beak shape, a child riding a bicycle.",
+          "solution": "Inherited: eye color, beak shape. Learned: sitting on command, riding a bicycle.",
+          "explanation": "Inherited traits come from an organism's parents through genes and are present from birth. Learned behaviors come from experience, practice, or teaching during life and cannot be passed to offspring.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Biology: Introduction to Cells, Microscopes, Classification and Taxonomy, Energy in Ecosystems",
+      "contentBody": "In grade 6 biology, students meet cells as the basic units of life. All living things are made of cells: most animals and plants are multicellular with many specialized cells, while bacteria and some protists are unicellular. Students learn to use a light microscope to observe plant cells such as onion skin and cheek cells, practicing skills of making a wet mount slide, focusing under low power first, and drawing labeled diagrams. Key cell parts are introduced with their functions: the cell membrane controls what enters and leaves, the cytoplasm is the jelly where reactions happen, the nucleus holds the genetic material that directs the cell, chloroplasts in plant cells capture sunlight for photosynthesis, and the rigid cell wall gives plant cells shape. Students also explore how cells are organized into tissues, tissues into organs, and organs into systems, using a leaf or the human stomach as examples. Classification becomes more formal: living things are grouped by shared characteristics into kingdoms and further groups, and scientists use taxonomy to name organisms with a two-part Latin name. Ecosystem studies continue with a focus on how energy and matter move through environments and on how populations of producers, consumers, and decomposers keep matter cycling. Key vocabulary: cell, unicellular, multicellular, microscope, membrane, nucleus, cytoplasm, chloroplast, cell wall, tissue, organ, taxonomy, classify, characteristic, population.",
+      "pedagogicalNotes": "Microscope time is essential; students who never handle one will not understand scale or cells. Common misconceptions: students think all cells look the same, that the cell wall and cell membrane are the same structure, and that only plants have cells. Pre-teach the parts-and-functions vocabulary with analogy (nucleus as the boss, membrane as the security guard) but state clearly that analogies are imperfect. Scaffold taxonomy as grouping by shared features first, then introduce Latin naming. Emphasize that structure supports function in every cell part.",
+      "exampleProblems": [
+        {
+          "problem": "Name two cell parts found in plant cells but not animal cells, and state what each does.",
+          "solution": "Chloroplasts capture sunlight for photosynthesis; the cell wall gives the plant cell a rigid shape and support.",
+          "explanation": "Plant cells need to make their own food from sunlight and to hold their shape without a skeleton, so they have chloroplasts and a cell wall. Animal cells get food by eating and have flexible membranes instead.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain the levels of organization in a plant from smallest to largest.",
+          "solution": "Cell, tissue, organ, organism (for example: leaf cells, leaf tissue, the leaf organ, the whole plant).",
+          "explanation": "Similar cells group into tissues that do one job, tissues combine into organs with several jobs, and organs work together in the organism. This levels-of-organization pattern applies to animals too, which prepares students for body systems.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Biology: Cell Processes, Human Body Systems, Heredity Basics, and Biodiversity",
+      "contentBody": "In grade 7 biology, students study how cells carry out the processes that keep organisms alive and how body systems work together. Photosynthesis and cellular respiration are paired: photosynthesis occurs in chloroplasts and stores energy in sugar using sunlight, water, and carbon dioxide, while cellular respiration occurs in mitochondria and releases that stored energy as usable cellular energy using oxygen and producing carbon dioxide and water. Students learn that these two processes form a cycle of matter between plants and animals. Body systems are examined in detail and in interaction: the circulatory system with heart, blood vessels, and blood transports oxygen, nutrients, and wastes; the respiratory system brings oxygen into the lungs; the digestive system breaks food into simple nutrients absorbed in the small intestine; the excretory system removes wastes; and the muscular and skeletal systems provide movement and support. Heredity basics follow: organisms reproduce and pass traits to offspring, some traits are controlled by single genes with dominant and recessive forms, and variation exists within populations because offspring receive a mix of traits from two parents. Biodiversity, the variety of life in an ecosystem, is presented as important because diverse ecosystems are more stable and provide resources such as food, medicine, and clean air. Key vocabulary: respiration, mitochondria, chloroplast, energy, nutrient, absorption, gene, dominant, recessive, variation, offspring, biodiversity, stable, ecosystem service.",
+      "pedagogicalNotes": "Pair photosynthesis and respiration explicitly as a two-way cycle; a diagram with arrows for both matter and energy prevents the common misconception that plants only photosynthesize and animals only respire. Note that all organisms respire all the time. In heredity, avoid Punnett squares here if algebra is weak; use family trait surveys and coin-flip simulations instead. Emphasize that biodiversity loss reduces ecosystem stability. Check for the misconception that dominant means better or more common, which is false.",
+      "exampleProblems": [
+        {
+          "problem": "Why do plants need both photosynthesis and cellular respiration?",
+          "solution": "Photosynthesis stores energy in sugar using sunlight, and respiration releases that energy so the plant's cells can do work.",
+          "explanation": "Making food is not enough; cells need energy in a usable form at all times, including at night when no photosynthesis occurs. Respiration breaks down the sugar to power growth, repair, and reproduction.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Two brown-eyed parents have a blue-eyed child. Explain how this can happen using dominant and recessive forms of a gene.",
+          "solution": "Both parents must carry a recessive blue-eye gene along with a dominant brown-eye gene; the child received the recessive form from each parent.",
+          "explanation": "A person carries two copies of a gene, one from each parent. A dominant form hides a recessive form when both are present, so parents can show the dominant trait while silently carrying the recessive one, and a child who gets two recessive copies shows the recessive trait.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Biology: Genetics and Heredity, Evolution by Natural Selection, Ecology, Human Health",
+      "contentBody": "In grade 8 biology, students connect genetics, evolution, and ecology into a unified picture of life. Heredity is studied through genes and chromosomes: genes are segments of DNA on chromosomes, organisms carry two alleles for each trait, one from each parent, and alleles can be dominant or recessive so some traits stay hidden in one generation and appear in the next. Simple Punnett squares model the probability of offspring genotypes and phenotypes, and students learn that probability predicts ratios over many offspring rather than exact outcomes for one individual. Evolution is introduced as change in populations over generations: individuals vary in inherited traits, some variations improve survival and reproduction in a given environment, those individuals leave more offspring, and over time beneficial traits become more common in the population. This is natural selection, and students study classic examples such as peppered moths, antibiotic-resistant bacteria, and Darwin's finches. Ecology work covers population factors such as food, space, disease, and predators, and community interactions including competition, predation, and symbiosis in mutualism, commensalism, and parasitism form. Human health topics include how diseases spread, the role of the immune system, and how antibiotics fight bacteria but not viruses, which links back to evolution through resistance. Key vocabulary: gene, allele, dominant, recessive, Punnett square, probability, variation, natural selection, adaptation, population, competition, symbiosis, mutualism, resistance, immune system.",
+      "pedagogicalNotes": "Run a coin-flip heredity simulation so probability feels experimental, not arbitrary. Common misconceptions: students think organisms change on purpose to meet needs (Lamarckian thinking), that dominant means more common, and that evolution happens to individuals rather than populations. Attack these directly with counterexamples such as bacteria, which evolve quickly without any intention. Emphasize that natural selection acts on existing variation and never creates traits on demand. Link antibiotic resistance to health behavior so the unit feels urgent and real.",
+      "exampleProblems": [
+        {
+          "problem": "In guinea pigs, black fur (B) is dominant over white fur (b). Cross a heterozygous black guinea pig (Bb) with a white guinea pig (bb). What fraction of offspring is expected to be white?",
+          "solution": "One half (50%) of the offspring are expected to be white (bb).",
+          "explanation": "The Punnett square gives Bb, Bb, bb, bb. Two of four boxes are bb, which shows white fur because the recessive trait appears only with two recessive alleles. Probability describes the expected ratio across many offspring, not a guarantee for a litter of four.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain how antibiotic-resistant bacteria appear even though individual bacteria do not choose to become resistant.",
+          "solution": "Random mutations produce variation; when antibiotics kill susceptible bacteria, resistant survivors reproduce, so the resistance allele becomes common in the population.",
+          "explanation": "This is natural selection in action. The antibiotic is the selective pressure, the mutation is the source of variation, and the change happens across generations in the population, not within any individual bacterium.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Biology: The Nature of Life, Scientific Inquiry, Biochemistry of Life, Cells and Ecology",
+      "contentBody": "In grade 9 biology, the first high school course establishes how biologists think and what defines living systems. Students review the characteristics of life: organization from cells to ecosystems, metabolism through chemical reactions, homeostasis or internal balance, growth and development, reproduction, response to stimuli, and evolution as the unifying theme of biology. Scientific inquiry is practiced through controlled experiments with independent, dependent, and controlled variables, data collection, graphing, and evidence-based conclusions. An introduction to the chemistry of life covers water and its life-supporting properties including cohesion, surface tension, and its role as a solvent, the four major macromolecules: carbohydrates for quick energy, lipids for long-term energy and membranes, proteins for structure and enzyme function, and nucleic acids for genetic information. Cells are covered at the high school level: prokaryotic cells without a nucleus such as bacteria versus eukaryotic cells with membrane-bound organelles, the endomembrane system, ribosomes, endoplasmic reticulum, Golgi apparatus, lysosomes, and the distinction between plant and animal cells. Ecology is framed quantitatively with population size, limiting factors, carrying capacity, and energy flow through trophic levels. Lab skills include microscopy, safe lab practice, and writing formal lab reports. Key vocabulary: homeostasis, metabolism, variable, hypothesis, macromolecule, carbohydrate, lipid, protein, nucleic acid, prokaryote, eukaryote, organelle, carrying capacity, limiting factor, trophic level.",
+      "pedagogicalNotes": "Treat this course as the foundation for AP and college biology; vocabulary accuracy matters more than ever. Common misconceptions: students confuse energy with matter in food chains, think evolution is a theory in the everyday guess sense rather than an evidence-based scientific theory, and mix up prokaryote with primitive or simple. Scaffold lab writing with templates and require error analysis in every report. Emphasize that structure determines function in macromolecules and organelles. Slow down on experimental design variables; this skill underpins every future lab.",
+      "exampleProblems": [
+        {
+          "problem": "Identify the independent and dependent variables in an experiment testing whether fertilizer affects plant height.",
+          "solution": "Independent variable: the presence or amount of fertilizer. Dependent variable: the height of the plants.",
+          "explanation": "The independent variable is what the experimenter deliberately changes, while the dependent variable is what is measured in response. Everything else such as light, water, and soil must be kept constant so only the fertilizer is being tested.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain why water being a good solvent matters for living things.",
+          "solution": "Because most biological reactions happen in water, dissolved nutrients, gases, and molecules can move freely and react with each other inside cells.",
+          "explanation": "Life originated in water and cells are about 70 percent water. Water's polarity lets it dissolve many substances, so it acts as the transport and reaction medium for metabolism. Without this property, the chemistry of life could not proceed at useful rates.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Biology: Cell Structure and Function, the Cell Cycle and Mitosis, Photosynthesis and Respiration",
+      "contentBody": "In grade 10 biology, cells are studied in depth as the functional units of life. Organelle structure and function are linked explicitly: the nucleus houses DNA, ribosomes synthesize proteins, rough and smooth endoplasmic reticulum modify and transport proteins and lipids, the Golgi apparatus packages and ships products, lysosomes and vacuoles handle digestion and storage, mitochondria perform cellular respiration, and chloroplasts perform photosynthesis in plants. The cell membrane is covered with the fluid mosaic model and selective permeability, including passive transport by diffusion and osmosis and active transport requiring energy. The cell cycle is taught as interphase with G1, S, and G2 phases followed by mitosis and cytokinesis, and mitosis is broken into prophase, metaphase, anaphase, and telophase, with the purpose of producing two genetically identical daughter cells for growth and repair. Students learn that cancer results from uncontrolled cell division caused by damaged regulatory genes such as tumor suppressors and proto-oncogenes. Energy processes are studied at the cellular level: photosynthesis in chloroplasts converts light energy to chemical energy in sugar with light-dependent reactions and the Calvin cycle, and cellular respiration in mitochondria breaks down glucose through glycolysis, the Krebs cycle, and the electron transport chain to produce ATP. Key vocabulary: organelle, membrane, osmosis, diffusion, active transport, cell cycle, interphase, mitosis, cytokinesis, tumor, ATP, glycolysis, Calvin cycle, electron transport chain.",
+      "pedagogicalNotes": "Mitosis must be ordered and understood as function, not memorized as disconnected stage names; onion root tip slides under a microscope make it concrete. Common misconceptions: students confuse mitosis with meiosis early, think interphase is a resting phase when it is actually busy with DNA replication and growth, and believe plants do not respire. Use energy accounting: show that respiration releases energy in small ATP packets rather than all at once. Emphasize checkpoints in the cell cycle to explain cancer logically rather than as a random disease.",
+      "exampleProblems": [
+        {
+          "problem": "Put the stages of mitosis in order and state what happens to chromosomes in each.",
+          "solution": "Prophase: chromosomes condense and become visible. Metaphase: chromosomes line up at the cell equator. Anaphase: sister chromatids separate and move to opposite poles. Telophase: two nuclei form around the separated chromosomes.",
+          "explanation": "The stages form a precise sequence that ensures each daughter cell receives a complete identical copy of the genetic material. Interphase before mitosis is when DNA is copied so that sister chromatids exist to be separated.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A plant is kept in total darkness for 48 hours. Explain what happens to its ability to produce glucose and why.",
+          "solution": "It cannot perform the light-dependent reactions of photosynthesis without light, so no new glucose is made; the plant survives temporarily on stored sugars and eventually dies.",
+          "explanation": "Photosynthesis needs light energy to split water and produce the ATP and electrons that power the Calvin cycle, which builds glucose. Remove the light and the whole process halts, which shows that photosynthesis is an energy-conversion process requiring continuous input.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Biology: Meiosis, Mendelian Genetics, DNA and Protein Synthesis, Natural Selection",
+      "contentBody": "In grade 11 biology, genetics and molecular biology take center stage. Meiosis is studied as the division that produces gametes with half the chromosome number through two successive divisions, crossing over in prophase I, and independent assortment, all of which generate genetic variation. Students compare mitosis and meiosis directly and connect meiosis to Mendel's laws: the law of segregation states that the two alleles for a trait separate during gamete formation, and the law of independent assortment states that different genes assort independently. Punnett squares extend to dihybrid crosses, test crosses, codominance, incomplete dominance, sex-linked traits, and pedigree analysis. The molecular basis of heredity is introduced: DNA is a double helix of nucleotides with base pairing rules of adenine to thymine and cytosine to guanine, DNA replication is semiconservative, and protein synthesis proceeds from transcription in the nucleus to translation at the ribosome using the genetic code. Mutations are classified as point mutations or frameshift mutations with effects ranging from silent to harmful or rarely beneficial. Evolution is tied to genetics: natural selection acts on heritable variation, and students examine evidence from the fossil record, homologous structures, embryology, and molecular comparisons, plus mechanisms such as genetic drift, gene flow, and speciation. Key vocabulary: meiosis, gamete, crossing over, segregation, independent assortment, dihybrid, codominance, sex-linked, DNA, base pair, replication, transcription, translation, mutation, genetic drift, speciation.",
+      "pedagogicalNotes": "Sequence meiosis before Mendel; genetics makes sense only after students see where haploid gametes come from. Common misconceptions: students think crossing over happens in mitosis, that genes blend like paint rather than staying discrete, and that mutations are always harmful. Use Socratic questioning on pedigree problems and require justification of every cross. For protein synthesis, a physical acting-out of transcription and translation with student-actors as nucleotides and ribosomes is highly effective. Stress that DNA sequence determines protein shape determines function.",
+      "exampleProblems": [
+        {
+          "problem": "In pea plants, tall (T) is dominant to short (t). Cross two heterozygous tall plants (Tt x Tt). Give the genotypic and phenotypic ratios.",
+          "solution": "Genotypes: 1 TT : 2 Tt : 1 tt. Phenotypes: 3 tall : 1 short.",
+          "explanation": "The Punnett square yields TT, Tt, Tt, tt. Since T is dominant, both TT and Tt show tall, giving 3 tall to 1 short. This is the classic monohybrid cross ratio and shows why two tall parents can produce a short offspring.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A DNA template strand reads TAC-GGA-CTT. Determine the mRNA sequence and explain the direction of information flow.",
+          "solution": "mRNA: AUG-CCU-GAA. Information flows DNA to mRNA to protein.",
+          "explanation": "During transcription, RNA polymerase builds mRNA complementary to the DNA template, with A pairing with U and T pairing with A. The mRNA then carries the codons to the ribome, where tRNAs bring amino acids to build the protein. This is the central dogma of molecular biology.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Biology: Human Physiology, Taxonomy and Phylogeny, Population and Community Ecology",
+      "contentBody": "In grade 12 biology, students integrate organismal and environmental biology. Human physiology covers the major systems in coordinated detail: the nervous system with neurons, synapses, and reflexes; the endocrine system with hormones as chemical messengers; the circulatory system with heart structure, blood pressure, and the double loop of circulation; the respiratory system with gas exchange across alveoli; the digestive system with mechanical and chemical digestion and enzyme specificity; the excretory system with nephrons and kidney filtration; and the musculoskeletal system with lever mechanics of movement. Homeostasis is the unifying concept, with negative feedback examples including blood glucose regulation by insulin and glucagon, thermoregulation, and osmoregulation. Taxonomy and systematics organize biodiversity: the three-domain system of Bacteria, Archaea, and Eukarya, hierarchical classification from domain to species, binomial nomenclature, and phylogenetic trees constructed from morphological and molecular evidence including cladistics and homologous versus analogous structures. Ecology scales up to populations with growth models, age structure, and carrying capacity; communities with succession, competition, and keystone species; and ecosystems with nutrient cycles for carbon, nitrogen, and water. Conservation topics include habitat fragmentation, invasive species, and biodiversity hotspots. Key vocabulary: homeostasis, feedback, hormone, synapse, alveoli, nephron, domain, phylogeny, cladistic, homologous, analogous, succession, keystone species, invasive species, carrying capacity.",
+      "pedagogicalNotes": "Frame every organ system with homeostasis so students see systems as integrated, not isolated chapters. Common misconceptions: students think hormones and nerves are separate systems rather than interacting, that analogous structures indicate common ancestry, and that ecosystems are fragile balances rather than dynamic systems with change over time. Use dissection or virtual dissection for anatomy, and have students build phylogenetic trees from trait matrices before molecular data. Emphasize that classification reflects evolutionary history, and that conservation decisions rest on population and ecosystem science.",
+      "exampleProblems": [
+        {
+          "problem": "Explain how insulin and glucagon work together to maintain blood glucose homeostasis.",
+          "solution": "After a meal, high blood glucose triggers insulin release, which drives cells to take up glucose and the liver to store it as glycogen, lowering blood glucose. When glucose falls, glucagon triggers glycogen breakdown, raising glucose.",
+          "explanation": "This is a negative feedback loop: the response opposes the original change, keeping glucose within a narrow range. Both hormones are needed because glucose must not rise too high or fall too low, and each corrects the opposite deviation.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A whale's flipper and a human's arm have the same bone pattern but different functions. What does this indicate, and what is the correct term?",
+          "solution": "It indicates common ancestry; these are homologous structures.",
+          "explanation": "Homologous structures share an underlying anatomical plan inherited from a common ancestor but are modified for different uses. An analogous structure such as a bird's wing and an insect's wing shares function but not ancestry, so the distinction is essential for reading phylogenetic trees correctly.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Biology: Macromolecules and Enzymes, DNA Replication, Gene Expression, Cell Signaling Basics",
+      "contentBody": "At grade 13, students approach biology at the molecular level with quantitative rigor. Biomolecules are reviewed with attention to structure and function: protein structure from primary sequence through secondary alpha helices and beta sheets to tertiary and quaternary folding, with denaturation and the relationship between shape and enzyme function; carbohydrates from monosaccharides to polysaccharides with structural roles in cellulose and energy roles in glycogen; lipids including phospholipid bilayer structure, triglycerides, and steroids; and nucleic acid structure with the sugar-phosphate backbone and base pairing. Enzyme kinetics are introduced with substrate specificity, active sites, activation energy, and factors affecting rate including temperature, pH, concentration, and inhibitors competitive and noncompetitive. DNA replication is covered in detail: helicase unwinds, primase lays RNA primers, DNA polymerase synthesizes in the 5 to 3 direction with leading and lagging strands and Okazaki fragments, and ligase joins fragments, all following semiconservative replication. Gene expression covers transcription with promoters, RNA polymerase, and mRNA processing including intron splicing and the 5 cap and poly-A tail, and translation with codons, tRNA, ribosome sites A, P, and E, and the start and stop codons. Students also meet the basics of cell signaling: signal molecules, receptors, and signal transduction pathways. Key vocabulary: protein folding, denaturation, active site, activation energy, inhibitor, replication fork, Okazaki fragment, intron, exon, spliceosome, codon, anticodon, transduction, receptor.",
+      "pedagogicalNotes": "Rigor increases here; require students to draw processes from memory and label directionality and enzymes, not just recognize diagrams. Common misconceptions: students confuse the template and coding strands, think both DNA strands are replicated the same continuous way, and think enzymes are used up in reactions. Stress that enzymes lower activation energy without being consumed and that structure determines function at every level. Use energy diagrams to make activation energy concrete. Connect gene expression to disease examples such as misfolded proteins in sickle cell anemia to maintain motivation.",
+      "exampleProblems": [
+        {
+          "problem": "Explain why DNA polymerase only synthesizes in the 5 to 3 direction and how the lagging strand is therefore made in fragments.",
+          "solution": "DNA polymerase adds nucleotides only to a free 3 hydroxyl group, so it must grow 5 to 3. Because the two template strands are antiparallel, one new strand can grow continuously toward the fork while the other grows away from it in short Okazaki fragments, later joined by ligase.",
+          "explanation": "The chemistry of nucleotide addition dictates directionality, and the antiparallel helix forces one strand to be synthesized discontinuously. Understanding this resolves why replication requires both leading and lagging strand machinery and why primers are necessary.",
+          "difficulty": "hard"
+        },
+        {
+          "problem": "A mutation changes one codon but the amino acid stays the same. Classify the mutation and explain its effect.",
+          "solution": "This is a silent point mutation; it has no effect on the protein because the genetic code is redundant.",
+          "explanation": "Multiple codons code for the same amino acid because the code is degenerate. A substitution in the third position often still specifies the same amino acid, so the protein is unchanged and usually no phenotype results. This demonstrates why not all mutations are harmful.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Biology: Non-Mendelian Genetics, Pedigrees and Biotechnology, Evolutionary Mechanisms and Speciation",
+      "contentBody": "In grade 14 biology, students master inheritance patterns beyond simple dominance and study evolution as a population process. Non-Mendelian patterns include incomplete dominance producing blended phenotypes, codominance with both alleles expressed such as AB blood type, multiple alleles, polygenic traits producing continuous variation like height and skin color, pleiotropy where one gene affects several traits, and epistasis where one gene masks another. Sex-linked inheritance is analyzed with X-linked recessive disorders such as color blindness and hemophilia, including why males express them more often. Pedigree analysis uses standard symbols to track traits through generations and determine dominance, recessiveness, and sex linkage. Biotechnology tools are practiced: gel electrophoresis for separating DNA fragments, PCR for amplifying DNA, restriction enzymes as molecular scissors, recombinant DNA and plasmids for genetic engineering, gene therapy, and CRISPR-Cas9 for targeted editing, with discussion of ethical implications. Evolution mechanisms are quantified: mutation as the ultimate source of new alleles, gene flow, genetic drift with founder and bottleneck effects, and natural selection with directional, stabilizing, and disruptive patterns. Speciation is covered through geographic isolation, reproductive isolation, prezygotic and postzygotic barriers, and gradual versus punctuated models. Key vocabulary: incomplete dominance, codominance, polygenic, pleiotropy, epistasis, sex-linked, pedigree, PCR, electrophoresis, recombinant, CRISPR, genetic drift, bottleneck, founder effect, reproductive isolation, speciation.",
+      "pedagogicalNotes": "Students often overgeneralize simple dominance, so present multiple real human examples early. Common misconceptions: students think heterozygotes always show the dominant phenotype, that acquired traits can be inherited, and that genetic drift only matters in small populations when founder effects shape species broadly. Practice pedigrees extensively with error analysis, since this is a tested skill. For biotechnology, run a virtual gel electrophoresis lab if no equipment is available. Keep ethical discussions grounded in real cases such as GMO crops and gene therapy trials rather than abstract debate.",
+      "exampleProblems": [
+        {
+          "problem": "Two pink snapdragons (red x white parents gave pink offspring) are crossed. What are the expected offspring phenotypes?",
+          "solution": "1 red : 2 pink : 1 white.",
+          "explanation": "In incomplete dominance the heterozygote shows a blended intermediate phenotype, so the cross R R x R R gives RR red, Rr pink twice, and rr white. This differs from Mendelian 3 to 1 because the heterozygote is distinguishable from the homozygous dominant.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A population of birds is reduced from 10,000 to 50 individuals by a storm, and the survivors happen to lack a red feather allele entirely. Name the effect and explain the long-term consequence.",
+          "solution": "This is a population bottleneck, a form of genetic drift; the red allele is permanently lost and future generations descend from the reduced gene pool.",
+          "explanation": "Genetic drift is random change in allele frequency due to chance events in small populations. The bottleneck drastically reduces genetic variation, and even if the population later grows large, the lost allele does not return except by mutation or gene flow. This shows how chance, not only selection, shapes evolution.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Biology: Biochemical Foundations, Enzyme Regulation, and Membrane Transport",
+      "contentBody": "At grade 15, biology becomes a quantitative molecular science organized around energy and structure. Students begin with biological thermodynamics: every chemical change involves free energy, reactions with a negative change in free energy are exergonic and release usable energy, reactions with a positive change are endergonic and require input, and cells couple the two so that energy released by ATP hydrolysis drives biosynthesis and transport. Entropy and the second law are applied to living systems: organisms maintain internal order by increasing the entropy of their surroundings. Enzyme regulation extends earlier kinetics: allosteric enzymes have regulatory sites distinct from the active site, feedback inhibition lets the end product of a pathway inhibit an early enzyme, covalent modification such as phosphorylation switches enzymes on and off, and zymogens activate enzymes only where needed, as in digestion and blood clotting. Membrane biology deepens with the fluid mosaic model refined by how cholesterol and unsaturated fatty acid tails affect fluidity. Transport is classified precisely: channels and carriers mediate facilitated diffusion down gradients, primary pumps such as the sodium-potassium ATPase hydrolyze ATP to move ions against their gradients, and secondary cotransporters harvest those gradients to move sugars and amino acids. Vesicular transport covers endocytosis, exocytosis, and receptor-mediated uptake. Protein folding connects to disease through prions and amyloid misfolding. Metabolism is introduced as an integrated network: catabolic pathways break fuels and produce ATP and reduced electron carriers such as NADH, anabolic pathways consume them to build macromolecules, and the cell's energy charge determines which direction dominates. Key vocabulary: free energy, exergonic, endergonic, entropy, activation energy, allosteric, feedback inhibition, phosphorylation, zymogen, membrane potential, electrochemical gradient, active transport, cotransport, NADH, catabolism, anabolism, energy charge.",
+      "pedagogicalNotes": "Anchor every abstract energy concept in a concrete example such as ATP-driven muscle contraction or the sodium-potassium pump in nerve cells. Common misconceptions: students think enzymes provide energy rather than lower activation energy, that small ions cross membranes passively by default, and that metabolism is one single pathway rather than an interlocking network. Use labeled energy diagrams showing free energy before and after, and have students trace one glucose molecule's carbons and electrons through catabolism conceptually. Assign paired problem sets on coupled reactions and gradient-driven transport; both ideas return in every later course.",
+      "exampleProblems": [
+        {
+          "problem": "Explain how ATP hydrolysis can drive an endergonic reaction that would not proceed on its own.",
+          "solution": "The cell couples the reactions. ATP hydrolysis releases free energy (negative change), and when the two reactions are added, the overall free energy change becomes negative, so the combined process proceeds.",
+          "explanation": "Energy cannot be created, only transferred. By releasing a larger amount of free energy than the endergonic reaction requires, ATP hydrolysis pays the energy cost, and the leftover energy is released as heat. This coupling is how cells build polymers and pump ions.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A neuron has high sodium outside and high potassium inside. If the sodium-potassium pump stops working, predict what happens to the membrane potential and explain why.",
+          "solution": "Sodium leaks in down its electrochemical gradient, potassium leaks out, the gradients run down, and the membrane potential moves toward zero and the cell cannot fire.",
+          "explanation": "The pump maintains the gradients that store potential energy. Sodium is driven inward by both the concentration gradient and the negative interior, so without pumping, charge separation collapses. This shows that the pump is not what fires the nerve impulse but what stores the energy the impulse spends.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A mutation removes the allosteric regulatory site of the first enzyme in a biosynthetic pathway whose end product normally inhibits that enzyme. Predict the metabolic consequence.",
+          "solution": "Feedback inhibition is lost, the pathway runs unchecked, and the cell overproduces the end product while wasting carbon and ATP.",
+          "explanation": "Allosteric regulation lets a pathway sense its own output. Without the regulatory site, the enzyme cannot respond to the end product, so flux is never throttled. This is why regulatory sites are distinct from active sites and why such mutations can be as damaging as losing catalytic function.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Biology: Gene Regulation, Genomics, and Population Genetics",
+      "contentBody": "At grade 16, genetics shifts from inheritance patterns to information management inside cells and across populations. Gene regulation begins with prokaryotic operons: the lac operon model shows how a repressor, an operator, and the inducer allolactose control transcription so bacteria make lactose-digesting enzymes only when lactose is available, while the trp operon shows repression plus attenuation when tryptophan is abundant. Eukaryotic control is multilayered: transcription factors bind promoters and enhancers, chromatin remodeling and histone acetylation open or close DNA to the transcriptional machinery, DNA methylation silences genes epigenetically, and small RNAs such as microRNAs degrade or block messenger RNA after transcription. Students learn that every body cell carries the same genome but expresses different gene sets, and developmental genetics shows how master control genes such as Hox genes build body plans through cascades of differential gene expression. Genomics covers DNA sequencing from Sanger chain termination to next-generation platforms, whole-genome projects and genome annotation, transcriptomics, proteomics, and bioinformatics comparisons across species. Population genetics makes evolution quantitative: the gene pool concept, allele frequency as the measure of evolution, and the Hardy-Weinberg principle, which states that allele and genotype frequencies remain constant only when there is no mutation, no migration, no selection, random mating, and a large population. Deviations from Hardy-Weinberg equilibrium reveal evolution at work, and students calculate allele frequencies from genotype counts. Molecular evolution covers neutral mutations, molecular clocks calibrated against the fossil record, and gene duplication as a source of new genes. Key vocabulary: operon, repressor, inducer, attenuation, transcription factor, enhancer, chromatin remodeling, epigenetics, microRNA, Hox gene, genomics, proteomics, gene pool, allele frequency, Hardy-Weinberg equilibrium, molecular clock.",
+      "pedagogicalNotes": "Have students build a physical model of the lac operon with movable repressor and inducer pieces; operon logic must be reasoned through, not memorized as a diagram. Common misconceptions: students think all genes are active in all cells, that epigenetic marks change the DNA sequence, and that Hardy-Weinberg describes real populations rather than a null model. Stress that the Hardy-Weinberg equation is a baseline for detecting evolution, not a law populations obey. Pair genomics with a simple sequence-alignment activity so genome comparison feels hands-on.",
+      "exampleProblems": [
+        {
+          "problem": "In the lac operon, what happens when lactose is absent, and why are lactose-digesting enzymes not made?",
+          "solution": "The repressor protein binds the operator and blocks RNA polymerase, so the structural genes are not transcribed.",
+          "explanation": "The repressor is made in an active form by default. Without the inducer allolactose to bind and change its shape, the repressor stays on the operator and transcription is prevented. This is negative regulation: the default state is off, and the inducer turns the system on only when its substrate is present.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "In a population of 100 individuals, 16 show the recessive phenotype. Assuming Hardy-Weinberg conditions, calculate the frequency of the dominant allele and the expected number of heterozygotes.",
+          "solution": "q squared equals 0.16, so q equals 0.4 and p equals 0.6. Heterozygotes are 2pq equals 0.48, so 48 individuals.",
+          "explanation": "Only homozygous recessive individuals show the recessive phenotype, so genotype frequency q squared is 16/100. Taking the square root gives the recessive allele frequency, and p follows because p plus q equals 1. The heterozygote frequency 2pq then predicts carriers, which is exactly how carrier screening works in genetics counseling.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A researcher finds a moth population whose genotype frequencies deviate from Hardy-Weinberg expectations. Give at least three possible causes and explain how each shifts allele frequencies.",
+          "solution": "Possible causes include natural selection favoring certain genotypes, genetic drift in a small population, gene flow from migration, nonrandom mating such as assortative mating, and new mutation.",
+          "explanation": "Each cause violates one of the Hardy-Weinberg assumptions. Selection changes frequencies nonrandomly by differential survival and reproduction, drift changes them by chance especially in small populations, migration introduces or removes alleles, nonrandom mating changes genotype proportions without necessarily changing allele frequencies, and mutation adds new variation. Comparing the observed pattern to each mechanism is how working biologists diagnose evolution in the field.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Biology: Evidence for Evolution, Macroevolution, and Ecosystem Ecology",
+      "contentBody": "At grade 17, students synthesize the evidence for evolution and study ecology at the ecosystem scale. The case for evolution draws on independent lines of evidence: the fossil record with transitional forms such as Tiktaalik and Archaeopteryx, biogeography showing that isolated continents and islands host unique but related species, comparative anatomy distinguishing homologous structures from analogous convergent ones, comparative embryology with shared developmental stages, and molecular biology, where shared genes and nearly identical metabolic pathways across all domains of life point to common ancestry. Endosymbiotic theory explains mitochondria and chloroplasts as once-free bacteria, supported by their double membranes, circular DNA, and bacterial-like ribosomes. Macroevolution covers adaptive radiation, convergent evolution producing similar forms in unrelated lineages, coevolution between predators and prey or flowers and pollinators, and patterns in the fossil record including mass extinctions followed by radiations. Advanced ecology quantifies energy and matter: only about ten percent of energy passes between trophic levels, which limits food chain length and explains why top predators are rare, and biogeochemical cycles trace carbon, nitrogen, phosphorus, and water through biotic and abiotic reservoirs, including human disruption such as fertilizer runoff causing eutrophication in lakes and coastal waters. Ecosystem studies cover primary productivity, decomposition, and the roles of keystone species and trophic cascades. Conservation ecology applies these tools to real decisions: minimum viable population sizes, habitat fragmentation and edge effects, wildlife corridors, invasive species management, and biodiversity hotspots threatened by climate change. Students evaluate real data sets and simple models rather than memorizing facts. Key vocabulary: transitional fossil, biogeography, endosymbiosis, adaptive radiation, convergent evolution, coevolution, trophic level, trophic efficiency, biogeochemical cycle, eutrophication, trophic cascade, minimum viable population, edge effect, wildlife corridor, biodiversity hotspot.",
+      "pedagogicalNotes": "Teach the evidence for evolution as convergent independent testimony, not a single argument; the strength is that unrelated methods agree. Common misconceptions: students think individuals evolve during their lifetimes, that convergent structures indicate common ancestry, and that energy is recycled like matter in ecosystems. The ten percent rule surprises students, so calculate a real food chain with numbers. For conservation, use a local case study so trade-offs feel concrete, and insist students back every management recommendation with a mechanism from population or ecosystem science.",
+      "exampleProblems": [
+        {
+          "problem": "Using the ten percent rule, explain why top predators are far rarer than producers.",
+          "solution": "Only about one tenth of energy passes to each higher trophic level, so the energy available shrinks at every step, supporting fewer and fewer organisms at the top.",
+          "explanation": "Energy is lost as heat, movement, and undigested matter at each transfer, while matter is recycled. A thousand kilograms of producer biomass supports roughly ten kilograms of top predator biomass. This also explains why food chains rarely exceed four or five links: there is simply not enough energy left to support another level.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "In a food chain of phytoplankton to zooplankton to small fish to heron, phytoplankton capture 10,000 kcal. How much energy reaches the heron?",
+          "solution": "10,000 to 1,000 to 100 to 10, so the heron receives about 10 kcal.",
+          "explanation": "Apply ten percent at each of the three transfers: each step multiplies by 0.1. The arithmetic shows how steeply energy declines with trophic height and why ecosystems need continuous solar input to keep running, unlike nutrients which cycle.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A manager must choose between one large nature reserve or several small reserves linked by corridors. Use ecological principles to evaluate the trade-off.",
+          "solution": "The large reserve holds bigger populations and less edge habitat, but several connected reserves can cover more habitat types and corridors allow migration and recolonization; the best choice depends on the species' dispersal ability and the threats involved.",
+          "explanation": "Island biogeography predicts fewer extinctions on larger reserves, and edge effects harm interior species in small fragments. However, metapopulation theory shows that connected fragments can sustain a species through local extinction and recolonization, and corridors counter genetic drift by allowing gene flow. A defensible answer weighs population size, edge effects, and connectivity against the specific landscape and species.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Biology: Bioenergetics, Cellular Respiration, and Photosynthesis",
+      "contentBody": "At grade 18, the college-level study of bioenergetics explains exactly how cells capture and spend energy. Thermodynamics is formalized with Gibbs free energy: the change in free energy of a reaction determines whether it proceeds spontaneously and how much useful work it can do, and enzymes speed reactions without altering equilibrium or the overall energy balance. Redox chemistry underlies metabolism: electrons move from fuels such as glucose, which is oxidized, to carriers like NAD+ and FAD, which become NADH and FADH2, and finally to oxygen, the terminal electron acceptor in aerobic respiration. Cellular respiration is dissected step by step. Glycolysis in the cytosol splits glucose into two pyruvate molecules with a net gain of two ATP and two NADH. Pyruvate oxidation in the mitochondrial matrix produces acetyl CoA, carbon dioxide, and NADH. The citric acid cycle completes the oxidation of the acetyl group, releasing carbon dioxide and loading electron carriers. Oxidative phosphorylation uses the electron transport chain embedded in the inner mitochondrial membrane: electrons pass through complexes that pump protons into the intermembrane space, building a proton motive force, and ATP synthase lets protons flow back through it, synthesizing ATP in the process called chemiosmosis. Counting yields per glucose shows why aerobic respiration produces roughly thirty to thirty-two ATP compared with two from fermentation. Fermentation regenerates NAD+ so glycolysis can continue without oxygen, producing lactate or ethanol depending on the organism. Photosynthesis parallels respiration: photosystem II splits water and passes electrons through an electron transport chain to photosystem I and NADP+, generating ATP by photophosphorylation, and the Calvin cycle uses ATP and NADPH to fix carbon dioxide into sugar. Regulation runs through allosteric control of key enzymes and the cell's energy charge. Key vocabulary: Gibbs free energy, redox, electron carrier, citric acid cycle, electron transport chain, proton motive force, chemiosmosis, ATP synthase, fermentation, photosystem, photophosphorylation, Calvin cycle, energy charge.",
+      "pedagogicalNotes": "Teach respiration as an energy-harvesting logic rather than a memorized pathway: follow the electrons and count the ATP. Common misconceptions: students think the energy in glucose is released in one explosion rather than stepwise capture, that the Krebs cycle directly makes most ATP, and that plants only photosynthesize and do not respire. Emphasize that ATP synthase is a rotary nanomachine driven by a proton gradient, which makes chemiosmosis memorable. Pair every pathway with its stoichiometry so students practice energy accounting, a skill tested in every exam at this level.",
+      "exampleProblems": [
+        {
+          "problem": "Why must fermentation regenerate NAD+ for a muscle cell working without enough oxygen?",
+          "solution": "Glycolysis needs NAD+ to accept electrons; without oxygen the electron transport chain cannot reoxidize NADH, so fermentation transfers those electrons to pyruvate, regenerating NAD+ so glycolysis can keep making a small amount of ATP.",
+          "explanation": "Fermentation does not produce extra ATP itself; its purpose is to recycle the electron carrier. This explains why sprinting muscles burn and fatigue quickly: ATP yield per glucose stays at two, and lactate accumulates until oxygen delivery catches up.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A cell has plenty of glucose and oxygen, but cyanide blocks the final electron transport complex. Predict the effect on ATP production and on oxygen use.",
+          "solution": "Electron flow stops, the proton gradient collapses, oxidative phosphorylation halts, and ATP output falls to the two ATP per glucose from glycolysis; oxygen consumption drops because it is no longer being reduced to water.",
+          "explanation": "Cyanide poisons cytochrome c oxidase, so electrons cannot reach oxygen. Even with abundant fuel and oxygen, the cell cannot run chemiosmosis without a functioning chain, and NADH piles up, which also slows the citric acid cycle. This is why cyanide is lethal within minutes despite oxygen in the blood.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Explain why the inner mitochondrial membrane must be both impermeable to protons and highly folded for oxidative phosphorylation to work.",
+          "solution": "Impermeability lets the electron transport chain build a steep proton gradient, and the folds called cristae multiply the surface area available for chains and ATP synthase, increasing ATP output per mitochondrion.",
+          "explanation": "The proton motive force is stored energy, and any leak short-circuits it into heat, which is exactly what brown fat does deliberately via thermogenin. The cristae arrangement packs many electron transport chains and ATP synthase complexes into a small volume, so structure directly sets the organelle's energy output.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Biology: Molecular Genetics, Gene Regulation, and Genome Maintenance",
+      "contentBody": "At grade 19, molecular genetics examines how genetic information is transcribed, repaired, and reprogrammed. Transcriptional control is studied in mechanistic detail: sigma factors guide RNA polymerase to promoters in bacteria, while in eukaryotes general transcription factors assemble at the TATA box, activators bind enhancers that may lie far from the gene, and mediator proteins connect them to RNA polymerase II, producing combinatorial control in which different cell types express different batteries of genes from the same genome. Post-transcriptional control includes alternative splicing that lets one gene encode several protein variants, the protective 5 cap and poly-A tail that stabilize messenger RNA and mark it for export, microRNA and siRNA pathways that silence transcripts, and regulated mRNA localization and degradation. Genome maintenance covers mismatch repair, base excision and nucleotide excision repair, and double-strand break repair by homologous recombination and nonhomologous end joining; failures of these systems explain disorders such as xeroderma pigmentosum and raise cancer risk. Transposable elements are presented as genomic engines of change rather than junk DNA. Viral genetics covers the lytic and lysogenic cycles of bacteriophages, retroviruses that reverse transcribe RNA into DNA and integrate as proviruses, and engineered viruses used as vectors in gene therapy. Genomics and systems biology describe next-generation sequencing, genome-wide association studies that link variants to disease, transcriptome profiling, and synthetic biology, including engineered genetic circuits in microbes. Developmental genetics shows how morphogen gradients and master regulators such as Hox genes build body plans, and epigenetic reprogramming explains how cell fate is maintained through division and reset in the germline. Key vocabulary: enhancer, mediator, combinatorial control, alternative splicing, RNA interference, mismatch repair, homologous recombination, transposon, lysogeny, reverse transcriptase, provirus, genome-wide association study, morphogen, epigenetic reprogramming.",
+      "pedagogicalNotes": "Push students from knowing pathways to reasoning about mechanism: every exam answer should name the molecular player and what it physically does. Common misconceptions: students think enhancers are promoters, that one gene always makes one protein, and that DNA repair is a single system rather than several lesion-specific pathways. Use case-driven teaching, for example xeroderma pigmentosum to anchor excision repair and HIV to anchor reverse transcription. Have students read a simplified gene regulation figure and narrate it aloud; fluent narration predicts exam success at this level.",
+      "exampleProblems": [
+        {
+          "problem": "What is alternative splicing, and why is it advantageous for complex organisms?",
+          "solution": "Different combinations of exons from one pre-mRNA are joined, producing multiple protein variants from a single gene.",
+          "explanation": "Humans have roughly twenty thousand genes but far more proteins, and alternative splicing explains the difference. The same gene can yield a membrane receptor in one tissue and a secreted decoy in another, so complexity comes from regulation of expression rather than gene count alone.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain how a retrovirus becomes a permanent part of the host genome and why this can sometimes cause cancer.",
+          "solution": "Reverse transcriptase copies the viral RNA into DNA, integrase inserts it into a chromosome, and the provirus is copied with every cell division; if it inserts near a proto-oncogene or disrupts a tumor suppressor, uncontrolled division can follow.",
+          "explanation": "The provirus is inherited by daughter cells, which is why retroviral infections last for life. Insertional mutagenesis is the hazard: viral promoters can overdrive a nearby growth gene, or insertion can knock out a protective gene. This same principle is managed deliberately in gene therapy by using safer integration profiles.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A cell sustains a double-strand DNA break. Compare homologous recombination and nonhomologous end joining in terms of template use and fidelity, and predict a consequence of repair errors.",
+          "solution": "Homologous recombination uses the sister chromatid as an accurate template and restores the original sequence; nonhomologous end joining ligates broken ends directly without a template and is fast but error-prone. A repair error can cause deletions, translocations, or mutations that inactivate genes or activate oncogenes.",
+          "explanation": "Homologous recombination is largely available after DNA replication when a sister chromatid exists, while nonhomologous end joining operates throughout the cell cycle. Choosing between them is a real cellular decision with trade-offs between speed and accuracy, and misrepair is a major route to the chromosomal rearrangements seen in cancers.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Biology: Cell Signaling, Population Dynamics, and Global Ecology",
+      "contentBody": "At grade 20, biology integrates cell communication with the ecology of populations and ecosystems. Cell signaling is studied as a precise molecular conversation: hormones, neurotransmitters, and growth factors bind specific receptors, including G protein-coupled receptors that activate second messengers such as cyclic AMP, receptor tyrosine kinases that dimerize and trigger phosphorylation cascades like the MAP kinase pathway, and ion channel receptors that change membrane potential within milliseconds. Second messenger systems amplify signals enormously: one activated receptor can generate thousands of second messenger molecules, and each tier of a phosphorylation cascade multiplies the signal further, so a few molecules of hormone can produce a large cellular response. Signal termination matters as much as activation, and defects in these pathways cause disease, most notably cancers driven by permanently active Ras or by growth factor receptors stuck in the on position. Programmed cell death, or apoptosis, is presented as a signaling outcome that sculpts tissues during development and removes damaged cells. The ecological half of the course treats populations as dynamic systems: exponential growth models give way to logistic growth with a carrying capacity, density-dependent factors such as competition, predation, and disease regulate population size, and life history theory contrasts species that produce many offspring with little investment against species that invest heavily in few young. Metapopulation theory explains how local extinctions and recolonizations sustain a species across fragmented habitats, and island biogeography relates species number to island size and distance from the mainland. Community ecology covers succession, trophic cascades, keystone species, and species diversity measures. Ecosystem and global ecology examine energy flow, nutrient cycling, and human-driven change including climate warming, ocean acidification, and biodiversity loss, with conservation strategies such as protected area networks, corridor design, and restoration ecology. Key vocabulary: G protein, second messenger, phosphorylation cascade, receptor tyrosine kinase, apoptosis, Ras, logistic growth, density dependence, metapopulation, island biogeography, succession, species diversity, trophic cascade, restoration ecology.",
+      "pedagogicalNotes": "This capstone should interlock the molecular and the ecological: signaling explains how organisms respond, ecology explains why those responses matter at scale. Common misconceptions: students think signaling is one molecule one response rather than cascades with amplification, that carrying capacity is a fixed number rather than a shifting equilibrium, and that ecosystems have infinite resilience. Use real datasets for logistic growth and diversity indices so students practice quantitative ecology. When discussing cancer, map each signaling defect to a therapy mechanism so the clinical relevance is explicit.",
+      "exampleProblems": [
+        {
+          "problem": "Explain how the cyclic AMP second messenger system amplifies an extracellular signal.",
+          "solution": "One hormone binding one G protein-coupled receptor activates many G proteins, each activates adenylyl cyclase to make many cAMP molecules, and each cAMP activates protein kinase A, which phosphorylates many target enzymes.",
+          "explanation": "Amplification occurs at every tier because each activated molecule activates many downstream molecules. This is why a hormone circulating at vanishingly small concentrations can switch a whole cell's metabolism within seconds, and why signal termination mechanisms are essential to prevent runaway responses.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A bird population of 500 has an intrinsic growth rate of 0.2 per year and a carrying capacity of 2,000. Using the logistic equation, calculate the growth rate now and explain the trend as the population approaches 2,000.",
+          "solution": "dN/dt equals rN(1 minus N/K), so 0.2 times 500 times (1 minus 500/2000) equals 100 times 0.75, which is 75 birds per year. Growth slows as N approaches K because the term (1 minus N/K) shrinks toward zero.",
+          "explanation": "Logistic growth adds a density-dependent brake to exponential growth. At low density growth is nearly exponential; near carrying capacity, resources limit reproduction and raise mortality until growth stops. Real populations fluctuate around K rather than sitting exactly on it, and K itself shifts with habitat and climate.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A mutation makes the Ras protein permanently active. Explain at the level of signal transduction why this causes uncontrolled cell division.",
+          "solution": "Ras normally cycles between active and inactive states after receiving a growth signal; when stuck active, it continuously triggers the MAP kinase phosphorylation cascade, so growth genes stay expressed without any external signal and cells divide without stop signals.",
+          "explanation": "Signaling depends on switching signals on and off. A permanently active Ras removes the off switch, so the pathway is locked in the on state and the cell ignores external cues and even some checkpoint signals. This is why Ras mutations are common in cancers and why therapies target the pathway downstream of Ras as well as Ras itself.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

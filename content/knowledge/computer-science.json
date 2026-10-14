@@ -1,0 +1,525 @@
+{
+  "subject": "Computer Science",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Computer Science: Parts of a Computer, Mouse and Keyboard Skills, and Staying Safe Online",
+      "contentBody": "In grade 1 computer science, students are introduced to technology as a tool they can control and care for. They learn to identify the main parts of a computer: the screen (monitor), keyboard, mouse or trackpad, and sometimes a tablet touchscreen, along with where the power button is and how to turn a device on and off properly. Motor skills are central: students practice clicking, double-clicking, dragging and dropping, and using arrow keys, and they begin keyboard awareness by finding letters, using the space bar and enter key, and typing simple words slowly. Early digital literacy covers what software (apps and programs) versus hardware (the physical machine) are, in the simplest terms. Sequencing appears through everyday routines such as getting dressed or making a sandwich, where steps must happen in the right order, which plants the seed of algorithmic thinking. Students also meet the idea of giving precise step-by-step instructions, for example describing how to draw a shape so a partner can follow exactly. Online safety is introduced concretely: only use devices with a trusted adult, never share name, address, or photos with strangers, tell an adult if something on a screen feels wrong or scary, and be kind in any message or comment. Vocabulary: computer, monitor, screen, keyboard, mouse, click, drag, app, program, hardware, software, internet, password, safety, sequence, instructions, order, step. By the end of grade 1, a student should be able to name the parts of a computer, perform basic mouse and keyboard actions, follow and give a simple ordered set of instructions, and state two rules for staying safe online.",
+      "pedagogicalNotes": "Use physical, tactile demos before screen time; let students point at real device parts rather than flashcards. Expect fine-motor struggles with double-click and drag — allow touchscreens as a bridge. Common misconception: students think the internet is a place inside the computer, or that anything on a screen is safe because a teacher showed it once. Emphasize routines (log in, log out, put device away) and pair every digital activity with an offline sequencing game. Keep vocabulary oral and repeated; do not require spelling. Praise careful clicking over speed and always supervise any online access.",
+      "exampleProblems": [
+        {
+          "problem": "Name three parts of a computer and say what one of them does.",
+          "solution": "Monitor (shows pictures and words), keyboard (lets you type letters), mouse (moves the pointer on the screen).",
+          "explanation": "Students connect each physical part to a job they have already done: watching, typing, pointing. Accept any correct device part such as touchscreen or power button.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Write the steps to open a drawing app in the correct order.",
+          "solution": "1. Turn on the computer or tablet. 2. Wait for the home screen. 3. Find the drawing app icon. 4. Tap or click it once. 5. Wait for the app to open.",
+          "explanation": "This is a sequence: if step 4 comes before step 3, the task fails. Discuss what happens when steps are out of order to reinforce that computers need exact order.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A game asks for your full name and where you live in a chat. What should you do?",
+          "solution": "Do not type it. Close or leave the chat and tell a trusted adult right away.",
+          "explanation": "Personal information stays private online. Students should practice the exact action: stop, do not answer, tell an adult, so it becomes an automatic habit rather than a rule they can recite but not follow.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Computer Science: Digital Citizenship, Typing Basics, and Step-by-Step Instructions",
+      "contentBody": "In grade 2 computer science, students build on their first digital experiences by becoming more independent and responsible users. Typing skills progress from single letters to short words and their first name and simple sentences, using correct finger placement on the home row in a very relaxed way and learning to press enter and space bar confidently. Students learn that a program follows instructions exactly as written, so vague instructions fail: if you tell someone to draw a house but do not say how, every house looks different, which introduces the need for precise language and algorithms as ordered steps that a person or computer can follow. They act out algorithms with unplugged activities such as making a sandwich, drawing a picture from a partner's instructions, or robot-and-programmer games where one student is the robot executing the other's commands. Loops appear intuitively through repeated actions in songs, clapping patterns, and daily routines such as brush, rinse, repeat. Digital citizenship covers being kind online, what to do when seeing something unkind, and the difference between things that are true and things that might trick you on a screen. Online safety deepens: private information (name, address, school, photos) is never shared in a game or video comment, and only known people are added as contacts. Vocabulary: algorithm, instructions, steps, order, repeat, loop, program, code, digital citizen, kind, private, username, password, true, trick. By the end of grade 2, students can type short words, describe an everyday routine as ordered steps, notice when instructions need more detail, and explain why private information is kept off screens.",
+      "pedagogicalNotes": "Keep typing practice short (5 minutes) and game-like; accuracy first, never speed tests. For the robot game, deliberately give a vague instruction and let the class see the funny failure — this motivates precision far better than lecturing. Common misconception: students believe computers understand human intentions, so they expect a program to know what they meant. Repeat the mantra 'the computer does exactly what you say.' Introduce loops as 'a shortcut for repeating' rather than formal syntax. Reinforce kindness online with role-played comments, both friendly and unkind, and discuss how the reader feels.",
+      "exampleProblems": [
+        {
+          "problem": "Write instructions for a partner to draw a smiley face. Then say what is missing if they draw it upside down.",
+          "solution": "Draw a big circle for the face, two small circles near the top for eyes, and a curved line near the bottom for the mouth. Missing detail: where to place each part (near the top, near the bottom).",
+          "explanation": "Placement words are part of the algorithm. Without them, the computer or partner must guess. This is the seed of precise, unambiguous instructions that later become code.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "You clap 4 times, rest, then clap 4 times again. How could you say this in fewer words?",
+          "solution": "Clap 4 times, repeat 2 times (with a rest between).",
+          "explanation": "This is a loop: saying 'repeat' instead of listing every clap. Students discover that loops make instructions shorter and easier to change.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A message in an online game says: 'You won a prize! Type your home address to get it.' What is wrong and what should you do?",
+          "solution": "It is a trick asking for private information. Do not reply, do not type your address, and tell an adult.",
+          "explanation": "Real prizes never need a child's home address. This introduces the idea that screens can be used to trick people, and that checking with an adult is always allowed.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Computer Science: Algorithms in Daily Life, Sequences and Loops in Scratch Jr, and Internet Safety",
+      "contentBody": "In grade 3 computer science, students formalize the idea of an algorithm as a precise sequence of steps to solve a problem, and they recognize algorithms outside computing: recipes, directions to the classroom, morning routines, and game rules. They use block-based coding in Scratch Jr or similar environments, dragging blocks to make characters move, turn, say things, and repeat actions. Sequencing is the main structure: the order of blocks determines what happens, and students debug programs by spotting the block that is in the wrong place or missing. Loops are introduced as a way to repeat actions without stacking duplicate blocks, and students compare a long stack of repeated blocks against a shorter loop version. Events appear as green-flag or tap triggers, showing that programs can respond to what a user does rather than just run top to bottom. Students also practice planning before coding: writing or drawing the steps (a paper algorithm) first, then building it, then testing and improving. Digital literacy covers how information travels on the internet in simple terms (messages go from one device to another through wires and signals) and how searches show results that are not always true. Online safety covers passwords as secrets, safe websites marked by a trusted adult, and asking permission before downloading or clicking. Vocabulary: algorithm, sequence, step, order, loop, repeat, event, code, block, program, debug, fix, test, plan, search, result, permission. By the end of grade 3, students can write an algorithm for an everyday task, build a short animated program with sequences and a loop, find a simple bug by testing, and explain why some search results are not trustworthy.",
+      "pedagogicalNotes": "Always start unplugged: have students act out the algorithm before touching devices. Teach debugging as a normal, expected part of programming — model saying 'I found a bug' cheerfully, not as failure. Common misconception: students think the loop block runs everything on the screen at once, or that the character understands words like 'go to the door' without coordinates or clear moves. Emphasize that only the blocks placed in the script run, in order, top to bottom. Limit block choice early to avoid overwhelm. For internet content, use concrete examples of a fake celebrity post or a too-good-to-be-true ad to show that seeing is not believing.",
+      "exampleProblems": [
+        {
+          "problem": "Write the steps to make a peanut butter and jelly sandwich (or a pretend sandwich) for someone who has never done it.",
+          "solution": "Get bread, put one slice on a plate, spread peanut butter on it, put jelly on the other slice, press the slices together, cut in half.",
+          "explanation": "Each step must be one clear action in order. If you skip 'open the jar', the follower gets stuck, just as a computer crashes or does nothing when a needed instruction is missing.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "In Scratch Jr, the cat must move right 5 steps, meow, then move right 5 more steps, meow, then move right 5 more steps, meow. How can you do the same with fewer blocks?",
+          "solution": "Move right 5 steps, meow, and wrap both blocks in a repeat loop set to 3.",
+          "explanation": "A loop replaces three copies of the same pair of blocks. Changing '3' to '5' would make 5 trips without rebuilding anything, which shows why loops save work.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Your program should make the character jump when the screen is tapped, but it jumps as soon as the green flag is pressed. What is the bug?",
+          "solution": "The jump blocks are not attached to the 'when tapped' event block; they are running on start.",
+          "explanation": "Events decide when code runs. Attaching the jump blocks under the tap trigger fixes the program — debugging means comparing what should happen with what actually happens and finding the difference.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Computer Science: Scratch Programming, Loops, Conditionals, Debugging, and Hardware vs Software",
+      "contentBody": "In grade 4 computer science, students move from Scratch Jr into Scratch, where they create animations and simple games using motion, looks, sound, and control blocks. Sequencing remains central but loops become standard practice: repeat blocks and repeat-until blocks let students iterate actions such as walking across the screen or bouncing a ball. Conditionals are introduced with if-then blocks, letting a program decide based on what is true, for example if the sprite touches the edge then turn around. Students learn to plan projects with storyboards or step lists, build in small pieces, test often, and improve, which models the iterative design process. Debugging becomes systematic: predict what should happen, run the program, observe what does happen, locate the wrong block, fix it, and retest. Concepts of hardware and software are separated clearly: hardware is the physical machine (keyboard, screen, processor, memory), software is the set of instructions that tell it what to do, and programs are written by people and can be changed. Students see that input, processing, and output form the basic pattern: the keyboard gives input, the processor works on it, and the screen shows output. Internet usage widens, so digital citizenship covers citing where images and sounds came from and asking before sharing someone else's work. Vocabulary: sprite, script, block, loop, repeat, if-then, condition, event, debug, test, hardware, software, processor, memory, input, output, design, improve, credit. By the end of grade 4, students can build a short Scratch project with a loop and a conditional, describe the input-process-output pattern, and use a repeatable debugging routine to fix their own programs.",
+      "pedagogicalNotes": "Let students remix each other's projects with credit — collaboration keeps motivation high. Scaffold conditionals with real-world either/or questions before showing the block. Common misconceptions: students think the computer reads blocks at random or that a loop checks a condition every frame; also they often write one giant script instead of several small ones. Teach 'build small, test, add more.' When debugging, forbid 'it doesn't work' as a report; require 'I expected X, but Y happened.' Normalize error messages as clues, not punishments. Keep a class wall of famous bugs found and fixed to celebrate debugging.",
+      "exampleProblems": [
+        {
+          "problem": "In Scratch, a ball sprite should keep bouncing off the edges of the screen forever. Which blocks would you use?",
+          "solution": "A forever loop containing move 10 steps, and if on edge, bounce.",
+          "explanation": "The forever loop repeats the check and move constantly; the if-on-edge bounce handles the condition of hitting the wall. One without the other fails: no loop means one bounce at most, and no bounce check means the ball leaves the screen.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "You press the space key and nothing happens, but the script shows 'when space key pressed' with blocks under it. Name two possible bugs and how to check them.",
+          "solution": "Possible bugs: the script is attached to the wrong sprite, or the blocks are broken apart below the hat block. Check by clicking the sprite and looking at the script, then drag the blocks to reconnect them.",
+          "explanation": "Debugging is detective work: list the suspects, then test each one. In Scratch, event blocks only fire for the sprite that owns them and only if the blocks are actually attached.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Is a computer mouse hardware or software? What about a video game?",
+          "solution": "The mouse is hardware (a physical object you can hold). The video game is software (instructions that tell the hardware what to do).",
+          "explanation": "Hardware is anything physical in the system; software is code. You can touch a mouse but not the game itself — only the disc, file, or screen that carries it.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Computer Science: Conditionals and Nested Loops in Scratch, Variables, Problem Decomposition, and Binary Numbers",
+      "contentBody": "In grade 5 computer science, students deepen their Scratch skills and begin to think like programmers designing solutions, not just following recipes. Conditionals expand to if-then-else, letting programs choose between two actions, and conditionals are combined with sensing blocks so sprites react to the mouse, keys, colors, or other sprites. Nested loops — a loop inside a loop — create patterns such as squares drawn in a circle or repeated game levels, and students learn to trace what the inner loop does on each pass of the outer loop. Variables are introduced as named boxes that store changing values, such as a score that increases when a star is collected or a timer that counts down. Students practice problem decomposition: breaking a big project like a maze game into smaller parts (movement, walls, winning condition, score), building and testing each part separately. Debugging skills advance to tracing values of variables step by step to find where a score goes wrong. Binary is introduced as the language computers use with just two symbols, 0 and 1, on and off, and students practice counting in binary and mapping small numbers and simple pictures to bits. Digital citizenship covers creative credit, respecting others' projects, and what makes a strong (secret, long, unguessable) password. Vocabulary: variable, value, condition, if-then-else, nested loop, decompose, trace, binary, bit, digit, on, off, pattern, score, timer, flag, user. By the end of grade 5, students can design a Scratch game with variables and nested loops, explain decomposition by splitting a task into parts, represent small numbers in binary, and describe what a variable stores and when its value changes.",
+      "pedagogicalNotes": "Teach variables with the physical metaphor of a labeled shoebox where slips of paper are swapped out; draw boxes on the board and update values by hand while tracing code. Common misconceptions: students think a variable name is the value itself, or that a nested loop runs the inner loop once total. Trace with a table: one row per outer-loop pass. For binary, use on/off light switches or dot cards before numerals. Keep decomposing concrete: give a jumbled list of game features and have groups sort them into buildable parts. Warn that passwords are secrets even for best friends, and praise good variable names like score over s.",
+      "exampleProblems": [
+        {
+          "problem": "In Scratch, a variable score starts at 0 and gains 10 points each time the cat eats a fish. What code sets this up?",
+          "solution": "Set score to 0 when the green flag is pressed. Then forever: if the cat is touching the fish, change score by 10 and move the fish to a new spot.",
+          "explanation": "The set block initializes the variable; the change block updates it inside the condition. Moving the fish prevents the same touch from scoring dozens of points per second.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "What is the number 5 in binary? Show your reasoning.",
+          "solution": "5 in binary is 101, because 5 = 4 + 1 = one 4, zero 2s, one 1.",
+          "explanation": "Binary columns are worth 1, 2, 4, 8. Reading the columns for 4, 2, 1 gives 1, 0, 1. Students can verify by building 5 with the binary place-value cards.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "You want to build a maze game in Scratch. Break the project into 4 smaller parts you could build one at a time.",
+          "solution": "1) The player sprite that moves with arrow keys, 2) the maze walls that stop the player, 3) the goal that ends the game, 4) the score or timer that tracks performance.",
+          "explanation": "Decomposition turns an overwhelming project into four testable pieces. Each can be built and debugged alone before they are combined, which is exactly how real software teams work.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Computer Science: Scratch Projects, Boolean Conditions, Problem Solving with Code, and How the Internet Works",
+      "contentBody": "In grade 6 computer science, students use Scratch to build substantial multi-sprite projects and start writing logic that combines several conditions. Boolean thinking appears directly: conditions are questions with true or false answers, and students combine them with and, or, and not to make rules such as 'if touching the enemy and not wearing a shield, then lose a life.' Custom blocks (my blocks) introduce the idea of writing your own named chunk of code that can be reused, laying the groundwork for functions. Students practice algorithm design with pseudocode in English before coding, then translate it to blocks, and they compare two algorithms for the same task such as searching a list of guesses to see which finds the answer in fewer tries. Binary knowledge extends to how text and pictures are stored as patterns of bits, and hexadecimal may appear as shorthand for long binary strings. How the internet works becomes concrete: devices send messages in packets across networks to servers that store websites, an IP address is like a phone number for a computer, and DNS is like a phone book that turns website names into addresses. Cyber hygiene covers strong passwords, not clicking unknown links, and that public Wi-Fi is risky. Vocabulary: boolean, true, false, and, or, not, custom block, reuse, pseudocode, algorithm, packet, network, server, IP address, DNS, browser, download, link. By the end of grade 6, students can write compound conditions in a game, design an algorithm in pseudocode before coding it, explain in simple terms how a web page travels from a server to their browser, and describe how text is stored as binary.",
+      "pedagogicalNotes": "Introduce and/or/not with plain-English puzzles ('I want a snack that is sweet AND cold') before any code, then map directly to blocks. Common misconceptions: students think 'or' means one or the other but never both, and they confuse conditions (a question) with actions (a command). For networks, use a physical packet-passing game where a message is cut into numbered slips passed across the room and reassembled. Keep pseudocode writing short and ungraded; the goal is plan-before-code habits. Debug compound conditions by testing each sub-condition alone first.",
+      "exampleProblems": [
+        {
+          "problem": "Write a condition: the player loses a life if they touch lava AND they do not have a shield.",
+          "solution": "If (touching lava) and (not (shields > 0)) then lose a life. In Scratch: if touching color lava and not shield-on then change lives by -1.",
+          "explanation": "Both parts must be checked together: touching lava alone is not enough if a shield is active. Splitting the rule into two simple questions and combining them with and mirrors how humans reason about rules.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Guess my number game: I think of a number 1-100. Which strategy finds it faster: guessing 1, 2, 3, ... or always guessing the middle of the remaining range?",
+          "solution": "Guessing the middle of the remaining range each time (binary search) finds it in at most 7 guesses; counting up can take 100.",
+          "explanation": "Each middle guess cuts the possibilities in half. This is binary search — one of the most important algorithms — introduced here as a guessing strategy rather than code.",
+          "difficulty": "hard"
+        },
+        {
+          "problem": "Explain what happens when you type www.example.com and press enter, in 3 steps.",
+          "solution": "1) DNS looks up the name and finds the server's IP address. 2) Your computer sends a request in packets across networks to that server. 3) The server sends the web page data back, and your browser draws it on screen.",
+          "explanation": "This is the client-server model in plain terms. Students should be able to retell it without the words 'magic' or 'it just does' — those are the signs a misconception is lurking.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Computer Science: Intro to Python, Variables, Data Types, Loops, Conditionals, and Flowcharts",
+      "contentBody": "In grade 7 computer science, students transition from block coding to a text-based language, usually Python, writing and running their first real programs. They learn syntax discipline: colons and indentation matter, spelling of keywords matters, and error messages are read carefully to find mistakes. Variables move from Scratch boxes to typed values: strings for text, integers and floats for numbers, booleans for true and false, and students practice converting between types with int, float, and str. Input and output are handled with input and print, producing interactive programs such as a name greeter or a calculator. Loops include for loops with range and while loops with a condition, and conditionals use if, elif, and else. Flowcharts are introduced as visual algorithms: ovals for start and end, rectangles for actions, diamonds for decisions, and students translate between flowcharts, pseudocode, and Python. Debugging is done by reading tracebacks and using print statements to inspect values. Binary and number systems reinforce how different data types are represented underneath. Digital citizenship covers citing sources when copying code and the ethics of copying versus learning from examples. Vocabulary: syntax, string, integer, float, boolean, variable, assignment, input, output, for loop, while loop, range, if, elif, else, indentation, traceback, flowchart, decision, algorithm. By the end of grade 7, students can write a short interactive Python program with typed variables, loops, and branching, translate a simple flowchart into code, and use a traceback to locate a syntax or logic error.",
+      "pedagogicalNotes": "Expect a rocky transition from blocks to text: typing speed and punctuation cause most early errors, not concepts — allow plenty of low-stakes practice and code-along time. Common misconceptions: students think = means 'is equal to' rather than 'store this value now', and they confuse the loop variable in a for loop with a variable they must change themselves. Teach indentation as part of the language, not decoration. Pair flowchart and code side by side for every new construct. When debugging, have students predict output before running to build mental tracing skills. Never let error messages be skipped; read them aloud together.",
+      "exampleProblems": [
+        {
+          "problem": "What does this Python code print?\nname = \"Ada\"\nprint(\"Hello, \" + name)",
+          "solution": "Hello, Ada",
+          "explanation": "The variable name stores the string Ada; the + glues the two strings together. Tracing by hand, substituting the variable's value at each step, is the skill being practiced.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Write Python that asks the user for a number and prints whether it is even or odd.",
+          "solution": "n = int(input(\"Enter a number: \"))\nif n % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")",
+          "explanation": "The % operator gives the remainder after division; even numbers have remainder 0 when divided by 2. Converting the input with int is required because input returns a string.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "This loop is meant to print 1 to 5 but prints nothing. Why?\ni = 1\nwhile i < 1:\n    print(i)\n    i = i + 1",
+          "solution": "The condition i < 1 is false from the start (i is 1), so the loop body never runs. Change it to i <= 5.",
+          "explanation": "A while loop checks its condition before the first run. Reading the condition with the actual current value of i is the tracing habit that exposes this class of bug instantly.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Computer Science: Python Functions, Lists, Nested Structures, Binary, Data Representation, and Cybersecurity",
+      "contentBody": "In grade 8 computer science, students write organized Python programs built from functions that take parameters and return values, learning that functions package repeated logic so it can be reused and tested. They work with lists of values: creating lists, indexing from zero, appending and removing items, and looping through lists with for. Nested structures appear as lists of lists (grids, tables) and loops inside functions, and students trace how values flow through calls and returns. String work includes slicing, common methods, and formatting output. Data representation deepens: text as ASCII or Unicode code points, images as grids of pixels with color values, sound as samples, and compression as trading accuracy for smaller size. Cybersecurity covers the CIA triad at an introductory level (confidentiality, integrity, availability), hashing as a one-way fingerprint for passwords, phishing recognition, and why plain-text passwords in code are dangerous. Students discuss encryption conceptually: scrambling a message with a key so only the holder of the key can read it, and they may try simple ciphers such as Caesar shift. Version habits start with saving iterations and commenting code. Vocabulary: function, parameter, argument, return, call, list, index, element, append, nested, ASCII, pixel, compression, hash, encryption, key, phishing, confidentiality, integrity. By the end of grade 8, students can decompose a program into functions with clear inputs and outputs, manipulate lists confidently, explain how images and text are stored as numbers, and describe how hashing and encryption protect data.",
+      "pedagogicalNotes": "Emphasize that functions are defined once and called many times; use the metaphor of a recipe card versus cooking. Common misconceptions: students expect a function to print when it should return, and they think index 1 is the first item — drill zero-based indexing with physical line-ups. For lists, draw boxes with numbered slots on the board constantly. Keep security concrete: show a fake phishing email and hunt for the tells together. Caesar ciphers make encryption tangible; connect the key idea that secrecy depends on the key, not on hiding the method. Require docstring-style comments in plain words on every function.",
+      "exampleProblems": [
+        {
+          "problem": "What does this code print?\ndef double(x):\n    return x * 2\nprint(double(5))",
+          "solution": "10",
+          "explanation": "The function receives the argument 5, computes 5 * 2, and returns 10 to the caller, which prints it. Contrast with a function that prints inside and returns nothing, so students see the difference between output and return.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Given nums = [4, 8, 15, 16, 23], what is nums[2], and how do you add 42 to the end?",
+          "solution": "nums[2] is 15. Add 42 with nums.append(42).",
+          "explanation": "Indexing starts at 0, so index 2 is the third item. The append method changes the list in place; students should trace the list after each mutation to build accurate mental models.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Explain why websites store hashed passwords instead of the passwords themselves. What happens if the database leaks?",
+          "solution": "A hash turns each password into a fixed fingerprint that cannot be reversed. If the database leaks, attackers see fingerprints, not real passwords, so accounts stay safer (though users should still change passwords).",
+          "explanation": "Hashing is one-way: easy to check a guess by hashing it and comparing, hard to recover the original. This is why even the company should not know your password, which connects to the confidentiality pillar of security.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Computer Science: Python Data Structures, Algorithms, Searching, Web Dev (HTML/CSS), and Computing Ethics",
+      "contentBody": "In grade 9 computer science, students consolidate Python programming with a focus on choosing the right data structure for a task: lists for ordered collections, dictionaries for key-to-value lookups such as a contact book or score table, and sets when uniqueness matters. They implement and compare simple algorithms, especially linear search versus binary search on sorted data, counting steps to see why the size of the input matters, and they sort small lists by hand with selection sort to understand swaps and passes. Complexity is introduced intuitively with the idea of counting steps as input grows rather than formal Big-O notation. Web development begins with HTML for structure (headings, paragraphs, lists, links, images) and CSS for presentation (colors, fonts, spacing), and students publish a small static page about a topic they care about, practicing semantic markup and accessibility basics such as alt text. Computing ethics covers intellectual property and open source, privacy and data collection by apps, algorithmic bias in simple examples, and digital footprints. Team projects introduce planning, dividing work, and integrating pieces. Vocabulary: dictionary, key, value, set, unique, linear search, binary search, sorted, algorithm, steps, efficiency, HTML, tag, element, CSS, selector, property, semantic, accessibility, bias, privacy. By the end of grade 9, students can pick a suitable data structure and justify the choice, implement a search algorithm and reason about its speed, build a styled HTML page, and discuss one ethical issue in data use with a concrete example.",
+      "pedagogicalNotes": "Have students physically act out linear versus binary search on a line of sorted cards while counting their own steps — the speed difference becomes visceral. Common misconceptions: dictionaries are treated as lists with labels (order and lookup rules differ), and students think binary search works on unsorted data (the sorted precondition must be stressed every time). For HTML, forbid div-everything habits early; teach that the browser and screen readers read structure. Use current, real examples for ethics (recommendation feeds, face recognition) without scaring students. Peer-review HTML with checklists to build collaborative habits.",
+      "exampleProblems": [
+        {
+          "problem": "You must store student names and their test scores so you can look up a score fast by name. Which structure: list or dictionary? Why?",
+          "solution": "A dictionary, mapping each name (key) to the score (value), because lookup by key is direct; with a list of pairs you would have to scan every entry.",
+          "explanation": "The access pattern decides the structure: frequent lookup by identifier favors a dictionary. This is a design judgment students must learn to justify, not just execute.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Show why binary search on [2, 5, 8, 12, 16, 23, 38] to find 16 takes about 3 checks instead of up to 7.",
+          "solution": "Check the middle (12): 16 is bigger, so look right. New range [16, 23, 38], check middle (23): 16 is smaller, so look left. Range [16], check 16: found. That is 3 checks.",
+          "explanation": "Each check removes half the remaining items, so the number of steps grows slowly as the list grows — roughly doubling the list size adds only one check.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write an HTML page with a heading 'My Book Report', one paragraph, and a bulleted list of two favorite books.",
+          "solution": "<h1>My Book Report</h1>\n<p>These are the books I enjoyed most this year.</p>\n<ul><li>The Hobbit</li><li>Wonder</li></ul>",
+          "explanation": "Tags must be properly nested and closed; h1 gives the top heading, p a paragraph, and ul with li items a bulleted list. Structure first, styling later with CSS.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Computer Science: Databases and SQL, Sorting Algorithms, JavaScript for Interactive Web Pages, and AI Concepts",
+      "contentBody": "In grade 10 computer science, students learn that real applications persist data in databases: tables have rows and columns, a primary key uniquely identifies each row, and related tables are linked by keys. They write SQL queries using SELECT with WHERE, ORDER BY, and simple joins, and they design a small database for a domain like a library or school club, considering which fields belong in which table to avoid duplication. Sorting algorithms are studied by hand: selection sort and bubble sort passes are traced step by step, and the idea of comparing number of comparisons and swaps introduces efficiency analysis more formally, leading toward O(n) versus O(n^2) intuition. Web pages become interactive with JavaScript: variables, functions, events, and the DOM, so buttons respond to clicks and pages change content without reloading. AI and machine learning concepts appear at a conceptual level: supervised learning from labeled examples, training versus testing data, classification versus regression, and why data quality and bias matter. Students may train a tiny classifier by hand (for example, a rule-based spam filter) to see the loop of examples, features, and predictions. Project work ties layers together: a front-end page that collects data and shows results from a small data source. Vocabulary: database, table, row, column, primary key, query, SELECT, WHERE, ORDER BY, join, sort, comparison, swap, DOM, event listener, supervised learning, training data, classification, regression, bias. By the end of grade 10, students can write basic SQL to retrieve and order data, trace a sorting algorithm pass by pass, add interactivity to a web page with JavaScript, and explain how a model learns from labeled examples.",
+      "pedagogicalNotes": "Use a real (free, local) SQLite playground or in-browser SQL so queries run against actual data; abstract SQL slides teach little. Common misconceptions: students think a database is just a spreadsheet (relationships and keys differ), and they expect binary search or fast sorts to work on unsorted data without the sort step. Trace sorting with a physical line of students holding number cards, performing swaps out loud. For machine learning, resist tools that hide everything; a hand-worked example makes training versus testing concrete. Emphasize that joins connect tables through keys, not by row position. Keep JavaScript DOM examples minimal — one button, one handler — before anything fancier.",
+      "exampleProblems": [
+        {
+          "problem": "Write SQL to list all book titles and years from a books table, newest first.",
+          "solution": "SELECT title, year FROM books ORDER BY year DESC;",
+          "explanation": "SELECT chooses the columns, FROM names the table, and ORDER BY sorts the results; DESC puts the newest first. Tracing which rows come back for a tiny sample table cements the mental model.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Trace one full pass of bubble sort on [5, 3, 8, 1]. What is the list after the pass?",
+          "solution": "Compare 5 and 3: swap to [3, 5, 8, 1]. Compare 5 and 8: no swap. Compare 8 and 1: swap to [3, 5, 1, 8]. One pass pushes the largest value (8) to the end.",
+          "explanation": "Bubble sort compares neighbors and swaps out-of-order pairs; after each full pass the next-largest value settles at the end. Multiple passes finish the sort, showing why it takes O(n^2) comparisons in general.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A spam filter trained only on emails from engineers marks every casual greeting as spam. Name the problem and one fix.",
+          "solution": "The problem is biased or unrepresentative training data. Fix: add varied, balanced training examples (different writing styles and groups) and retest on fresh data.",
+          "explanation": "A model learns the patterns in its training data and nothing more. This example makes bias concrete and connects data quality directly to real-world harm.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Computer Science: Python Functions and Modules, File Input and Output, Error Handling, and Linear Search",
+      "contentBody": "Grade 11 computer science moves from writing small scripts to building programs that are organized, robust, and reusable. Students deepen their Python skills: functions with parameters and return values, default arguments, and why a function should do one clear job. Modules and imports introduce the idea that code is packaged and shared, and students practice reading documentation for a standard library module such as random, math, or datetime. File input and output lets programs work with real data: opening a text file, reading it line by line, writing results to a new file, and always closing files safely with a with block. Error handling appears as try and except, so a program can respond to bad input instead of crashing, and students learn to distinguish syntax errors, runtime errors, and logic errors by reading tracebacks. Lists become a working tool: appending, slicing, iterating, counting, and finding the maximum, and the linear search pattern of walking through a list item by item is written, traced, and modified to count matches or report an index. Nested data such as a list of dictionaries, for example a roster of student records, previews database thinking and prepares students for more complex data structures. Good habits are emphasized throughout: meaningful variable names, small functions, comments that explain why rather than what, and testing with more than one input including edge cases like empty files. Vocabulary: parameter, argument, return value, module, import, file handle, exception, try, except, traceback, slice, index, linear search, nested list, record, edge case. By the end of grade 11, students can split a multi-step program into functions, read data from a file and write a summary back out, handle invalid input gracefully instead of crashing, and explain how linear search examines each element in turn until the target is found or the list ends.",
+      "pedagogicalNotes": "Build on grade 10 projects by refactoring old scripts into functions rather than starting fresh, so students see organization pay off on familiar code. Common misconceptions: confusing parameters with arguments, and believing a function without a return statement is useless; show print versus return side by side. Scaffold file work with prepared text files first, then student-created data. Introduce exceptions only after students have seen real crash tracebacks, so error handling feels like the fix to a familiar problem rather than new theory.",
+      "exampleProblems": [
+        {
+          "problem": "Trace this Python code and give the output: def double(x): return x * 2. values = [1, 2, 3]. total = 0. for v in values: total = total + double(v). print(total)",
+          "solution": "The output is 12. The calls are double(1) = 2, double(2) = 4, double(3) = 6, and total accumulates 2, then 6, then 12.",
+          "explanation": "The function is called once per loop pass and its return value is added to total. Tracing means keeping a small table of total after each pass instead of guessing the final sum, which also catches mistakes like adding v instead of double(v).",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Write a function count_evens(numbers) that returns how many values in a list of integers are even.",
+          "solution": "def count_evens(numbers): count = 0; for n in numbers: if n % 2 == 0: count = count + 1; return count",
+          "explanation": "The modulo operator n % 2 is 0 exactly for even numbers. The accumulator count starts at 0 and rises by 1 for each match, and the function returns the total after the loop finishes. An empty list correctly returns 0, which is a good edge case to test.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write code that reads grades.txt, which holds one integer per line and may contain blank lines, then prints the average of the values. Handle the case where the file has no numbers at all.",
+          "solution": "total = 0; count = 0; with open('grades.txt') as f: for line in f: line = line.strip(); if line == '': continue; total = total + int(line); count = count + 1; if count == 0: print('no grades'); else: print(total / count)",
+          "explanation": "Blank lines are skipped after stripping whitespace, so int() never receives an empty string. Counting entries instead of dividing by the number of lines avoids both blank lines and the zero-division crash, and the guard for count == 0 handles an empty file explicitly rather than hoping it will not happen.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Computer Science: Web Development, Forms and Validation, HTTP, and SQL Databases",
+      "contentBody": "Grade 12 computer science focuses on how real web applications are built and how data moves between a browser and a server. Students review HTML for structure and CSS for presentation, then use JavaScript to respond to user input: reading values from forms, validating them, and updating the page through the DOM. A typical check requires a field to be non-empty or a password to reach a minimum length, and error messages appear without reloading the page. Events such as submit and click are wired to handler functions, and students learn to prevent default form behavior while they inspect input. The HTTP request and response cycle is studied conceptually: URLs, GET versus POST, status codes like 200, 404, and 500, and why a password must never travel inside a GET URL where it can be logged or cached. Databases return from grade 10 with more power: aggregate queries with COUNT, SUM, and GROUP BY, filtering groups with HAVING, and joining two tables so a page can show each customer together with their orders. A simple back end is explored through a small server framework or teaching tool, showing how an incoming request triggers code that queries a database and returns JSON to the page. Cybersecurity touches input sanitization and SQL injection at a conceptual level: never build a query by pasting user text into it, use parameterized queries instead. Project work is a small full-stack slice: a form that validates input, stores a record in a database, and lists stored records in a table. Vocabulary: form, input validation, event handler, DOM, HTTP, GET, POST, status code, URL, endpoint, aggregate function, GROUP BY, HAVING, JSON, API, SQL injection, sanitize, parameterized query. By the end of grade 12, students can build a form that validates and submits data, explain what happens between pressing submit and seeing a saved record, and write a grouped SQL query that summarizes data by category.",
+      "pedagogicalNotes": "Students often think validation in the browser is enough; show that the server must re-check everything, because client-side checks can be bypassed with developer tools. Common misconception: the database lives inside the web page; draw the browser, server, and database as three separate boxes with arrows for requests and responses. Scaffold with starter templates so early frustration comes from logic, not CSS. Pair every abstract idea like HTTP or JSON with a visible artifact, such as a network panel screenshot or a printed JSON string.",
+      "exampleProblems": [
+        {
+          "problem": "What is the difference between GET and POST, and which should carry a newly created account password?",
+          "solution": "GET places parameters in the URL, where they can be bookmarked, cached, and written to server logs. POST sends data in the request body. A new account password should travel with POST over HTTPS.",
+          "explanation": "The URL of a GET request leaks into history, proxies, and log files, so anything secret must stay out of it. POST is not itself secure, but combined with HTTPS it keeps the body encrypted in transit, which is why login and signup forms use method POST.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Using the table orders(customer_id, amount), write an SQL query that returns each customer_id and the total of their orders, with the largest total first.",
+          "solution": "SELECT customer_id, SUM(amount) AS total FROM orders GROUP BY customer_id ORDER BY total DESC;",
+          "explanation": "GROUP BY collects all rows for one customer into a single group, and SUM(amount) collapses each group into one total. ORDER BY total DESC sorts the grouped results descending. Without GROUP BY the query would mix all customers into one row, which is the most common error here.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write a JavaScript function validateAge that returns true only if the input element with id 'age' contains a number between 13 and 120 inclusive; otherwise it writes the text 'Invalid age' into the element with id 'error' and returns false.",
+          "solution": "function validateAge() { let raw = document.getElementById('age').value; let n = Number(raw); if (raw.trim() === '' || Number.isNaN(n) || n < 13 || n > 120) { document.getElementById('error').textContent = 'Invalid age'; return false; } document.getElementById('error').textContent = ''; return true; }",
+          "explanation": "Three failure modes must be covered: empty or whitespace input, non-numeric input (Number('abc') is NaN), and out-of-range values. Checking them in one condition short-circuits safely because Number.isNaN is tested before any comparison. Clearing the error message on success prevents a stale message from lingering after a later valid attempt.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Computer Science: Data Structures, Stacks Queues and Hash Maps, and Binary Search",
+      "contentBody": "Grade 13 computer science studies data structures as deliberate choices: how data is organized determines which operations are fast and which are slow. Stacks, which are last in first out, and queues, which are first in first out, are implemented with lists and used for concrete jobs like undo history, browser back buttons, and print queues. Dictionaries, also called hash maps, map keys to values and give constant-time lookup on average; students implement a phone book or a word count program to feel the difference between scanning a list and looking up a key. Linked lists are introduced conceptually: nodes hold a value and a reference to the next node, so inserting in the middle does not require shifting elements, but reaching the tenth element requires walking through the first nine. Students compare this with arrays and lists, where indexing is immediate but insertion shifts everything. Algorithm analysis becomes quantitative: counting comparisons for linear search, which needs up to n, versus binary search, which needs about log2 n, and observing that binary search requires sorted data, which is the classic space-time trade-off. Sorting is revisited as a case study: selection sort is simple but quadratic, merge sort splits and merges in about n log n steps, and students trace a merge of two sorted halves by hand. Sets appear as collections of unique values with fast membership tests, ideal for tasks like removing duplicates or checking whether an item was already seen. Throughout, students justify choices with evidence: which structure fits a to-do list, a browser history, a contact lookup, or a queue of songs. Vocabulary: stack, queue, enqueue, dequeue, push, pop, hash map, dictionary, key, value, collision, linked list, node, reference, array, binary search, sorted data, merge, n log n, trade-off, set, membership test. By the end of grade 13, students can implement stack and queue behavior with lists, explain why dictionary lookup beats scanning a list, trace binary search on a sorted array step by step, and select an appropriate data structure for a stated problem.",
+      "pedagogicalNotes": "Use physical demos: a stack of paper plates for push and pop, a line of students for enqueue and dequeue. Misconception: binary search works on any list; require students to state the sorted precondition every single time. Another trap is treating dictionary lookup as free without knowing hashing exists underneath. Keep analysis concrete by counting operations for small values of n before naming any formal notation, which arrives in grade 17.",
+      "exampleProblems": [
+        {
+          "problem": "A stack starts empty. Perform: push 3, push 7, pop, push 5, pop, pop. List the values returned by the pops in order.",
+          "solution": "The pops return 7, then 5, then 3.",
+          "explanation": "A stack is last in first out: the first pop removes 7 because it was pushed most recently. After pushing 5, the next pop returns 5, and the final pop reaches the bottom value 3, leaving the stack empty.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Write a function is_sorted(values) that returns True if a list of numbers is in non-decreasing order, then trace it on [2, 4, 4, 9].",
+          "solution": "def is_sorted(values): i = 0; while i < len(values) - 1: if values[i] > values[i + 1]: return False; i = i + 1; return True. On [2, 4, 4, 9] the checks are 2 > 4 false, 4 > 4 false, 4 > 9 false, so the function returns True.",
+          "explanation": "Only adjacent pairs need comparing: if every neighbor pair is in order, the whole list is. Equal neighbors are allowed because the order is non-decreasing, so the test uses > rather than >=. The loop stops one element early because the last element has no right neighbor.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Trace binary search on the sorted list [1, 3, 5, 7, 9, 11, 13] looking for the value 11. Give the low, high, and mid index checked at each step.",
+          "solution": "Step 1: low = 0, high = 6, mid = 3, value = 7; 11 is larger, so continue right with low = 4. Step 2: low = 4, high = 6, mid = 5, value = 11; found, return index 5.",
+          "explanation": "Each step compares against the middle element and discards half of what remains, so the search window shrinks from 7 elements to 3 to 1. Two probes found the target here, while linear search would have needed six. The sorted order is what licenses discarding the other half.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Computer Science: Cybersecurity and Networks, Encryption, Authentication, and Machine Learning",
+      "contentBody": "Grade 14 computer science connects programming to the systems and society around it: networks, security, and machine learning practice. Networking is studied as layered protocols: how a domain name becomes an IP address through DNS, how TCP breaks data into packets and reassembles them in order, and what HTTP and HTTPS add on top. Students draw the path of a web request from their device through routers to a server and back. Security follows naturally: passwords are stored as salted hashes rather than in plain text, symmetric encryption uses one shared key while public-key encryption uses a matched pair of keys, and digital signatures prove both origin and integrity. Authentication, which is who you are, is separated from authorization, which is what you may do, and common attacks are named and defended against: phishing, man-in-the-middle, SQL injection, and denial of service. Safe habits include two-factor authentication, password managers, and recognizing that security is a process rather than a product. Machine learning moves from concepts to workflow: gathering and cleaning data, choosing features, splitting data into training and test sets, fitting a simple model such as a decision tree or nearest neighbor classifier by hand, and measuring accuracy, precision, and recall. Overfitting is demonstrated by a model that memorizes training data and fails on new examples, and the ethics of data, including consent, privacy, bias, and representativeness, are discussed with real cases. A short project applies both threads together, for example a small classification tool with a written security and privacy note. Vocabulary: DNS, IP address, TCP, packet, protocol, HTTPS, hash, salt, encryption, public key, digital signature, authentication, authorization, phishing, feature, training set, test set, overfitting, accuracy, precision, recall, bias, privacy. By the end of grade 14, students can describe the journey of a web request, explain why passwords are hashed rather than encrypted, distinguish authentication from authorization, and evaluate a simple model using a held-out test set.",
+      "pedagogicalNotes": "Security topics invite fear or hype; keep the tone practical and actionable. Key misconception: hashing is the same as encryption; contrast reversible encryption with one-way hashing explicitly and test it by asking whether the original password can ever be recovered. For machine learning, students overestimate accuracy from tiny demos, so always hold out test data and show at least one wrong prediction. Scaffold ethics discussions with concrete cases instead of abstract principles.",
+      "exampleProblems": [
+        {
+          "problem": "Write a function strong_enough(password) that returns True only if the string has at least 8 characters and contains at least one letter and at least one digit.",
+          "solution": "def strong_enough(password): has_letter = any(c.isalpha() for c in password); has_digit = any(c.isdigit() for c in password); return len(password) >= 8 and has_letter and has_digit",
+          "explanation": "The three requirements are checked independently and combined with and, so every condition must hold. Scanning with any() short-circuits at the first match. Testing cases like 'abcdefgh', '12345678', and 'abc123' covers each way the function can return False.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 1-nearest-neighbor classifier has points (1, 1) labeled A, (5, 5) labeled B, and (2, 0) labeled A. Using Euclidean distance, what label does the new point (2, 2) receive? Show the distances.",
+          "solution": "Distance to (1, 1) is sqrt(1 squared + 1 squared) = sqrt(2) which is about 1.41; to (5, 5) it is sqrt(9 + 9) = sqrt(18) about 4.24; to (2, 0) it is sqrt(0 + 4) = 2. The nearest is (1, 1), so the label is A.",
+          "explanation": "The classifier consults only the closest training point under the chosen distance metric. Squared distances give the same ranking, so computing them avoids square roots. The result depends on the metric: a different distance definition could change the winner, which is why feature scaling matters in practice.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A model scores 99 percent on the 100 examples it was trained on, but only 62 percent on new data it has never seen. Name the problem and give one concrete fix.",
+          "solution": "The model is overfitting: it memorized the training examples including their noise, so its training accuracy says little about future performance. Fix: split the data before training, for example 80 percent for training and 20 percent for testing, tune only on a validation set, and report the held-out test accuracy.",
+          "explanation": "High training accuracy with a large gap to test accuracy is the signature of overfitting. A model that memorizes can fit arbitrary quirks of the sample, so evaluation must use data the model never influenced. Simpler models, more training data, or regularization also shrink the gap, but the held-out test set is what makes the gap visible at all.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Computer Science: Classes and Objects, Encapsulation, Program Design, and Recursion Basics",
+      "contentBody": "Grade 15 computer science introduces object-oriented design, the organizing idea behind most professional software. Classes are blueprints that bundle data, called attributes, and behavior, called methods, into objects. Students define a class, write a constructor that sets up initial state, and create instances that each hold their own data. Encapsulation is practiced by keeping attributes private in spirit and controlling change through methods, so an object maintains its own rules, for example a BankAccount whose withdraw method refuses to let the balance go negative. The self or this reference is demystified as the way a method knows which object it is working on. Students compare procedural code that manipulates separate variables with class-based code where each object manages its own state, and they refactor a familiar program, such as a gradebook or a simple game with player entities, into classes. Design habits include choosing clear class and method names, keeping methods small, and sketching the objects and their relationships before writing any code. Recursion is introduced alongside this material: a function that calls itself on a smaller input, guarded by a base case that stops the recursion. Examples include printing a countdown, computing factorial, and summing a list recursively. Students trace recursive calls on paper as a growing and shrinking stack of frames, seeing that each call carries its own parameters and local variables and that the results combine on the way back out. Vocabulary: class, object, instance, attribute, field, method, constructor, parameter, self, encapsulation, state, invariant, procedural programming, object-oriented programming, recursion, base case, recursive case, call stack. By the end of grade 15, students can define a class with a constructor and methods, explain why data should be changed through methods rather than directly, convert a small procedural program into objects, and trace a simple recursive function down to its base case and back.",
+      "pedagogicalNotes": "Students grasp classes fastest when the class models something concrete they already coded as parallel lists; refactoring that code makes the benefit visible immediately. Common misconceptions: confusing class with object, like blueprint versus house, and calling an instance method on the class itself. For recursion, the recurring error is a missing base case or trusting intuition over the trace; require hand traces with a drawn call-stack diagram before any recursive code is written. Delay inheritance until grade 16 so encapsulation solidifies first.",
+      "exampleProblems": [
+        {
+          "problem": "Write a class Counter with a constructor that sets count to 0 and a method increment that raises count by 1. Then state what prints after: c = Counter(); c.increment(); c.increment(); print(c.count)",
+          "solution": "class Counter: def __init__(self): self.count = 0; def increment(self): self.count = self.count + 1. The print shows 2.",
+          "explanation": "The constructor runs once per object and initializes its own state. Each increment call updates that specific object's count, so two calls produce 2. If a second Counter were created it would start back at 0, which is the point of instance state.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Trace this recursive function and give the output of countdown(3): def countdown(n): if n <= 0: print('liftoff'); else: print(n); countdown(n - 1)",
+          "solution": "The output is 3, 2, 1, liftoff, each on its own line.",
+          "explanation": "Each call prints its own n, then spawns a call with n minus 1. The chain stops at n = 0, where the base case prints liftoff and makes no further call. Drawing the four stacked calls shows that printing happens on the way down, before any call returns.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Write a class Temperature that stores degrees Celsius, with a method set_celsius(c) that rejects values below absolute zero, which is -273.15 Celsius, printing a message instead of storing them, and a method get_fahrenheit() that returns c * 9 / 5 + 32.",
+          "solution": "class Temperature: def __init__(self): self.celsius = 0.0; def set_celsius(self, c): if c < -273.15: print('below absolute zero'); return; self.celsius = c; def get_fahrenheit(self): return self.celsius * 9 / 5 + 32",
+          "explanation": "The class protects its own invariant: the stored value can never fall below absolute zero, because every write passes through set_celsius. The early return rejects invalid input without touching state, and get_fahrenheit reads the guarded value, so a conversion can never be computed from invalid data. This is encapsulation doing real work rather than ceremony.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Computer Science: Inheritance and Polymorphism, Interfaces, Recursion and the Call Stack",
+      "contentBody": "Grade 16 computer science extends object-oriented design to relationships between classes and deepens recursion. Inheritance lets a subclass reuse and specialize a superclass: a Student extends Person, inheriting fields and methods while overriding the ones that need different behavior, and the super constructor call is traced to see in what order state is initialized. Polymorphism appears when code written against a superclass, for example a function that calls area() on a list of Shape objects, works unchanged for every subclass, and students practice writing code to an interface rather than to a specific implementation. Interfaces or abstract classes define contracts: what a class must provide without saying how, so a contract like Sortable or Drawable can be satisfied by otherwise unrelated classes. The trade-offs are named honestly: inheritance is for true is-a relationships, while has-a relationships are better expressed by holding another object as a field through composition. Recursion grows from small traces into real algorithms: computing factorial and Fibonacci recursively, observing the explosion of repeated calls in naive Fibonacci, which recomputes the same values over and over, and comparing with a faster iterative version. The call stack is studied concretely: each recursive call pushes a frame holding its own parameters and local variables, each return pops a frame, and a stack overflow is exactly what happens when the base case is never reached and frames pile up without bound. Students trace functions like recursive binary search, sum of a list, and printing a string in reverse, drawing the stack at each step and the return values unwinding. Vocabulary: superclass, subclass, extends, inherits, override, polymorphism, dynamic dispatch, interface, abstract method, contract, composition, is-a, has-a, base case, recursive case, call stack, frame, stack overflow, iteration. By the end of grade 16, students can design a small class hierarchy, explain when overriding is appropriate, call the same method on different object types and get the correct behavior for each, and trace recursive code including the state of the call stack at every step.",
+      "pedagogicalNotes": "Draw every hierarchy as boxes with arrows before coding it; students who skip the sketch end up with deep inheritance trees that fight them later. Misconceptions: using inheritance for mere code reuse when composition fits better, and expecting the superclass constructor to run automatically with no explicit call. For recursion, watch for students trying to simulate every frame mentally instead of writing a trace table; provide templates with columns for call, argument, and return value, and require them to be filled before any code is typed.",
+      "exampleProblems": [
+        {
+          "problem": "Given class Animal with method speak() printing 'some sound' and class Dog extending Animal and overriding speak() to print 'woof', what is printed by: a = Animal(); d = Dog(); a.speak(); d.speak()",
+          "solution": "First 'some sound', then 'woof'.",
+          "explanation": "The call on d uses Dog's overridden method because the runtime type of the object, not the name of the variable, decides which version runs. This is dynamic dispatch, and it is what lets a loop over mixed animal objects produce the right sound for each one.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Trace this recursive function on the list [4, 5, 6], showing each call and its return value: def sum_list(xs): if len(xs) == 0: return 0; else: return xs[0] + sum_list(xs[1:])",
+          "solution": "sum_list([4,5,6]) calls 4 + sum_list([5,6]); that calls 5 + sum_list([6]); that calls 6 + sum_list([]); the base case sum_list([]) returns 0. Unwinding: 6 + 0 = 6, then 5 + 6 = 11, then 4 + 11 = 15. The final answer is 15.",
+          "explanation": "The list shrinks by one element per call, so the base case of the empty list is always reached. Each call adds its own head to the answer that its recursive call returns, and the addition happens on the way back up the stack. The trace separates the descent, where calls are made, from the ascent, where values combine.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Design a class hierarchy for a drawing program: an abstract class Shape with an abstract method area(), and subclasses Circle with radius r and Rectangle with width w and height h that implement area(). Then write a loop that prints the area of a mixed list of shapes.",
+          "solution": "from math import pi. class Shape: def area(self): raise NotImplementedError. class Circle(Shape): def __init__(self, r): self.r = r; def area(self): return pi * self.r * self.r. class Rectangle(Shape): def __init__(self, w, h): self.w = w; self.h = h; def area(self): return self.w * self.h. shapes = [Circle(2), Rectangle(3, 4), Circle(1)]. for s in shapes: print(s.area())",
+          "explanation": "Shape defines the contract that every shape can report its area but does not say how, and each subclass supplies its own formula. The loop calls s.area() without knowing which shape it holds, which is polymorphism; adding a Triangle later requires no change to the loop at all. Storing w and h in Rectangle and r in Circle keeps each object holding only its own data.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Computer Science: Algorithm Analysis and Big-O, Recurrences, and Sorting Trade-offs",
+      "contentBody": "Grade 17 computer science turns intuition about efficiency into formal analysis. Big-O notation describes how an algorithm's cost grows with input size n, ignoring constants and lower-order terms. The common classes are named, matched to examples, and ordered on a growth line: constant, logarithmic, linear, linearithmic, quadratic, and exponential. Students analyze code by counting operations: a single loop over n items is linear, nested loops over the same items are quadratic, and halving the search space each step is logarithmic. Recursive algorithms are analyzed with recurrence relations such as T(n) = T(n over 2) + 1 for binary search and T(n) = 2 T(n over 2) + n for merge sort, then solved by expansion or by drawing a recursion tree to reach log n and n log n. Sorting is the case study that ties everything together: selection sort is quadratic, merge sort is n log n but needs extra memory, and quicksort is n log n on average with in-place partitioning; students justify when each is the right choice. Data structure costs are tabulated side by side: array indexing is constant, inserting at the front of an array is linear because elements shift, linked list traversal is linear, and hash map lookup is constant on average with possible degradation when collisions pile up. Amortized analysis is hinted at through dynamic array growth, where occasional expensive resizes average out to constant cost per insertion. Students also practice the discipline of best case, worst case, and average case, and they learn that timing one program on one machine is no substitute for growth analysis. Vocabulary: Big-O, Theta, Omega, growth rate, constant time, logarithmic, linear, linearithmic, quadratic, exponential, recurrence relation, recursion tree, best case, worst case, average case, amortized, in-place, stable sort, trade-off. By the end of grade 17, students can determine the Big-O of nested loops, solve simple recurrences, compare sorting algorithms by time, memory, and stability, and defend a data structure choice with a cost argument.",
+      "pedagogicalNotes": "Students hide behind rules like two loops means n squared; force them to state what each loop iterates over, since two sequential loops are still linear. Common misconceptions: treating Big-O as wall-clock time, dropping the wrong terms, and calling binary search constant because it feels fast. Use concrete operation counts at n = 10 and n = 1000 before abstracting to symbols. For recurrences, have students draw recursion trees before any algebra; the tree usually makes the formula obvious.",
+      "exampleProblems": [
+        {
+          "problem": "What is the Big-O of this code and why: s = 0; for i in range(n): s = s + i",
+          "solution": "O(n).",
+          "explanation": "One loop runs n times and each iteration performs a constant amount of work: one addition and one assignment. Total work is proportional to n, and Big-O drops the constant factor, so the growth class is linear. Doubling n doubles the work, which is the sanity check for O(n).",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Find the Big-O of: for i in range(n): for j in range(n): print(i, j). Then find the Big-O of: for i in range(n): print(i) followed by for i in range(n): print(i * 2). Which grows faster?",
+          "solution": "The first is O(n squared): the inner loop runs n times for each of n outer iterations, giving n times n prints. The second is O(n): the two loops run one after the other for 2n iterations total, and the constant 2 is dropped. The first grows faster.",
+          "explanation": "Nested loops multiply iteration counts, while sequential loops add them. The rule of thumb is to write the count as a sum or product first and simplify after, rather than counting loops. At n = 100 the first does 10000 prints versus 200 for the second, which matches the growth classes.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A recursive algorithm satisfies T(n) = T(n over 2) + 1 with T(1) = 1. Solve the recurrence by expansion and state its Big-O class.",
+          "solution": "Expanding: T(n) = T(n over 2) + 1 = T(n over 4) + 2 = T(n over 8) + 3, and after k halvings T(n) = T(n over 2^k) + k. The recursion stops when n over 2^k = 1, that is k = log2 n, so T(n) = log2 n + 1, which is O(log n).",
+          "explanation": "Each level of recursion adds constant work, and the number of levels is how many times n can be halved before reaching 1, which is exactly log2 n. This is the shape of binary search. Drawing the same recurrence as a tree with one branch shows the same thing: a chain of log n nodes, each costing 1.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Computer Science: Complexity Theory, P and NP, Logic, and Proofs by Induction",
+      "contentBody": "Grade 18 computer science enters theory: what problems are, what efficient means, and how to prove claims about programs. Complexity theory classifies problems by the resources their solutions require. Decision problems answer yes or no, while optimization problems seek a best answer and can be converted into decision form by asking whether a solution better than a bound exists. The class P contains problems solvable in polynomial time; NP contains problems whose proposed solutions can be verified in polynomial time, and students treat the question of whether P equals NP as one of the great open problems rather than settled fact. NP-complete problems, such as satisfiability, the decision form of traveling salesman, and graph coloring, are hard in a precise sense: every NP problem reduces to them. Reductions are taught as transformations that carry solutions from one problem to another, which makes NP-completeness a certificate of likely intractability rather than a mere warning. Students learn the practical responses to hard problems: approximate, randomize, exploit structure, or solve small instances exactly. Discrete mathematics supplies the language. Propositional logic with and, or, not, implication, and biconditional is used to specify program behavior and to build truth tables; quantifiers, for all and there exists, express statements over data. Proof techniques are practiced directly: direct proof, proof by contradiction such as showing the square root of 2 is irrational, and mathematical induction to prove statements about sums, divisibility, and recursively defined structures. Students write induction proofs carefully in three parts: base case, inductive hypothesis, and the step from k to k plus 1. Vocabulary: decision problem, optimization problem, polynomial time, P, NP, NP-complete, reduction, approximation algorithm, proposition, truth table, implication, quantifier, predicate, direct proof, contradiction, induction, base case, inductive hypothesis, loop invariant. By the end of grade 18, students can classify a problem as decision or optimization, explain why NP-complete problems resist known efficient solutions, construct truth tables for compound propositions, and write a valid induction proof.",
+      "pedagogicalNotes": "P versus NP attracts confident wrong answers; be explicit that P = NP is unproven and that NP does not mean not polynomial. Reductions confuse students when they solve the transformed problem instead of the original; always trace a small example through the transformation in both directions. For induction, the classic failure is assuming what you must prove inside the inductive step; grade the hypothesis statement strictly at first. Keep proofs small and tied to code, such as proving a loop invariant holds through an iteration.",
+      "exampleProblems": [
+        {
+          "problem": "Build a truth table for the proposition (p or q) and not p, and state exactly when it is true.",
+          "solution": "Rows: p true, q true gives (true) and false = false; p true, q false gives true and false = false; p false, q true gives true and true = true; p false, q false gives false and false = false. The proposition is true exactly when p is false and q is true.",
+          "explanation": "A truth table lists every combination of truth values and evaluates the expression step by step, first the or inside the parentheses, then the negation, then the and. The result shows the expression is logically equivalent to not p and q, a useful simplification pattern when reasoning about program conditions.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Prove by induction that 1 + 2 + ... + n = n(n+1)/2 for every integer n greater than or equal to 1.",
+          "solution": "Base case n = 1: the left side is 1, the right side is 1 times 2 over 2, which is 1. Inductive hypothesis: assume 1 + 2 + ... + k = k(k+1)/2 for some k. For k + 1: 1 + ... + k + (k+1) = k(k+1)/2 + (k+1) = (k+1)(k/2 + 1) = (k+1)(k+2)/2, which is exactly the formula with n = k + 1. The proof is complete.",
+          "explanation": "Induction works like a chain of dominoes: the base case knocks the first domino, and the inductive step shows that if domino k falls then domino k+1 falls. The step is allowed to assume the formula for k only because the base case anchors it; the algebra then factored (k+1) out to reveal the same shape with k+1 in place of k.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "The traveling salesman decision problem asks whether a tour visiting every city exactly once with total cost at most B exists. Explain what it means that this problem is NP-complete, and give one practical strategy for a real instance with 2000 cities.",
+          "solution": "NP-complete means two things: a proposed tour can be verified in polynomial time by checking it visits every city and summing its costs, and every NP problem reduces to it, so a polynomial-time exact algorithm for it would imply P equals NP. No such algorithm is known, so exact solutions scale badly. For 2000 cities, use a heuristic or approximation such as nearest neighbor followed by 2-opt improvement, or a known approximation algorithm with a provable bound, and report how far from optimal the result may be.",
+          "explanation": "Completeness transfers hardness: because everything in NP reduces to this problem, solving it fast would crack all of NP at once, which is why researchers treat it as intractable in practice. The engineering response is not to give up but to trade exactness for speed and to state the trade honestly, which is what a guarantee or an empirical gap against a lower bound does.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Computer Science: Computer Architecture, Memory Hierarchy, Operating Systems, and Concurrency",
+      "contentBody": "Grade 19 computer science studies the machine beneath the code. Data representation is examined at the hardware level: binary, two's complement for signed integers, fixed word sizes and overflow, and IEEE floating point as an approximation whose rounding error students can reproduce in a few lines of code. The processor executes the fetch-decode-execute cycle; instructions operate on registers and memory, and assembly language is sampled just enough to see high-level code lowered into moves, loads, stores, compares, and jumps. The memory hierarchy is explained by the latency gap: registers, several cache levels, RAM, and SSD or disk, each orders of magnitude slower than the previous, with locality, both temporal and spatial, as the reason fast code often means cache-friendly code. Students reason about why iterating a matrix row by row can beat column by column even when the arithmetic is identical. Operating systems provide abstractions and management: processes as running programs with their own address space, threads as shared-memory execution units within a process, system calls as the controlled doorway to hardware, and scheduling as policy over which runnable task executes next. Memory management covers allocation, fragmentation, and virtual memory with paging and page faults, so a program can use more memory than physically exists. Concurrency comes with real hazards: race conditions when two threads interleave on shared state, locks or atomic operations as the fix, and deadlock explained through the four Coffman conditions. File systems and input-output round out the picture: files as byte streams, directories as naming structure, and the difference between volatile memory and persistent storage. Vocabulary: two's complement, overflow, floating point, rounding error, register, instruction cycle, assembly, cache, locality, RAM, virtual memory, page, page fault, process, thread, system call, scheduler, race condition, lock, atomic, deadlock, file system. By the end of grade 19, students can explain how data is represented in fixed-width binary, why caches make some code faster than other code with the same arithmetic, what separates a process from a thread, and how a race condition arises and how it is prevented.",
+      "pedagogicalNotes": "Systems topics tempt hand-waving; anchor every abstraction to a concrete artifact such as an integer overflow demo, a timing loop that shows stride effects, or a threaded counter run with and without a lock. Common misconceptions: cache as storage rather than a copy of memory, floating point as exact decimal arithmetic, and threads as separate programs. Use step-by-step timelines to show instruction interleaving, and keep assembly snippets tiny so their only job is demystifying compilation, not writing programs.",
+      "exampleProblems": [
+        {
+          "problem": "In 8-bit two's complement, what decimal range can be represented, and what is 01111111 + 1 in that representation?",
+          "solution": "The range is -128 to 127. The pattern 01111111 is 127; adding 1 gives 10000000, which in two's complement is -128.",
+          "explanation": "Two's complement uses the top bit as sign, so 01111111 is the largest positive value. The addition wraps around because the register is fixed width: the binary pattern changes smoothly, but the decimal meaning jumps from the maximum to the minimum. Real programs hit this when a counter exceeds its type's range and silently becomes negative.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Two threads each execute count = count + 1 exactly once on a shared count starting at 0. Explain how the final value can be 1 instead of 2, and how a lock fixes it.",
+          "solution": "The statement is three machine steps: read count, add 1, write count. If both threads read 0 before either writes, both compute 1 and write 1, so one increment is lost and the final value is 1. Wrapping the read-modify-write in a lock forces the second thread to wait until the first releases it, so it reads 1, computes 2, and writes 2; the final value is correctly 2.",
+          "explanation": "The race condition lives in the interleaving, not in the arithmetic: each thread alone is correct, but their steps can interleave badly. The lock restores atomicity by making the three steps appear as one to other threads. Drawing the two interleavings side by side makes the lost update visible immediately.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A program sums all entries of a 10000 by 10000 matrix of doubles. Explain why walking each row in the inner loop is typically much faster than walking each column in the inner loop, using the memory hierarchy.",
+          "solution": "In row-major layout a row is stored as consecutive memory, so row-wise traversal reads consecutive addresses: each cache line fetched is used completely before the next, giving spatial locality and letting the hardware prefetcher help. Column-wise traversal strides by an entire row each step, so successive accesses land in different cache lines, each line is fetched mostly unused, and most steps risk a cache miss that reaches all the way to RAM. Same arithmetic, very different miss rate, hence different runtime.",
+          "explanation": "Performance differences between identical computation almost always come from memory access patterns, not from the math. A cache line of 64 bytes holds 8 doubles; row order uses all 8 per fetch, column order uses 1 and wastes 7. Thinking in cache lines is exactly what the memory hierarchy model of grade 19 is for.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Computer Science: Discrete Mathematics, Graphs and Trees, Automata, and Computability",
+      "contentBody": "Grade 20 computer science completes the bridge from programming to formal computer science with discrete structures and the theory of computation. Sets and relations are formalized: set notation, subsets, unions and intersections, Cartesian products, and properties of relations such as reflexive, symmetric, and transitive, leading to equivalence relations and partial orders that underpin sorting and dependency resolution. Functions are treated mathematically as mappings with domain, range, injectivity, and surjectivity, linking back to code as pure functions. Graphs and trees carry the largest practical load: directed versus undirected graphs, weighted edges, degree, adjacency lists versus adjacency matrices with their space trade-offs, breadth-first search with a queue and depth-first search with recursion or a stack, shortest paths via Dijkstra's algorithm traced by hand, spanning trees, and applications from social networks to routing and build dependencies. Combinatorics provides counting tools: permutations, combinations, the pigeonhole principle, and recurrence relations like the Fibonacci recurrence, which students now solve exactly rather than only compute. Automata theory begins with finite automata and regular languages: designing a deterministic automaton for a pattern such as strings ending in 01, converting between a state diagram and a transition table, and using the pumping lemma to show a language is not regular. Context-free grammars and parse trees explain the syntax of programming languages, connecting back to every parser students have ever used. Turing machines establish the limits of computation: the halting problem is proved undecidable by diagonalization, showing some problems have no algorithm at all, which reframes everything studied since grade 11. Vocabulary: set, relation, equivalence relation, partial order, function, injective, surjective, graph, vertex, edge, adjacency matrix, BFS, DFS, shortest path, spanning tree, permutation, combination, recurrence relation, finite automaton, regular language, grammar, parse tree, Turing machine, halting problem, undecidable. By the end of grade 20, students can model a real system as a graph and run traversals on it, count outcomes with combinations, design a finite automaton for a simple pattern, and explain why the halting problem cannot be solved by any program.",
+      "pedagogicalNotes": "Students who succeeded by coding often resist pure abstraction; re-anchor every definition to a program they have already written, such as a graph as a dependency structure or a grammar as the rules behind a parser. Frequent errors: checking relation properties against pairs that exist instead of against all pairs, mixing up BFS and DFS on paper traces, and believing undecidable means very hard rather than impossible. For Dijkstra, enforce the discipline of updating the distance table after every vertex, since memorized steps produce wrong answers on any new graph.",
+      "exampleProblems": [
+        {
+          "problem": "Given the undirected graph with edges (A,B), (A,C), (B,D), (C,D), run breadth-first search starting from A and list the visit order of the vertices.",
+          "solution": "A is visited first. Its neighbors B and C enter the queue, so B is visited next, then C. Visiting B enqueues D, and D is visited last. The order is A, B, C, D.",
+          "explanation": "BFS explores in layers of increasing distance from the start: A at distance 0, B and C at distance 1, D at distance 2. The queue holds discovered but unvisited vertices, and each vertex is marked visited when enqueued or dequeued so it is never processed twice. D appears once even though two edges lead to it.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Design a deterministic finite automaton for binary strings that end in 01. List the states and transitions, and say whether the string 1011 is accepted.",
+          "solution": "States: q0 is the start state with no useful suffix, q1 means the last bit read was 0, q2 is the accept state meaning the last two bits were 01. Transitions: from q0, 0 goes to q1 and 1 stays in q0; from q1, 0 stays in q1 and 1 goes to q2; from q2, 0 goes to q1 and 1 goes to q0. Tracing 1011: q0 to q0 on 1, to q1 on 0, to q2 on 1, to q0 on 1. The machine ends in q0, so 1011 is rejected.",
+          "explanation": "Each state remembers exactly the relevant recent suffix: nothing useful, a trailing 0, or a trailing 01. The accept state is entered exactly when the required ending appears and is left when the next bit breaks it. The trace shows 1011 ends in 11, not 01, so rejection is correct; the design also accepts the empty string edge case correctly only if the spec requires it, which is why the start state must never be accepting here.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Use diagonalization to explain why the halting problem is undecidable: assume a program H decides halting, then construct a program D that contradicts it.",
+          "solution": "Suppose H(P, x) correctly reports whether program P halts on input x. Define D(P): run H(P, P); if it says P halts on P, then loop forever; otherwise halt. Now run D on itself. If D(D) halts, then H said it halts on P = D, but then D(D) loops, a contradiction. If D(D) loops, then H said it does not halt, but then D(D) halts, also a contradiction. Every case fails, so no such H can exist and halting is undecidable.",
+          "explanation": "The proof builds a case that flips whatever the alleged decider answers, which is the essence of diagonalization. The trick is feeding the program its own description as input, so the contradiction is unavoidable. The conclusion is stronger than saying the problem is hard: no algorithm whatsoever solves it, which places an absolute boundary on what programs can do.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

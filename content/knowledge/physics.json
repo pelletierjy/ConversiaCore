@@ -1,0 +1,525 @@
+{
+  "subject": "Physics",
+  "entries": [
+    {
+      "gradeLevel": 1,
+      "title": "Grade 1 Physics: Pushes and Pulls, Magnets, Light, and Sound",
+      "contentBody": "In grade 1 physics, students begin observing the physical world through forces, magnets, light, and sound, without formal formulas. They learn that a push or a pull is a force that can make an object start moving, stop moving, speed up, slow down, or change direction. Objects at rest stay where they are unless a force acts on them, and moving objects keep sliding or rolling until friction or another force slows them. Students explore magnets as objects that pull on iron and steel, sticking to some materials (paper clips, nails, keys) but not others (wood, plastic, glass). They observe that magnets have two ends called poles, that like poles push apart, and that opposite poles stick together, even through paper or a thin book. In light, students identify light sources such as the Sun, lamps, and candles, and distinguish them from objects that only reflect light, like the Moon, mirrors, and white walls. They observe that light travels in straight lines, that shadows form when something blocks light, and that transparent materials (clear glass) let light through while opaque materials (cardboard) do not. In sound, students notice that sounds come from vibrating objects: a drum skin shakes when struck, guitar strings wiggle, and vocal cords buzz. They classify sounds as loud or quiet and high or low, and they recognize that sound travels through air to their ears but does not travel through empty space. Key vocabulary: push, pull, force, magnet, pole, attract, repel, light source, shadow, transparent, opaque, vibrate, loud, quiet, high, low. Measurement is informal: students compare how far a toy car rolls on carpet versus a tile floor to feel friction.",
+      "pedagogicalNotes": "Keep everything hands-on: toy cars, magnet trays, drums, and flashlights. Common misconception: children think magnets stick to everything metal (they do not stick to aluminum or copper) and that the Moon makes its own light (it reflects sunlight). Another misconception: sound and light travel the same way; emphasize sound needs a vibrating source. Scaffold with sentence frames like 'When I push the block, it...' and accept drawings instead of writing. Do not introduce formulas; focus on observation and descriptive language.",
+      "exampleProblems": [
+        {
+          "problem": "Mia pushes a toy truck on the carpet and it rolls 2 steps. She pushes it with the same push on the tile floor and it rolls 8 steps. Why did the truck roll farther on the tile?",
+          "solution": "The truck rolled 8 - 2 = 6 more steps on the tile. The carpet rubs against the wheels more than the smooth tile, so it makes a bigger friction force that stops the truck sooner.",
+          "explanation": "Friction is the rubbing force between surfaces. Rough surfaces like carpet make more friction, so the same push makes the truck travel a shorter distance. Smooth tile makes less friction, so the truck keeps rolling.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Ben has a bar magnet. One end sticks to a paper clip. He flip the magnet around and the other end pushes the paper clip away. He brings two magnets together and the ends that stick are end A and end B. What can he say about ends that stick together?",
+          "solution": "Ends that stick together are opposite poles, and ends that push apart are the same poles. So if end A sticks to end B, A and B are opposite poles.",
+          "explanation": "Magnets have two kinds of poles. Opposite poles attract (pull together), and like poles repel (push apart). This rule always holds, no matter which end is painted or labeled.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Lena holds a flashlight and a wooden block. She turns on the flashlight and holds the block in front of it, then holds clear plastic in front of it. What does she see in each case and why?",
+          "solution": "With the wooden block she sees a dark shadow on the wall because the block is opaque and blocks the light. With the clear plastic she sees the light shining through with no dark shadow because the plastic is transparent.",
+          "explanation": "Light travels in straight lines from the flashlight. Opaque objects stop the light and cast shadows; transparent objects let the light pass straight through, so no shadow forms.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 2,
+      "title": "Grade 2 Physics: Sorting Materials, Day and Night, Energy Around Us",
+      "contentBody": "In grade 2 physics, students deepen their study of materials, forces, light, sound, and energy in everyday life. They sort objects by observable physical properties: shiny or dull, hard or soft, bendy or stiff, rough or smooth, and magnetic or non-magnetic, learning that a material's properties determine what it is useful for. They revisit pushes and pulls, noticing that a stronger push makes an object move farther or faster, and that friction depends on surface texture: sandpaper grips while ice slips. In magnets, students discover that magnets can pull iron objects through other materials, that a magnet's pull is strongest at its poles, and that a magnet can be made by stroking iron with a magnet. Day and night are studied as a rotation pattern: the Earth spins once each day, so the part facing the Sun has day while the other part has night, and the Sun appears to move across the sky because the Earth turns. Students observe that shadows change length and position during the day because the Sun's position in the sky changes. In energy, students identify that people and machines need energy to work, that food gives people energy, that the Sun is the Earth's main energy source, and that energy makes things happen: heat warms, light brightens, sound alerts, and electricity powers devices. They see energy changes in simple examples, such as a battery making a bulb light and a bell making sound when hit. Key vocabulary: property, magnetic, friction, rotate, spin, shadow, sunrise, sunset, energy, heat, electricity, battery, energy source. Students record observations in pictures and simple tables, comparing morning and afternoon shadows to build evidence-based reasoning.",
+      "pedagogicalNotes": "Use a shadow-tracking activity across the school day: draw chalk outlines of a shadow in the morning, at lunch, and in the afternoon so students see the Sun's apparent motion concretely. Common misconception: the Sun moves around the Earth (it is the Earth rotating) and that night happens because clouds cover the Sun. Also watch for 'energy is fuel' thinking; frame energy as 'what makes things happen.' Keep vocabulary words on a word wall with icons.",
+      "exampleProblems": [
+        {
+          "problem": "In the morning, Sam's shadow is 5 chalk marks long. At noon, it is 2 chalk marks long. How much shorter is the noon shadow?",
+          "solution": "5 - 2 = 3 chalk marks shorter at noon.",
+          "explanation": "At noon the Sun is high in the sky, so it shines down steeply and makes short shadows. In the morning the Sun is low, so shadows stretch out longer.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Ava tests 6 objects with a magnet: paper clip, nail, eraser, spoon (steel), wooden block, and aluminum foil ball. The magnet picks up 3 of them. Which 3 are they?",
+          "solution": "The paper clip, the nail, and the steel spoon. That is 3 objects, so the magnet picked up the iron and steel items.",
+          "explanation": "Magnets attract iron and steel. Erasers, wood, and aluminum are not magnetic, so the magnet does not pull them even though the foil is metal.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A wind-up toy moves across the floor after Ben winds it. Where did the energy that made it move come from?",
+          "solution": "The energy came from Ben's hand when he turned the key to wind the spring. His body got that energy from the food he ate. The wound spring stored the energy and released it to move the toy.",
+          "explanation": "Energy does not appear from nowhere. It moves from one place to another: food to body to hand to spring to motion. Tracking where energy comes from is a core physics habit of mind.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 3,
+      "title": "Grade 3 Physics: Light and Shadows, Sound Vibrations, Magnet Poles, States of Matter",
+      "contentBody": "In grade 3 physics, students investigate light, sound, magnets, and the observable states of matter with more structured experiments. In light, they learn that light travels in straight lines and changes direction when it bounces (reflection) or passes into water (refraction, seen as a bent spoon in a cup). They explore mirrors, observing that a mirror flips front and back, and they mix colored filters or cellophane to see that colors can combine. Shadows are explained as places where straight-line light is blocked, and students predict shadow shapes using a lamp and objects. In sound, students connect sound to vibration more rigorously: they feel a ruler twanging on a desk, see salt jumping on a drum skin, and learn that sound needs a material to travel through, moving through solids, liquids, and gases but not through a vacuum. They compare loudness (how big the vibration is) and pitch (how fast the vibration is), testing rubber bands stretched to different tightness: tighter bands vibrate faster and make higher pitch. In magnetism, students map magnetic fields with iron filings or compasses, see that field lines run from the north pole to the south pole outside the magnet, and learn that magnets can be temporary (electromagnets made with a nail, wire, and battery) or permanent. In matter, students observe solids, liquids, and gases, describing that solids keep their shape, liquids take the shape of their container, and gases fill their container, and they watch melting and evaporation as changes driven by heating. Key vocabulary: reflect, refract, vibration, pitch, loudness, medium, magnetic field, pole, temporary magnet, solid, liquid, gas, melt, evaporate. Students record results in tables and draw labeled diagrams.",
+      "pedagogicalNotes": "Demonstrate refraction with the broken-pencil-in-water illusion and reflection with mirrors before introducing terms. Common misconceptions: sound travels through nothing (it needs a medium), pitch is the same as loudness (pitch is vibration rate, loudness is vibration size), and gases are 'not matter' because they are invisible (weigh an inflated versus deflated balloon). For magnetism, let students draw field lines before showing iron filings so their predictions generate discussion.",
+      "exampleProblems": [
+        {
+          "problem": "Maya plucks a loose rubber band and it buzzes low. Then she stretches it tight and plucks it again, and it makes a high note. Why did the pitch change?",
+          "solution": "The stretched band vibrates faster (more vibrations per second) than the loose band, and faster vibration makes higher pitch. The loose band vibrates slowly, so it sounds low.",
+          "explanation": "Pitch depends on how fast something vibrates. Tighter strings and bands vibrate quickly and give high notes; looser ones vibrate slowly and give low notes. This is why guitar players turn the tuning pegs.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Omar holds a bar magnet near a compass. The north end of his magnet pulls the south end of the compass needle. Then he flips his magnet so his north end faces the compass north end. What happens and why?",
+          "solution": "The compass needle swings away, because two north poles are like poles and like poles repel. When his north pole faced the compass south pole, they were opposite poles and attracted.",
+          "explanation": "Every magnet has a north and a south pole. The rule is simple: opposites attract, likes repel. A compass is just a tiny magnet that lines up with other magnetic fields.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "Lena leaves an ice cube on a warm plate and a puddle of water appears after 10 minutes. Where did the puddle come from?",
+          "solution": "Heat from the warm plate moved into the ice and melted it. The solid ice changed into liquid water, so the puddle is the melted ice cube.",
+          "explanation": "Heating gives particles in a solid more movement until they break free and flow as a liquid. The water did not vanish or turn into something new; it just changed state from solid to liquid.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 4,
+      "title": "Grade 4 Physics: Energy Forms, Heat Transfer, Simple Circuits, and Friction",
+      "contentBody": "In grade 4 physics, students study energy forms and transfers, heat movement, the beginnings of electric circuits, and friction as a force. They identify common energy forms: kinetic (motion), thermal (heat), light, sound, electrical, and gravitational potential (stored by height), and they track energy transfers in familiar systems, such as a lamp converting electrical energy to light and heat, or a child on a slide converting stored height energy to motion. They learn the core rule that energy cannot be created or destroyed, only moved or transformed, though at this level the emphasis is on tracking where energy goes. In heat, students discover three transfer methods: conduction (direct contact, like a metal spoon in hot soup warming its handle), convection (warm fluids rising and cool ones sinking, driving currents in air and water), and radiation (heat traveling as rays from the Sun or a fire without needing a material). They test which materials conduct heat best by comparing spoons wrapped in metal, wood, and plastic, and they learn that good conductors feel colder because they pull heat from the hand quickly. In electricity, students build simple circuits from a battery, wires, and a bulb, learning the parts: cell or battery (energy source), wires (path), bulb (device), and switch (control). They draw circuit diagrams with standard symbols and discover that a circuit must be a complete loop for current to flow, that a break stops the bulb, and that series circuits go through one path. In friction, students measure how far a block slides on different surfaces and relate friction to texture and to the usefulness of friction in brakes, shoes, and tires. Key vocabulary: kinetic energy, thermal energy, potential energy, transfer, transform, conduct, convection, radiation, circuit, current, conductor, insulator, switch, series, friction.",
+      "pedagogicalNotes": "Build circuits with battery holders and bulbs before drawing symbols; many students fight the two-wire connection to the bulb. Common misconceptions: energy is 'used up' and disappears (it transforms to less useful forms like heat), cold flows from the cold object (heat flows from hot to cold), and electricity is 'used up' in the bulb (current continues around the loop). Have students trace energy with arrows from source to output in every system they study.",
+      "exampleProblems": [
+        {
+          "problem": "A block slides 60 cm on smooth tile but only 15 cm on sandpaper before stopping. How many times farther did it slide on tile?",
+          "solution": "60 cm / 15 cm = 4 times farther on the smooth tile.",
+          "explanation": "Smooth tile makes less friction, so the block keeps sliding. Sandpaper is rough, making more friction that removes the block's motion quickly. The same starting push gives different distances because friction differs.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "In a simple circuit, one wire from the battery touches the bulb and the other wire touches only the table. Does the bulb light? What change fixes it?",
+          "solution": "The bulb does not light because the circuit is not a complete loop. Connecting the second wire from the battery to the bulb's other metal contact closes the loop, and then current flows and the bulb lights.",
+          "explanation": "Current can only flow around a closed path from one battery terminal, through the device, and back to the other terminal. A gap anywhere in the loop breaks the circuit and stops the current.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A ball is held 2 m above the ground. It is dropped and speeds up as it falls. Describe the energy change from hand to ground.",
+          "solution": "At 2 m the ball has stored gravitational potential energy. As it falls, that potential energy changes into kinetic (motion) energy, so the ball speeds up. Just before it hits, almost all the energy is kinetic. On impact, the kinetic energy changes into sound, heat, and a little bouncing motion.",
+          "explanation": "Energy transforms from one form to another. Height energy becomes motion energy on the way down, and impact energy spreads into heat, sound, and deformation. Tracking each stage prevents the misconception that energy disappears.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 5,
+      "title": "Grade 5 Physics: Simple Machines, Gravity, Light Reflection and Refraction, Measurement of Motion",
+      "contentBody": "In grade 5 physics, students explore simple machines, gravity as a force, the behavior of light, and first measurements of motion. Simple machines are studied as tools that change the size or direction of a force: levers (seesaws, crowbars), pulleys (changing force direction or halving the effort), wheels and axles (reducing friction), inclined planes (ramps making lifting easier), wedges, and screws. Students learn trade-off ideas: a longer ramp needs less effort but over a longer distance, and a pulley system can halve the effort but you must pull twice the rope. In gravity, students learn that gravity is the force pulling objects toward Earth, that all objects fall with the same acceleration when air resistance is negligible (a heavy ball and a light ball land together when dropped from the same height), and that air resistance explains why feathers float down slowly. They measure weight in newtons using spring scales and compare it with mass in grams or kilograms. In light, students formalize reflection with the law of reflection (angle in equals angle out, measured from the normal line) using mirrors and protractors, and they explore refraction as light bending when it enters a new medium, explaining why pools look shallower and lenses focus light. They study how convex lenses converge light to a focus and concave lenses spread it. In motion, students measure how far objects travel in a given time and compute speed as distance divided by time, introducing units like meters per second and centimeters per second. Key vocabulary: simple machine, lever, pulley, inclined plane, effort, load, gravity, weight, mass, air resistance, angle of incidence, angle of reflection, normal, refraction, convex lens, concave lens, speed, distance, time. They collect distance and time data on ramps and record it in tables for graphing.",
+      "pedagogicalNotes": "Use spring scales and ramps before any formulas; students must feel force sizes. Common misconceptions: heavier objects fall faster (only true with air resistance), machines create energy (they only trade force for distance), and weight and mass are the same (mass is the amount of matter, weight is gravity's pull). For reflection, insist students draw the normal line first; angles are measured from the normal, not the mirror surface.",
+      "exampleProblems": [
+        {
+          "problem": "A cart rolls 3 m down a ramp in 6 s. What is its average speed?",
+          "solution": "speed = distance / time = 3 m / 6 s = 0.5 m/s.",
+          "explanation": "Speed compares how far something goes to how long it takes. Dividing 3 meters by 6 seconds gives 0.5 meters every second, which is the cart's average speed over the ramp.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A student lifts a 20 N box straight up 1 m. Another student pushes the same box up a 4 m ramp to the same 1 m height using only 10 N of effort. Compare the effort and explain why.",
+          "solution": "Straight lift: 20 N of force for 1 m of distance. Ramp: 10 N of force for 4 m of distance. The ramp halves the effort but quadruples the distance. The trade is fair because 20 N x 1 m = 20 J and 10 N x 4 m = 20 J of work.",
+          "explanation": "Simple machines never save work; they let you trade force for distance. A longer ramp reduces the push needed but you push over a longer path, so the total work stays the same.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A light ray hits a mirror at 30 degrees to the normal line. At what angle does it reflect, measured from the normal?",
+          "solution": "The reflected ray leaves at 30 degrees to the normal, on the other side. Angle of incidence = angle of reflection = 30 degrees.",
+          "explanation": "The law of reflection says the incoming and outgoing angles, both measured from the normal (the line perpendicular to the mirror), are equal. Measuring from the mirror surface instead is a common error that would give the wrong answer.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 6,
+      "title": "Grade 6 Physics: States of Matter and Particles, Heat Transfer, Sound Waves, Speed Calculations",
+      "contentBody": "In grade 6 physics, students connect macroscopic observations to a particle model of matter and formalize heat, sound, and speed. The particle model states that all matter is made of tiny particles in constant motion: in solids particles are packed in fixed positions and vibrate, in liquids they slide past each other, and in gases they spread far apart and move fast and freely. Changes of state are explained by heating and cooling: melting and boiling add energy so particles move more and break free, while condensing and freezing remove energy. Evaporation is explained as the fastest liquid particles escaping the surface, which is why evaporation cools what remains. Students distinguish temperature (average particle motion energy) from heat (energy transferred between objects) and from thermal energy (total particle energy in a sample). They revisit conduction, convection, and radiation and explain each with the particle model: conduction is neighboring particles bumping energy along, convection is warm low-density fluid rising and cool dense fluid sinking, and radiation is infrared waves needing no medium. In sound, students model sound as a longitudinal wave of compressions and rarefactions traveling through a medium, relate pitch to frequency (measured in hertz) and loudness to amplitude, and observe that sound reflects (echoes) and is absorbed by soft materials. They calculate the relationship speed = frequency x wavelength qualitatively and see that sound travels faster in solids than in gases because particles are closer together. In motion, students compute speed from distance and time using units consistently (m/s, km/h), convert between them (1 m/s = 3.6 km/h), and interpret distance-time graphs where slope equals speed. Key vocabulary: particle model, temperature, heat, thermal energy, evaporation, condensation, conduction, convection, radiation, wave, frequency, hertz, amplitude, wavelength, echo, speed, distance-time graph.",
+      "pedagogicalNotes": "Draw particle diagrams constantly; they are the bridge from observation to explanation. Common misconceptions: cold 'flows' into things (heat flows out of warm objects), temperature and heat are the same (temperature is average energy, heat is transfer), and evaporation only happens at boiling (it happens at any temperature). Students often mix up frequency and amplitude when describing sound; use oscilloscope apps to show tall waves versus crowded waves. Practice unit conversion explicitly before multi-step speed problems.",
+      "exampleProblems": [
+        {
+          "problem": "A cyclist rides 12 km in 30 minutes. What is the average speed in km/h?",
+          "solution": "30 minutes = 0.5 h. speed = 12 km / 0.5 h = 24 km/h.",
+          "explanation": "Speed is distance divided by time, and the time must be in hours to get km/h. Converting 30 minutes to 0.5 hours first avoids the common error of reporting 12/30 = 0.4 km/h.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A car travels at 20 m/s. How far does it go in 15 s?",
+          "solution": "distance = speed x time = 20 m/s x 15 s = 300 m.",
+          "explanation": "Rearranging speed = distance / time gives distance = speed x time. At 20 meters every second, after 15 seconds the car covers 20 x 15 = 300 meters.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A student wraps one metal spoon and one plastic spoon in cloth and leaves both in hot water. After 2 minutes, which handle feels warmer and why?",
+          "solution": "The metal spoon's handle feels warmer. Metal conducts heat quickly along its length, so thermal energy travels from the hot water through the metal to the handle in about 2 minutes. Plastic conducts slowly, so little heat reaches its handle in that time.",
+          "explanation": "Conduction passes energy along neighboring particles. Metal particles transfer energy very efficiently, making metal a good conductor; plastic transfers poorly and acts as an insulator. The same property keeps pot handles plastic-coated.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 7,
+      "title": "Grade 7 Physics: Forces and Gravity, Mass versus Weight, Energy Transfer Chains, Circuit Types",
+      "contentBody": "In grade 7 physics, students analyze forces quantitatively and study energy chains and circuit behavior. Forces are described as pushes or pulls with size and direction, measured in newtons, and represented by arrows whose length shows magnitude. Students combine forces to find the resultant: two forces in the same direction add, opposite directions subtract, and balanced forces produce no change in motion while unbalanced forces change an object's velocity. Gravity is treated as an attractive force with a field strength near Earth of about 10 newtons per kilogram (g = 9.8 N/kg precisely), so weight in newtons equals mass in kilograms times g. Mass is the amount of matter and does not change with location; weight depends on the gravitational field and would be smaller on the Moon. Friction and air resistance are studied as contact forces opposing motion, with terminal velocity introduced as the speed where air resistance balances weight. Students draw free-body diagrams for simple cases: a book on a table (weight down, normal force up, balanced) and a falling object speeding up (weight bigger than air resistance). Energy is organized into stores: kinetic, gravitational potential, thermal, elastic, and chemical, with transfers shown as arrows and descriptions that energy is conserved overall but spreads to thermal stores and becomes less useful. Elastic potential is explored with springs, noting that stretching stores energy and that springs obey Hooke's law within limits: extension is proportional to force. Electrically, students distinguish series circuits (one path, current same everywhere, more bulbs make each dimmer, a break stops all) from parallel circuits (multiple paths, each branch independent, bulbs stay bright, one branch can break without stopping others), and they relate current, voltage, and resistance qualitatively using Ohm's law as a preview. Key vocabulary: force, newton, resultant, balanced, unbalanced, free-body diagram, mass, weight, gravitational field strength, terminal velocity, energy store, elastic potential, Hooke's law, series, parallel, current, voltage, resistance.",
+      "pedagogicalNotes": "Free-body diagrams are the single highest-leverage skill here: insist on arrows from a dot, labeled, with lengths showing relative size. Common misconceptions: heavier objects fall faster, motion requires a continuing force (Aristotelian view; balanced forces allow constant velocity), and mass changes with gravity (only weight does). For circuits, predict-and-test with real bulbs before drawing diagrams; students expect adding bulbs in series to brighten the circuit. Use Newton spring scales to make force sizes tangible.",
+      "exampleProblems": [
+        {
+          "problem": "A student has a 4 kg bag of rice. What is its weight on Earth, and what would it weigh on the Moon where g = 1.6 N/kg?",
+          "solution": "Weight on Earth = mass x g = 4 kg x 9.8 N/kg = 39.2 N (about 40 N). Weight on Moon = 4 kg x 1.6 N/kg = 6.4 N. The mass stays 4 kg in both places.",
+          "explanation": "Weight is the gravitational force on a mass. The same 4 kg of matter is pulled harder by Earth's stronger gravity than by the Moon's, so the weight changes while the mass does not.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Two people push a stalled car in the same direction: one pushes with 300 N and the other with 200 N. Friction opposes them with 350 N. What is the resultant force?",
+          "solution": "Total push = 300 N + 200 N = 500 N forward. Resultant = 500 N - 350 N = 150 N in the direction of the push.",
+          "explanation": "Forces in one direction add; opposing forces subtract. With a 150 N resultant the car accelerates forward, because the forces are unbalanced.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "In a series circuit, a battery drives two identical bulbs, each glowing dimly. One bulb is unscrewed. What happens to the other bulb? What would happen if the bulbs were in parallel?",
+          "solution": "In series, unscrewing one bulb breaks the single path, so the other bulb goes out. In parallel, each bulb has its own path to the battery, so unscrewing one leaves the other glowing at full brightness.",
+          "explanation": "Series circuits share one loop: a break anywhere stops all current. Parallel circuits have independent branches, which is how house wiring works so one dead bulb does not switch off the room.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 8,
+      "title": "Grade 8 Physics: Motion and Speed, Forces and Newton's Laws, Energy Forms and Conservation, Electricity Basics",
+      "contentBody": "In grade 8 physics, students begin formal physics with motion, forces, energy, and electricity. Motion is described using distance, displacement, speed, and velocity, with speed computed as distance over time and average speed distinguished from instantaneous speed. Distance-time graphs are read and drawn: flat sections mean stopped, straight sloping sections mean constant speed, and steeper slopes mean faster motion. Acceleration is introduced as the rate of change of velocity, computed as change in velocity divided by time, with units meters per second squared, and velocity-time graphs are used qualitatively. Newton's three laws are the spine of the course: the first law (inertia: objects keep their state of motion unless a net force acts), the second law (net force equals mass times acceleration, F = ma), and the third law (every action has an equal and opposite reaction force acting on a different object). Students draw free-body diagrams, calculate net force and resulting acceleration, and distinguish mass from weight. Friction and air resistance are examined as forces opposing motion. Energy is organized into forms: kinetic (E_k = 1/2 mv^2 at a basic level), gravitational potential (E_p = mgh), thermal, light, sound, electrical, and chemical, and the law of conservation of energy is applied to falling objects, pendulums, and roller coasters: energy transfers between stores but total energy stays constant. Power is defined as the rate of doing work, P = work/time, in watts. Electricity covers current (flow of charge, measured in amperes), voltage (energy per charge, measured in volts), resistance (opposition, measured in ohms), and Ohm's law (V = IR), with calculations for series and parallel circuits and for electrical power P = VI. Key vocabulary: distance, displacement, speed, velocity, acceleration, inertia, net force, Newton's laws, mass, weight, conservation of energy, kinetic energy, potential energy, power, watt, current, voltage, resistance, Ohm's law.",
+      "pedagogicalNotes": "Start every force problem with a free-body diagram and unit check; most errors are missing forces or unit mix-ups. Common misconceptions: velocity and speed are interchangeable (velocity has direction), an object moving at constant velocity has zero net force (true), and a heavier object has more inertia so accelerates less under the same force (true, but students conflate this with falling speed). For energy, use bar charts showing energy stores before and after to make conservation visible. In circuits, keep V = IR practice interleaved with conceptual questions about what changes when a resistor is added.",
+      "exampleProblems": [
+        {
+          "problem": "A car speeds up from 10 m/s to 30 m/s in 5 s. What is its acceleration?",
+          "solution": "acceleration = (30 m/s - 10 m/s) / 5 s = 20 m/s / 5 s = 4 m/s^2.",
+          "explanation": "Acceleration is the change in velocity per second. The car gains 20 m/s over 5 seconds, so it gains 4 m/s each second, written 4 m/s^2.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 1200 kg car accelerates at 2 m/s^2. What net force acts on it?",
+          "solution": "F = ma = 1200 kg x 2 m/s^2 = 2400 N.",
+          "explanation": "Newton's second law links force, mass, and acceleration. Multiplying the car's mass by its acceleration gives the net force; the units kg x m/s^2 are newtons.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 2 kg ball is dropped from 5 m. Taking g = 10 m/s^2, find its potential energy at the top and its speed just before hitting the ground.",
+          "solution": "E_p = mgh = 2 kg x 10 m/s^2 x 5 m = 100 J. Just before impact all potential energy has become kinetic: E_k = 1/2 mv^2 = 100 J, so 100 = 1/2 x 2 x v^2, giving v^2 = 100, v = 10 m/s.",
+          "explanation": "Conservation of energy converts height energy to motion energy. Equating mgh = 1/2 mv^2 shows the mass cancels, which is why all objects fall at the same rate when air resistance is ignored.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 9,
+      "title": "Grade 9 Physics: Kinematics Graphs, Newton's Laws in Depth, Work and Power, Waves and Circuits",
+      "contentBody": "In grade 9 physics, students formalize kinematics, dynamics, energy, waves, and DC circuits. Kinematics covers distance and displacement, speed and velocity, and uniform acceleration, using the equations v = u + at, s = ut + 1/2 at^2, and v^2 = u^2 + 2as where u is initial velocity, v final velocity, a acceleration, t time, and s displacement. Students interpret distance-time, velocity-time, and acceleration-time graphs, computing areas under velocity-time graphs for displacement and slopes for acceleration. Dynamics applies Newton's laws with free-body diagrams to problems involving friction (F_friction = mu x normal force), tension, and inclined planes resolved with components. Work is defined as force times distance moved in the force's direction (W = Fd, in joules), power as work per time (P = W/t, in watts), and kinetic energy as 1/2 mv^2 with gravitational potential mgh; the work-energy principle links net work to change in kinetic energy. Momentum is introduced as p = mv with impulse Ft = change in momentum, applied to collisions and safety features like airbags. Waves are studied as disturbances transferring energy without transferring matter, with transverse waves (crests and troughs, e.g., light) and longitudinal waves (compressions and rarefactions, e.g., sound), characterized by wavelength, frequency (Hz), amplitude, and wave speed v = f x lambda. Sound properties (pitch from frequency, loudness from amplitude, echo from reflection) and light basics (speed of light, reflection, refraction with Snell's law qualitative) are covered. Electricity extends Ohm's law to series and parallel circuits: in series resistances add and current is the same, in parallel reciprocal resistances add and voltage is the same, with power P = VI = I^2R applied to heating devices. Key vocabulary: displacement, velocity, acceleration, kinematic equation, free-body diagram, friction coefficient, work, joule, power, momentum, impulse, transverse, longitudinal, wavelength, frequency, wave speed, Ohm's law, series, parallel, resistance, electric power.",
+      "pedagogicalNotes": "Insist on a consistent sign convention for direction from the start; vector sign errors dominate kinematics mistakes. Common misconceptions: heavier objects fall faster in vacuum (false), a force is needed to sustain motion (false; net force causes acceleration), and waves carry matter with them (they carry energy). In circuits, students often think current is 'used up'; show that current is identical at all points in a series loop. Use graph-based reasoning every week so students can move fluently between equations and graphs.",
+      "exampleProblems": [
+        {
+          "problem": "A car starts from rest and accelerates at 3 m/s^2 for 4 s. How far does it travel?",
+          "solution": "Using s = ut + 1/2 at^2 with u = 0: s = 0 + 1/2 x 3 m/s^2 x (4 s)^2 = 1/2 x 3 x 16 = 24 m.",
+          "explanation": "The first term vanishes because the car starts from rest. Squaring the time is essential: the car covers more distance each second as it speeds up, giving 24 meters total.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 1500 kg car brakes with a friction force of 4500 N. What deceleration does it undergo?",
+          "solution": "F = ma gives a = F/m = 4500 N / 1500 kg = 3 m/s^2. Since friction opposes motion, the deceleration is 3 m/s^2.",
+          "explanation": "Newton's second law gives acceleration from net force and mass. The friction force is the net horizontal force during braking, so dividing it by mass yields how quickly the car slows.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A wave has frequency 50 Hz and wavelength 2 m. What is its wave speed?",
+          "solution": "v = f x lambda = 50 Hz x 2 m = 100 m/s.",
+          "explanation": "Each second 50 full waves pass a point, and each wave is 2 m long, so the wave travels 50 x 2 = 100 meters per second. Frequency in Hz means cycles per second, which is why the units work out to m/s.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 10,
+      "title": "Grade 10 Physics: Kinematics with Vectors, Newton's Laws and Friction, Energy and Work, Momentum",
+      "contentBody": "In grade 10 physics, students master one-dimensional and two-dimensional kinematics, dynamics with friction, energy methods, and momentum. Vectors and scalars are distinguished, with vectors added by components and by scale drawing; displacement, velocity, acceleration, and force are vectors while distance, speed, mass, and energy are scalars. Kinematics uses v = u + at, s = ut + 1/2 at^2, v^2 = u^2 + 2as for uniform acceleration, extending to projectile motion where horizontal velocity is constant and vertical motion is free fall with a = g = 9.8 m/s^2, giving parabolic trajectories and range calculations. Dynamics applies Newton's laws systematically: drawing free-body diagrams, resolving forces on inclined planes into components parallel and perpendicular, and using F_friction = mu x F_normal with static friction preventing motion and kinetic friction opposing sliding. Terminal velocity is treated as the equilibrium where drag equals weight. Work and energy cover W = Fs cos(theta), kinetic energy 1/2 mv^2, gravitational potential mgh, elastic potential 1/2 kx^2 for springs obeying Hooke's law F = kx, and conservation of mechanical energy including work done against friction, which converts mechanical energy to thermal energy. Power P = W/t and efficiency as useful output over total input are computed. Momentum p = mv is conserved in isolated systems, with impulse J = Ft = change in momentum applied to collisions: perfectly inelastic (objects stick, kinetic energy not conserved), elastic (kinetic energy conserved), and explosions analyzed with conservation of momentum. Key vocabulary: vector, scalar, component, projectile, trajectory, free-body diagram, inclined plane, normal force, coefficient of friction, work, power, efficiency, Hooke's law, spring constant, momentum, impulse, elastic collision, inelastic collision, conservation of momentum.",
+      "pedagogicalNotes": "Projectile motion hinges on independence of horizontal and vertical motions; demonstrate with a dropped and a horizontally launched ball hitting the ground together. Common misconceptions: circular motion at constant speed has zero acceleration (it has centripetal acceleration), kinetic energy is conserved in all collisions (only in elastic ones), and friction always opposes motion (static friction can cause motion, e.g., walking). Emphasize systematic problem solving: diagram, choose axes, resolve, apply the right law, check units and magnitude sanity.",
+      "exampleProblems": [
+        {
+          "problem": "A ball is thrown horizontally at 10 m/s from a 20 m high cliff. How long does it take to hit the ground? (g = 10 m/s^2)",
+          "solution": "Vertical motion starts from rest: s = 1/2 gt^2, so 20 = 1/2 x 10 x t^2 = 5t^2, giving t^2 = 4, t = 2 s. The horizontal speed does not affect the fall time.",
+          "explanation": "Horizontal and vertical motions are independent. Gravity acts only vertically, so the drop time depends only on height; the ball travels 10 m/s x 2 s = 20 m horizontally while falling.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 5 kg box is pushed across a floor with a 20 N horizontal force. The coefficient of kinetic friction is 0.3. What is the acceleration? (g = 10 m/s^2)",
+          "solution": "Normal force F_N = mg = 5 x 10 = 50 N. Friction = mu x F_N = 0.3 x 50 = 15 N. Net force = 20 - 15 = 5 N. a = F/m = 5 / 5 = 1 m/s^2.",
+          "explanation": "The normal force balances weight on a flat floor, so friction scales with weight. Subtracting friction from the push gives the net force that accelerates the box, showing why pushing harder than friction is required for any motion.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 1000 kg car moving at 20 m/s hits a stationary 2000 kg truck and they lock together. What is their common velocity after impact?",
+          "solution": "Momentum before = 1000 x 20 + 2000 x 0 = 20000 kg m/s. After: (1000 + 2000) v = 3000 v. Conservation: 3000 v = 20000, so v = 6.67 m/s in the car's original direction.",
+          "explanation": "In any collision momentum is conserved. The combined mass is larger, so the shared speed is lower than the car's initial speed; kinetic energy is lost to deformation and heat, which is typical of inelastic collisions.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 11,
+      "title": "Grade 11 Physics: Two-Dimensional Kinematics, Relative Motion, Newton's Laws for Systems",
+      "contentBody": "In grade 11 physics, students extend kinematics to two dimensions and apply Newton's laws to systems of connected objects. Projectile motion is analyzed by resolving the initial velocity into horizontal and vertical components: v0x = v0 cos(theta) and v0y = v0 sin(theta). Horizontal motion is uniform (constant velocity) while vertical motion is free fall with a = -g, so the trajectory is a parabola. Key results for a projectile launched over level ground are the time of flight t = 2 v0 sin(theta) / g, maximum height h = v0^2 sin^2(theta) / (2g), and range R = v0^2 sin(2theta) / g, with maximum range at 45 degrees. Students also solve relative velocity problems in one and two dimensions, such as a boat crossing a river: the velocity of the boat relative to the ground is the vector sum of the velocity of the boat relative to the water and the velocity of the water relative to the ground, written v_BG = v_BW + v_WG, and the boat must head upstream to travel straight across. Dynamics focuses on systems: connected blocks joined by strings over frictionless pulleys (Atwood machines), boxes pulled across rough floors, and objects on inclines where weight resolves into mg sin(theta) down the slope and mg cos(theta) perpendicular to the surface, setting the normal force and hence friction. Students write one free-body diagram per object, define a coordinate system, apply sum of forces = ma in each direction, and solve the resulting equations simultaneously, noting that tension is shared along an ideal massless string. Uniform circular motion is introduced: an object moving in a circle at constant speed still accelerates because its direction of motion changes, with centripetal acceleration a_c = v^2 / r directed toward the center, produced by a net centripetal force F_c = m v^2 / r supplied by tension, friction, gravity, or a normal force. This explains banked curves, hairpin turns, and previews orbital motion. Key vocabulary: projectile, trajectory, launch angle, relative velocity, frame of reference, Atwood machine, tension, normal force, inclined plane, component, centripetal acceleration, centripetal force, uniform circular motion.",
+      "pedagogicalNotes": "Emphasize that horizontal and vertical motions are independent; demonstrate by dropping one ball while launching another horizontally so they hit the floor together. Common misconceptions: range is greatest at very steep launch angles (over level ground it peaks at 45 degrees), a force in the direction of motion is needed to keep an object moving, and circular motion at constant speed is equilibrium (the velocity direction changes, so a net inward force is always required). For connected systems, teach one free-body diagram per object and simultaneous equation solving; most mistakes are tension sign errors or forgetting that both masses accelerate. Sketch river-boat vector triangles before inserting numbers.",
+      "exampleProblems": [
+        {
+          "problem": "A soccer ball is kicked at 20 m/s at an angle of 30 degrees above the horizontal. What are the horizontal and vertical components of its initial velocity?",
+          "solution": "v0x = 20 m/s x cos(30 degrees) = 20 x 0.866 = 17.3 m/s. v0y = 20 m/s x sin(30 degrees) = 20 x 0.5 = 10.0 m/s.",
+          "explanation": "Resolving the launch velocity into perpendicular components separates the motions: 17.3 m/s stays constant horizontally (ignoring air resistance) while 10.0 m/s upward is reduced by gravity at 9.8 m/s each second.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "Two blocks of mass 4 kg and 6 kg are connected by a light string over a frictionless pulley (an Atwood machine). What is the acceleration of the system and the tension in the string? (g = 9.8 m/s^2)",
+          "solution": "a = (m2 - m1) g / (m1 + m2) = (6 kg - 4 kg) x 9.8 m/s^2 / (4 kg + 6 kg) = 2 x 9.8 / 10 = 1.96 m/s^2. Tension: T = m1 (g + a) = 4 kg x (9.8 + 1.96) m/s^2 = 4 x 11.76 = 47.0 N.",
+          "explanation": "Both blocks share the same acceleration magnitude because they are tied together. The net driving force is the difference in weights, 2 kg x 9.8 m/s^2 = 19.6 N, and it accelerates the total mass of 10 kg. The tension of about 47 N is more than the 4 kg block's weight (39.2 N), which is exactly what makes it accelerate upward.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 1000 kg car rounds a flat curve of radius 50 m at 15 m/s. What minimum coefficient of static friction between tires and road is required to prevent skidding? (g = 9.8 m/s^2)",
+          "solution": "Required centripetal force: F_c = m v^2 / r = 1000 kg x (15 m/s)^2 / 50 m = 1000 x 225 / 50 = 4500 N. Normal force: F_N = mg = 1000 x 9.8 = 9800 N. Friction supplies the centripetal force: mu x F_N = F_c, so mu = 4500 N / 9800 N = 0.46.",
+          "explanation": "On a flat curve, static friction is the only force pointing toward the center. The needed friction rises with the square of speed, so doubling the speed would quadruple the required coefficient; 0.46 is a realistic value for dry asphalt, which is why icy roads make curves dangerous.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 12,
+      "title": "Grade 12 Physics: Work-Energy Theorem, Potential Energy, Momentum, Collisions, Center of Mass",
+      "contentBody": "In grade 12 physics, students unify mechanics with energy and momentum methods and study collisions in depth. The work-energy theorem states that the net work done on an object equals its change in kinetic energy: W_net = 1/2 mv_f^2 - 1/2 mv_i^2. Work is computed as W = F d cos(theta), where theta is the angle between force and displacement, and power is the rate of doing work, P = W/t, or P = F v for a constant force. Forces are classified as conservative (gravity and spring force, whose work is path-independent and stored as potential energy) and nonconservative (friction and drag, whose work converts mechanical energy into thermal energy). Mechanical energy E = E_k + E_p is conserved only when nonconservative work is zero; otherwise E_f = E_i + W_nc. Potential energy functions are examined: gravitational U = mgh near Earth's surface and U = -G M m / r in general, and elastic U = 1/2 kx^2 for springs. Students sketch energy diagrams and identify equilibrium points where the slope of the potential energy curve is zero, judging stability from the curvature. Momentum methods handle collisions without needing force details: p = mv is conserved in isolated systems, and the impulse-momentum theorem J = F_avg delta t = delta p explains how airbags and crumple zones extend impact time to reduce force. Two-dimensional collisions are solved by conserving momentum along x and y separately. The center of mass is introduced as the point tracking the average motion of a system: it moves as if all external forces act there, explaining rocket propulsion and recoil. Elastic collisions conserve kinetic energy while inelastic ones do not; perfectly inelastic collisions end with a shared velocity. Students learn to choose methods: momentum for collisions and explosions, energy for speed-height problems, and both together for elastic collision problems. Key vocabulary: work-energy theorem, conservative force, nonconservative force, potential energy curve, equilibrium point, power, impulse, impulse-momentum theorem, center of mass, elastic collision, inelastic collision, isolated system.",
+      "pedagogicalNotes": "Have students categorize each problem before solving: energy for speed-position questions, momentum for collisions, both for elastic collisions. Common misconceptions: energy is used up (it transforms between stores), work requires motion in the force direction (the cos(theta) factor handles angles), and kinetic energy is conserved in every collision (only in elastic ones). Draw before-and-after energy bar charts to make conservation concrete. For two-dimensional collisions, insist on a coordinate system and two separate momentum equations; students habitually subtract momenta as scalars. Demonstrate center of mass with a thrown wrench or a spinning baton.",
+      "exampleProblems": [
+        {
+          "problem": "A 2 kg ball sliding at 6 m/s across a rough floor experiences a constant 3 N friction force. How far does it slide before stopping?",
+          "solution": "Initial kinetic energy: E_k = 1/2 m v^2 = 1/2 x 2 kg x (6 m/s)^2 = 36 J. Friction does work W = -F d = -3 N x d. The ball stops when all 36 J is removed: 3 N x d = 36 J, so d = 36 J / 3 N = 12 m.",
+          "explanation": "The work-energy theorem replaces force-time reasoning here: friction removes energy at 3 joules per meter, so 36 joules lasts 12 meters. Mass cancels out of the stopping-distance question only because the kinetic energy was computed from the given mass first.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 0.5 kg block sliding at 4 m/s on a frictionless surface compresses a spring of spring constant 200 N/m. What is the maximum compression of the spring?",
+          "solution": "Kinetic energy of block: E_k = 1/2 x 0.5 kg x (4 m/s)^2 = 4 J. At maximum compression all kinetic energy becomes elastic potential: 1/2 k x^2 = 4 J, so 1/2 x 200 N/m x x^2 = 4 J, giving 100 x^2 = 4, x^2 = 0.04 m^2, x = 0.20 m = 20 cm.",
+          "explanation": "Energy conservation converts ordered motion into stored spring energy. Because the spring force grows with compression, the block decelerates progressively and stops at 20 cm; the block mass affects the initial energy but the final compression follows from that energy and the spring stiffness alone.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 0.1 kg ball moving at 8 m/s collides elastically head-on with a stationary 0.3 kg ball. Find both final velocities.",
+          "solution": "For an elastic collision with target at rest: v1f = (m1 - m2) v1i / (m1 + m2) = (0.1 - 0.3) x 8 / 0.4 = -4 m/s. v2f = 2 m1 v1i / (m1 + m2) = 2 x 0.1 x 8 / 0.4 = 4 m/s. Momentum check: before 0.1 x 8 = 0.8 kg m/s; after 0.1 x (-4) + 0.3 x 4 = -0.4 + 1.2 = 0.8 kg m/s. Energy check: before 1/2 x 0.1 x 64 = 3.2 J; after 1/2 x 0.1 x 16 + 1/2 x 0.3 x 16 = 0.8 + 2.4 = 3.2 J.",
+          "explanation": "The light ball rebounds at 4 m/s while the heavy ball moves forward at 4 m/s. Both momentum and kinetic energy are conserved, as required for elastic collisions; the reversal of the light ball shows how a heavier target can send a projectile back the way it came.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 13,
+      "title": "Grade 13 Physics: Simple Harmonic Motion, Waves and Superposition, Sound, Doppler Effect",
+      "contentBody": "In grade 13 physics, students study oscillations and waves as the language of periodic phenomena. Simple harmonic motion (SHM) occurs when the restoring force is proportional to displacement and opposite in direction: F = -kx, producing oscillation described by x(t) = A cos(2 pi f t) with acceleration a = -(2 pi f)^2 x, maximum at the extremes and zero at equilibrium. The mass-spring system has period T = 2 pi sqrt(m/k), and the simple pendulum has period T = 2 pi sqrt(L/g) for small swings, showing that pendulum period depends on length and gravity but not mass or amplitude. Energy in SHM trades between kinetic energy (maximum at equilibrium) and potential energy (maximum at the extremes), with total energy constant at E = 1/2 k A^2. Damping, driven oscillations, and resonance are treated qualitatively: a driving frequency matching the natural frequency builds large amplitude, explaining tuning forks, radio tuning, and the Tacoma Narrows bridge failure. Waves are described by v = f lambda for periodic waves, and students distinguish transverse waves (displacement perpendicular to travel, such as light and waves on a string) from longitudinal waves (displacement parallel, such as sound). The principle of superposition states that overlapping waves add algebraically: constructive interference occurs where crests meet crests and amplitudes add, destructive interference where crests meet troughs and amplitudes cancel. Standing waves form when waves reflect and interfere within a medium fixed at both ends, with nodes (no displacement) and antinodes (maximum displacement), and harmonic frequencies f_n = n v / (2L) for strings and open pipes; the fundamental frequency sets pitch in musical instruments. Sound intensity follows the inverse square law with distance, and loudness in decibels reflects logarithmic perception. The Doppler effect describes the frequency shift when source and observer move relative to each other: f' = f (v + v_o)/(v - v_s), higher pitch on approach and lower on recession, applied to radar guns, medical ultrasound, and astronomy. Key vocabulary: simple harmonic motion, restoring force, amplitude, period, frequency, natural frequency, resonance, damping, superposition, constructive interference, destructive interference, standing wave, node, antinode, harmonic, Doppler effect, decibel.",
+      "pedagogicalNotes": "Use physical demos: a pendulum, a mass on a spring, and a shaker-driven string to make period, amplitude, and harmonics tangible. Common misconceptions: a pendulum period depends on amplitude or mass (for small swings it does not), a louder sound has a higher pitch (loudness is amplitude, pitch is frequency), and waves carry matter along with them (the medium oscillates in place while energy travels). For standing waves, label nodes and antinodes on diagrams before any calculation. For the Doppler effect, always draw directions of motion before choosing signs; sign convention is the main hurdle.",
+      "exampleProblems": [
+        {
+          "problem": "A simple pendulum has a length of 0.25 m. What is its period on Earth where g = 9.8 m/s^2?",
+          "solution": "T = 2 pi sqrt(L/g) = 2 x 3.142 x sqrt(0.25 m / 9.8 m/s^2) = 6.283 x sqrt(0.0255 s^2) = 6.283 x 0.160 s = 1.00 s.",
+          "explanation": "The pendulum formula shows period depends only on length and gravitational field for small swings. A quarter-meter pendulum ticks once per second, which is why such pendulums were used in clocks; changing the bob mass would not change the 1.00 s period.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 1.5 m long string vibrating in its third harmonic (3 antinodes) has a frequency of 120 Hz. What is the wave speed on the string?",
+          "solution": "Third harmonic: L = 3 x (lambda/2), so lambda = 2L/3 = 2 x 1.5 m / 3 = 1.0 m. Wave speed: v = f lambda = 120 Hz x 1.0 m = 120 m/s.",
+          "explanation": "Three antinodes mean three half-wavelengths fit along the string. With each half-wavelength 0.5 m long, the full wavelength is 1.0 m, and multiplying by frequency gives the speed at which waves travel along the string.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "An ambulance drives toward a stationary observer at 30 m/s while sounding a 700 Hz siren. Speed of sound is 340 m/s. What frequency does the observer hear?",
+          "solution": "Source approaching, observer at rest: f' = f v / (v - v_s) = 700 Hz x 340 m/s / (340 m/s - 30 m/s) = 700 x 340 / 310 = 700 x 1.097 = 768 Hz.",
+          "explanation": "Because the ambulance chases its own sound waves, the observed wavelength shortens and the heard frequency rises above the emitted 700 Hz. Once the ambulance passes and recedes, the same formula with v + v_s gives a pitch below 700 Hz, the familiar drop in siren pitch.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 14,
+      "title": "Grade 14 Physics: DC Circuits and Kirchhoff's Laws, Capacitors, Magnetism, Electromagnets",
+      "contentBody": "In grade 14 physics, students analyze DC circuits and magnetism quantitatively. Circuit analysis uses Kirchhoff's junction rule (current into a junction equals current out, conservation of charge) and the loop rule (potential changes around a closed loop sum to zero, conservation of energy), enabling multi-loop circuits with several batteries and resistors. Real batteries have internal resistance r, so terminal voltage is V = EMF - I r, explaining why headlights dim when a starter motor draws large current. Series and parallel resistor combinations are reduced to equivalent resistance: in series R_eq = R1 + R2, in parallel 1/R_eq = 1/R1 + 1/R2, and the voltage divider rule V_out = V_in R2/(R1 + R2) is applied to sensor circuits. Capacitors store charge Q = C V and energy U = 1/2 C V^2; in series 1/C_eq = 1/C1 + 1/C2 and in parallel C_eq = C1 + C2. RC circuits are introduced with charging and discharging curves V(t) = V0 (1 - e^(-t/RC)) and time constant tau = RC, which sets how fast charging proceeds. Electrical power P = I V = I^2 R = V^2/R is computed for appliances, and energy use in kilowatt-hours connects physics to household bills. Magnetism covers the magnetic field produced by current-carrying wires (right-hand rule, with field strength falling off with distance from the wire) and the force on a moving charge or a current-carrying wire in a field: F = q v B sin(theta) and F = I L B sin(theta), with applications to electric motors, speakers, and mass spectrometers. Magnetic flux Phi = B A cos(theta) is defined in preparation for induction. Students also examine Earth's magnetic field, magnetic domains in ferromagnets, and how electromagnets concentrate field with iron cores. Key vocabulary: Kirchhoff's junction rule, Kirchhoff's loop rule, internal resistance, terminal voltage, equivalent resistance, voltage divider, capacitor, capacitance, time constant, magnetic field, tesla, magnetic flux, right-hand rule, electromagnet, galvanometer.",
+      "pedagogicalNotes": "Build intuition with a physical circuit kit before formal analysis; have students predict brightness changes before measuring. Common misconceptions: current is used up as it passes through components (it is the same around a series loop; energy is transferred), voltage flows through a circuit (it is a potential difference across components), and capacitors behave like batteries (they store charge briefly and discharge). For the loop rule, teach students to walk the loop recording signed gains and drops; sign confusion is the dominant error. For magnetism, drill the right-hand rule on concrete cases such as a wire deflecting a compass before abstract problems.",
+      "exampleProblems": [
+        {
+          "problem": "A 12 V battery drives a 4 ohm resistor. What current flows, and what power is dissipated in the resistor?",
+          "solution": "Ohm's law: I = V / R = 12 V / 4 ohm = 3 A. Power: P = V I = 12 V x 3 A = 36 W (equivalently I^2 R = 9 x 4 = 36 W).",
+          "explanation": "Three amperes of charge flow each second, and each coulomb gives up 12 joules passing through the resistor, so 36 joules per second of electrical energy becomes heat. Both power formulas agree, which is a useful self-check.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A battery with EMF 12 V and internal resistance 0.5 ohm is connected to a 5.5 ohm load. What current flows, and what is the terminal voltage of the battery?",
+          "solution": "Total resistance: R_total = 5.5 ohm + 0.5 ohm = 6.0 ohm. Current: I = EMF / R_total = 12 V / 6.0 ohm = 2.0 A. Terminal voltage: V = EMF - I r = 12 V - 2.0 A x 0.5 ohm = 12 - 1 = 11 V.",
+          "explanation": "The internal resistance shares the EMF with the load, so the measured battery voltage under load (11 V) is lower than the open-circuit 12 V. The missing 1 volt is the potential drop inside the battery, which heats it during use.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 2 microfarad capacitor is charged through a 3 megaohm resistor by a 6 V battery. What is the time constant, and what is the capacitor voltage after one time constant?",
+          "solution": "Time constant: tau = R C = 3 x 10^6 ohm x 2 x 10^-6 F = 6 s. Charging equation: V(t) = V0 (1 - e^(-t/tau)). At t = tau: V = 6 V x (1 - e^-1) = 6 V x (1 - 0.368) = 6 x 0.632 = 3.8 V.",
+          "explanation": "One time constant always brings a charging capacitor to 63.2 percent of its final voltage, here 3.8 of 6 V. The large resistance makes charging slow: about 6 seconds per 63 percent step, and near-full charge takes roughly 5 time constants, around 30 seconds.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 15,
+      "title": "Grade 15 Physics: Rotational Kinematics, Torque, Moment of Inertia, Angular Momentum",
+      "contentBody": "In grade 15 physics, students extend mechanics to rotation, drawing constant parallels with linear motion. Angular position, velocity, and acceleration (theta, omega = change in theta over time, alpha = change in omega over time) are measured in radians, rad/s, and rad/s^2, and obey kinematic equations identical in form to the linear ones: omega = omega0 + alpha t, theta = omega0 t + 1/2 alpha t^2, omega^2 = omega0^2 + 2 alpha theta. Linear and angular quantities connect through the radius: v = r omega, tangential acceleration a_t = r alpha, and centripetal acceleration a_c = v^2 / r = r omega^2. Rotation is caused by torque tau = r F sin(theta), the rotational analog of force, measured in newton-meters. Newton's second law for rotation is tau_net = I alpha, where I is the moment of inertia, the rotational analog of mass: I = sum of m r^2 for point masses, with standard results like 1/2 MR^2 for a solid cylinder, 2/5 MR^2 for a solid sphere, and MR^2 for a thin hoop, showing that mass far from the axis counts more. Rotational kinetic energy is E_k = 1/2 I omega^2, and rolling objects divide energy between translation and rotation: a solid sphere rolling from height h reaches v = sqrt(10gh/7) at the bottom, slower than a sliding block's sqrt(2gh), because part of the energy funds rotation. Angular momentum L = I omega is conserved when the net external torque is zero, explaining why a spinning skater speeds up by pulling in arms (I decreases as mass moves inward) and why gyroscopes resist tilting. Static equilibrium requires both zero net force and zero net torque, applied to ladders leaning on walls and balanced beams. Power in rotation is P = tau omega. Key vocabulary: radian, angular velocity, angular acceleration, torque, moment of inertia, rotational kinetic energy, angular momentum, conservation of angular momentum, static equilibrium, center of gravity, rolling without slipping, gyroscope.",
+      "pedagogicalNotes": "Build a translation-rotation correspondence table (F to tau, m to I, v to omega, p to L) and refer to it constantly; students transfer linear intuition once the map is explicit. Common misconceptions: torque and force are the same (torque depends on where force is applied), an object spinning at constant angular speed has zero acceleration (the velocity direction continuously changes), and heavier objects always roll faster down a ramp (mass cancels; the distribution of mass through I decides the race). Run a rolling race between a solid sphere, cylinder, and hoop. For static equilibrium, pick the pivot at an unknown force so it drops out of the torque equation.",
+      "exampleProblems": [
+        {
+          "problem": "A wheel accelerates uniformly from rest at 4 rad/s^2 for 3 s. What is its final angular velocity and how many radians does it turn through?",
+          "solution": "Final angular velocity: omega = omega0 + alpha t = 0 + 4 rad/s^2 x 3 s = 12 rad/s. Angle: theta = omega0 t + 1/2 alpha t^2 = 0 + 1/2 x 4 rad/s^2 x (3 s)^2 = 2 x 9 = 18 rad.",
+          "explanation": "The rotational equations mirror the linear ones exactly, with alpha in place of a and radians in place of meters. The wheel spins faster each second by 4 rad/s, reaching 12 rad/s and sweeping 18 radians (just under three full turns) in the process.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A 20 N force is applied at the end of a 0.4 m wrench, perpendicular to the handle. What torque results? What if the force is applied at 30 degrees to the handle?",
+          "solution": "Perpendicular: tau = r F sin(theta) = 0.4 m x 20 N x sin(90 degrees) = 0.4 x 20 x 1 = 8 N m. At 30 degrees: tau = 0.4 m x 20 N x sin(30 degrees) = 0.4 x 20 x 0.5 = 4 N m.",
+          "explanation": "Torque depends on the perpendicular component of force. Pulling straight across the wrench gives full effect, while the same force tilted at 30 degrees delivers only half the turning effect because only 10 N acts perpendicular to the handle; this is why long-handled wrenches loosen stubborn bolts.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A solid sphere of mass 2 kg and radius 0.1 m rolls without slipping from rest down a 1.2 m high ramp. What is its speed at the bottom? (g = 9.8 m/s^2, I = 2/5 MR^2 for a solid sphere)",
+          "solution": "Energy conservation: mgh = 1/2 m v^2 + 1/2 I omega^2, with omega = v/r and I = 2/5 m r^2. Substituting: mgh = 1/2 m v^2 + 1/2 x (2/5 m r^2) x (v^2/r^2) = 1/2 m v^2 + 1/5 m v^2 = 7/10 m v^2. So v = sqrt(10gh/7) = sqrt(10 x 9.8 m/s^2 x 1.2 m / 7) = sqrt(117.6/7) = sqrt(16.8) = 4.10 m/s.",
+          "explanation": "Only 5/7 of the lost potential energy becomes translational speed; the rest spins the sphere. Mass and radius cancel from the result, so every solid sphere rolls down at the same rate regardless of size, while a hoop (v = sqrt(gh)) would arrive slower because more of its energy goes into rotation.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 16,
+      "title": "Grade 16 Physics: Universal Gravitation, Kepler's Laws, Orbits, Satellites, Escape Velocity",
+      "contentBody": "In grade 16 physics, students study gravity as a universal force and apply it to orbits and planetary motion. Newton's law of universal gravitation states that every mass attracts every other mass with F = G m1 m2 / r^2, where G = 6.67 x 10^-11 N m^2/kg^2 and r is the distance between centers of mass; the inverse square law means doubling the separation quarters the force. Gravitational field strength g = G M / r^2 explains why g weakens with altitude and varies from planet to planet. Near a planet's surface this field gives familiar weight, but general orbit work requires gravitational potential energy U = -G M m / r, which is negative by convention with zero at infinite separation. Escape velocity v_esc = sqrt(2GM/R) is the launch speed at which kinetic energy exactly cancels the potential well, about 11.2 km/s from Earth's surface. Kepler's three laws describe planetary motion: orbits are ellipses with the Sun at one focus, a line from Sun to planet sweeps equal areas in equal times (so planets move faster near perihelion), and the square of the orbital period is proportional to the cube of the semi-major axis (T^2 proportional to a^3). Satellite orbits follow because gravitation provides the centripetal force: G M m / r^2 = m v^2 / r gives orbital speed v = sqrt(GM/r), so low Earth orbit satellites travel fastest (about 7.7 km/s at 400 km altitude) while geostationary satellites at roughly 42,000 km orbital radius keep a 24-hour period matching Earth's rotation. Orbital energy determines orbit shape: total energy E = -G M m / (2a) is negative for bound orbits and zero or positive for escape trajectories. Apparent weightlessness in orbit is explained as continuous free fall, not absence of gravity: at ISS altitude g is still about 90 percent of surface value. Tidal forces, binary star systems, and gravitational slingshot maneuvers by spacecraft illustrate multi-body applications. Key vocabulary: universal gravitation, inverse square law, gravitational field, gravitational potential energy, escape velocity, Kepler's laws, ellipse, semi-major axis, perihelion, orbital period, orbital speed, geostationary orbit, free fall, weightlessness.",
+      "pedagogicalNotes": "Anchor the inverse square law with a physical spread: a lamp's glow dims with distance in the same geometric way gravity weakens. Common misconceptions: astronauts are weightless because space lacks gravity (they are in free fall around Earth), orbits need no force (gravity supplies the centripetal force), and heavier satellites orbit faster (orbital speed is independent of satellite mass). Drill that r is measured center to center, never surface to surface. For Kepler's third law, have students compare periods and orbital radii for Earth, Mars, and geostationary satellites with real data so T^2 versus a^3 becomes concrete.",
+      "exampleProblems": [
+        {
+          "problem": "What is the gravitational force between two 100 kg balls whose centers are 2 m apart? (G = 6.67 x 10^-11 N m^2/kg^2)",
+          "solution": "F = G m1 m2 / r^2 = 6.67 x 10^-11 N m^2/kg^2 x 100 kg x 100 kg / (2 m)^2 = 6.67 x 10^-11 x 10000 / 4 = 1.67 x 10^-7 N.",
+          "explanation": "The force is tiny, about a ten-millionth of a newton, which is why ordinary objects never visibly attract each other. Gravity only becomes dominant when at least one mass is planetary; the calculation shows why the gravitational constant had to be measured with delicate torsion balance experiments.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A satellite orbits Earth (mass 5.97 x 10^24 kg) at 400 km altitude. Earth's radius is 6370 km. What is the satellite's orbital speed? (G = 6.67 x 10^-11 N m^2/kg^2)",
+          "solution": "Orbital radius: r = 6370 km + 400 km = 6770 km = 6.77 x 10^6 m. v = sqrt(GM/r) = sqrt(6.67 x 10^-11 x 5.97 x 10^24 / 6.77 x 10^6) = sqrt(3.98 x 10^14 / 6.77 x 10^6) = sqrt(5.88 x 10^7) = 7.67 x 10^3 m/s, about 7.7 km/s.",
+          "explanation": "Gravity bending the satellite's path at exactly the right rate produces a circular orbit at 7.7 km/s, roughly 28,000 km/h. Note r includes Earth's radius: using 400 km alone is a classic error that badly skews the result.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "What is the escape velocity from Mars (radius 3.39 x 10^6 m, mass 6.42 x 10^23 kg)? (G = 6.67 x 10^-11 N m^2/kg^2)",
+          "solution": "v_esc = sqrt(2GM/R) = sqrt(2 x 6.67 x 10^-11 x 6.42 x 10^23 / 3.39 x 10^6) = sqrt(8.56 x 10^13 / 3.39 x 10^6) = sqrt(2.53 x 10^7) = 5.03 x 10^3 m/s, about 5.0 km/s.",
+          "explanation": "Escape velocity follows from energy: the launch kinetic energy 1/2 mv^2 must equal the depth of the potential well GMm/R. Mars, being smaller and less massive than Earth (11.2 km/s), holds its atmosphere more loosely, which partly explains why Mars lost most of its atmosphere over time.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 17,
+      "title": "Grade 17 Physics: Electromagnetic Induction, AC Circuits, Maxwell's Equations, Photons",
+      "contentBody": "In grade 17 physics, students unify electricity and magnetism through induction and open modern physics. Electromagnetic induction, discovered by Faraday, states that a changing magnetic flux through a loop induces an EMF: EMF = -N change in Phi over time, where Phi = B A cos(theta) is the magnetic flux and N the number of turns. Lenz's law gives the direction: the induced current creates a field opposing the change that produced it, consistent with conservation of energy. This principle underlies generators (mechanical energy converted to electrical), transformers (V_p/V_s = N_p/N_s with power approximately conserved), induction stoves, and wireless charging. Inductors store energy in magnetic fields and resist changes in current, producing back EMF. Alternating current is described by sinusoidal voltage V(t) = V0 sin(2 pi f t); RMS values (V_rms = V0 / sqrt(2)) give effective heating power, and impedance in RLC circuits generalizes resistance, with phase shifts between voltage and current. Maxwell's synthesis completes the picture: changing electric fields produce magnetic fields and vice versa, and the speed of electromagnetic waves predicted from electrical and magnetic constants, c = 1/sqrt(mu0 epsilon0) = 3 x 10^8 m/s, matched the measured speed of light, revealing light as an electromagnetic wave. The electromagnetic spectrum runs from radio to gamma rays, all traveling at c in vacuum and carrying energy. Modern physics begins where classical physics fails: blackbody radiation is explained by Planck's quantized energy E = h f (h = 6.63 x 10^-34 J s), and the photoelectric effect shows light ejecting electrons only above a threshold frequency regardless of intensity, proving light behaves as photons of energy E = h f and momentum p = h / lambda. Einstein's explanation earned the 1921 Nobel Prize. Students contrast wave and particle views of light and preview wave-particle duality. Key vocabulary: magnetic flux, electromagnetic induction, Faraday's law, Lenz's law, generator, transformer, alternating current, RMS value, impedance, electromagnetic spectrum, Maxwell's equations, photon, Planck's constant, photoelectric effect, threshold frequency, quantization.",
+      "pedagogicalNotes": "Demonstrate induction live with a magnet and coil connected to a galvanometer; students must see the needle deflect only while the field changes. Common misconceptions: a steady magnetic field induces current (only changing flux does), transformers work with DC (they require changing current), and brighter light ejects faster electrons (intensity affects electron count only; frequency sets maximum electron energy). For Lenz's law, have students state the opposition in words before applying right-hand rules. When introducing photons, confront the classical expectation with the photoelectric threshold so quantization feels necessary, not arbitrary.",
+      "exampleProblems": [
+        {
+          "problem": "What is the energy of a photon of green light with frequency 5.5 x 10^14 Hz? (h = 6.63 x 10^-34 J s)",
+          "solution": "E = h f = 6.63 x 10^-34 J s x 5.5 x 10^14 Hz = 3.65 x 10^-19 J.",
+          "explanation": "A single photon carries a minuscule 3.65 x 10^-19 joules, yet photons arrive in such vast numbers that light delivers substantial power. Because photon energy is proportional to frequency, blue light photons carry more energy than red ones, explaining why only high-frequency light triggers the photoelectric effect.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A transformer has 500 turns on its primary coil and 2000 turns on its secondary. If the primary voltage is 120 V, what is the secondary voltage?",
+          "solution": "V_s = V_p x N_s / N_p = 120 V x 2000 / 500 = 120 V x 4 = 480 V.",
+          "explanation": "Four times as many turns on the secondary means four times the voltage, making this a step-up transformer. Power is approximately conserved, so the secondary current would be roughly one quarter of the primary current, which is how power transmission lines minimize heating losses.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A 200-turn coil of area 0.05 m^2 sits perpendicular to a 0.40 T magnetic field. The field is switched off in 0.020 s. What average EMF is induced in the coil?",
+          "solution": "Initial flux: Phi_i = B A = 0.40 T x 0.05 m^2 = 0.020 Wb; final flux Phi_f = 0 Wb. Average EMF = -N (Phi_f - Phi_i) / t = -200 x (0 - 0.020 Wb) / 0.020 s = 200 x 0.020 / 0.020 = 200 V.",
+          "explanation": "Faraday's law ties EMF to how fast flux collapses: 200 turns each losing 0.020 weber in 0.020 seconds produces a substantial 200 V spike. Lenz's law says the induced current will try to maintain the flux, which is why switching off inductive circuits causes sparks across the gap.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 18,
+      "title": "Grade 18 Physics: Calculus-Based Mechanics, Variable Forces, Work as an Integral, Differential Equations",
+      "contentBody": "In grade 18 physics, students reformulate mechanics with calculus, moving from algebraic formulas to differential equations and integral methods. Kinematics becomes the calculus of motion: velocity is the derivative of position, v = dx/dt, acceleration is the derivative of velocity, a = dv/dt, and integration reverses the process: displacement is the integral of velocity over time and velocity change is the integral of acceleration. Variable acceleration problems, such as a(t) = 2t or drag-dependent deceleration, are solved by integration instead of the constant-acceleration equations. Newton's second law F = m dv/dt is written as a differential equation; when force depends on velocity (linear drag F = -bv) or position (spring F = -kx), solving the equation gives x(t) directly: spring motion yields simple harmonic motion x(t) = A cos(omega t + phi) with omega = sqrt(k/m). Work is redefined for variable forces as the integral W = integral of F dx, computed as the area under a force-displacement graph; similarly, impulse is the area under a force-time graph. Potential energy is defined from force: F = -dU/dx, so equilibrium points occur where dU/dx = 0 and stability follows from the second derivative of U. Momentum methods handle variable forces and continuous mass flow: rocket propulsion follows from F_thrust = v_exh dm/dt, and center of mass position is computed as the mass-weighted average x_cm = integral of x dm / M. Two-dimensional motion is handled with vector functions: r(t) = x(t) i + y(t) j, with velocity and acceleration as derivatives of the position vector, and projectile motion solved by applying initial conditions to integrated components. Conservation laws are framed as first integrals of the equations of motion, letting students solve problems where Newton's law alone is unwieldy. Key vocabulary: derivative, integral, differential equation, initial condition, position function, velocity function, instantaneous rate of change, area under the curve, potential energy function, equilibrium point, center of mass integral, variable force, linear drag, rocket equation, vector function.",
+      "pedagogicalNotes": "Students must see the derivative-integral pair as tools, not jargon: connect every new equation to a graph feature (slope, area) whenever it appears. Common misconceptions: acceleration is the derivative of distance (it is the derivative of velocity), work requires a constant force (integration handles variable forces), and calculus merely re-derives old results (it unlocks velocity-dependent force problems algebra cannot solve). Assign problems where a(t) is given as a function and students recover v(t) and x(t) from initial conditions; that is where the method crystallizes. For drag, compare linear and quadratic models and connect both to terminal velocity.",
+      "exampleProblems": [
+        {
+          "problem": "A car's position is x(t) = 3t^2 + 2t meters. What are its velocity and acceleration at t = 2 s?",
+          "solution": "Velocity: v(t) = dx/dt = 6t + 2 m/s, so v(2) = 6 x 2 + 2 = 14 m/s. Acceleration: a(t) = dv/dt = 6 m/s^2 (constant at all times).",
+          "explanation": "Differentiating position once gives velocity and twice gives acceleration. The constant 6 m/s^2 acceleration matches the uniform-acceleration formulas; calculus recovers them while also working when coefficients vary with time.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "An object has acceleration a(t) = 4t m/s^2 and starts from rest at the origin. Find v(t) and x(t), and the distance covered by t = 3 s.",
+          "solution": "v(t) = integral of 4t dt = 2t^2 + C; v(0) = 0 gives C = 0, so v(t) = 2t^2 m/s. x(t) = integral of 2t^2 dt = 2t^3/3 + C2; x(0) = 0 gives C2 = 0, so x(t) = 2t^3/3 m. At t = 3 s: x = 2 x 27 / 3 = 18 m.",
+          "explanation": "Each integration introduces a constant fixed by initial conditions, which is why rest and origin start matter. The distance of 18 m in 3 s far exceeds what constant-acceleration formulas would give because the acceleration itself grows with time.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "A force F(x) = 4x + 2 newtons acts on a 5 kg object along the x-axis from x = 0 to x = 3 m. What work does the force do, and what is the final speed if the object starts from rest?",
+          "solution": "Work: W = integral from 0 to 3 of (4x + 2) dx = 2x^2 + 2x evaluated 0 to 3 = (18 + 6) - 0 = 24 J. Work-energy theorem: 24 J = 1/2 x 5 kg x v^2, so v^2 = 48/5 = 9.6 m^2/s^2, v = 3.10 m/s.",
+          "explanation": "Because force grows with position, the work integral (area under the F-x graph, a trapezoid from 2 N to 14 N) equals 24 J; a constant-force formula would underestimate it. The work-energy theorem then converts that work directly into final kinetic energy and speed.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 19,
+      "title": "Grade 19 Physics: Calculus-Based Electromagnetism, Gauss's Law, Electric Potential, Maxwell's Equations",
+      "contentBody": "In grade 19 physics, students study electromagnetism through field theory and calculus. Electrostatics begins with Coulomb's law F = k q1 q2 / r^2 (k = 8.99 x 10^9 N m^2/C^2), but the field concept is central: the electric field E = F/q describes force per unit charge at each point in space, and fields from multiple charges superpose vectorially. Gauss's law relates flux through a closed surface to enclosed charge: the integral of E dA over a closed surface equals Q_enclosed / epsilon0, exploiting symmetry to find fields of infinite lines, planes, and spheres without difficult integration. Electric potential V = U/q is potential energy per unit charge; potential relates to field through E = -dV/dx in one dimension, equipotential surfaces are perpendicular to field lines, and conductors in electrostatic equilibrium have constant potential and zero internal field, which explains electrostatic shielding. Capacitance is derived from geometry: parallel plates give C = epsilon0 A / d, and the energy density stored in a field is u = 1/2 epsilon0 E^2. Magnetostatics introduces the Biot-Savart law and Ampere's law (the line integral of B dl around a closed loop equals mu0 times enclosed current), computing fields of straight wires, solenoids, and toroids. The Lorentz force F = q(E + v x B) governs charged particle motion, producing helical paths in magnetic fields and enabling velocity selectors and mass spectrometers. Faraday's law (EMF = -dPhi/dt) plus Maxwell's displacement current term complete the four Maxwell equations, which predict electromagnetic waves traveling at c = 1/sqrt(mu0 epsilon0); plane wave solutions have E and B mutually perpendicular and perpendicular to propagation, with energy flux given by the Poynting vector S = E cross B / mu0. RL and LC circuits are solved with differential equations, yielding exponential decay and sinusoidal oscillation at the resonant frequency. Key vocabulary: electric field, field line, Gauss's law, electric flux, electric potential, equipotential surface, dielectric, capacitance, Biot-Savart law, Ampere's law, Lorentz force, displacement current, Maxwell's equations, electromagnetic wave, Poynting vector.",
+      "pedagogicalNotes": "Field thinking is the major conceptual shift: draw field and equipotential lines before any calculation. Common misconceptions: electric field and electric force are the same (field is force per unit charge), a charge inside a Gaussian surface is shielded from the field (Gauss's law counts enclosed charge regardless of position), and zero potential means zero field (field is the spatial gradient of potential). Train students to use symmetry to predict field direction before integrating; blind integration is the most common wasted effort. Present Maxwell's equations as four statements about field sources rather than an intimidating symbol block, and stress how displacement current fixed Ampere's law's inconsistency for charging capacitors.",
+      "exampleProblems": [
+        {
+          "problem": "Two point charges of +3 microcoulomb and -3 microcoulomb are 0.20 m apart. What is the force between them? (k = 8.99 x 10^9 N m^2/C^2)",
+          "solution": "F = k |q1 q2| / r^2 = 8.99 x 10^9 x (3 x 10^-6 x 3 x 10^-6) / (0.20)^2 = 8.99 x 10^9 x 9 x 10^-12 / 0.040 = 0.0809 / 0.040 = 2.02 N, attractive.",
+          "explanation": "Equal and opposite charges attract with 2.02 newtons. Even microcoulomb charges at centimeter-scale separations produce measurable forces because k is enormous; the force follows the inverse square law just like gravity but is far stronger at laboratory scales.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A parallel-plate capacitor has plate area 0.020 m^2 and separation 0.0050 m, with air between the plates (epsilon0 = 8.85 x 10^-12 F/m). What is its capacitance, and what charge flows when it is connected to a 12 V battery?",
+          "solution": "C = epsilon0 A / d = 8.85 x 10^-12 F/m x 0.020 m^2 / 0.0050 m = 3.54 x 10^-11 F = 35.4 pF. Charge: Q = C V = 3.54 x 10^-11 F x 12 V = 4.25 x 10^-10 C.",
+          "explanation": "Capacitance is purely geometric: bigger plates store more charge per volt and closer plates store more as well. At 12 V this small capacitor stores about 0.4 nanocoulombs; inserting a dielectric would multiply C by the material's dielectric constant.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "An electron moves at 3 x 10^6 m/s perpendicular to a 0.020 T magnetic field. What is the magnetic force on it and the radius of its circular path? (e = 1.6 x 10^-19 C, m_e = 9.11 x 10^-31 kg)",
+          "solution": "Force: F = q v B sin(90 degrees) = 1.6 x 10^-19 C x 3 x 10^6 m/s x 0.020 T = 9.6 x 10^-15 N. Radius: r = m v / (q B) = 9.11 x 10^-31 kg x 3 x 10^6 m/s / (1.6 x 10^-19 C x 0.020 T) = 2.73 x 10^-24 / 3.2 x 10^-21 = 8.5 x 10^-4 m = 0.85 mm.",
+          "explanation": "The magnetic force is always perpendicular to velocity, so it bends the path into a circle without changing speed. Electromagnets steering electron beams in old CRT televisions and in particle accelerators rely on exactly this radius formula; the sub-millimeter orbit here shows how light electrons curve tightly in modest fields.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "gradeLevel": 20,
+      "title": "Grade 20 Physics: Special Relativity, Mass-Energy Equivalence, Matter Waves, Quantum Mechanics Intro",
+      "contentBody": "In grade 20 physics, students study special relativity and the foundations of quantum mechanics. Special relativity rests on two postulates: the laws of physics are identical in all inertial frames, and the speed of light in vacuum (c = 3 x 10^8 m/s) is the same for all observers regardless of their motion. The consequences overturn everyday intuition: moving clocks run slow, with time dilation t = t0 / sqrt(1 - v^2/c^2); moving lengths contract, L = L0 sqrt(1 - v^2/c^2); and simultaneity itself is relative. Relativistic momentum p = gamma m v with gamma = 1 / sqrt(1 - v^2/c^2) grows without bound as speed approaches c, so infinite energy would be needed to reach light speed, making c the universal speed limit. Mass-energy equivalence E = mc^2 shows mass is a form of energy; the full relation E^2 = (pc)^2 + (mc^2)^2 unifies rest energy and kinetic energy, and nuclear reactions convert small mass deficits into enormous energy, as in the Sun and nuclear reactors. The relativistic Doppler effect connects to astronomy and the observed redshift of distant galaxies. Quantum mechanics begins where classical physics fails at atomic scales: blackbody radiation, the photoelectric effect, and sharp atomic spectra all require quantized energy. De Broglie proposed that matter has wave character with wavelength lambda = h/p, confirmed by electron diffraction experiments. The Bohr model quantized angular momentum in hydrogen, giving energy levels E_n = -13.6 eV / n^2 and the observed spectral lines. Heisenberg's uncertainty principle states that position and momentum cannot both be known precisely: delta x delta p >= h / (4 pi), a fundamental limit of nature rather than an instrument flaw. The Schrodinger equation governs the wave function, whose square gives probability density, replacing classical certainty with probability amplitudes. Quantum tunneling, energy bands in solids, and applications from lasers to transistors demonstrate the theory's reach. Key vocabulary: inertial frame, speed of light postulate, time dilation, length contraction, mass-energy equivalence, relativistic momentum, matter wave, de Broglie wavelength, quantized energy level, atomic spectrum, uncertainty principle, wave function, probability amplitude, Schrodinger equation, tunneling.",
+      "pedagogicalNotes": "Relativity demotes common sense, so derive each result from the two postulates with light-clock arguments instead of asserting formulas. Common misconceptions: relativity only matters near light speed (GPS satellites require relativistic corrections), E = mc^2 means any mass can be freely converted to energy (only reaction mass defects convert), and uncertainty is a measurement limitation (it is intrinsic to wave-like nature). In quantum topics, keep historical failure points front and center: classical physics predicting infinite blackbody energy shows why quantization was necessary. Use probability simulations for the wave function so students see |Psi|^2 as an outcome distribution. Keep the mathematics light; the conceptual revolution matters more than solving the Schrodinger equation at this level.",
+      "exampleProblems": [
+        {
+          "problem": "How much energy is released if 1.0 gram of matter is completely converted into energy? (c = 3 x 10^8 m/s)",
+          "solution": "E = mc^2 = 0.0010 kg x (3 x 10^8 m/s)^2 = 0.0010 x 9 x 10^16 = 9 x 10^13 J.",
+          "explanation": "One gram yields 90 trillion joules, roughly the energy of a 20-kiloton explosion or the daily output of a large power station. The c^2 factor is astronomically large, which is why tiny mass losses in the Sun's fusion produce all of sunlight.",
+          "difficulty": "easy"
+        },
+        {
+          "problem": "A spaceship travels at 0.60c relative to Earth. By what factor do its clocks run slow compared with Earth clocks? If 5.0 years pass aboard the ship, how much time passes on Earth?",
+          "solution": "gamma = 1 / sqrt(1 - v^2/c^2) = 1 / sqrt(1 - 0.36) = 1 / sqrt(0.64) = 1 / 0.80 = 1.25. Earth time = gamma x ship time = 1.25 x 5.0 years = 6.25 years.",
+          "explanation": "At 60 percent of light speed, moving clocks tick 25 percent slow: 5 years aboard matches 6.25 years on Earth. This is the twin paradox in quantitative form; the traveler genuinely ages less, confirmed daily by corrected muon lifetimes and satellite clocks.",
+          "difficulty": "medium"
+        },
+        {
+          "problem": "What is the de Broglie wavelength of an electron accelerated from rest through a potential difference of 150 V? (e = 1.6 x 10^-19 C, m = 9.11 x 10^-31 kg, h = 6.63 x 10^-34 J s)",
+          "solution": "Kinetic energy: E_k = eV = 1.6 x 10^-19 C x 150 V = 2.4 x 10^-17 J. Speed: v = sqrt(2 E_k / m) = sqrt(4.8 x 10^-17 / 9.11 x 10^-31) = sqrt(5.27 x 10^13) = 7.26 x 10^6 m/s. Wavelength: lambda = h / (m v) = 6.63 x 10^-34 / (9.11 x 10^-31 x 7.26 x 10^6) = 6.63 x 10^-34 / 6.61 x 10^-24 = 1.00 x 10^-10 m = 0.10 nm.",
+          "explanation": "The electron's wave nature gives it a wavelength of 0.1 nanometers, comparable to atomic spacing, which is why electron diffraction resolves crystal structures and electron microscopes out-resolve visible light. Every moving object has a de Broglie wavelength, but for macroscopic masses it is far too small to observe.",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
