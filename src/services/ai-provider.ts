@@ -1,6 +1,19 @@
 import type { FunctionCall, FunctionDeclaration } from '@google/generative-ai';
 
-export type AiProviderErrorKind = 'not_configured' | 'unauthorized' | 'rate_limited' | 'unavailable' | 'network' | 'unknown';
+export type AiProviderErrorKind =
+  | 'not_configured'
+  | 'unauthorized'
+  | 'rate_limited'
+  | 'unavailable'
+  | 'network'
+  | 'unknown'
+  /** The worker rejected this app's own embedding credential (feature 002-secure-embed-telemetry).
+   *  Not retryable across providers — every provider sits behind the same gate. */
+  | 'client_unauthorized'
+  /** The worker throttled this app's client id (per-client rate limit). Not retryable. */
+  | 'client_throttled'
+  /** No `window.conversiaClient` credential was injected into this page by the host app. */
+  | 'client_not_configured';
 
 export class AiProviderError extends Error {
   constructor(

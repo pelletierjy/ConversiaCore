@@ -2,6 +2,11 @@ import { GoogleGenerativeAI, TaskType, type FunctionCall, type FunctionDeclarati
 import { ChatGroq } from '@langchain/groq';
 import { ChatOpenRouter } from '@langchain/openrouter';
 import { AIMessage, HumanMessage, SystemMessage, type BaseMessage } from '@langchain/core/messages';
+import { handleAdminRequest } from './admin-api';
+import { verifyClientCredential } from './client-auth';
+import type { KvLike } from './credential-utils';
+import { logEvent, newCorrelationId } from './observability';
+import { bumpCounters, checkAndIncrement } from './rate-limit';
 
 interface Env {
   GEMINI_API_KEY?: string;
@@ -9,6 +14,10 @@ interface Env {
   OPENROUTER_API_KEY?: string;
   DEEPSEEK_API_KEY?: string;
   HUGGING_FACE_API_KEY?: string;
+  /** Embedding-client registry binding (feature 002-secure-embed-telemetry). */
+  CLIENTS?: KvLike;
+  /** Enables the /admin/* management surface; absent → 503 not_configured. */
+  ADMIN_TOKEN?: string;
 }
 
 interface ChatTurn {
@@ -45,7 +54,7 @@ function isAllowedOrigin(origin: string | null): boolean {
 function corsHeaders(origin: string | null): HeadersInit {
   const headers: Record<string, string> = {
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Headers': 'Content-Type, X-Conversia-Client, X-Conversia-Key, X-Conversia-Attempt',
     Vary: 'Origin',
   };
   if (origin && isAllowedOrigin(origin)) {
@@ -178,7 +187,7 @@ async function handleDeepSeekChat(body: ChatRequestBody, apiKey: string): Promis
     const errorText = await response.text().catch(() => 'unknown');
     throw new Error(`${response.status} ${errorText}`);
   }
-  const data = await response.json<{
+  const data = (await response.json()) as {
     choices: Array<{
       message: {
         content?: string;
@@ -189,13 +198,13 @@ async function handleDeepSeekChat(body: ChatRequestBody, apiKey: string): Promis
         }>;
       };
     }>;
-  }>();
+  };
   const choice = data.choices[0];
   if (!choice) throw new Error('DeepSeek API returned no choices');
   const text = choice.message.content || '';
   const functionCalls = choice.message.tool_calls?.map((call) => ({
     name: call.function.name,
-    args: safeJsonParse(call.function.arguments),
+    args: safeJsonParse(call.function.arguments) ?? {},
   }));
   return { text, functionCalls };
 }
@@ -237,7 +246,7 @@ async function handleHuggingFaceChat(body: ChatRequestBody, apiKey: string): Pro
     const errorText = await response.text().catch(() => 'unknown');
     throw new Error(`${response.status} ${errorText}`);
   }
-  const data = await response.json<{
+  const data = (await response.json()) as {
     choices: Array<{
       message: {
         content?: string;
@@ -248,71 +257,178 @@ async function handleHuggingFaceChat(body: ChatRequestBody, apiKey: string): Pro
         }>;
       };
     }>;
-  }>();
+  };
   const choice = data.choices[0];
   if (!choice) throw new Error('Hugging Face API returned no choices');
   const text = choice.message.content || '';
   const functionCalls = choice.message.tool_calls?.map((call) => ({
     name: call.function.name,
-    args: safeJsonParse(call.function.arguments),
+    args: safeJsonParse(call.function.arguments) ?? {},
   }));
   return { text, functionCalls };
 }
 
+const PROVIDER_BY_ROUTE: Record<string, string> = {
+  '/gemini/chat': 'gemini',
+  '/gemini/embed': 'gemini',
+  '/groq/chat': 'groq',
+  '/openrouter/chat': 'openrouter',
+  '/deepseek/chat': 'deepseek',
+  '/huggingface/chat': 'huggingface',
+};
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const origin = request.headers.get('Origin');
+    const { pathname } = new URL(request.url);
+    const correlationId = newCorrelationId();
+    const startedAt = Date.now();
+    const withCorrelation = (response: Response): Response => {
+      response.headers.set('X-Correlation-Id', correlationId);
+      return response;
+    };
+    const logBase = { correlationId, route: pathname, origin: origin ?? undefined };
+    const durationMs = (): number => Date.now() - startedAt;
+
+    // Admin surface is token-guarded, not origin-gated: the operator CLI sends no Origin header.
+    if (pathname.startsWith('/admin/')) {
+      return withCorrelation(await handleAdminRequest(request, env, origin, correlationId));
+    }
 
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
     if (!isAllowedOrigin(origin)) {
-      return jsonResponse({ error: 'origin_not_allowed' }, 403, origin);
+      logEvent({
+        ...logBase,
+        level: 'warn',
+        event: 'request_refused',
+        outcome: 'refused',
+        status: 403,
+        durationMs: durationMs(),
+        errorKind: 'origin_not_allowed',
+      });
+      return withCorrelation(jsonResponse({ error: 'origin_not_allowed' }, 403, origin));
     }
     if (request.method !== 'POST') {
-      return jsonResponse({ error: 'method_not_allowed' }, 405, origin);
+      return withCorrelation(jsonResponse({ error: 'method_not_allowed' }, 405, origin));
     }
 
-    const { pathname } = new URL(request.url);
+    // Client-credential gate (FR-002/FR-003), then per-client rate limit (FR-007).
+    const auth = await verifyClientCredential(request.headers, env, origin);
+    if (!auth.ok) {
+      if (auth.remoteId && env.CLIENTS) {
+        await bumpCounters(env.CLIENTS, auth.remoteId, 'r').catch(() => undefined);
+      }
+      logEvent({
+        ...logBase,
+        remoteId: auth.remoteId ?? 'unknown',
+        level: 'warn',
+        event: 'request_refused',
+        outcome: 'refused',
+        status: 401,
+        durationMs: durationMs(),
+        errorKind: 'not_authorized',
+      });
+      return withCorrelation(jsonResponse({ error: 'not_authorized' }, 401, origin));
+    }
+    const client = auth.client;
+    const gate = await checkAndIncrement(env.CLIENTS as KvLike, client.remoteId, client.requestLimitPerMinute);
+    if (!gate.allowed) {
+      logEvent({
+        ...logBase,
+        remoteId: client.remoteId,
+        level: 'warn',
+        event: 'request_throttled',
+        outcome: 'throttled',
+        status: 429,
+        durationMs: durationMs(),
+        errorKind: 'rate_limited',
+      });
+      return withCorrelation(jsonResponse({ error: 'rate_limited' }, 429, origin));
+    }
+
+    const provider = PROVIDER_BY_ROUTE[pathname];
+    /** Fallback depth derived from the widget orchestrator's attempt number (1-based) — a
+     *  request field, not widget telemetry, so FR-017's service-side scope holds. */
+    const attempt = Number(request.headers.get('X-Conversia-Attempt'));
+    const fallbackCount = Number.isFinite(attempt) && attempt >= 1 ? attempt - 1 : undefined;
+    /** Logs and returns one handler outcome, keeping served/errored counters and the
+     *  structured event stream in lockstep (FR-009, FR-012). */
+    const serve = async (body: unknown, status: number): Promise<Response> => {
+      const ok = status < 400;
+      if (!ok && env.CLIENTS) {
+        await bumpCounters(env.CLIENTS, client.remoteId, 'e').catch(() => undefined);
+      }
+      logEvent({
+        ...logBase,
+        remoteId: client.remoteId,
+        level: ok ? 'info' : 'warn',
+        event: ok ? 'request_served' : 'request_errored',
+        outcome: ok ? 'served' : 'errored',
+        status,
+        durationMs: durationMs(),
+        provider,
+        fallbackCount,
+        errorKind: ok ? undefined : status === 503 ? 'not_configured' : undefined,
+      });
+      return withCorrelation(jsonResponse(body, status, origin));
+    };
 
     try {
       switch (pathname) {
         case '/gemini/chat': {
-          if (!env.GEMINI_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<ChatRequestBody>();
-          return jsonResponse(await handleGeminiChat(body, env.GEMINI_API_KEY), 200, origin);
+          if (!env.GEMINI_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as ChatRequestBody;
+          return serve(await handleGeminiChat(body, env.GEMINI_API_KEY), 200);
         }
         case '/gemini/embed': {
-          if (!env.GEMINI_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<EmbedRequestBody>();
-          return jsonResponse(await handleGeminiEmbed(body, env.GEMINI_API_KEY), 200, origin);
+          if (!env.GEMINI_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as EmbedRequestBody;
+          return serve(await handleGeminiEmbed(body, env.GEMINI_API_KEY), 200);
         }
         case '/groq/chat': {
-          if (!env.GROQ_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<ChatRequestBody>();
-          return jsonResponse(await handleGroqChat(body, env.GROQ_API_KEY), 200, origin);
+          if (!env.GROQ_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as ChatRequestBody;
+          return serve(await handleGroqChat(body, env.GROQ_API_KEY), 200);
         }
         case '/openrouter/chat': {
-          if (!env.OPENROUTER_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<ChatRequestBody>();
-          return jsonResponse(await handleOpenRouterChat(body, env.OPENROUTER_API_KEY), 200, origin);
+          if (!env.OPENROUTER_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as ChatRequestBody;
+          return serve(await handleOpenRouterChat(body, env.OPENROUTER_API_KEY), 200);
         }
         case '/deepseek/chat': {
-          if (!env.DEEPSEEK_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<ChatRequestBody>();
-          return jsonResponse(await handleDeepSeekChat(body, env.DEEPSEEK_API_KEY), 200, origin);
+          if (!env.DEEPSEEK_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as ChatRequestBody;
+          return serve(await handleDeepSeekChat(body, env.DEEPSEEK_API_KEY), 200);
         }
         case '/huggingface/chat': {
-          if (!env.HUGGING_FACE_API_KEY) return jsonResponse({ error: 'not_configured' }, 503, origin);
-          const body = await request.json<ChatRequestBody>();
-          return jsonResponse(await handleHuggingFaceChat(body, env.HUGGING_FACE_API_KEY), 200, origin);
+          if (!env.HUGGING_FACE_API_KEY) return serve({ error: 'not_configured' }, 503);
+          const body = (await request.json()) as ChatRequestBody;
+          return serve(await handleHuggingFaceChat(body, env.HUGGING_FACE_API_KEY), 200);
         }
         default:
-          return jsonResponse({ error: 'not_found' }, 404, origin);
+          return serve({ error: 'not_found' }, 404);
       }
     } catch (error) {
       const detail = error instanceof Error ? error.message : String(error);
-      return jsonResponse({ error: 'upstream_error', detail }, statusFromError(error), origin);
+      const status = statusFromError(error);
+      if (env.CLIENTS) {
+        await bumpCounters(env.CLIENTS, client.remoteId, 'e').catch(() => undefined);
+      }
+      logEvent({
+        ...logBase,
+        remoteId: client.remoteId,
+        level: 'error',
+        event: 'request_errored',
+        outcome: 'errored',
+        status,
+        durationMs: durationMs(),
+        provider,
+        fallbackCount,
+        errorKind: 'upstream_error',
+      });
+      return withCorrelation(jsonResponse({ error: 'upstream_error', detail }, status, origin));
     }
   },
 };

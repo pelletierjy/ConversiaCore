@@ -3,7 +3,24 @@ main = "src/index.ts"
 compatibility_date = "2026-09-23"
 compatibility_flags = ["nodejs_compat"]
 
+# Client registry for the embed credential gate (spec 002-secure-embed-telemetry).
+# Create the namespace once, then paste its id below:
+#   cd worker && npx wrangler kv namespace create CLIENTS
+[[kv_namespaces]]
+binding = "CLIENTS"
+id = "1246d229cbe844caae5f07a1a383837b"
+
+# Workers Logs + automatic tracing (spec 002-secure-embed-telemetry, FR-015/FR-016).
+# Also set in the Cloudflare dashboard: Workers & Pages → conversia-core-proxy →
+# Observability → Data retention = 30 days, and a Traces (OTLP) export destination.
+[observability]
+enabled = true
+head_sampling_rate = 1
+
 [vars]
+# ADMIN_TOKEN must be set as a Worker Secret for the /admin/* endpoints to be enabled
+# (without it they return 503 not_configured):
+#   echo "<long-random-token>" | npx wrangler secret put ADMIN_TOKEN
 # DEEPSEEK_API_KEY must be set as a Worker Secret:
 #   echo $DEEPSEEK_API_KEY | wrangler secret put DEEPSEEK_API_KEY
 

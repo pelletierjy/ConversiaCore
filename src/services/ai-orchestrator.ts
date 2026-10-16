@@ -2,6 +2,7 @@ import type { FunctionCall, FunctionDeclaration } from '@google/generative-ai';
 import { AiProviderError, type AiProvider, type ChatTurn, type EmbedResult } from './ai-provider';
 import { getDisabledProviders, getProviderPriority } from './ai-provider-config';
 import { resolveProviderOrder } from './provider-order';
+import { setAttemptNumber } from './worker-client';
 
 const RETRYABLE_KINDS = new Set(['not_configured', 'unauthorized', 'rate_limited', 'unavailable', 'network']);
 
@@ -29,8 +30,12 @@ export async function generateTutorResponse(
 ): Promise<TutorResponse> {
   const providers = await resolveOrder();
   let lastError: AiProviderError | undefined;
+  let attempt = 0;
   for (const provider of providers) {
     if (!provider.isConfigured()) continue;
+    attempt += 1;
+    // Worker-side observability: attributes fallback depth to this request (FR-016).
+    setAttemptNumber(attempt);
     try {
       const { text, functionCalls } = await provider.generateTutorResponse(systemPrompt, history, provider.supportsTools ? tools : undefined);
       return { text, providerId: provider.id, functionCalls };
@@ -48,8 +53,11 @@ export async function generateTutorResponse(
 export async function embedText(text: string, taskType: 'document' | 'query'): Promise<EmbedResult> {
   const providers = await resolveOrder();
   let lastError: AiProviderError | undefined;
+  let attempt = 0;
   for (const provider of providers) {
     if (!provider.isConfigured() || !provider.embedText) continue;
+    attempt += 1;
+    setAttemptNumber(attempt);
     try {
       return await provider.embedText(text, taskType);
     } catch (error) {

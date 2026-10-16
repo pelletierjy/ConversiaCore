@@ -22,6 +22,8 @@ interface TranslationDict {
     sendButton: string;
     errorNotConfigured: string;
     errorUnauthorized: string;
+    errorClientUnauthorized: string;
+    errorClientNotConfigured: string;
     errorRateLimited: string;
     errorUnavailable: string;
     errorNetwork: string;
@@ -166,6 +168,8 @@ const en: TranslationDict = {
     sendButton: 'Send',
     errorNotConfigured: 'The AI service is not configured. Please contact an administrator.',
     errorUnauthorized: 'AI provider authorization failed. The administrator needs to check the API key.',
+    errorClientUnauthorized: "This assistant isn't authorized in this app. Please contact the app provider.",
+    errorClientNotConfigured: 'The AI assistant is not configured in this app.',
     errorRateLimited: "We're a bit busy right now. Please try again in about a minute.",
     errorUnavailable: 'The AI service is temporarily unavailable. Please try again shortly.',
     errorNetwork: 'Connection problem. Check your internet and try again.',
@@ -313,6 +317,8 @@ const fr: TranslationDict = {
     sendButton: 'Envoyer',
     errorNotConfigured: "Le service IA n'est pas configuré. Veuillez contacter un administrateur.",
     errorUnauthorized: "L'autorisation du fournisseur IA a échoué. L'administrateur doit vérifier la clé API.",
+    errorClientUnauthorized: "Cet assistant n'est pas autorisé dans cette application. Veuillez contacter le fournisseur de l'application.",
+    errorClientNotConfigured: "L'assistant IA n'est pas configuré dans cette application.",
     errorRateLimited: 'Nous sommes un peu occupés en ce moment. Veuillez réessayer dans environ une minute.',
     errorUnavailable: 'Le service IA est temporairement indisponible. Veuillez réessayer sous peu.',
     errorNetwork: 'Problème de connexion. Vérifiez votre connexion Internet et réessayez.',
@@ -460,6 +466,8 @@ const es: TranslationDict = {
     sendButton: 'Enviar',
     errorNotConfigured: 'El servicio de IA no está configurado. Por favor, contacta a un administrador.',
     errorUnauthorized: 'La autorización del proveedor de IA falló. El administrador necesita verificar la clave API.',
+    errorClientUnauthorized: 'Este asistente no está autorizado en esta aplicación. Contacta al proveedor de la aplicación.',
+    errorClientNotConfigured: 'El asistente de IA no está configurado en esta aplicación.',
     errorRateLimited: 'Estamos un poco ocupados en este momento. Inténtalo de nuevo en aproximadamente un minuto.',
     errorUnavailable: 'El servicio de IA no está disponible temporalmente. Inténtalo de nuevo en breve.',
     errorNetwork: 'Problema de conexión. Revisa tu conexión a Internet e inténtalo de nuevo.',

@@ -7,3 +7,6 @@ CLAUDE.md
 node_modules/
 dist/
 *.log
+
+# Cloudflare Wrangler local state (worker/)
+.wrangler/

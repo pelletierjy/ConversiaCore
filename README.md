@@ -39,6 +39,24 @@ Attributes:
 
 Changing `subject`, `grade-level`, or `context` restarts the flow with a new session. The widget dispatches `conversia-app:command` `CustomEvent`s (bubbling, composed) that host apps listen for to react to AI-initiated state changes. See `src/models/host-commands.ts` for the command protocol.
 
+### Client credential (required)
+
+Every embedding host needs a client credential issued once by the operator — no end-user accounts. The AI proxy refuses requests without it (feature 002-secure-embed-telemetry):
+
+```bash
+# Operator issues a remote id + one-time key (see contracts/admin-cli.md):
+CONVERSIA_WORKER_URL=… CONVERSIA_ADMIN_TOKEN=… node tools/conversia-admin/index.js client add --remote-id my-host --label "My app"
+```
+
+The host app then injects the credential into the page **before** any widget script runs — never via the launch URL:
+
+```js
+// WebView2: AddScriptToExecuteOnDocumentCreated; web hosts: an inline script above the widget
+window.conversiaClient = { version: 1, remoteId: 'my-host', key: 'cvk_my-host_…' };
+```
+
+Full contract: [`specs/002-secure-embed-telemetry/contracts/embedder-injection.md`](specs/002-secure-embed-telemetry/contracts/embedder-injection.md). Missing credential → the widget still renders but AI requests surface a friendly "not configured / not authorized" message. Rotation keeps up to two active keys per client, so you can roll out a new key before revoking the old one.
+
 ## Tech Stack
 
 - Vite + TypeScript (vanilla, no UI framework)

@@ -126,6 +126,12 @@ function describeError(error: unknown): string {
         return t('chat.errorUnavailable');
       case 'network':
         return t('chat.errorNetwork');
+      case 'client_unauthorized':
+        return t('chat.errorClientUnauthorized');
+      case 'client_throttled':
+        return t('chat.errorRateLimited');
+      case 'client_not_configured':
+        return t('chat.errorClientNotConfigured');
       default:
         return t('chat.errorGeneric');
     }
