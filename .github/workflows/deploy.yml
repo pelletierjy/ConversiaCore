@@ -36,6 +36,11 @@ jobs:
           VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
           VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+          # Standalone-SPA credential (feature 002-secure-embed-telemetry). Values live in
+          # repo secrets; missing secrets degrade the standalone page to a friendly
+          # "not configured" message (embedded hosts are unaffected — they inject their own).
+          VITE_CONVERSIA_REMOTE_ID: ${{ secrets.VITE_CONVERSIA_REMOTE_ID }}
+          VITE_CONVERSIA_CLIENT_KEY: ${{ secrets.VITE_CONVERSIA_CLIENT_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
