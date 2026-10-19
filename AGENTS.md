@@ -25,6 +25,13 @@ ConversiaCore is an embeddable AI tutor widget (the `<conversia-app>` custom ele
 - Worker: `cd worker && npm install && npm run dev` (wrangler dev), `npm run deploy` (see `worker/package.json`)
 - Type-check only: `npx tsc -b`
 
+## PI agent worker (`pi-agent/`)
+
+Separate npm package (own `package-lock.json`, wrangler 4 + Pi Durable / `@earendil-works/pi-durable`) backing this project's PI coding agent Durable Object — one of five sibling workers. Not part of the pnpm workspace; root `tsc -b`, Vite, and CI ignore it.
+- `cd pi-agent && npm install && npm run dev` (local, :8787) / `npm run deploy` (worker `pi-conversia-core`).
+- Full API/CLI/WebSocket docs: `pi-agent/README.md`. Shared `AGENT_TOKEN` + provider keys in `pi-agent/.dev.vars` (gitignored; also worker secrets).
+- The federation hub is `pi-global-agent` at `D:\Repos\pi-global-agent` (its `PEERS` var lists all four project workers).
+
 ## Setup / environment
 
 - `.env.example` lists provider and `VITE_FIREBASE_*` keys, but `VITE_WORKER_BASE_URL` is NOT in it (it currently lives in `.env.local`). The client never calls AI providers directly — `isXConfigured()` in `src/config.ts` only checks `WORKER_BASE_URL`, and all AI calls go through the worker proxy. Never call provider APIs from client code.
