@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <title>signal-grid harness</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!--
+      Dev-only harness: loads the vendored <signal-grid> web component and wires it
+      exactly like the AI providers panel, without Firebase. Open at
+      /grid-harness.html while running `npm run dev`.
+    -->
+    <h1>signal-grid harness</h1>
+    <p>Edit a cell, press Save — the payload appears below.</p>
+    <div id="grid-host"></div>
+    <pre id="out">waiting for saveChanges…</pre>
+
+    <script src="/vendor/signal-grid/runtime.js" type="module"></script>
+    <script src="/vendor/signal-grid/polyfills.js" type="module"></script>
+    <script src="/vendor/signal-grid/main.js" type="module"></script>
+    <script type="module">
+      import {
+        providerColumns,
+        buildProviderRows,
+        computeProviderSave,
+      } from '/src/ui/admin/ai-providers-grid.ts';
+
+      const host = document.getElementById('grid-host');
+      const out = document.getElementById('out');
+      const config = {
+        aiProviderPriority: ['groq', 'gemini', 'openrouter', 'deepseek', 'huggingface'],
+        aiDisabledProviders: ['deepseek'],
+      };
+
+      const grid = document.createElement('signal-grid');
+      grid.style.display = 'block';
+      grid.style.setProperty('--signal-grid-viewport-height', '340px');
+      grid.columns = providerColumns();
+      grid.model = buildProviderRows(config);
+      grid.addEventListener('saveChanges', (event) => {
+        const rows = computeProviderSave(
+          Array.isArray(event.detail?.[0]) ? event.detail[0] : event.detail ?? [],
+        );
+        out.textContent = JSON.stringify(
+          {
+            detailShape: Array.isArray(event.detail)
+              ? `array(len=${event.detail.length}, first=${typeof event.detail[0]})`
+              : typeof event.detail,
+            save: rows,
+          },
+          null,
+          2,
+        );
+        if (rows.ok) grid.model = rows.rows;
+      });
+      host.append(grid);
+
+      // For automation:
+      window.__harness = { grid, config };
+    </script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 1.5rem;
+      }
+      #out {
+        background: #f6f7f9;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 1rem;
+        max-width: 720px;
+      }
+    </style>
+  </body>
+</html>

@@ -7,6 +7,10 @@
   </head>
   <body>
     <div id="app"></div>
+    <!-- signal-grid web component: webpack runtime, zone polyfills, then the element bundle -->
+    <script src="/vendor/signal-grid/runtime.js" type="module"></script>
+    <script src="/vendor/signal-grid/polyfills.js" type="module"></script>
+    <script src="/vendor/signal-grid/main.js" type="module"></script>
     <script>
       (function () {
         var redirect = sessionStorage.getItem('gh_pages_redirect');
