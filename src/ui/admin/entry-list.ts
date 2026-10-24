@@ -228,36 +228,16 @@ function renderList(
         </div>
       </div>
 
-      <!-- Table -->
-      <div class="entry-table-wrapper">
-        <table class="entry-table">
-          <thead>
-            <tr>
-              <th class="entry-col-title">${t('entryList.tableTitleHeader')}</th>
-              <th class="entry-col-type">${t('entryList.tableEntryTypeHeader')}</th>
-              <th class="entry-col-detail">${t('entryList.tableDetailHeader')}</th>
-              <th class="entry-col-meta">${t('entryList.tableMetaHeader')}</th>
-              <th class="entry-col-actions">${t('entryList.tableActionsHeader')}</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${entries.length === 0
-              ? `<tr><td colspan="5" class="entry-table-empty">${t('entryList.empty')}</td></tr>`
-              : entries.map((e) => `
-                <tr class="entry-table-row" data-id="${e.id}">
-                  <td class="entry-col-title"><strong>${escapeHtml(e.title)}</strong></td>
-                  <td class="entry-col-type">${e.entryType === 'context' ? escapeHtml(t('entryList.contextOption')) : escapeHtml(t('entryList.subjectOption'))}</td>
-                  <td class="entry-col-detail">${formatEntryDetail(e)}</td>
-                  <td class="entry-col-meta">${formatEntryMeta(e)}</td>
-                  <td class="entry-col-actions">
-                    <button type="button" class="entry-card-edit" data-action="edit">${t('entryList.editButton')}</button>
-                    <button type="button" class="entry-card-delete" data-action="delete">${t('entryList.deleteButton')}</button>
-                  </td>
-                </tr>
-              `).join('')}
-          </tbody>
-        </table>
-      </div>
+      <!-- Table (signal-grid: schema columns + built-in actions cell) -->
+      ${entries.length === 0 ? `<p class="entry-table-empty">${t('entryList.empty')}</p>` : ''}
+      <signal-grid class="entry-grid"></signal-grid>
+      <style>
+        .entry-grid {
+          display: block;
+          margin-top: 12px;
+          --signal-grid-viewport-height: 520px;
+        }
+      </style>
     </div>
   `;
 
@@ -336,15 +316,52 @@ function renderList(
     });
   });
 
-  // Wire up row actions
-  container.querySelectorAll('.entry-table-row').forEach((rowEl) => {
-    const row = rowEl as HTMLElement;
-    const id = row.dataset.id as string;
-    const entry = entries.find((e) => e.id === id) as KnowledgeEntry;
-    if (!entry) return;
+  // Grid wiring: schema-driven columns; Edit/Delete via the built-in `actions`
+  // cell, which reports clicks through the `cellAction` output with the row data.
+  const grid = container.querySelector('signal-grid') as HTMLElement & {
+    model: unknown[];
+    columns: unknown[];
+    editable: boolean;
+  };
+  grid.columns = [
+    { field: 'title', header: t('entryList.tableTitleHeader'), type: 'string', width: 300 },
+    { field: 'type', header: t('entryList.tableEntryTypeHeader'), type: 'string', width: 120 },
+    { field: 'detail', header: t('entryList.tableDetailHeader'), type: 'string', width: 280 },
+    { field: 'meta', header: t('entryList.tableMetaHeader'), type: 'string', width: 340 },
+    {
+      field: 'actions',
+      header: t('entryList.tableActionsHeader'),
+      type: 'actions',
+      width: 190,
+      props: {
+        actions: [
+          { id: 'edit', label: t('entryList.editButton') },
+          { id: 'delete', label: t('entryList.deleteButton'), variant: 'danger' },
+        ],
+      },
+    },
+  ];
+  grid.model = entries.map((e) => ({
+    id: e.id,
+    title: e.title,
+    type: e.entryType === 'context' ? t('entryList.contextOption') : t('entryList.subjectOption'),
+    detail: formatEntryDetail(e),
+    meta: formatEntryMeta(e),
+    entry: e,
+  }));
+  // Display-only list: no unsaved-edit model, so hide the grid's Save/Reset bar.
+  grid.editable = false;
 
-    row.querySelector('[data-action="edit"]')?.addEventListener('click', () => opts.onEdit(entry));
-    row.querySelector('[data-action="delete"]')?.addEventListener('click', async () => {
+  grid.addEventListener('cellAction', async (event) => {
+    const detail = (event as CustomEvent).detail;
+    const payload = (Array.isArray(detail?.[0]) ? detail[0] : detail) as
+      | { action?: string; row?: { entry?: KnowledgeEntry } }
+      | undefined;
+    const entry = payload?.row?.entry;
+    if (!entry) return;
+    if (payload?.action === 'edit') {
+      opts.onEdit(entry);
+    } else if (payload?.action === 'delete') {
       if (!confirm(t('entryList.deleteConfirm', { title: entry.title }))) return;
       try {
         await deleteKnowledgeEntry(entry.id);
@@ -354,7 +371,7 @@ function renderList(
       } catch {
         showToast(t('entryList.deleteFailedToast'), 'error');
       }
-    });
+    }
   });
 }
 
