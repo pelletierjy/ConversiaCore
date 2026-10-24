@@ -37,7 +37,21 @@
       const grid = document.createElement('signal-grid');
       grid.style.display = 'block';
       grid.style.setProperty('--signal-grid-viewport-height', '340px');
-      grid.columns = providerColumns();
+      grid.columns = [
+        ...providerColumns(),
+        {
+          field: 'id',
+          header: 'Actions',
+          type: 'actions',
+          width: 190,
+          props: {
+            actions: [
+              { id: 'pin', label: 'Pin' },
+              { id: 'remove', label: 'Remove', variant: 'danger' },
+            ],
+          },
+        },
+      ];
       grid.model = buildProviderRows(config);
       grid.addEventListener('saveChanges', (event) => {
         const rows = computeProviderSave(
@@ -56,6 +70,11 @@
         if (rows.ok) grid.model = rows.rows;
       });
       host.append(grid);
+
+      grid.addEventListener('cellAction', (event) => {
+        const detail = Array.isArray(event.detail?.[0]) ? event.detail[0] : event.detail;
+        out.textContent = JSON.stringify({ cellAction: detail }, null, 2);
+      });
 
       // For automation:
       window.__harness = { grid, config };
