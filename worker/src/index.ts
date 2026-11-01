@@ -42,12 +42,39 @@ interface EmbedRequestBody {
   model: string;
 }
 
-const ALLOWED_ORIGINS_EXACT = new Set(['https://pelletierjy.github.io', 'https://scales-viewer.vercel.app', 'https://homework-tutora.vercel.app']);
+const ALLOWED_ORIGINS_EXACT = new Set([
+  'https://pelletierjy.github.io',
+  'https://scales-viewer.vercel.app',
+  'https://homework-tutora.vercel.app',
+  // Native shells of the host apps above (same apps, same client credential,
+  // but their WebView reports a private origin instead of the deployed site's).
+  // Without these the preflight gets no Access-Control-Allow-Origin, the
+  // browser rejects the response, and the widget reports a generic
+  // "Connection problem":
+  //   http://tauri.localhost   Tauri v2 on Windows/Linux (WebView2 / custom protocol)
+  //   tauri://localhost        Tauri v2 on macOS
+  //   https://localhost        Capacitor, androidScheme: "https" (this app's config)
+  //   capacitor://localhost    Capacitor with the capacitor:// scheme
+  // These origins are private to the machine running the app, so they cannot be
+  // claimed by a remote page; the client-credential gate below stays the real
+  // authentication check for every origin on this list.
+  'http://tauri.localhost',
+  'tauri://localhost',
+  'https://localhost',
+  'capacitor://localhost',
+]);
+
+// Vercel preview deployments of the hosted hosts, so a PR can be demoed from its
+// own URL. Anchored per host and restricted to *.vercel.app rather than a blanket
+// pattern, which would admit any Vercel project (and an origin such as
+// `…-git-x.vercel.app.evil.com` must stay refused).
+const ALLOWED_PREVIEW_ORIGIN = /^https:\/\/(?:scales-viewer|homework-tutora)-git-[a-z0-9-]+\.vercel\.app$/;
 
 function isAllowedOrigin(origin: string | null): boolean {
   if (!origin) return false;
   if (ALLOWED_ORIGINS_EXACT.has(origin)) return true;
   if (origin.startsWith('http://localhost:')) return true;
+  if (ALLOWED_PREVIEW_ORIGIN.test(origin)) return true;
   return false;
 }
 
