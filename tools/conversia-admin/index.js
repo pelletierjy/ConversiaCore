@@ -4,7 +4,7 @@
 // Constitution Principle II: args → stdout (JSON envelope by default), errors → stderr,
 // structured output, meaningful exit codes: 0 ok · 1 validation/conflict · 2 auth · 3 upstream.
 
-const COMMANDS = new Set(['client', 'usage']);
+const COMMANDS = new Set(['client', 'usage', 'reports']);
 const CLIENT_ACTIONS = new Set(['add', 'list', 'show', 'rotate', 'revoke-key', 'revoke']);
 
 /** Parses trailing `--flag value` pairs; repeated flags (e.g. --origin) collect into arrays. */
@@ -44,6 +44,11 @@ function humanize(command, action, data) {
       .map((c) => `${c.remoteId}\t${c.status}\tkeys=${c.credentialCount}\tlimit=${c.requestLimitPerMinute}\t${c.label ?? ''}`)
       .join('\n') || '(no registered clients)';
   }
+  if (command === 'reports') {
+    return (data.reports ?? [])
+      .map((r) => `${r.createdAt}\t${r.remoteId}\t${r.reason}\t${r.providerId ?? '-'}\t${(r.comment ?? '').replace(/\s+/g, ' ')}\n  reply: ${String(r.assistantContent).replace(/\s+/g, ' ').slice(0, 200)}`)
+      .join('\n') || '(no reports)';
+  }
   if (command === 'usage') {
     return [
       `client: ${data.remoteId} (last ${data.windowDays} days)`,
@@ -69,7 +74,7 @@ export async function runCommand(argv, deps) {
   const secondIsFlag = typeof second === 'string' && second.startsWith('--');
   const action = group === 'client' ? (secondIsFlag ? undefined : second) : undefined;
   const rest = secondIsFlag ? [second, ...tailStart] : tailStart;
-  if (!group || !COMMANDS.has(group)) return fail('usage', 'Usage: conversia-admin <client add|list|show|rotate|revoke-key|revoke|usage> [flags]', 1);
+  if (!group || !COMMANDS.has(group)) return fail('usage', 'Usage: conversia-admin <client add|list|show|rotate|revoke-key|revoke|usage|reports> [flags]', 1);
   if (group === 'client' && (!action || !CLIENT_ACTIONS.has(action))) {
     return fail('usage', `Unknown client action "${second ?? ''}". Expected one of: ${[...CLIENT_ACTIONS].join(', ')}`, 1);
   }
@@ -78,7 +83,7 @@ export async function runCommand(argv, deps) {
   }
 
   const flags = parseFlags(rest);
-  const needsRemoteId = !(group === 'client' && (action === 'list' || action === 'add'));
+  const needsRemoteId = group !== 'reports' && !(group === 'client' && (action === 'list' || action === 'add'));
   if (group === 'usage' || needsRemoteId) {
     if (!flags['remote-id']) return fail('usage', `--remote-id is required for "${group}${action ? ' ' + action : ''}"`, 1);
   }
@@ -92,7 +97,12 @@ export async function runCommand(argv, deps) {
   let method = 'GET';
   let body;
 
-  if (group === 'usage') {
+  if (group === 'reports') {
+    const params = [];
+    if (flags['remote-id']) params.push(`remoteId=${encodeURIComponent(flags['remote-id'])}`);
+    if (flags.limit) params.push(`limit=${encodeURIComponent(flags.limit)}`);
+    url = `${base}/admin/reports${params.length ? '?' + params.join('&') : ''}`;
+  } else if (group === 'usage') {
     const days = flags.days ? `&days=${encodeURIComponent(flags.days)}` : '';
     url = `${base}/admin/usage?remoteId=${encodeURIComponent(flags['remote-id'])}${days}`;
   } else if (action === 'add') {

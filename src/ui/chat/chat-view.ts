@@ -6,6 +6,9 @@ import { sendStudentMessage } from '../../services/homework';
 import { AiProviderError } from '../../services/ai-provider';
 import { PROVIDER_DISPLAY } from '../../services/ai-provider-registry';
 import { t } from '../../i18n/translations';
+import { getLocale } from '../../i18n/locale';
+import { openReportDialog } from './report-dialog';
+import { submitContentReport } from '../../services/report';
 import { HOST_COMMAND_PROTOCOL_VERSION, type HostCommand, type HostCommandEventDetail } from '../../models/host-commands';
 import type { ChatMessage, StudentSession } from '../../models/types';
 
@@ -46,7 +49,34 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
     messages = [welcomeMessage];
     await addMessage(welcomeMessage);
   }
-  renderMessageList(messageListEl, messages);
+  const render = (): void => renderMessageList(messageListEl, messages, handleReport);
+
+  function handleReport(messageId: string): void {
+    const index = messages.findIndex((m) => m.id === messageId);
+    const target = messages[index];
+    if (!target) return;
+    const prompt = messages.slice(0, index).reverse().find((m) => m.role === 'student');
+    openReportDialog(container.querySelector('.chat-view') as HTMLElement, async ({ reason, comment }) => {
+      await submitContentReport({
+        reason,
+        comment: comment || undefined,
+        messageId: target.id,
+        sessionId: session.id,
+        assistantContent: target.content,
+        studentPrompt: prompt?.content,
+        providerId: target.metadata?.providerId,
+        subject: session.subject,
+        gradeLevel: session.gradeLevel,
+        contextKey: session.contextKey,
+        locale: getLocale(),
+      });
+      target.metadata = { ...target.metadata, reportedAt: Date.now() };
+      await addMessage(target);
+      render();
+    });
+  }
+
+  render();
 
   renderInputBar(inputBarEl, async (text) => {
     const studentMessage: ChatMessage = {
@@ -57,7 +87,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       timestamp: Date.now(),
     };
     messages = [...messages, studentMessage];
-    renderMessageList(messageListEl, messages);
+    render();
     await addMessage(studentMessage);
 
     setInputBarDisabled(inputBarEl, true);
@@ -92,7 +122,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
         },
       };
       messages = [...messages, assistantMessage];
-      renderMessageList(messageListEl, messages);
+      render();
       await addMessage(assistantMessage);
       if (result.hostCommands?.length) {
         dispatchHostCommands(container, session.id, result.hostCommands);
