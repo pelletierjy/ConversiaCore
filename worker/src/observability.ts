@@ -18,6 +18,7 @@ export interface LogEvent {
   provider?: string;
   fallbackCount?: number;
   errorKind?: string;
+  reportReason?: string;
 }
 
 export type LogEventInput = Omit<Partial<LogEvent>, 'event' | 'level' | 'correlationId'> & {
@@ -40,6 +41,7 @@ const ALLOWED_FIELDS = new Set<string>([
   'provider',
   'fallbackCount',
   'errorKind',
+  'reportReason',
 ]);
 
 /** Anything matching these is replaced with "[redacted]" before it can reach a log backend (FR-014/FR-018/SC-007). */

@@ -33,6 +33,22 @@ interface TranslationDict {
     modelLabel: string;
     welcomeMessage: string;
     welcomeMessageGeneral: string;
+    reportButton: string;
+    reportedLabel: string;
+    reportTitle: string;
+    reportIntro: string;
+    reportReasonLabel: string;
+    reportReasonInappropriate: string;
+    reportReasonIncorrect: string;
+    reportReasonHarmful: string;
+    reportReasonOther: string;
+    reportCommentLabel: string;
+    reportCommentPlaceholder: string;
+    reportSubmit: string;
+    reportCancel: string;
+    reportSending: string;
+    reportThanks: string;
+    reportFailed: string;
   };
   admin: {
     firebaseNotConfiguredTitle: string;
@@ -180,6 +196,22 @@ const en: TranslationDict = {
     modelLabel: 'Model',
     welcomeMessage: "Hi! I'm your {subject} tutor. Ask me a question, or ask for a practice problem whenever you're ready.",
     welcomeMessageGeneral: "Hi! I'm here to help. Ask me your questions if you need help with using the {appName}!",
+    reportButton: 'Report an issue',
+    reportedLabel: 'Reported',
+    reportTitle: 'Report an issue with this reply',
+    reportIntro: 'Tell us what is wrong with this AI-generated reply. Your report is reviewed by the app provider.',
+    reportReasonLabel: 'What is the problem?',
+    reportReasonInappropriate: 'Inappropriate or offensive',
+    reportReasonIncorrect: 'Incorrect or misleading',
+    reportReasonHarmful: 'Unsafe or harmful',
+    reportReasonOther: 'Something else',
+    reportCommentLabel: 'Details (optional)',
+    reportCommentPlaceholder: 'Add anything that helps us understand the problem',
+    reportSubmit: 'Send report',
+    reportCancel: 'Cancel',
+    reportSending: 'Sending...',
+    reportThanks: 'Thank you. Your report was sent.',
+    reportFailed: 'The report could not be sent. Please try again.',
   },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase is not configured',
@@ -329,6 +361,22 @@ const fr: TranslationDict = {
     modelLabel: 'Modèle',
     welcomeMessage: 'Bonjour ! Je suis ton tuteur de {subject}. Pose-moi une question, ou demande un exercice quand tu seras prêt.',
     welcomeMessageGeneral: "Salut ! Je suis là pour aider. Pose-moi tes questions si tu as besoin d'aide pour utiliser {appName} !",
+    reportButton: 'Signaler un problème',
+    reportedLabel: 'Signalé',
+    reportTitle: 'Signaler un problème avec cette réponse',
+    reportIntro: "Dis-nous ce qui ne va pas avec cette réponse générée par l'IA. Ton signalement sera examiné par le fournisseur de l'application.",
+    reportReasonLabel: 'Quel est le problème ?',
+    reportReasonInappropriate: 'Inapproprié ou offensant',
+    reportReasonIncorrect: 'Incorrect ou trompeur',
+    reportReasonHarmful: 'Dangereux ou nuisible',
+    reportReasonOther: 'Autre chose',
+    reportCommentLabel: 'Détails (facultatif)',
+    reportCommentPlaceholder: 'Ajoute tout ce qui nous aide à comprendre le problème',
+    reportSubmit: 'Envoyer le signalement',
+    reportCancel: 'Annuler',
+    reportSending: 'Envoi...',
+    reportThanks: 'Merci. Ton signalement a été envoyé.',
+    reportFailed: "Le signalement n'a pas pu être envoyé. Réessaie.",
   },
   admin: {
     firebaseNotConfiguredTitle: "Firebase n'est pas configuré",
@@ -478,6 +526,22 @@ const es: TranslationDict = {
     modelLabel: 'Modelo',
     welcomeMessage: '¡Hola! Soy tu tutor de {subject}. Hazme una pregunta o pide un ejercicio de práctica cuando estés listo.',
     welcomeMessageGeneral: '¡Hola! Estoy aquí para ayudarte. ¡Hazme tus preguntas si necesitas ayuda para usar {appName}!',
+    reportButton: 'Informar de un problema',
+    reportedLabel: 'Informado',
+    reportTitle: 'Informar de un problema con esta respuesta',
+    reportIntro: 'Cuéntanos qué falla en esta respuesta generada por IA. El proveedor de la aplicación revisará tu informe.',
+    reportReasonLabel: '¿Cuál es el problema?',
+    reportReasonInappropriate: 'Inapropiado u ofensivo',
+    reportReasonIncorrect: 'Incorrecto o engañoso',
+    reportReasonHarmful: 'Peligroso o dañino',
+    reportReasonOther: 'Otro motivo',
+    reportCommentLabel: 'Detalles (opcional)',
+    reportCommentPlaceholder: 'Añade cualquier dato que nos ayude a entender el problema',
+    reportSubmit: 'Enviar informe',
+    reportCancel: 'Cancelar',
+    reportSending: 'Enviando...',
+    reportThanks: 'Gracias. Tu informe fue enviado.',
+    reportFailed: 'No se pudo enviar el informe. Inténtalo de nuevo.',
   },
   admin: {
     firebaseNotConfiguredTitle: 'Firebase no está configurado',

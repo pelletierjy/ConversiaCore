@@ -79,6 +79,8 @@ describe('commands (JSON envelope, contracts/admin-cli.md)', () => {
       [['client', 'rotate', '--remote-id', 'gvh'], 'https://worker.example/admin/clients/gvh/rotate', 'POST'],
       [['client', 'revoke-key', '--remote-id', 'gvh', '--key-id', 'ab12cd34'], 'https://worker.example/admin/clients/gvh/keys/ab12cd34/revoke', 'POST'],
       [['client', 'revoke', '--remote-id', 'gvh'], 'https://worker.example/admin/clients/gvh/revoke', 'POST'],
+      [['reports'], 'https://worker.example/admin/reports', 'GET'],
+      [['reports', '--remote-id', 'gvh', '--limit', '10'], 'https://worker.example/admin/reports?remoteId=gvh&limit=10', 'GET'],
       [['usage', '--remote-id', 'gvh', '--days', '7'], 'https://worker.example/admin/usage?remoteId=gvh&days=7', 'GET'],
     ];
     for (const [argv, expectedUrl, expectedMethod] of cases) {

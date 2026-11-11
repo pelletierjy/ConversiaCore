@@ -80,6 +80,29 @@ export async function handleAdminRequest(request: Request, env: AdminEnv, origin
     return json(summary, 200);
   }
 
+  // ---- GET /admin/reports?remoteId=&limit= -----------------------------------------------
+  // "Report an issue" submissions about AI replies, newest first (see handleReport in index.ts).
+  if (pathname === '/admin/reports' && request.method === 'GET') {
+    const params = new URL(request.url).searchParams;
+    const remoteId = params.get('remoteId');
+    const requestedLimit = Number(params.get('limit') ?? '50');
+    const limit = Number.isFinite(requestedLimit) ? Math.min(Math.max(Math.trunc(requestedLimit), 1), 200) : 50;
+    const listed = await kv.list({ prefix: remoteId ? `report:${remoteId}:` : 'report:' });
+    const reports: Array<{ createdAt: string }> = [];
+    for (const key of listed.keys.map((k) => k.name)) {
+      const raw = await kv.get(key);
+      if (!raw) continue;
+      try {
+        reports.push(JSON.parse(raw) as { createdAt: string });
+      } catch {
+        // skip malformed records
+      }
+    }
+    reports.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+    security('reports_listed', remoteId ?? 'all', 'info');
+    return json({ total: reports.length, reports: reports.slice(0, limit) }, 200);
+  }
+
   // ---- collection ------------------------------------------------------------------------
   if (pathname === '/admin/clients') {
     if (request.method === 'GET') {

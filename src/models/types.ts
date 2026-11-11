@@ -22,6 +22,8 @@ export interface MessageMetadata {
   hintLevel?: number;
   isHomeworkRequest?: boolean;
   providerId?: string;
+  /** Set once the user has reported this AI reply via "Report an issue". */
+  reportedAt?: number;
 }
 
 export interface ChatMessage {
@@ -107,4 +109,23 @@ export interface HostAppConfig {
 export interface RetrievedEntry {
   entry: KnowledgeEntry;
   score: number;
+}
+
+export type ReportReason = 'inappropriate' | 'incorrect' | 'harmful' | 'other';
+
+export const REPORT_REASONS: ReportReason[] = ['inappropriate', 'incorrect', 'harmful', 'other'];
+
+/** A user's report about an AI-generated reply (Microsoft Store policy 11.16). */
+export interface ContentReport {
+  reason: ReportReason;
+  comment?: string;
+  messageId: string;
+  sessionId: string;
+  assistantContent: string;
+  studentPrompt?: string;
+  providerId?: string;
+  subject?: string;
+  gradeLevel?: number;
+  contextKey?: string;
+  locale?: string;
 }

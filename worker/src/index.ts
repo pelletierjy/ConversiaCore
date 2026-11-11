@@ -295,6 +295,46 @@ async function handleHuggingFaceChat(body: ChatRequestBody, apiKey: string): Pro
   return { text, functionCalls };
 }
 
+const REPORT_REASONS = new Set(['inappropriate', 'incorrect', 'harmful', 'other']);
+const REPORT_TTL_SECONDS = 60 * 60 * 24 * 90;
+
+function clip(value: unknown, max: number): string | undefined {
+  return typeof value === 'string' && value.length > 0 ? value.slice(0, max) : undefined;
+}
+
+/** Stores a user's "Report an issue" submission about an AI reply (Microsoft Store policy 11.16)
+ *  under `report:<remoteId>:<id>` for 90 days. Free-text fields are length-capped. */
+async function handleReport(
+  body: Record<string, unknown>,
+  kv: KvLike,
+  remoteId: string,
+): Promise<{ status: number; body: unknown; reason?: string }> {
+  const reason = typeof body.reason === 'string' ? body.reason : '';
+  const assistantContent = clip(body.assistantContent, 8000);
+  if (!REPORT_REASONS.has(reason) || !assistantContent) {
+    return { status: 400, body: { error: 'invalid_report' } };
+  }
+  const id = crypto.randomUUID();
+  const record = {
+    id,
+    remoteId,
+    createdAt: new Date().toISOString(),
+    reason,
+    comment: clip(body.comment, 1000),
+    messageId: clip(body.messageId, 100),
+    sessionId: clip(body.sessionId, 100),
+    assistantContent,
+    studentPrompt: clip(body.studentPrompt, 4000),
+    providerId: clip(body.providerId, 100),
+    subject: clip(body.subject, 100),
+    gradeLevel: typeof body.gradeLevel === 'number' ? body.gradeLevel : undefined,
+    contextKey: clip(body.contextKey, 100),
+    locale: clip(body.locale, 10),
+  };
+  await kv.put(`report:${remoteId}:${id}`, JSON.stringify(record), { expirationTtl: REPORT_TTL_SECONDS });
+  return { status: 200, body: { ok: true, id }, reason };
+}
+
 const PROVIDER_BY_ROUTE: Record<string, string> = {
   '/gemini/chat': 'gemini',
   '/gemini/embed': 'gemini',
@@ -433,6 +473,14 @@ export default {
           if (!env.HUGGING_FACE_API_KEY) return serve({ error: 'not_configured' }, 503);
           const body = (await request.json()) as ChatRequestBody;
           return serve(await handleHuggingFaceChat(body, env.HUGGING_FACE_API_KEY), 200);
+        }
+        case '/report': {
+          const body = (await request.json()) as Record<string, unknown>;
+          const result = await handleReport(body, env.CLIENTS as KvLike, client.remoteId);
+          if (result.reason) {
+            logEvent({ ...logBase, remoteId: client.remoteId, level: 'warn', event: 'content_reported', reportReason: result.reason });
+          }
+          return serve(result.body, result.status);
         }
         default:
           return serve({ error: 'not_found' }, 404);
