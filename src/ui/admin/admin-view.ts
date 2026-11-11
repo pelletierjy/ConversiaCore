@@ -7,6 +7,7 @@ import { renderEntryList } from './entry-list';
 import { renderEntryEditor } from './entry-editor';
 import { renderAiProvidersPanel } from './ai-providers-panel';
 import { renderHostAppsPanel } from './host-apps-panel';
+import { renderReportsPanel } from './reports-panel';
 import { t } from '../../i18n/translations';
 import type { AppConfig } from '../../models/types';
 
@@ -65,7 +66,7 @@ export async function renderAdminView(root: HTMLElement): Promise<void> {
   });
 }
 
-type AdminTab = 'knowledge' | 'settings' | 'hostApps';
+type AdminTab = 'knowledge' | 'settings' | 'hostApps' | 'reports';
 
 async function renderAdminHome(container: HTMLElement, config: AppConfig): Promise<void> {
   container.innerHTML = `
@@ -73,6 +74,7 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
       <nav class="admin-nav">
         <button type="button" class="admin-nav-btn" data-tab="knowledge">${t('admin.knowledgeBaseNavLabel')}</button>
         <button type="button" class="admin-nav-btn" data-tab="hostApps">${t('admin.hostAppsNavLabel')}</button>
+        <button type="button" class="admin-nav-btn" data-tab="reports">${t('admin.reportsNavLabel')}</button>
         <button type="button" class="admin-nav-btn" data-tab="settings">${t('admin.settingsNavLabel')}</button>
       </nav>
       <div class="admin-page-container"></div>
@@ -86,6 +88,7 @@ async function renderAdminHome(container: HTMLElement, config: AppConfig): Promi
     navButtons.forEach((btn) => btn.classList.toggle('active', btn.dataset.tab === tab));
     void (tab === 'knowledge' ? renderKnowledgeBasePage(pageContainer, config)
       : tab === 'hostApps' ? renderHostAppsPage(pageContainer)
+      : tab === 'reports' ? renderReportsPage(pageContainer)
       : renderSettingsPage(pageContainer, config));
   }
 
@@ -164,4 +167,16 @@ function renderHostAppsPage(container: HTMLElement): void {
 
   const hostAppsContainer = container.querySelector('.host-apps-container') as HTMLElement;
   void renderHostAppsPanel(hostAppsContainer);
+}
+
+function renderReportsPage(container: HTMLElement): void {
+  container.innerHTML = `
+    <div class="admin-page">
+      <header class="admin-header">
+        <h2>${t('admin.reportsTitle')}</h2>
+      </header>
+      <div class="reports-container"></div>
+    </div>
+  `;
+  renderReportsPanel(container.querySelector('.reports-container') as HTMLElement);
 }

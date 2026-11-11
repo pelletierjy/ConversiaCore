@@ -73,6 +73,23 @@ interface TranslationDict {
     orderSaveFailedError: string;
     providerEnabledLabel: string;
     allProvidersDisabledError: string;
+    reportsNavLabel: string;
+    reportsTitle: string;
+    reportsDescription: string;
+    reportsTokenLabel: string;
+    reportsLoadButton: string;
+    reportsLoading: string;
+    reportsEmpty: string;
+    reportsLoadFailed: string;
+    reportsUnauthorized: string;
+    reportsColTime: string;
+    reportsColClient: string;
+    reportsColReason: string;
+    reportsColProvider: string;
+    reportsColDetails: string;
+    reportsPrompt: string;
+    reportsReply: string;
+    reportsComment: string;
     hostAppsNavLabel: string;
     hostAppsTitle: string;
     hostAppsDescription: string;
@@ -237,6 +254,23 @@ const en: TranslationDict = {
     orderSaveFailedError: 'Failed to save provider settings.',
     providerEnabledLabel: 'Enabled',
     allProvidersDisabledError: 'Enable at least one provider before saving.',
+    reportsNavLabel: 'Reports',
+    reportsTitle: 'Reports',
+    reportsDescription: 'AI replies that users reported through "Report an issue". Reports are kept for 90 days.',
+    reportsTokenLabel: 'Admin token',
+    reportsLoadButton: 'Load reports',
+    reportsLoading: 'Loading...',
+    reportsEmpty: 'No reports.',
+    reportsLoadFailed: 'Could not load reports.',
+    reportsUnauthorized: 'Invalid admin token.',
+    reportsColTime: 'Time',
+    reportsColClient: 'Client',
+    reportsColReason: 'Reason',
+    reportsColProvider: 'Provider',
+    reportsColDetails: 'Details',
+    reportsPrompt: 'Student prompt',
+    reportsReply: 'AI reply',
+    reportsComment: 'Comment',
     hostAppsNavLabel: 'Host Apps',
     hostAppsTitle: 'Host Apps',
     hostAppsDescription:
@@ -402,6 +436,23 @@ const fr: TranslationDict = {
     orderSaveFailedError: "Échec de l'enregistrement des paramètres des fournisseurs.",
     providerEnabledLabel: 'Activé',
     allProvidersDisabledError: "Activez au moins un fournisseur avant d'enregistrer.",
+    reportsNavLabel: 'Signalements',
+    reportsTitle: 'Signalements',
+    reportsDescription: 'Réponses de l\'IA signalées par les utilisateurs via « Signaler un problème ». Les signalements sont conservés 90 jours.',
+    reportsTokenLabel: 'Jeton d\'administration',
+    reportsLoadButton: 'Charger les signalements',
+    reportsLoading: 'Chargement...',
+    reportsEmpty: 'Aucun signalement.',
+    reportsLoadFailed: 'Impossible de charger les signalements.',
+    reportsUnauthorized: 'Jeton d\'administration invalide.',
+    reportsColTime: 'Heure',
+    reportsColClient: 'Client',
+    reportsColReason: 'Raison',
+    reportsColProvider: 'Fournisseur',
+    reportsColDetails: 'Détails',
+    reportsPrompt: 'Question de l\'élève',
+    reportsReply: 'Réponse de l\'IA',
+    reportsComment: 'Commentaire',
     hostAppsNavLabel: 'Applications hôtes',
     hostAppsTitle: 'Applications hôtes',
     hostAppsDescription:
@@ -567,6 +618,23 @@ const es: TranslationDict = {
     orderSaveFailedError: 'No se pudo guardar la configuración de proveedores.',
     providerEnabledLabel: 'Activado',
     allProvidersDisabledError: 'Activa al menos un proveedor antes de guardar.',
+    reportsNavLabel: 'Informes',
+    reportsTitle: 'Informes',
+    reportsDescription: 'Respuestas de la IA que los usuarios informaron con «Informar de un problema». Los informes se conservan 90 días.',
+    reportsTokenLabel: 'Token de administración',
+    reportsLoadButton: 'Cargar informes',
+    reportsLoading: 'Cargando...',
+    reportsEmpty: 'No hay informes.',
+    reportsLoadFailed: 'No se pudieron cargar los informes.',
+    reportsUnauthorized: 'Token de administración no válido.',
+    reportsColTime: 'Hora',
+    reportsColClient: 'Cliente',
+    reportsColReason: 'Motivo',
+    reportsColProvider: 'Proveedor',
+    reportsColDetails: 'Detalles',
+    reportsPrompt: 'Pregunta del estudiante',
+    reportsReply: 'Respuesta de la IA',
+    reportsComment: 'Comentario',
     hostAppsNavLabel: 'Apps anfitrionas',
     hostAppsTitle: 'Apps anfitrionas',
     hostAppsDescription:
