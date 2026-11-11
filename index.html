@@ -8,9 +8,18 @@
   <body>
     <div id="app"></div>
     <!-- signal-grid web component: webpack runtime, zone polyfills, then the element bundle -->
-    <script src="/vendor/signal-grid/runtime.js" type="module"></script>
-    <script src="/vendor/signal-grid/polyfills.js" type="module"></script>
-    <script src="/vendor/signal-grid/main.js" type="module"></script>
+    <!-- Injected from an inline script (not <script src>) because the files live in /public:
+         Vite's dev server otherwise tries to transform them and logs "Pre-transform error".
+         async=false keeps the three modules executing in order. -->
+    <script>
+      ['runtime', 'polyfills', 'main'].forEach(function (name) {
+        var el = document.createElement('script');
+        el.type = 'module';
+        el.async = false;
+        el.src = '%BASE_URL%vendor/signal-grid/' + name + '.js';
+        document.head.appendChild(el);
+      });
+    </script>
     <script>
       (function () {
         var redirect = sessionStorage.getItem('gh_pages_redirect');
