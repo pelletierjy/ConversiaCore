@@ -358,8 +358,21 @@ export default {
     const durationMs = (): number => Date.now() - startedAt;
 
     // Admin surface is token-guarded, not origin-gated: the operator CLI sends no Origin header.
+    // The browser admin page (Reports tab) calls this cross-origin from an allowed origin, so answer
+    // that origin's preflight and echo CORS headers; the X-Admin-Token check remains the real gate.
     if (pathname.startsWith('/admin/')) {
-      return withCorrelation(await handleAdminRequest(request, env, origin, correlationId));
+      const adminCors: Record<string, string> = { Vary: 'Origin' };
+      if (origin && isAllowedOrigin(origin)) {
+        adminCors['Access-Control-Allow-Origin'] = origin;
+        adminCors['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS';
+        adminCors['Access-Control-Allow-Headers'] = 'Content-Type, X-Admin-Token';
+      }
+      if (request.method === 'OPTIONS') {
+        return withCorrelation(new Response(null, { status: 204, headers: adminCors }));
+      }
+      const adminResponse = await handleAdminRequest(request, env, origin, correlationId);
+      for (const [k, v] of Object.entries(adminCors)) adminResponse.headers.set(k, v);
+      return withCorrelation(adminResponse);
     }
 
     if (request.method === 'OPTIONS') {
