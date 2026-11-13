@@ -25,6 +25,9 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       <div class="message-list"></div>
       <div class="chat-status" aria-live="polite"></div>
       <div class="input-bar-container"></div>
+      <div class="report-bar">
+        <button type="button" class="report-button">${t('chat.reportButton')}</button>
+      </div>
       <div class="chat-footer">
         <span class="provider-status" aria-live="polite"></span>
         <p class="ai-provider-warning">${t('chat.aiProviderWarning')}</p>
@@ -36,6 +39,7 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
   const inputBarEl = container.querySelector('.input-bar-container') as HTMLElement;
   const statusEl = container.querySelector('.chat-status') as HTMLElement;
   const providerStatusEl = container.querySelector('.provider-status') as HTMLElement;
+  const reportButtonEl = container.querySelector('.report-button') as HTMLButtonElement;
 
   let messages = await getMessagesForSession(session.id);
   if (messages.length === 0) {
@@ -49,12 +53,44 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
     messages = [welcomeMessage];
     await addMessage(welcomeMessage);
   }
-  const render = (): void => renderMessageList(messageListEl, messages, handleReport);
+  const render = (): void => {
+    renderMessageList(messageListEl, messages);
+    renderReportButton();
+  };
 
-  function handleReport(messageId: string): void {
-    const index = messages.findIndex((m) => m.id === messageId);
-    const target = messages[index];
-    if (!target) return;
+  /** The persistent button under the chat always targets the latest AI-generated reply
+   *  (falling back to the newest assistant message so the control is never a dead end). */
+  function reportTarget(): { target: ChatMessage; index: number } | undefined {
+    let index = -1;
+    for (let i = messages.length - 1; i >= 0; i--) {
+      const m = messages[i];
+      if (m.role === 'assistant' && m.metadata?.providerId) {
+        index = i;
+        break;
+      }
+    }
+    if (index === -1) {
+      index = messages.map((m) => m.role).lastIndexOf('assistant');
+    }
+    return index === -1 ? undefined : { target: messages[index], index };
+  }
+
+  function renderReportButton(): void {
+    const found = reportTarget();
+    if (!found) {
+      reportButtonEl.disabled = true;
+      reportButtonEl.textContent = t('chat.reportButton');
+      return;
+    }
+    const reported = !!found.target.metadata?.reportedAt;
+    reportButtonEl.disabled = reported;
+    reportButtonEl.textContent = reported ? t('chat.reportedLabel') : t('chat.reportButton');
+  }
+
+  function handleReport(): void {
+    const found = reportTarget();
+    if (!found) return;
+    const { target, index } = found;
     const prompt = messages.slice(0, index).reverse().find((m) => m.role === 'student');
     openReportDialog(container.querySelector('.chat-view') as HTMLElement, async ({ reason, comment }) => {
       await submitContentReport({
@@ -75,6 +111,8 @@ export async function renderChatView(container: HTMLElement, session: StudentSes
       render();
     });
   }
+
+  reportButtonEl.addEventListener('click', handleReport);
 
   render();
 

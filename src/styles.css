@@ -165,25 +165,42 @@ label {
   max-width: 100%;
 }
 
-.report-link {
-  background: none;
-  border: none;
-  padding: 2px 4px;
-  font-size: 0.75rem;
+/* Persistent "Report an issue" control under the chat (Microsoft Store policy 11.16). */
+.report-bar {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0 2px;
+  border-top: 1px solid var(--color-border);
+}
+
+.report-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--color-muted);
-  text-decoration: underline;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
   cursor: pointer;
 }
 
-.report-link:hover {
-  background: none;
-  color: var(--color-text);
+.report-button::before {
+  content: '\26A0';
 }
 
-.message-reported {
-  padding: 2px 4px;
-  font-size: 0.75rem;
-  color: var(--color-muted);
+.report-button:hover:not(:disabled) {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.report-button:disabled {
+  color: var(--color-success);
+  border-style: solid;
+  border-color: var(--color-border);
+  cursor: default;
 }
 
 .report-overlay {
